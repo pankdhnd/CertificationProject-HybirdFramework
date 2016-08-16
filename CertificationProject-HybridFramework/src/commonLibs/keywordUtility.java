@@ -10,9 +10,11 @@ import appModules.setup;
 public class keywordUtility { 
 	private static excelDriver oExcelDriver;
 	static commonDriver oDriver;
+	setup Setup = new setup();
 	
 public keywordUtility(){
 		oDriver  = new commonDriver();
+		
 	}	
 	 
  public String runMethod(String methodName, String testDataFolder){
@@ -27,25 +29,30 @@ try {
 		
 		oExcelDriver = new excelDriver();
 		oExcelDriver.openExcelSheet(testDataFolder+"\\TestData.xlsx");
-			
-		
-		if(methodName.equalsIgnoreCase("Login"))
-		{
-			String browserType = oExcelDriver.getCellData(methodName, 1, 2);
+	
+		if (methodName.equalsIgnoreCase("openBrowser")){
+			String browserType = oExcelDriver.getCellData(methodName, 1, 2);			
 			String URL = oExcelDriver.getCellData(methodName, 2, 2);
+			return Setup.openBrowser(browserType, URL);
+		}		
+		else if (methodName.equalsIgnoreCase("PreLoginValidations")){
+			return Setup.verifyLoginElementsExistance();
+		}			
+		else if(methodName.equalsIgnoreCase("Login"))
+		{			
 			String userName = oExcelDriver.getCellData(methodName, 3, 2);
 			String passWord = oExcelDriver.getCellData(methodName, 4, 2);	
-			return setup.login(browserType, URL, userName, passWord);			
+			return Setup.login(userName, passWord);			
 		}
 		else if(methodName.equalsIgnoreCase("Logout"))
 		{			
-			Setup setup = new Setup();
-			return setup.logout();		
+			//setup setup = new setup();
+			return Setup.logout();		
 		}
 		else if(methodName.equalsIgnoreCase("OpenFileManager"))
 		{			
-			classFileManager FileManager = new classFileManager();
-			return FileManager.OpenFileManager();		
+		//	classFileManager FileManager = new classFileManager();
+		//	return FileManager.OpenFileManager();		
 		}		
 		
 		

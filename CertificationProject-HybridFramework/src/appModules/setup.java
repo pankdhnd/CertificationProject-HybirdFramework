@@ -17,13 +17,13 @@ public class setup {
 	
 	
 	static commonDriver oDriver;	
-	public setup(){
-		  oDriver = new commonDriver();		
+	public setup(){		  
 		  DOMConfigurator.configure("log4j.xml");
+		  oDriver = new commonDriver();		
 	}
 	
 
-	public static String verifyLoginElementsExistance(){
+	public  String verifyLoginElementsExistance(){
 	try {
 		if(!oDriver.isVisible(By.id(txtUsername)))
 		{
@@ -45,29 +45,39 @@ public class setup {
 		}
 		
 	} catch (Exception e) {
-		// TODO: handle exception
+		Log.error("setup()->verifyLoginElementsExistance()-> Error occured, here are the details: ");
+		Log.error(e.getStackTrace().toString());
+	}	
+		
+		return "Pre-login validations complete";		
 	}
-		
-		
-		
-		return "";
-		
+	
+	public String openBrowser(String browserType, String URL){
+		try {
+			oDriver.openBrowser(browserType, URL);
+			oDriver.waitTillElementClickable(By.id(txtUsername),60l);   
+
+			if(!oDriver.getTitle().equals("WordPress Demo Install › Log In")){
+				Log.error("ERROR: Login page title mismatch; login failed");
+				return "ERROR: Login page title mismatch; login failed";
+			}
+		} catch (Exception e) {
+			Log.error("ERROR: Error while opening browser; here are the details: ");
+			Log.error(e.getStackTrace().toString());
+			e.printStackTrace();
+			return "ERROR: Error while opening browser";
+		}
+		return "ERROR";
 	}
+	
+	
+	
 	
 	
 
-	public static String login(String browserType, String URL, String userName, String passWord)
+	public String login(String userName, String passWord)
 	{
-	
 		try {			
-				oDriver.openBrowser(browserType, URL);
-				oDriver.waitTillElementClickable(By.id(txtUsername),60l);   
-
-				if(!oDriver.getTitle().equals("WordPress Demo Install › Log In")){
-					Log.error("ERROR: Login page title mismatch; login failed");
-					return "ERROR: Login page title mismatch; login failed";
-				}
-				
 				oDriver.setText(By.id(txtUsername), userName);
 				oDriver.setText(By.id(txtPassword),passWord);
 				oDriver.click(By.id(loginButton));   			
@@ -87,9 +97,8 @@ public class setup {
 		}
 	}
 	
-	public static String logout()
-	{
-		
+	public String logout()
+	{		
 		try {			
 		
 			oDriver.waitTillElementVisible(By.xpath(myAccountLink), 60l);			

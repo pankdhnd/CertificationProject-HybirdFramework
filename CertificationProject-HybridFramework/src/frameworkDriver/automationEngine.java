@@ -11,7 +11,7 @@ import commonLibs.utils;;
 public class automationEngine {
 
 	private static keywordUtility kUtil;
-	private static String driverPropertyFile = "D:\\Framework\\config\\config.properties";
+	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
 	private static Properties oDriverProperties;
 	private static String testSuiteFolder;
 	private static String testDataFolder;
@@ -50,7 +50,7 @@ public class automationEngine {
 			currentTestCaseStatus = "PASS";				
 			testCaseSheetName = oExcelDriver.getCellData("TestSuite", Row, 2);				
 			runFlag = oExcelDriver.getCellData("TestSuite", Row, 3);			
-			testCaseSheetName = testCaseSheetName.trim();
+			testCaseSheetName = testCaseSheetName.trim();			
 			runFlag = runFlag.toLowerCase().trim();			
 			if(runFlag.equals("y")) {
 				kUtil = null;				
@@ -98,7 +98,7 @@ public class automationEngine {
 			rowCount = oExcelDriver.getRowCount(sheetName);			
 			for(Row = 2; Row <= rowCount; Row++){
 			methodName = oExcelDriver.getCellData(sheetName, Row, 2);				
-			System.out.println("methodname: "+methodName);
+			System.out.println("methodname: "+ methodName);
 			if (methodName.equals("")){
 				runStatus = "Skipped";
 				Comment = "Invalid action keyword";
