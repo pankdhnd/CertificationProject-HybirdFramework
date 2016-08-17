@@ -1,20 +1,28 @@
 package commonLibs;
 
 
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-
 import appModules.setup;
+import commonLibs.utils;
 
 public class keywordUtility { 
 	private static excelDriver oExcelDriver;
-	static commonDriver oDriver;
+	static commonDriver oDriver;	
+	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
+	private static Properties oDriverProperties;
+	private static String screenshotPath;
+	
+	
 	setup Setup = new setup();
 	
 public keywordUtility(){
 		oDriver  = new commonDriver();
-		
+		oDriverProperties = utils.getProperties(driverPropertyFile);	
+		screenshotPath = oDriverProperties.getProperty("screenshotFolder").trim();
 	}	
 	 
  public String runMethod(String methodName, String testDataFolder){
@@ -33,24 +41,25 @@ try {
 		if (methodName.equalsIgnoreCase("openBrowser")){
 			String browserType = oExcelDriver.getCellData(methodName, 1, 2);			
 			String URL = oExcelDriver.getCellData(methodName, 2, 2);
-			return Setup.openBrowser(browserType, URL);
+			String expectedTitle = oExcelDriver.getCellData(methodName, 3, 2);
+			return Setup.openBrowser(browserType, URL, expectedTitle);
 		}		
 		else if (methodName.equalsIgnoreCase("PreLoginValidations")){
 			return Setup.verifyLoginElementsExistance();
 		}
 		else if (methodName.equalsIgnoreCase("inputLoginDetails")){
 			String userName = oExcelDriver.getCellData(methodName, 1, 2);
-			String passWord = oExcelDriver.getCellData(methodName, 2, 2);
-			System.out.println(userName+"  "+passWord);
+			String passWord = oExcelDriver.getCellData(methodName, 2, 2);			
 			return Setup.inputLoginDetails(userName, passWord);
-		}		
-		
+		}				
 		else if (methodName.equalsIgnoreCase("verifyEnteredValues")){
 			String userName = oExcelDriver.getCellData(methodName, 1, 2);
 			String passWord = oExcelDriver.getCellData(methodName, 2, 2);	
 			return Setup.verifyEnteredValues(userName, passWord);
 		}
-		
+		else if (methodName.equalsIgnoreCase("takeScreenshot")){
+			oDriver.takeScreenshot(screenshotPath +utils.getDateTimeStamp()+"_"+methodName);
+		}
 		
 		
 		else if(methodName.equalsIgnoreCase("Login"))
