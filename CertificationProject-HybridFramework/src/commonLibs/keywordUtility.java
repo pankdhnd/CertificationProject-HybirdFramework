@@ -42,13 +42,13 @@ try {
 			String userName = oExcelDriver.getCellData(methodName, 1, 2);
 			String passWord = oExcelDriver.getCellData(methodName, 2, 2);
 			System.out.println(userName+"  "+passWord);
-			Setup.inputLoginDetails(userName, passWord);
+			return Setup.inputLoginDetails(userName, passWord);
 		}		
 		
 		else if (methodName.equalsIgnoreCase("verifyEnteredValues")){
 			String userName = oExcelDriver.getCellData(methodName, 1, 2);
 			String passWord = oExcelDriver.getCellData(methodName, 2, 2);	
-			Setup.verifyEnteredValues(userName, passWord);
+			return Setup.verifyEnteredValues(userName, passWord);
 		}
 		
 		
