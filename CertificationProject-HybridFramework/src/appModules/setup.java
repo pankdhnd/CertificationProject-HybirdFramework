@@ -56,32 +56,27 @@ public class setup {
 		try {
 			oDriver.openBrowser(browserType, URL);
 			oDriver.waitTillElementClickable(By.id(txtUsername),60l);   
-
 			if(!oDriver.getTitle().equals("WordPress Demo Install › Log In")){
 				Log.error("ERROR: Login page title mismatch; login failed");
 				return "ERROR: Login page title mismatch; login failed";
+			}
+			else
+			{
+				return "Success: Browser opened successfully";
 			}
 		} catch (Exception e) {
 			Log.error("ERROR: Error while opening browser; here are the details: ");
 			Log.error(e.getStackTrace().toString());
 			e.printStackTrace();
 			return "ERROR: Error while opening browser";
-		}
-		return "ERROR";
+		}		
 	}
 	
 	
-	
-	
-	
-
-	public String login(String userName, String passWord)
+	public String login()
 	{
-		try {			
-				oDriver.setText(By.id(txtUsername), userName);
-				oDriver.setText(By.id(txtPassword),passWord);
-				oDriver.click(By.id(loginButton));   			
-			
+		try {		
+				oDriver.click(By.id(loginButton));  
 				try {
 					oDriver.waitTillElementVisible(By.xpath(dashboardLink),60l);
 					Log.info("Login successful");
@@ -96,6 +91,40 @@ public class setup {
 			return "ERROR: Login failed due to some exception";
 		}
 	}
+	
+	public String inputLoginDetails(String userName, String passWord){
+		try {
+			oDriver.setText(By.id(txtUsername), userName);			
+			oDriver.setText(By.id(txtPassword),passWord);
+			return "Success";
+		} catch (Exception e) {
+			Log.error("ERROR: inputLoginDetails failed due to some exception. Below are the details: ");
+			Log.error(e.getStackTrace().toString());
+			return "ERROR: Entered values verification failed due some exception";
+		}
+	}
+	
+	
+	
+	public String verifyEnteredValues(String userName, String passWord){
+		try {
+			if (!oDriver.getText(By.id(txtUsername)).equals(userName)){
+			Log.error("Entered username doesn't match with supplied username");
+			return "ERROR: Entered username doesn't match with supplied username";
+			}
+			else if (!oDriver.getText(By.id(txtPassword)).equals(passWord)){
+				Log.error("Entered password doesn't match with supplied username");
+				return "ERROR: Entered password doesn't match with supplied username";
+			}
+			return "Successful";
+		} catch (Exception e) {
+			Log.error("ERROR: verifyEnteredValues failed due to some exception. Below are the details: ");
+			Log.error(e.getStackTrace().toString());
+			return "ERROR: Entered values verification failed due some exception";
+		}
+	}
+	
+	
 	
 	public String logout()
 	{		

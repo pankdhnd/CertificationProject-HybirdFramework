@@ -37,12 +37,26 @@ try {
 		}		
 		else if (methodName.equalsIgnoreCase("PreLoginValidations")){
 			return Setup.verifyLoginElementsExistance();
-		}			
+		}
+		else if (methodName.equalsIgnoreCase("inputLoginDetails")){
+			String userName = oExcelDriver.getCellData(methodName, 1, 2);
+			String passWord = oExcelDriver.getCellData(methodName, 2, 2);
+			System.out.println(userName+"  "+passWord);
+			Setup.inputLoginDetails(userName, passWord);
+		}		
+		
+		else if (methodName.equalsIgnoreCase("verifyEnteredValues")){
+			String userName = oExcelDriver.getCellData(methodName, 1, 2);
+			String passWord = oExcelDriver.getCellData(methodName, 2, 2);	
+			Setup.verifyEnteredValues(userName, passWord);
+		}
+		
+		
+		
 		else if(methodName.equalsIgnoreCase("Login"))
 		{			
-			String userName = oExcelDriver.getCellData(methodName, 3, 2);
-			String passWord = oExcelDriver.getCellData(methodName, 4, 2);	
-			return Setup.login(userName, passWord);			
+			
+			return Setup.login();			
 		}
 		else if(methodName.equalsIgnoreCase("Logout"))
 		{			
