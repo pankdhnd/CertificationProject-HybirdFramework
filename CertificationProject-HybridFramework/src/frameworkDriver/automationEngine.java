@@ -63,8 +63,7 @@ public class automationEngine {
 					else{
 						currentTestCaseStatus = "FAIL";
 						Comment = "Failure occured";	
-					}
-										
+					}										
 				}
 				else{
 					Comment = runStatus;
@@ -98,7 +97,7 @@ public class automationEngine {
 			rowCount = oExcelDriver.getRowCount(sheetName);			
 			for(Row = 2; Row <= rowCount; Row++){
 			methodName = oExcelDriver.getCellData(sheetName, Row, 2);				
-			System.out.println("methodname: "+ methodName);
+			System.out.println("Executing method >> "+ methodName);
 			if (methodName.equals("")){
 				runStatus = "Skipped";
 				Comment = "Invalid action keyword";
@@ -111,18 +110,19 @@ public class automationEngine {
 					if (returnValue.contains("ERROR")){
 						Comment = returnValue;
 						runStatus = "FAIL";
+						testCaseDriverReturnValue = "FAIL: Failure occured in method: "+methodName;
 						currentTestCaseStatus = "FAIL";
 					}
 					else{
 						runStatus = "PASS";
-					//	currentTestCaseStatus = "PASS";
+						currentTestCaseStatus = "PASS";
 						Comment = returnValue;						
 					}	
 					
 				} catch (Exception e) {
 					Comment = e.getMessage();
 					runStatus = "EXCEPTION";
-					currentTestCaseStatus = "FAIL";
+					currentTestCaseStatus = "FAIL: "+e.getMessage();
 				}
 			
 			oExcelDriver.setCellData(sheetName, runStatus, Row, 3);
@@ -139,6 +139,8 @@ public class automationEngine {
 		
 		return testCaseDriverReturnValue;
 	}//END testCaseDriver
+	
+	
 	
 	
 	private static void exportToExcel()

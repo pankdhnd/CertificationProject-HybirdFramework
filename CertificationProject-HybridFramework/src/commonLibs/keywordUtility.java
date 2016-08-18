@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import appModules.setup;
 import commonLibs.utils;
+import utility.Log;
 
 public class keywordUtility { 
 	private static excelDriver oExcelDriver;
@@ -28,8 +29,7 @@ public keywordUtility(){
  public String runMethod(String methodName, String testDataFolder){
 try {		
 		//int Row, rowCount;
-		methodName = methodName.trim();
-		testDataFolder = testDataFolder.trim();
+		methodName = methodName.trim();		testDataFolder = testDataFolder.trim();
 	
 		if (methodName.isEmpty() || testDataFolder.isEmpty()){
 			return "ERROR: Invalid Method or Test Data Folder";
@@ -57,14 +57,20 @@ try {
 			String passWord = oExcelDriver.getCellData(methodName, 2, 2);	
 			return Setup.verifyEnteredValues(userName, passWord);
 		}
-		else if (methodName.equalsIgnoreCase("takeScreenshot")){
-			oDriver.takeScreenshot(screenshotPath +utils.getDateTimeStamp()+"_"+methodName);
+		else if (methodName.equalsIgnoreCase("takeScreenshot")){			
+			try {
+				oDriver.takeScreenshot(screenshotPath +utils.getDateTimeStamp()+".jpg");
+				return "Screenshot saved successfully";
+			} catch (Exception e) {
+				Log.error("ERROR: Could not save screenshot; here are some more details: ");
+				Log.error(e.getStackTrace().toString());
+				return "ERROR: Error occured while saving the screnshot";
+			}
 		}
 		
 		
 		else if(methodName.equalsIgnoreCase("Login"))
-		{			
-			
+		{
 			return Setup.login();			
 		}
 		else if(methodName.equalsIgnoreCase("Logout"))

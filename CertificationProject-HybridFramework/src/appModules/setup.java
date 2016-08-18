@@ -11,7 +11,7 @@ public class setup {
 	private static By txtUsername = By.name("userName");
 	private static By txtPassword = By.name("password");
 	private static By loginButton = By.name("login");
-	private static String dashboardLink = "//a[contains(text(),'Dashboard')]";
+	private static By signOffLink = By.linkText("SIGN-OFF");
 	private static String myAccountLink = "//a[contains(text(),'Howdy, admin')]";
 	private static String linkLogout = "//a[contains(text(),'Log Out')]";
 	
@@ -83,12 +83,12 @@ public class setup {
 		try {		
 				oDriver.click(loginButton);  
 				try {
-					oDriver.waitTillElementVisible(By.xpath(dashboardLink),60l);
+					oDriver.waitTillElementVisible(signOffLink,60l);
 					Log.info("Login successful");
 					return "Login Successful";
 				} catch (Exception e) {
-					Log.error("ERROR: Could not find Dashboard link; login failed");
-					return "ERROR: Could not find Dashboard link; login failed";					
+					Log.error("ERROR: Could not find Sign off link; login failed");
+					return "ERROR: Could not find Sign off link; login failed";					
 				}
 		} catch (Exception e){
 			Log.error("ERROR: Login failed due to some exception. Below are the details: ");
