@@ -13,18 +13,16 @@ public class setup {
 	private static By loginButton = By.name("login");
 	private static By signOffLink = By.linkText("SIGN-OFF");
 	private static String myAccountLink = "//a[contains(text(),'Howdy, admin')]";
-	private static String linkLogout = "//a[contains(text(),'Log Out')]";
-	
-		
-	
+	private static String linkLogout = "//a[contains(text(),'Log Out')]";	
 	static commonDriver oDriver;	
+	
 	public setup(){		  
 		  DOMConfigurator.configure("log4j.xml");
 		  oDriver = new commonDriver();		
 	}
 	
 
-	public  String verifyLoginElementsExistance(){		
+	public String verifyLoginElementsExistance(){		
 	try {
 		if(!oDriver.isVisible(txtUsername))
 		{
