@@ -22,3 +22,43 @@
 2016-08-18 09:48:32,747 INFO  [Log] Login successful 
 2016-08-18 10:10:15,999 ERROR [Log] ERROR: Login page title mismatch; login failed 
 2016-08-18 10:10:19,902 INFO  [Log] Login successful 
+2016-08-19 19:29:16,418 INFO  [Log] Opening regisration page 
+2016-08-19 19:29:16,772 INFO  [Log] Inputting registration details 
+2016-08-19 19:30:25,915 INFO  [Log] Opening regisration page 
+2016-08-19 19:30:25,926 INFO  [Log] Inputting registration details 
+2016-08-19 19:30:25,929 INFO  [Log] Clicking Submit button 
+2016-08-19 19:30:25,929 INFO  [Log] Verifying user display name 
+2016-08-19 19:30:25,933 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-19 19:31:00,502 INFO  [Log] Opening regisration page 
+2016-08-19 19:31:01,991 INFO  [Log] Inputting registration details 
+2016-08-19 19:32:02,811 INFO  [Log] Clicking Submit button 
+2016-08-19 19:32:10,026 INFO  [Log] Verifying user display name 
+2016-08-19 19:33:10,189 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-19 19:37:28,351 INFO  [Log] Opening regisration page 
+2016-08-19 19:37:29,645 INFO  [Log] Inputting registration details 
+2016-08-19 19:38:58,683 INFO  [Log] Opening regisration page 
+2016-08-19 19:39:01,055 INFO  [Log] Inputting registration details 
+2016-08-19 19:39:40,277 INFO  [Log] Opening regisration page 
+2016-08-19 19:39:41,959 INFO  [Log] Inputting registration details 
+2016-08-19 19:40:12,373 INFO  [Log] Opening regisration page 
+2016-08-19 19:40:14,310 INFO  [Log] Inputting registration details 
+2016-08-19 19:40:42,720 INFO  [Log] Clicking Submit button 
+2016-08-19 19:40:46,568 INFO  [Log] Verifying user display name 
+2016-08-19 19:41:46,816 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-19 19:54:30,456 INFO  [Log] Opening regisration page 
+2016-08-19 19:54:32,053 INFO  [Log] Inputting registration details 
+2016-08-19 19:54:33,322 INFO  [Log] Clicking Submit button 
+2016-08-19 19:54:34,810 INFO  [Log] Verifying user display name 
+2016-08-19 19:55:35,080 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-19 20:03:28,340 INFO  [Log] Opening regisration page 
+2016-08-19 20:03:29,742 INFO  [Log] Inputting registration details 
+2016-08-19 20:03:30,960 INFO  [Log] Clicking Submit button 
+2016-08-19 20:03:32,407 INFO  [Log] Verifying user display name 
+2016-08-19 20:03:32,549 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-19 20:04:17,991 INFO  [Log] Opening regisration page 
+2016-08-19 20:04:20,043 INFO  [Log] Inputting registration details 
+2016-08-19 20:04:21,406 INFO  [Log] Clicking Submit button 
+2016-08-19 20:04:23,407 INFO  [Log] Verifying user display name 
+2016-08-19 20:04:23,447 INFO  [Log] User Display name verification successful 
+2016-08-19 20:04:23,447 INFO  [Log] Verifying login username 
+2016-08-19 20:04:23,555 ERROR [Log] ERROR: Login username displayed is different than the username we provided; screenshot taken 

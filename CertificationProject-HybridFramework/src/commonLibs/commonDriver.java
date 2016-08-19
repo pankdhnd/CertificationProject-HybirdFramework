@@ -19,6 +19,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utility.Log;
+
 import java.io.*;
 
 
@@ -219,10 +221,12 @@ public class commonDriver {
   //------------------------------------------------------------------------------------------------------------------------------------------------------//
  public void selectByValue(By oBy, String value) {
    try {
+	
     WebElement element = oDriver.findElement(oBy);
     Select select = new Select(element);
     select.selectByValue(value);
    } catch (Exception e) {
+	Log.error("Could not find value: "+value + " in the dropdown");
     System.out.println("Could not select given element; here is some more detail: ");
     e.printStackTrace();
    }
@@ -231,6 +235,7 @@ public class commonDriver {
   //------------------------------------------------------------------------------------------------------------------------------------------------------//
  public void selectByVisibleText(By oBy, String visibleText) {
    try {
+	 System.out.println("Value for country: "+ visibleText+"text");   
     WebElement element = oDriver.findElement(oBy);
     Select select = new Select(element);
     select.selectByVisibleText(visibleText);

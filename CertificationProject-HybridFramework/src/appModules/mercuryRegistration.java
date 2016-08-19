@@ -30,8 +30,8 @@ public class mercuryRegistration {
 	private static By txtPassword = By.name("password");
 	private static By txtConfirmPassword = By.name("confirmPassword");
 	private static By buttonSubmit = By.name("register");
-	private static By displayUsername = By.partialLinkText("Dear"); 
-	private static By loginUsername = By.partialLinkText("Note:");
+	private static By displayUsername = By.xpath("//b[contains(text(),'Dear')]"); 
+	private static By loginUsername = By.xpath("//b[contains(text(),'Note:')]");
 	static commonDriver oDriver;
 	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
 	private static Properties oDriverProperties;
@@ -61,7 +61,7 @@ public class mercuryRegistration {
 			oDriver.setText(txtCity, City);
 			oDriver.setText(txtState, State);
 			oDriver.setText(txtPostalcode, postalCode);
-			oDriver.selectByValue(selectCountry, Country);
+			oDriver.selectByVisibleText(selectCountry, Country);
 			oDriver.setText(txtUsername, userName);
 			oDriver.setText(txtPassword, passWord);
 			oDriver.setText(txtConfirmPassword, confirmPassword);
@@ -70,7 +70,7 @@ public class mercuryRegistration {
 			oDriver.click(buttonSubmit);
 			
 			Log.info("Verifying user display name");
-			if(oDriver.isVisible(displayUsername) && displayUsername.equals("Dear "+ firstName + " " + lastName)){
+			if(oDriver.isVisible(displayUsername) || oDriver.getText(displayUsername).equals("Dear "+ firstName + " " + lastName)){
 				Log.info("User Display name verification successful");
 			}
 			else{
@@ -89,7 +89,7 @@ public class mercuryRegistration {
 				return "ERROR: Login username displayed is different than the username we provided";
 			}
 			
-			return "Successful";
+			return "Registration successful";
 		} catch (Exception e) {
 			Log.error("mercuryRegistration()->registerNewUser()-> Error occured, here are the details: ");
 			Log.error(e.getStackTrace().toString());

@@ -6,7 +6,9 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import appModules.setup;
+
+import appModules.mercuryRegistration;
+import appModules.*;
 import commonLibs.utils;
 import utility.Log;
 
@@ -19,6 +21,7 @@ public class keywordUtility {
 	
 	
 	setup Setup = new setup();
+	mercuryRegistration Register = new mercuryRegistration();
 	
 public keywordUtility(){
 		oDriver  = new commonDriver();
@@ -66,6 +69,23 @@ try {
 				Log.error(e.getStackTrace().toString());
 				return "ERROR: Error occured while saving the screnshot";
 			}
+		}
+		else if (methodName.equalsIgnoreCase("RegisterNewUser")){
+			String firstName = oExcelDriver.getCellData(methodName, 1, 2);
+			String lastName = oExcelDriver.getCellData(methodName, 2, 2);
+			String Phone = oExcelDriver.getCellData(methodName, 3, 2);
+			String Email = oExcelDriver.getCellData(methodName, 4, 2);
+			String Address1 = oExcelDriver.getCellData(methodName, 5, 2);
+			String Address2 = oExcelDriver.getCellData(methodName, 6, 2);
+			String City = oExcelDriver.getCellData(methodName, 7, 2);
+			String State = oExcelDriver.getCellData(methodName, 8, 2);
+			String postalCode = oExcelDriver.getCellData(methodName, 9, 2);
+			String Country = oExcelDriver.getCellData(methodName, 10, 2);
+			String userName = oExcelDriver.getCellData(methodName, 11, 2);
+			String passWord = oExcelDriver.getCellData(methodName, 12, 2);
+			String confirmPassword = oExcelDriver.getCellData(methodName, 13, 2);
+			
+			return Register.registerNewUser(firstName, lastName, Phone, Email, Address1, Address2, City, State, postalCode, Country, userName, passWord, confirmPassword);
 		}
 		
 		
