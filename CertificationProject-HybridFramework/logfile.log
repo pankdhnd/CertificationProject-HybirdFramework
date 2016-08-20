@@ -62,3 +62,45 @@
 2016-08-19 20:04:23,447 INFO  [Log] User Display name verification successful 
 2016-08-19 20:04:23,447 INFO  [Log] Verifying login username 
 2016-08-19 20:04:23,555 ERROR [Log] ERROR: Login username displayed is different than the username we provided; screenshot taken 
+2016-08-20 08:29:09,088 INFO  [Log] Opening regisration page 
+2016-08-20 08:29:15,840 INFO  [Log] Inputting registration details 
+2016-08-20 08:29:17,532 INFO  [Log] Clicking Submit button 
+2016-08-20 08:29:21,573 INFO  [Log] Verifying user display name 
+2016-08-20 08:29:21,594 INFO  [Log] User Display name verification successful 
+2016-08-20 08:29:21,594 INFO  [Log] Verifying login username 
+2016-08-20 08:29:21,743 ERROR [Log] ERROR: Login username displayed is different than the username we provided; screenshot taken 
+2016-08-20 08:30:03,481 INFO  [Log] Opening regisration page 
+2016-08-20 08:30:08,018 INFO  [Log] Inputting registration details 
+2016-08-20 08:30:09,329 INFO  [Log] Clicking Submit button 
+2016-08-20 08:30:14,214 INFO  [Log] Verifying user display name 
+2016-08-20 08:30:14,237 INFO  [Log] User Display name verification successful 
+2016-08-20 08:30:14,237 INFO  [Log] Verifying login username 
+2016-08-20 08:30:14,356 ERROR [Log] ERROR: Login username displayed is different than the username we provided; screenshot taken 
+2016-08-20 08:32:17,545 INFO  [Log] Opening regisration page 
+2016-08-20 08:32:18,830 INFO  [Log] Inputting registration details 
+2016-08-20 08:32:20,076 INFO  [Log] Clicking Submit button 
+2016-08-20 08:32:21,509 INFO  [Log] Verifying user display name 
+2016-08-20 08:32:21,567 INFO  [Log] User Display name verification successful 
+2016-08-20 08:32:21,567 INFO  [Log] Verifying login username 
+2016-08-20 08:32:21,701 ERROR [Log] ERROR: Login username displayed is different than the username we provided; screenshot taken 
+2016-08-20 08:33:24,608 INFO  [Log] Opening regisration page 
+2016-08-20 08:33:27,289 INFO  [Log] Inputting registration details 
+2016-08-20 08:33:28,661 INFO  [Log] Clicking Submit button 
+2016-08-20 08:33:31,023 INFO  [Log] Verifying user display name 
+2016-08-20 08:33:31,071 INFO  [Log] User Display name verification successful 
+2016-08-20 08:33:31,071 INFO  [Log] Verifying login username 
+2016-08-20 08:33:31,200 ERROR [Log] ERROR: Login username displayed is different than the username we provided; screenshot taken 
+2016-08-20 08:34:24,183 INFO  [Log] Opening regisration page 
+2016-08-20 08:34:25,846 INFO  [Log] Inputting registration details 
+2016-08-20 08:34:27,179 INFO  [Log] Clicking Submit button 
+2016-08-20 08:34:29,260 INFO  [Log] Verifying user display name 
+2016-08-20 08:34:29,327 INFO  [Log] User Display name verification successful 
+2016-08-20 08:34:29,327 INFO  [Log] Verifying login username 
+2016-08-20 08:34:29,507 ERROR [Log] ERROR: Login username displayed is different than the username we provided; screenshot taken 
+2016-08-20 08:34:56,204 INFO  [Log] Opening regisration page 
+2016-08-20 08:34:57,808 INFO  [Log] Inputting registration details 
+2016-08-20 08:34:59,151 INFO  [Log] Clicking Submit button 
+2016-08-20 08:35:00,605 INFO  [Log] Verifying user display name 
+2016-08-20 08:35:00,670 INFO  [Log] User Display name verification successful 
+2016-08-20 08:35:00,670 INFO  [Log] Verifying login username 
+2016-08-20 08:35:00,736 INFO  [Log] Login username verification complete 

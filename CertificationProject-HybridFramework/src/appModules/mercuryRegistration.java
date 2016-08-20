@@ -70,7 +70,7 @@ public class mercuryRegistration {
 			oDriver.click(buttonSubmit);
 			
 			Log.info("Verifying user display name");
-			if(oDriver.isVisible(displayUsername) || oDriver.getText(displayUsername).equals("Dear "+ firstName + " " + lastName)){
+			if(oDriver.isVisible(displayUsername) && oDriver.getText(displayUsername).equals("Dear "+ firstName + " " + lastName + ",")){
 				Log.info("User Display name verification successful");
 			}
 			else{
@@ -79,9 +79,9 @@ public class mercuryRegistration {
 				return "ERROR: Could not find post registration screen";
 			}
 			
-			Log.info("Verifying login username");
-			if(oDriver.isVisible(loginUsername) && loginUsername.equals("Note: Your user name is " + txtUsername)){
-				Log.info("Login username verification complete");
+			Log.info("Verifying login username");			
+			if(oDriver.isVisible(loginUsername) && oDriver.getText(loginUsername).equals("Note: Your user name is " + userName + ".")){
+				Log.info("Login username verification successful");
 			}
 			else{
 				oDriver.takeScreenshot(screenshotPath + utils.getDateTimeStamp()+".jpg");

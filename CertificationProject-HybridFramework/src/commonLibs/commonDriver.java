@@ -234,8 +234,7 @@ public class commonDriver {
   //------------------------------------------------------------------------------------------------------------------------------------------------------//
   //------------------------------------------------------------------------------------------------------------------------------------------------------//
  public void selectByVisibleText(By oBy, String visibleText) {
-   try {
-	 System.out.println("Value for country: "+ visibleText+"text");   
+   try {	    
     WebElement element = oDriver.findElement(oBy);
     Select select = new Select(element);
     select.selectByVisibleText(visibleText);
