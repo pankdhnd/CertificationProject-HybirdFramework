@@ -227,6 +227,7 @@ public class commonDriver {
     select.selectByValue(value);
    } catch (Exception e) {
 	Log.error("Could not find value: "+value + " in the dropdown");
+	Log.error("Could not select given element; here is some more detail: "+ e);
     System.out.println("Could not select given element; here is some more detail: ");
     e.printStackTrace();
    }
@@ -240,8 +241,8 @@ public class commonDriver {
     select.selectByVisibleText(visibleText);
 
    } catch (Exception e) {
-    System.out.println("Could not select given element; here is some more detail: ");
-    e.printStackTrace();
+	Log.error("Could not select given element; here is some more detail: "+ e);
+    System.out.println("Could not select given element; here is some more detail: ");    
    }
   }
   //------------------------------------------------------------------------------------------------------------------------------------------------------//

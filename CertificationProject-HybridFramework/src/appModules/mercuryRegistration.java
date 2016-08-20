@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import commonLibs.commonDriver;
 import commonLibs.utils;
 import utility.Log;
-
+import commonLibs.dataProvider;
 
 
 public class mercuryRegistration {
@@ -37,7 +37,7 @@ public class mercuryRegistration {
 	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
 	private static Properties oDriverProperties;
 	private static String screenshotPath;
-	
+	dataProvider getTestDataFor = new dataProvider();
 	
 	public mercuryRegistration()
 	{
@@ -47,31 +47,32 @@ public class mercuryRegistration {
 		  screenshotPath = oDriverProperties.getProperty("screenshotFolder").trim();
 	}
 	
-	public String registerNewUser(String firstName, String lastName, String Phone, String Email, String Address1, String Address2, String City, String State, String postalCode, String Country, String userName, String passWord, String confirmPassword){
+	public String registerNewUser(){
 		try {
+			String Data[] = getTestDataFor.registerNewUser();
 			Log.info("Opening regisration page");
-			oDriver.click(linkRegister);
+			oDriver.click(linkRegister);						
 			
 			Log.info("Inputting registration details");
-			oDriver.setText(txtFirstname, firstName);
-			oDriver.setText(txtLastname, lastName);
-			oDriver.setText(txtPhone, Phone);
-			oDriver.setText(txtEmail, Email);
-			oDriver.setText(txtAddress1, Address1);
-			oDriver.setText(txtAddress2, Address2);
-			oDriver.setText(txtCity, City);
-			oDriver.setText(txtState, State);
-			oDriver.setText(txtPostalcode, postalCode);
-			oDriver.selectByVisibleText(selectCountry, Country);
-			oDriver.setText(txtUsername, userName);
-			oDriver.setText(txtPassword, passWord);
-			oDriver.setText(txtConfirmPassword, confirmPassword);
+			oDriver.setText(txtFirstname, Data[0]);
+			oDriver.setText(txtLastname, Data[1]);
+			oDriver.setText(txtPhone, Data[2]);
+			oDriver.setText(txtEmail, Data[3]);
+			oDriver.setText(txtAddress1, Data[4]);
+			oDriver.setText(txtAddress2, Data[5]);
+			oDriver.setText(txtCity, Data[6]);
+			oDriver.setText(txtState, Data[7]);
+			oDriver.setText(txtPostalcode, Data[8]);
+			oDriver.selectByVisibleText(selectCountry, Data[9]);
+			oDriver.setText(txtUsername, Data[10]);
+			oDriver.setText(txtPassword, Data[11]);
+			oDriver.setText(txtConfirmPassword, Data[12]);
 			
 			Log.info("Clicking Submit button");
 			oDriver.click(buttonSubmit);
 			
 			Log.info("Verifying user display name");
-			if(oDriver.isVisible(displayUsername) && oDriver.getText(displayUsername).equals("Dear "+ firstName + " " + lastName + ",")){
+			if(oDriver.isVisible(displayUsername) && oDriver.getText(displayUsername).equals("Dear "+ Data[0] + " " + Data[1] + ",")){
 				Log.info("User Display name verification successful");
 			}
 			else{
@@ -81,7 +82,7 @@ public class mercuryRegistration {
 			}
 			
 			Log.info("Verifying login username");			
-			if(oDriver.isVisible(loginUsername) && oDriver.getText(loginUsername).equals("Note: Your user name is " + userName + ".")){
+			if(oDriver.isVisible(loginUsername) && oDriver.getText(loginUsername).equals("Note: Your user name is " + Data[10] + ".")){
 				Log.info("Login username verification successful");
 			}
 			else{

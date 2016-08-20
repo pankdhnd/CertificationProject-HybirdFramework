@@ -6,16 +6,19 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 
 import commonLibs.commonDriver;
+import commonLibs.dataProvider;
 import commonLibs.utils;
+import utility.Log;
 
 public class mercuryFlightBooking {
 
-	private static By radioJourneyType = By.name("tripType");
+	private static By radioJourneyTypeRoundTrip = By.xpath("//input[@value='roundtrip']");
+	private static By radioJourneyTypeOneWay = By.xpath("//input[@value='oneway']");
 	private static By selectPassengers = By.name("passCount");
 	private static By selectDepartingFrom = By.name("fromPort");
 	private static By selectOnMonth = By.name("fromMonth");
 	private static By selectOnDay = By.name("fromDay");
-	private static By selectArrivingOn = By.name("toPort");
+	private static By selectArrivingIn = By.name("toPort");
 	private static By selectReturningMonth = By.name("toMonth");
 	private static By selectReturningDay = By.name("toDay");
 	private static By selectServiceClass = By.name("servClass");
@@ -76,6 +79,8 @@ public class mercuryFlightBooking {
 	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
 	private static Properties oDriverProperties;
 	private static String screenshotPath;
+	dataProvider getTestDataFor = new dataProvider();
+	
 	
 	public mercuryFlightBooking(){
 		  DOMConfigurator.configure("log4j.xml");
@@ -85,6 +90,40 @@ public class mercuryFlightBooking {
 	}
 	
 	public String inputFlightDetails(){
+		try {
+			
+			String Data[] = getTestDataFor.inputFlightDetails();		
+			
+			//Check which of the radio button is already selected
+			if (oDriver.isSelected(radioJourneyTypeRoundTrip)){
+			Log.info("Return Trip checkbox is slected by default");
+			}
+						
+			if (oDriver.isSelected(radioJourneyTypeOneWay)){
+				Log.info("Return Trip checkbox is slected by default");
+			}
+
+			if(Data[0].equals("Round Trip")) 
+			{
+				oDriver.click(radioJourneyTypeRoundTrip);
+			}
+			else if (Data[0].equals("One way")){
+				oDriver.click(radioJourneyTypeOneWay);
+			}
+			
+			
+			oDriver.selectByVisibleText(selectPassengers, Data[1]);
+			oDriver.selectByVisibleText(selectDepartingFrom, Data[2]);
+			oDriver.selectByVisibleText(selectOnMonth, Data[3]);
+			oDriver.selectByVisibleText(selectOnDay, Data[4]);
+			oDriver.selectByVisibleText(selectArrivingIn, Data[5]);
+			oDriver.selectByVisibleText(selectReturningMonth, Data[6]);
+			
+		} catch (Exception e) {			
+			Log.error("mercuryFlightBooking()->inputFlightDetails()-> Error occured, here are the details: ");
+			Log.error(e.toString());
+			return "ERROR: Error occurred while entering flight details";
+		}
 		return "";
 	}
 	

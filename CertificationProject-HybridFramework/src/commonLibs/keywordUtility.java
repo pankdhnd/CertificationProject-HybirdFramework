@@ -3,10 +3,7 @@ package commonLibs;
 
 import java.util.Properties;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-
+import commonLibs.dataProvider;
 import appModules.mercuryRegistration;
 import appModules.*;
 import commonLibs.utils;
@@ -22,8 +19,11 @@ public class keywordUtility {
 	
 	setup Setup = new setup();
 	mercuryRegistration Register = new mercuryRegistration();
+	mercuryFlightBooking bookFlight = new mercuryFlightBooking();
+	dataProvider getTestDataFor = new dataProvider();
 	
-public keywordUtility(){
+	
+	public keywordUtility(){
 		oDriver  = new commonDriver();
 		oDriverProperties = utils.getProperties(driverPropertyFile);	
 		screenshotPath = oDriverProperties.getProperty("screenshotFolder").trim();
@@ -33,7 +33,7 @@ public keywordUtility(){
 try {		
 		//int Row, rowCount;
 		methodName = methodName.trim();		testDataFolder = testDataFolder.trim();
-	
+		
 		if (methodName.isEmpty() || testDataFolder.isEmpty()){
 			return "ERROR: Invalid Method or Test Data Folder";
 		}
@@ -41,68 +41,50 @@ try {
 		oExcelDriver = new excelDriver();
 		oExcelDriver.openExcelSheet(testDataFolder+"\\TestData.xlsx");
 	
+		//Run method openBrowser
 		if (methodName.equalsIgnoreCase("openBrowser")){
-			String browserType = oExcelDriver.getCellData(methodName, 1, 2);			
-			String URL = oExcelDriver.getCellData(methodName, 2, 2);
-			String expectedTitle = oExcelDriver.getCellData(methodName, 3, 2);
-			return Setup.openBrowser(browserType, URL, expectedTitle);
+			return  Setup.openBrowser();
 		}		
+		
+		//Run method PreLoginValidations
 		else if (methodName.equalsIgnoreCase("PreLoginValidations")){
 			return Setup.verifyLoginElementsExistance();
 		}
-		else if (methodName.equalsIgnoreCase("inputLoginDetails")){
-			String userName = oExcelDriver.getCellData(methodName, 1, 2);
-			String passWord = oExcelDriver.getCellData(methodName, 2, 2);			
-			return Setup.inputLoginDetails(userName, passWord);
+		
+		//Run method inputLoginDetails
+		else if (methodName.equalsIgnoreCase("inputLoginDetails")){						
+			return Setup.inputLoginDetails();
 		}				
-		else if (methodName.equalsIgnoreCase("verifyEnteredValues")){
-			String userName = oExcelDriver.getCellData(methodName, 1, 2);
-			String passWord = oExcelDriver.getCellData(methodName, 2, 2);	
-			return Setup.verifyEnteredValues(userName, passWord);
+		
+		//Run method verifyEnteredValues
+		else if (methodName.equalsIgnoreCase("verifyEnteredValues")){				
+			return Setup.verifyEnteredValues();
 		}
+		
+		//Run method takeScreenshot
 		else if (methodName.equalsIgnoreCase("takeScreenshot")){			
-			try {
-				oDriver.takeScreenshot(screenshotPath +utils.getDateTimeStamp()+".jpg");
-				return "Screenshot saved successfully";
-			} catch (Exception e) {
-				Log.error("ERROR: Could not save screenshot; here are some more details: ");
-				Log.error(e.getStackTrace().toString());
-				return "ERROR: Error occured while saving the screnshot";
-			}
-		}
-		else if (methodName.equalsIgnoreCase("RegisterNewUser")){
-			String firstName = oExcelDriver.getCellData(methodName, 1, 2);
-			String lastName = oExcelDriver.getCellData(methodName, 2, 2);
-			String Phone = oExcelDriver.getCellData(methodName, 3, 2);
-			String Email = oExcelDriver.getCellData(methodName, 4, 2);
-			String Address1 = oExcelDriver.getCellData(methodName, 5, 2);
-			String Address2 = oExcelDriver.getCellData(methodName, 6, 2);
-			String City = oExcelDriver.getCellData(methodName, 7, 2);
-			String State = oExcelDriver.getCellData(methodName, 8, 2);
-			String postalCode = oExcelDriver.getCellData(methodName, 9, 2);
-			String Country = oExcelDriver.getCellData(methodName, 10, 2);
-			String userName = oExcelDriver.getCellData(methodName, 11, 2);
-			String passWord = oExcelDriver.getCellData(methodName, 12, 2);
-			String confirmPassword = oExcelDriver.getCellData(methodName, 13, 2);
-			
-			return Register.registerNewUser(firstName, lastName, Phone, Email, Address1, Address2, City, State, postalCode, Country, userName, passWord, confirmPassword);
+			Setup.takeScreenshot(screenshotPath);
 		}
 		
+		//Run method RegisterNewUser
+		else if (methodName.equalsIgnoreCase("RegisterNewUser")){				
+			return Register.registerNewUser();
+		}
 		
-		else if(methodName.equalsIgnoreCase("Login"))
-		{
+		//Run method InputFlightDetails
+		else if (methodName.equalsIgnoreCase("InputFlightDetails")){			
+			return bookFlight.inputFlightDetails();
+		}
+		
+		//Run method Login
+		else if(methodName.equalsIgnoreCase("Login")){
 			return Setup.login();			
 		}
-		else if(methodName.equalsIgnoreCase("Logout"))
-		{			
-			//setup setup = new setup();
+		
+		//Run method Logout
+		else if(methodName.equalsIgnoreCase("Logout")){						
 			return Setup.logout();		
 		}
-		else if(methodName.equalsIgnoreCase("OpenFileManager"))
-		{			
-		//	classFileManager FileManager = new classFileManager();
-		//	return FileManager.OpenFileManager();		
-		}		
 		
 		
 } catch (Exception e) {

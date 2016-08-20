@@ -104,3 +104,156 @@
 2016-08-20 08:35:00,670 INFO  [Log] User Display name verification successful 
 2016-08-20 08:35:00,670 INFO  [Log] Verifying login username 
 2016-08-20 08:35:00,736 INFO  [Log] Login username verification complete 
+2016-08-20 15:50:40,475 ERROR [Log] ERROR: Login page title mismatch; login failed 
+2016-08-20 16:07:25,706 INFO  [Log] Opening regisration page 
+2016-08-20 16:07:28,094 INFO  [Log] Inputting registration details 
+2016-08-20 16:07:29,365 INFO  [Log] Clicking Submit button 
+2016-08-20 16:07:31,312 INFO  [Log] Verifying user display name 
+2016-08-20 16:07:31,391 INFO  [Log] User Display name verification successful 
+2016-08-20 16:07:31,392 INFO  [Log] Verifying login username 
+2016-08-20 16:07:31,437 INFO  [Log] Login username verification successful 
+2016-08-20 16:37:07,029 ERROR [Log] ERROR: Login page title mismatch; login failed 
+2016-08-20 16:39:26,787 ERROR [Log] ERROR: Login page title mismatch; login failed 
+2016-08-20 16:44:08,246 INFO  [Log] Login successful 
+2016-08-20 16:44:42,576 INFO  [Log] Login successful 
+2016-08-20 16:48:56,334 INFO  [Log] Login successful 
+2016-08-20 16:48:56,387 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-20 16:50:31,880 INFO  [Log] Login successful 
+2016-08-20 16:50:31,934 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-20 17:27:08,192 INFO  [Log] Login successful 
+2016-08-20 17:27:08,223 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Error occured, here are the details:  
+2016-08-20 17:27:08,223 ERROR [Log] [Ljava.lang.StackTraceElement;@1c9b0314 
+2016-08-20 17:28:06,936 INFO  [Log] Login successful 
+2016-08-20 17:28:06,960 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Error occured, here are the details:  
+2016-08-20 17:28:06,960 ERROR [Log] [Ljava.lang.StackTraceElement;@1c9b0314 
+2016-08-20 17:29:26,176 INFO  [Log] Login successful 
+2016-08-20 17:29:26,205 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Error occured, here are the details:  
+2016-08-20 17:29:26,205 ERROR [Log] [Ljava.lang.StackTraceElement;@1c9b0314 
+2016-08-20 17:30:05,230 INFO  [Log] Login successful 
+2016-08-20 17:30:05,244 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Error occured, here are the details:  
+2016-08-20 17:30:05,244 ERROR [Log] [Ljava.lang.StackTraceElement;@1c9b0314 
+2016-08-20 17:30:40,750 INFO  [Log] Login successful 
+2016-08-20 17:30:40,775 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Error occured, here are the details:  
+2016-08-20 17:30:40,775 ERROR [Log] [Ljava.lang.StackTraceElement;@45385f75 
+2016-08-20 17:31:36,720 INFO  [Log] Login successful 
+2016-08-20 17:31:36,779 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-20 17:31:39,006 ERROR [Log] Could not find value: Round Trip in the dropdown 
+2016-08-20 17:32:15,973 INFO  [Log] Login successful 
+2016-08-20 17:32:15,988 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Error occured, here are the details:  
+2016-08-20 17:32:15,988 ERROR [Log] 10 
+2016-08-20 17:34:34,839 INFO  [Log] Login successful 
+2016-08-20 17:34:34,857 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Error occured, here are the details:  
+2016-08-20 17:34:34,857 ERROR [Log] java.lang.ArrayIndexOutOfBoundsException: 10 
+2016-08-20 17:35:06,682 INFO  [Log] Login successful 
+2016-08-20 17:35:06,736 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-20 17:40:45,315 INFO  [Log] Login successful 
+2016-08-20 17:40:45,369 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-20 17:41:45,469 ERROR [Log] Could not find value: Round Trip in the dropdown 
+2016-08-20 17:43:45,651 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Round Trip
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: commonDriver 
+2016-08-20 17:44:16,657 INFO  [Log] Login successful 
+2016-08-20 17:44:16,720 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-20 17:44:45,773 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: commonDriver 
+2016-08-20 17:45:16,825 ERROR [Log] Could not find value: Round Trip in the dropdown 
+2016-08-20 17:45:16,828 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Round Trip
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: commonDriver 
+2016-08-20 17:45:45,870 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Acapulco
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: commonDriver 
+2016-08-20 17:46:00,167 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-20 17:46:00,172 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-20 17:46:00,175 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: Opera with embedded Chromium 52.0.2743.82)
+  (Driver info: OperaDriver=0.2.0 (ba47709ed9e35ce26dbd960fb5d75be104290d96),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\Pankaj\AppData\Local\Temp\scoped_dir9656_14055}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=52.0.2743.82, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0cadce79370f5de55bbc818748cab805
+*** Element info: {Using=name, value=toPort} 
+2016-08-20 17:46:00,182 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: Opera with embedded Chromium 52.0.2743.82)
+  (Driver info: OperaDriver=0.2.0 (ba47709ed9e35ce26dbd960fb5d75be104290d96),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\Pankaj\AppData\Local\Temp\scoped_dir11616_1932}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=52.0.2743.82, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e50617aba784d947e1e962a97126f9eb
+*** Element info: {Using=name, value=fromPort} 
+2016-08-20 17:46:00,182 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: Opera with embedded Chromium 52.0.2743.82)
+  (Driver info: OperaDriver=0.2.0 (ba47709ed9e35ce26dbd960fb5d75be104290d96),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\Pankaj\AppData\Local\Temp\scoped_dir9656_14055}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=52.0.2743.82, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0cadce79370f5de55bbc818748cab805
+*** Element info: {Using=name, value=toMonth} 
+2016-08-20 17:46:00,190 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: Opera with embedded Chromium 52.0.2743.82)
+  (Driver info: OperaDriver=0.2.0 (ba47709ed9e35ce26dbd960fb5d75be104290d96),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\Pankaj\AppData\Local\Temp\scoped_dir11616_1932}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=52.0.2743.82, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e50617aba784d947e1e962a97126f9eb
+*** Element info: {Using=name, value=fromMonth} 
+2016-08-20 17:46:00,198 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: Opera with embedded Chromium 52.0.2743.82)
+  (Driver info: OperaDriver=0.2.0 (ba47709ed9e35ce26dbd960fb5d75be104290d96),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\Pankaj\AppData\Local\Temp\scoped_dir11616_1932}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=52.0.2743.82, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e50617aba784d947e1e962a97126f9eb
+*** Element info: {Using=name, value=fromDay} 
+2016-08-20 17:46:00,205 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: Opera with embedded Chromium 52.0.2743.82)
+  (Driver info: OperaDriver=0.2.0 (ba47709ed9e35ce26dbd960fb5d75be104290d96),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\Pankaj\AppData\Local\Temp\scoped_dir11616_1932}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=52.0.2743.82, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e50617aba784d947e1e962a97126f9eb
+*** Element info: {Using=name, value=toPort} 
+2016-08-20 17:46:00,211 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: Opera with embedded Chromium 52.0.2743.82)
+  (Driver info: OperaDriver=0.2.0 (ba47709ed9e35ce26dbd960fb5d75be104290d96),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\Pankaj\AppData\Local\Temp\scoped_dir11616_1932}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=52.0.2743.82, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e50617aba784d947e1e962a97126f9eb
+*** Element info: {Using=name, value=toMonth} 
+2016-08-20 17:46:08,436 INFO  [Log] Login successful 
+2016-08-20 17:46:08,485 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-20 17:46:44,991 INFO  [Log] Login successful 
+2016-08-20 17:46:45,041 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-20 17:51:22,236 INFO  [Log] Login successful 
+2016-08-20 17:51:22,290 INFO  [Log] Return Trip checkbox is slected by default 

@@ -3,6 +3,8 @@ package appModules;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import utility.Log;
+import commonLibs.dataProvider;
+import commonLibs.utils;
 import commonLibs.commonDriver;
 
 
@@ -15,10 +17,12 @@ public class setup {
 	private static String myAccountLink = "//a[contains(text(),'Howdy, admin')]";
 	private static String linkLogout = "//a[contains(text(),'Log Out')]";	
 	static commonDriver oDriver;	
+	dataProvider getTestDataFor = new dataProvider();
+	
 	
 	public setup(){		  
 		  DOMConfigurator.configure("log4j.xml");
-		  oDriver = new commonDriver();		
+		  oDriver = new commonDriver();		  
 	}
 	
 
@@ -56,8 +60,12 @@ public class setup {
 		return "Pre-login validations complete";		
 	}
 	
-	public String openBrowser(String browserType, String URL, String expectedTitle){
+	public String openBrowser(){
 		try {
+			String Data[] = getTestDataFor.openBrowser();
+			String browserType = Data[0];
+			String URL = Data[1];
+			String expectedTitle = Data[2];
 			oDriver.openBrowser(browserType, URL);
 			oDriver.waitTillElementClickable(txtUsername,60l);   
 			if(!oDriver.getTitle().equals(expectedTitle)){
@@ -95,8 +103,11 @@ public class setup {
 		}
 	}
 	
-	public String inputLoginDetails(String userName, String passWord){
+	public String inputLoginDetails(){
 		try {
+			String Data [] = getTestDataFor.inputLoginDetails();
+			String userName = Data[0];
+			String passWord = Data[1];
 			oDriver.setText(txtUsername, userName);			
 			oDriver.setText(txtPassword,passWord);
 			return "Successful";
@@ -107,9 +118,11 @@ public class setup {
 		}
 	}
 	
-		
-	public String verifyEnteredValues(String userName, String passWord){		
+	public String verifyEnteredValues(){		
 		try {
+			String Data [] = getTestDataFor.inputLoginDetails();
+			String userName = Data[0];
+			String passWord = Data[1];
 			if (!oDriver.getAttribute(txtUsername, "value").equals(userName)){
 			Log.error("Entered username doesn't match with supplied username");
 			return "ERROR: Entered username doesn't match with supplied username";
@@ -125,11 +138,6 @@ public class setup {
 			return "ERROR: Entered values verification failed due some exception";
 		}
 	}
-	
-	public void takeScreenshot(){
-		
-	}
-	
 	
 	public String logout()
 	{		
@@ -151,6 +159,16 @@ public class setup {
 		return "ERROR";
 	}
 					
+public String takeScreenshot(String filePath){
+	try {
+		oDriver.takeScreenshot(filePath +utils.getDateTimeStamp()+".jpg");
+		return "Screenshot saved successfully";
+	} catch (Exception e) {
+		Log.error("ERROR: Could not save screenshot; here are some more details: ");
+		Log.error(e.getStackTrace().toString());
+		return "ERROR: Error occured while saving the screnshot";
+	}
 
+}
 	
 }
