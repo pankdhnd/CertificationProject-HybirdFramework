@@ -32,6 +32,7 @@ public class mercuryRegistration {
 	private static By buttonSubmit = By.name("register");
 	private static By displayUsername = By.xpath("//b[contains(text(),'Dear')]"); 
 	private static By loginUsername = By.xpath("//b[contains(text(),'Note:')]");
+	
 	static commonDriver oDriver;
 	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
 	private static Properties oDriverProperties;
