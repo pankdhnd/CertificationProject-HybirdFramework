@@ -257,3 +257,57 @@ Session ID: e50617aba784d947e1e962a97126f9eb
 2016-08-20 17:46:45,041 INFO  [Log] Return Trip checkbox is slected by default 
 2016-08-20 17:51:22,236 INFO  [Log] Login successful 
 2016-08-20 17:51:22,290 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-20 23:34:40,404 INFO  [Log] Login successful 
+2016-08-20 23:34:40,504 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 00:39:13,016 INFO  [Log] Login successful 
+2016-08-21 00:39:13,083 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 00:39:13,112 INFO  [Log] Populatig all the provided data 
+2016-08-21 00:39:13,862 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 00:41:42,709 INFO  [Log] Login successful 
+2016-08-21 00:41:42,771 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 00:41:42,801 INFO  [Log] Populatig all the provided data 
+2016-08-21 00:41:43,559 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 00:41:44,926 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-21 00:41:44,964 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-21 00:41:44,998 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-21 01:15:56,953 INFO  [Log] Login successful 
+2016-08-21 01:15:57,010 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 01:15:57,040 INFO  [Log] Populatig all the provided data 
+2016-08-21 01:15:57,807 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 01:15:58,862 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-21 01:15:58,906 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-21 01:15:58,941 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-21 01:15:59,029 INFO  [Log] Flights selected successfully 
+2016-08-21 01:16:47,837 INFO  [Log] Login successful 
+2016-08-21 01:16:47,898 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 01:16:47,926 INFO  [Log] Populatig all the provided data 
+2016-08-21 01:16:48,653 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 01:16:49,682 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-21 01:16:49,716 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-21 01:16:49,751 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-21 01:16:49,844 INFO  [Log] Flights selected successfully 
+2016-08-21 01:17:36,086 INFO  [Log] Login successful 
+2016-08-21 01:17:36,128 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 01:17:36,152 INFO  [Log] Populatig all the provided data 
+2016-08-21 01:17:36,884 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 01:17:38,504 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-21 01:17:38,546 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-21 01:17:38,578 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-21 01:17:38,682 INFO  [Log] Flights selected successfully 
+2016-08-21 01:17:51,411 ERROR [Log] mercuryFlightBooking()->bookFlight()->Could not find Summary header 
+2016-08-21 01:18:24,757 ERROR [Log] mercuryFlightBooking()->bookFlight()->Could not find Summary header 
+2016-08-21 01:19:29,677 INFO  [Log] Login successful 
+2016-08-21 01:19:29,731 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 01:19:29,759 INFO  [Log] Populatig all the provided data 
+2016-08-21 01:19:30,491 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 01:19:31,514 ERROR [Log] mercuryFlightBooking()->selectFlight()->Could not find DEPART header 
+2016-08-21 01:19:43,447 ERROR [Log] mercuryFlightBooking()->bookFlight()->Could not find Summary header 
+2016-08-21 01:20:07,786 INFO  [Log] Login successful 
+2016-08-21 01:20:07,844 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 01:20:07,873 INFO  [Log] Populatig all the provided data 
+2016-08-21 01:20:08,611 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 01:20:09,650 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-21 01:20:09,686 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-21 01:20:09,719 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-21 01:20:09,811 INFO  [Log] Flights selected successfully 
+2016-08-21 01:20:11,388 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
