@@ -13,6 +13,8 @@ import utility.Log;
 
 public class mercuryFlightBooking {
 
+	private static By linkFlightBooking = By.xpath("//a[contains(.,'Flights')]");
+	private static By headerFlightDetails = By.xpath("//table/tbody/tr[1]/td/font/font/b/font/font");
 	private static By radioJourneyTypeRoundTrip = By.xpath("//input[@value='roundtrip']");
 	private static By radioJourneyTypeOneWay = By.xpath("//input[@value='oneway']");
 	private static By selectPassengers = By.name("passCount");
@@ -51,9 +53,9 @@ public class mercuryFlightBooking {
 	private static By summaryNumberOfPassengers = By.xpath("//table/tbody/tr[7]/td[2]/font");
 	private static By summaryTaxes = By.xpath("//table/tbody/tr[8]/td[2]/font");
 	private static By summaryTotalCost = By.xpath("//table/tbody/tr[9]/td[2]/font/b");
-	private static By txtFirstname;
-	private static By txtLastName;
-	private static By selectMeal;
+	private static By txtFirstname = By.name("passFirst0");
+	private static By txtLastName = By.name("passLast0");
+	private static By selectMeal = By.name("pass.0.meal");
 	private static By selectCreditCard = By.name("creditCard");
 	private static By txtCreditCardNumber = By.name("creditnumber");
 	private static By selectExpiryMonth = By.name("cc_exp_dt_mn");
@@ -61,13 +63,14 @@ public class mercuryFlightBooking {
 	private static By txtCCFirstName = By.name("cc_frst_name");
 	private static By txtCCMiddleName = By.name("cc_mid_name");
 	private static By txtCCLastName = By.name("cc_last_name");
-	private static By checkboxTicketlessBilling = By.name("ticketLess");
+	private static By checkboxTicketlessBilling = By.xpath("//tr[9]/td[2]/input[@name='ticketLess']");
 	private static By txtBillingAddress1 = By.name("billAddress1");
 	private static By txtBillingAddress2 = By.name("billAddress2");;
 	private static By txtBillingCity = By.name("billCity");
 	private static By txtBillingState = By.name("billState");
 	private static By txtBillingPostalCode = By.name("billZip");
-	private static By selectBillingCountry = By.name("billCountry");	
+	private static By selectBillingCountry = By.name("billCountry");
+	private static By checkboxSameBillingDelivery = By.xpath("//tr[15]/td[2]/input[@name='ticketLess']");
 	private static By txtDeliveryAddress1 = By.name("delAddress1");
 	private static By txtDeliveryAddress2 = By.name("delAddress2");;
 	private static By txtDeliveryCity = By.name("delCity");
@@ -76,25 +79,25 @@ public class mercuryFlightBooking {
 	private static By selectDeliveryCountry = By.name("delCountry");
 	private static By buttonSecurePurchase = By.name("buyFlights");
 	private static By headerConfirmation = By.xpath("//table/tbody/tr[3]/td/p/font/b/font[2]");
-	private static By headerFlightConfirmatioNumber = By.xpath("//table/tbody/tr/td[1]/b/font/font/b/font[1]");
-	private static By headerConfirmDeparting = By.xpath("//table/tbody/tr[3]/td/font/b");
-	private static By headerConfirmReturning = By.xpath("//table/tbody/tr[5]/td/font");
-	private static By headerConfirmNumberOfPessengers = By.xpath("//table/tbody/tr[7]/td/font");
-	private static By headerBilledTo = By.xpath("//table/tbody/tr[9]/td/p");
-	private static By headerDeliveryTo = By.xpath("//table/tbody/tr[11]/td/p");
-	private static By headerTotalTaxes = By.xpath("//table/tbody/tr[1]/td[2]/font/font/font/b/font");
-	private static By headerTotalPrice = By.xpath("//table/tbody/tr[2]/td[2]/font/b/font/font/b/font");
-	private static By buttonBackToHome = By.xpath("//table/tbody/tr/td[2]/a/img");
-	private static By buttonBackToFlights = By.xpath("//table/tbody/tr/td[1]/a/img");
-	private static By buttonLogout = By.xpath("//table/tbody/tr/td[3]/a/img");
-	private static String departureFlightCost;
-	private static String arrivalFlightCost;
+//	private static By headerFlightConfirmatioNumber = By.xpath("//table/tbody/tr/td[1]/b/font/font/b/font[1]");
+//	private static By headerConfirmDeparting = By.xpath("//table/tbody/tr[3]/td/font/b");
+//	private static By headerConfirmReturning = By.xpath("//table/tbody/tr[5]/td/font");
+//	private static By headerConfirmNumberOfPessengers = By.xpath("//table/tbody/tr[7]/td/font");
+//	private static By headerBilledTo = By.xpath("//table/tbody/tr[9]/td/p");
+//	private static By headerDeliveryTo = By.xpath("//table/tbody/tr[11]/td/p");
+//	private static By headerTotalTaxes = By.xpath("//table/tbody/tr[1]/td[2]/font/font/font/b/font");
+//	private static By headerTotalPrice = By.xpath("//table/tbody/tr[2]/td[2]/font/b/font/font/b/font");
+//	private static By buttonBackToHome = By.xpath("//table/tbody/tr/td[2]/a/img");
+//	private static By buttonBackToFlights = By.xpath("//table/tbody/tr/td[1]/a/img");
+//	private static By buttonLogout = By.xpath("//table/tbody/tr/td[3]/a/img");
+//	private static String departureFlightCost;
+//	private static String arrivalFlightCost;
 	
 	
 	static commonDriver oDriver;
 	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
 	private static Properties oDriverProperties;
-	private static String screenshotPath;
+
 	dataProvider getTestDataFor = new dataProvider();
 	
 	
@@ -102,7 +105,18 @@ public class mercuryFlightBooking {
 		  DOMConfigurator.configure("log4j.xml");
 		  oDriver = new commonDriver();
 		  oDriverProperties = utils.getProperties(driverPropertyFile);	
-		  screenshotPath = oDriverProperties.getProperty("screenshotFolder").trim();
+		  //screenshotPath = oDriverProperties.getProperty("screenshotFolder").trim();
+	}
+	
+	public String openFlightBookingPage(){
+		try {
+			oDriver.click(linkFlightBooking);
+			oDriver.waitTillElementVisible(headerFlightDetails, 30l);
+			return "Flight booking page opened successfully";
+		} catch (Exception e) {
+			Log.error("mercuryFlightBooking()->openFlightBookingPage()-> Could not open flight booking page, here is the error: " + e );
+			return "ERROR: Could not open flight booking page";
+		}
 	}
 	
 	public String inputFlightDetails(){
@@ -325,52 +339,62 @@ public class mercuryFlightBooking {
 				return "ERROR: Expected and actual total cost mismatch";
 			}
 				
+			Log.info("Inputting all the details");
+			oDriver.setText(txtFirstname, Data[7]);
+			oDriver.setText(txtLastName, Data[8]);
+			oDriver.selectByVisibleText(selectMeal, Data[9]);
+			oDriver.selectByVisibleText(selectCreditCard, Data[10]);
+			oDriver.setText(txtCreditCardNumber, Data[11]);		
+			oDriver.selectByVisibleText(selectExpiryMonth, Data[12]);
+			oDriver.selectByVisibleText(selectExpiryYear, Data[13]);
+			oDriver.setText(txtCCFirstName, Data[14]);
+			oDriver.setText(txtCCMiddleName, Data[15]);
+			oDriver.setText(txtCCLastName, Data[16]);
+			
+			if (Data[17].equalsIgnoreCase("yes")){
+				oDriver.click(checkboxTicketlessBilling);
+			}
+			
+			oDriver.setText(txtBillingAddress1, Data[18]);
+			oDriver.setText(txtBillingAddress2, Data[19]);
+			oDriver.setText(txtBillingCity, Data[20]);
+			oDriver.setText(txtBillingState, Data[21]);
+			oDriver.setText(txtBillingPostalCode, Data[22]);
+			oDriver.selectByVisibleText(selectBillingCountry, Data[23]);
+			
+			if (Data[24].equalsIgnoreCase("yes")){
+				oDriver.click(checkboxSameBillingDelivery);
+			}
+			
+			oDriver.setText(txtDeliveryAddress1, Data[25]);
+			oDriver.setText(txtDeliveryAddress2, Data[26]);
+			oDriver.setText(txtDeliveryState, Data[27]);			
+			oDriver.setText(txtDeliveryCity, Data[28]);
+			oDriver.setText(txtDeliveryPostalCode, Data[29]);
+			
+			if (!Data[30].equals("UNITED STATES")){
+				oDriver.setText(selectDeliveryCountry, Data[30]);
+				Log.info("Waiting for alert to appear");
+				oDriver.waitTillAlertVisible(30l);
+				Log.info("Alert visible, switching to alert");
+				oDriver.switchToAlert();
+				System.out.println(Data[31]);
+				Log.info("Alert Text: "+ oDriver.getAlertText());
 				
-	
-			
-					
-					
-					
-					
-					
-					
-					
-//			private static By summaryTaxes = By.xpath("//table/tbody/tr[8]/td[2]/font");
-//			private static By summaryTotalCost = By.xpath("//table/tbody/tr[9]/td[2]/font/b");
-//			private static By txtFirstname;
-//			private static By txtLastName;
-//			private static By selectMeal;
-//			private static By selectCreditCard = By.name("creditCard");
-//			private static By txtCreditCardNumber = By.name("creditnumber");
-//			private static By selectExpiryMonth = By.name("cc_exp_dt_mn");
-//			private static By selectExpiryYear = By.name("cc_exp_dt_yr");
-//			private static By txtCCFirstName = By.name("cc_frst_name");
-//			private static By txtCCMiddleName = By.name("cc_mid_name");
-//			private static By txtCCLastName = By.name("cc_last_name");
-//			private static By checkboxTicketlessBilling = By.name("ticketLess");
-//			private static By txtBillingAddress1 = By.name("billAddress1");
-//			private static By txtBillingAddress2 = By.name("billAddress2");;
-//			private static By txtBillingCity = By.name("billCity");
-//			private static By txtBillingState = By.name("billState");
-//			private static By txtBillingPostalCode = By.name("billZip");
-//			private static By selectBillingCountry = By.name("billCountry");	
-//			private static By txtDeliveryAddress1 = By.name("delAddress1");
-//			private static By txtDeliveryAddress2 = By.name("delAddress2");;
-//			private static By txtDeliveryCity = By.name("delCity");
-//			private static By txtDeliveryState = By.name("delState");
-//			private static By txtDeliveryPostalCode = By.name("delZip");
-//			private static By selectDeliveryCountry = By.name("delCountry");
-//			private static By buttonSecurePurchase = By.name("buyFlights");		
-					
-					
-			return "";
-			
+				Log.info("Accpeting the alert");
+				oDriver.acceptAlert();
+			}
+								
+			oDriver.click(buttonSecurePurchase);			
+			oDriver.waitTillElementVisible(headerConfirmation, 30l);
+			Log.info("Flight booked successfully");
+			return "Flight booked successfully";
+		
 		} catch (Exception e) {
 			Log.error("mercuryFlightBooking()->bookFlight()-> Error occured, here are the details: ");
 			Log.error(e.toString());
 			return "ERROR: Error occurred while booking flight";
 		}
 	}
-	
-	
+		
 }

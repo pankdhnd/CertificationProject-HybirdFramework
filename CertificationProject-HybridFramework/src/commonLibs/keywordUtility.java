@@ -63,7 +63,7 @@ try {
 		
 		//Run method takeScreenshot
 		else if (methodName.equalsIgnoreCase("takeScreenshot")){			
-			Setup.takeScreenshot(screenshotPath);
+			return takeScreenshot(screenshotPath);
 		}
 		
 		//Run method RegisterNewUser
@@ -85,7 +85,11 @@ try {
 				else if (methodName.equalsIgnoreCase("bookFlight")){			
 					return bookFlight.bookFlight();
 				}
-		
+		//Run method openFlightBookingPage
+				else if (methodName.equalsIgnoreCase("openFlightBookingPage")){			
+					return bookFlight.openFlightBookingPage();
+				}
+				
 		//Run method Login
 		else if(methodName.equalsIgnoreCase("Login")){
 			return Setup.login();			
@@ -106,7 +110,17 @@ try {
 	 return "";
  }
  
- 
+ public String takeScreenshot(String filePath){
+		try {
+			oDriver.takeScreenshot(filePath +utils.getDateTimeStamp()+".jpg");
+			return "Screenshot saved successfully";
+		} catch (Exception e) {
+			Log.error("ERROR: Could not save screenshot; here are some more details: ");
+			Log.error(e.getStackTrace().toString());
+			return "ERROR: Error occured while saving the screnshot";
+		}
+
+	}
  
   
 

@@ -359,6 +359,20 @@ public class commonDriver {
   }
   //------------------------------------------------------------------------------------------------------------------------------------------------------//
   //------------------------------------------------------------------------------------------------------------------------------------------------------//
+ public void waitTillAlertVisible(long timeOut) {
+	   try {
+		 if (oDriver == null){
+			 System.out.println("Odriver is NULLLLLLLL");
+		 }
+	    WebDriverWait oWait = new WebDriverWait(oDriver, timeOut);
+	    oWait.until(ExpectedConditions.alertIsPresent());
+	   } catch (Exception e) {
+	    System.out.println("commonDriver()->waitTillElementClickable()->Error while waiting for element to be clickable; here is some more detail: ");
+	    e.printStackTrace();
+	   }
+	  }
+	  //------------------------------------------------------------------------------------------------------------------------------------------------------//
+	  //------------------------------------------------------------------------------------------------------------------------------------------------------//
  public void rightClick(By oBy) {
    try {
     Actions action = new Actions(oDriver);
@@ -405,7 +419,7 @@ public class commonDriver {
 
  //------------------------------------------------------------------------------------------------------------------------------------------------------//
  //------------------------------------------------------------------------------------------------------------------------------------------------------//
- public void switchToAlert(String Alert) {
+ public void switchToAlert() {
    try {
     oDriver.switchTo().alert();
    } catch (Exception e) {

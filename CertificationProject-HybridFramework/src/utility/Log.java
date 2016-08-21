@@ -6,14 +6,14 @@ public class Log {
 	private static Logger Log = Logger.getLogger(Log.class.getName());
 	
 	public static void startOfTestCase(String testCaseName){
-		Log.info("****************************************************************************************");
+	Log.info("*************************************STARTING TEST CASE*********************************");
 	    Log.info("****************************************************************************************");
 	    Log.info("$$$$$$$$$$$$$$$$$$$$$                 "+testCaseName+ "       $$$$$$$$$$$$$$$$$$$$$$$$$");
 	    Log.info("****************************************************************************************");
 	    Log.info("****************************************************************************************");
 	}
 	
-	public static void endOfTestCase(String testCaseName){
+	public static void endOfTestCase(){
 		Log.info("XXXXXXXXXXXXXXXXXXXXXXX             "+"-E---N---D-"+"             XXXXXXXXXXXXXXXXXXXXXX");
 	    Log.info("X");
 	    Log.info("X");

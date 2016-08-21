@@ -1,13 +1,13 @@
 package frameworkDriver;
 import java.util.Properties;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
-
-import com.sun.accessibility.internal.resources.accessibility;
 
 import commonLibs.excelDriver;
 import commonLibs.keywordUtility;
-import commonLibs.utils;;
+import commonLibs.utils;
+import utility.Log;;
 public class automationEngine {
 
 	private static keywordUtility kUtil;
@@ -23,6 +23,7 @@ public class automationEngine {
 	
 	public static void main(String[] args) {
 		
+		DOMConfigurator.configure("log4j.xml");
 		oDriverProperties = utils.getProperties(driverPropertyFile);	
 		testSuiteFolder = oDriverProperties.getProperty("TestSuiteFolder").trim();
 		TestSuite = oDriverProperties.getProperty("TestSuite").trim();
@@ -51,11 +52,12 @@ public class automationEngine {
 			testCaseSheetName = oExcelDriver.getCellData("TestSuite", Row, 2);				
 			runFlag = oExcelDriver.getCellData("TestSuite", Row, 3);			
 			testCaseSheetName = testCaseSheetName.trim();			
-			runFlag = runFlag.toLowerCase().trim();			
-			if(runFlag.equals("y")) {
-				kUtil = null;				
-				runStatus = testCaseDriver(testCaseSheetName);
-				
+			runFlag = runFlag.toLowerCase().trim();				
+			if(runFlag.equalsIgnoreCase(("Y"))) {
+				kUtil = null;	
+				System.out.println("Starting Test Case");
+				Log.startOfTestCase(testCaseSheetName);
+				runStatus = testCaseDriver(testCaseSheetName);				
 				if (runStatus.equals("")){					
 					if (currentTestCaseStatus.equals("PASS")){
 					runStatus = "PASS";					
@@ -68,7 +70,8 @@ public class automationEngine {
 				else{
 					Comment = runStatus;
 					runStatus = "FAIL";
-				}					
+				}
+				Log.endOfTestCase();
 			}
 			else
 			{				
@@ -76,8 +79,9 @@ public class automationEngine {
 				Comment = "Run Flag is set to "+ runFlag;
 			}
 			oExcelDriver.setCellData("TestSuite", runStatus, Row, 4);
-			oExcelDriver.setCellData("TestSuite", Comment, Row, 5);			
-		}		
+			oExcelDriver.setCellData("TestSuite", Comment, Row, 5);				
+		}
+		
 			
 	}//END  testSuiteDriver
 //--------------------------------------------------------------------------------------------------------------------
@@ -92,7 +96,7 @@ public class automationEngine {
 		String returnValue = "";
 		By oBy = null;
 		
-		try {
+		try {			
 			kUtil = new keywordUtility();	
 			rowCount = oExcelDriver.getRowCount(sheetName);			
 			for(Row = 2; Row <= rowCount; Row++){
@@ -127,7 +131,7 @@ public class automationEngine {
 			
 			oExcelDriver.setCellData(sheetName, runStatus, Row, 3);
 			oExcelDriver.setCellData(sheetName, Comment, Row, 4);
-			oExcelDriver.setCellData(sheetName, returnValue, Row, 5);				
+			oExcelDriver.setCellData(sheetName, returnValue, Row, 5);			
 			}
 			
 			}

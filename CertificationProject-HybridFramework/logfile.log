@@ -768,3 +768,647 @@ Session ID: e50617aba784d947e1e962a97126f9eb
 2016-08-21 12:19:35,551 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
 2016-08-21 12:19:35,587 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
 2016-08-21 12:19:35,621 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-21 23:45:03,679 INFO  [Log] Login successful 
+2016-08-21 23:45:03,754 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-21 23:45:03,787 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 23:45:03,818 INFO  [Log] Populatig all the provided data 
+2016-08-21 23:45:05,585 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 23:45:05,620 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-21 23:45:05,654 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-21 23:45:05,687 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-21 23:45:07,390 INFO  [Log] Flights selected successfully 
+2016-08-21 23:45:07,416 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-21 23:45:07,417 ERROR [Log] dataProvider()->bookFlight()-> Error occured while getting data: java.lang.ArrayIndexOutOfBoundsException: 30 
+2016-08-21 23:45:07,453 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Error occured, here are the details:  
+2016-08-21 23:45:07,453 ERROR [Log] java.lang.NullPointerException 
+2016-08-21 23:45:52,287 INFO  [Log] Login successful 
+2016-08-21 23:45:52,335 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-21 23:45:52,382 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 23:45:52,431 INFO  [Log] Populatig all the provided data 
+2016-08-21 23:45:54,146 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 23:45:54,174 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-21 23:45:54,209 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-21 23:45:54,242 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-21 23:45:55,894 INFO  [Log] Flights selected successfully 
+2016-08-21 23:45:55,917 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-21 23:45:55,918 ERROR [Log] dataProvider()->bookFlight()-> Error occured while getting data: java.lang.ArrayIndexOutOfBoundsException: 30 
+2016-08-21 23:45:55,953 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Error occured, here are the details:  
+2016-08-21 23:45:55,953 ERROR [Log] java.lang.NullPointerException 
+2016-08-21 23:46:38,935 INFO  [Log] Login successful 
+2016-08-21 23:46:38,972 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-21 23:46:39,021 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 23:46:39,069 INFO  [Log] Populatig all the provided data 
+2016-08-21 23:46:40,875 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 23:46:40,906 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-21 23:46:40,940 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-21 23:46:40,973 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-21 23:46:42,753 INFO  [Log] Flights selected successfully 
+2016-08-21 23:46:42,775 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-21 23:46:42,810 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-21 23:46:42,844 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-21 23:46:42,879 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-21 23:46:42,935 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-21 23:46:42,969 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-21 23:46:43,004 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-21 23:46:43,042 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-21 23:46:43,106 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-21 23:46:43,107 INFO  [Log] Inputting all the details 
+2016-08-21 23:48:44,237 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: New Zealand
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: commonDriver 
+2016-08-21 23:48:44,703 INFO  [Log] Flight booked successfully 
+2016-08-21 23:50:22,286 INFO  [Log] Login successful 
+2016-08-21 23:50:22,325 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-21 23:50:22,357 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 23:50:22,388 INFO  [Log] Populatig all the provided data 
+2016-08-21 23:50:24,171 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 23:50:24,203 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-21 23:50:24,243 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-21 23:50:24,279 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-21 23:50:25,969 INFO  [Log] Flights selected successfully 
+2016-08-21 23:50:25,996 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-21 23:50:26,029 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-21 23:50:26,061 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-21 23:50:26,094 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-21 23:50:26,151 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-21 23:50:26,184 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-21 23:50:26,216 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-21 23:50:26,252 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-21 23:50:26,316 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-21 23:50:26,316 INFO  [Log] Inputting all the details 
+2016-08-21 23:50:27,729 INFO  [Log] Flight booked successfully 
+2016-08-21 23:55:37,610 INFO  [Log] Login successful 
+2016-08-21 23:55:37,650 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-21 23:55:37,688 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-21 23:55:37,720 INFO  [Log] Populatig all the provided data 
+2016-08-21 23:55:40,065 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-21 23:55:40,095 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-21 23:55:40,128 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-21 23:55:40,163 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-21 23:55:41,913 INFO  [Log] Flights selected successfully 
+2016-08-21 23:55:41,941 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-21 23:55:41,979 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-21 23:55:42,012 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-21 23:55:42,047 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-21 23:55:42,082 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-21 23:55:42,117 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-21 23:55:42,149 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-21 23:55:42,183 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-21 23:55:42,253 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-21 23:55:42,253 INFO  [Log] Inputting all the details 
+2016-08-21 23:55:43,719 INFO  [Log] Flight booked successfully 
+2016-08-22 00:00:40,708 INFO  [Log] Login successful 
+2016-08-22 00:00:40,749 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 00:00:40,786 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 00:00:40,832 INFO  [Log] Populatig all the provided data 
+2016-08-22 00:00:42,791 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 00:00:42,823 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 00:00:42,855 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 00:00:42,887 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 00:00:44,631 INFO  [Log] Flights selected successfully 
+2016-08-22 00:00:44,652 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 00:00:44,686 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 00:00:44,718 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 00:00:44,751 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 00:00:44,785 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 00:00:44,821 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 00:00:44,856 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 00:00:44,905 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 00:00:44,968 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 00:00:44,969 INFO  [Log] Inputting all the details 
+2016-08-22 00:00:46,313 INFO  [Log] Waiting for alert to appear 
+2016-08-22 00:00:46,320 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 00:00:46,334 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Alert text does not match 
+2016-08-22 00:13:58,432 INFO  [Log] Login successful 
+2016-08-22 00:13:58,473 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 00:13:58,508 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 00:13:58,540 INFO  [Log] Populatig all the provided data 
+2016-08-22 00:14:00,326 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 00:14:00,353 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 00:14:00,387 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 00:14:00,421 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 00:14:02,110 INFO  [Log] Flights selected successfully 
+2016-08-22 00:14:02,132 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 00:14:02,169 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 00:14:02,204 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 00:14:02,240 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 00:14:02,288 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 00:14:02,322 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 00:14:02,355 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 00:14:02,387 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 00:14:02,456 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 00:14:02,456 INFO  [Log] Inputting all the details 
+2016-08-22 00:14:03,895 INFO  [Log] Waiting for alert to appear 
+2016-08-22 00:14:03,901 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 00:14:03,927 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Alert text does not match 
+2016-08-22 00:31:33,184 INFO  [Log] Login successful 
+2016-08-22 00:31:33,222 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 00:31:33,261 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 00:31:33,293 INFO  [Log] Populatig all the provided data 
+2016-08-22 00:31:36,861 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 00:31:36,882 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 00:31:36,916 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 00:31:36,949 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 00:31:38,667 INFO  [Log] Flights selected successfully 
+2016-08-22 00:31:38,691 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 00:31:38,732 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 00:31:38,764 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 00:31:38,797 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 00:31:38,832 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 00:31:38,882 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 00:31:38,915 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 00:31:38,948 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 00:31:39,014 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 00:31:39,014 INFO  [Log] Inputting all the details 
+2016-08-22 00:31:40,414 INFO  [Log] Waiting for alert to appear 
+2016-08-22 00:31:40,421 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 00:31:40,446 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Alert text does not match 
+2016-08-22 00:46:24,075 INFO  [Log] Login successful 
+2016-08-22 00:46:24,114 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 00:46:24,160 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 00:46:24,201 INFO  [Log] Populatig all the provided data 
+2016-08-22 00:46:25,998 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 00:46:26,020 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 00:46:26,055 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 00:46:26,091 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 00:46:28,120 INFO  [Log] Flights selected successfully 
+2016-08-22 00:46:28,145 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 00:46:28,184 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 00:46:28,219 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 00:46:28,255 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 00:46:28,312 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 00:46:28,348 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 00:46:28,380 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 00:46:28,413 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 00:46:28,477 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 00:46:28,477 INFO  [Log] Inputting all the details 
+2016-08-22 00:46:29,904 INFO  [Log] Waiting for alert to appear 
+2016-08-22 00:46:29,910 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 00:46:29,936 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Alert text does not match 
+2016-08-22 00:47:41,476 INFO  [Log] Login successful 
+2016-08-22 00:47:41,518 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 00:47:41,559 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 00:47:41,589 INFO  [Log] Populatig all the provided data 
+2016-08-22 00:47:43,413 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 00:47:43,446 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 00:47:43,490 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 00:47:43,523 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 00:47:45,221 INFO  [Log] Flights selected successfully 
+2016-08-22 00:47:45,243 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 00:47:45,278 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 00:47:45,311 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 00:47:45,346 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 00:47:45,382 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 00:47:45,416 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 00:47:45,449 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 00:47:45,484 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 00:47:45,549 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 00:47:45,549 INFO  [Log] Inputting all the details 
+2016-08-22 00:47:46,948 INFO  [Log] Waiting for alert to appear 
+2016-08-22 00:47:46,955 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 00:47:46,970 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 00:47:46,970 INFO  [Log] Accpeting the alert 
+2016-08-22 00:47:48,519 INFO  [Log] Flight booked successfully 
+2016-08-22 00:50:22,494 INFO  [Log] Login successful 
+2016-08-22 00:50:22,532 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 00:50:22,571 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 00:50:22,619 INFO  [Log] Populatig all the provided data 
+2016-08-22 00:50:24,318 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 00:50:24,354 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 00:50:24,391 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 00:50:24,424 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 00:50:26,089 INFO  [Log] Flights selected successfully 
+2016-08-22 00:50:26,114 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 00:50:26,154 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 00:50:26,187 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 00:50:26,224 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 00:50:26,260 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 00:50:26,312 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 00:50:26,345 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 00:50:26,378 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 00:50:26,446 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 00:50:26,447 INFO  [Log] Inputting all the details 
+2016-08-22 00:50:27,878 INFO  [Log] Waiting for alert to appear 
+2016-08-22 00:50:27,886 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 00:50:27,902 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 00:50:27,902 INFO  [Log] Accpeting the alert 
+2016-08-22 00:50:29,348 INFO  [Log] Flight booked successfully 
+2016-08-22 00:50:29,350 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 00:50:29,350 INFO  [Log] X 
+2016-08-22 00:50:29,350 INFO  [Log] X 
+2016-08-22 00:50:29,350 INFO  [Log] X 
+2016-08-22 00:50:29,350 INFO  [Log] X 
+2016-08-22 00:51:23,110 INFO  [Log] Login successful 
+2016-08-22 00:51:23,143 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 00:51:23,180 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 00:51:23,215 INFO  [Log] Populatig all the provided data 
+2016-08-22 00:51:25,038 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 00:51:25,074 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 00:51:25,107 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 00:51:25,139 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 00:51:26,788 INFO  [Log] Flights selected successfully 
+2016-08-22 00:51:26,811 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 00:51:26,846 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 00:51:26,880 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 00:51:26,915 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 00:51:26,966 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 00:51:26,999 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 00:51:27,034 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 00:51:27,067 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 00:51:27,130 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 00:51:27,130 INFO  [Log] Inputting all the details 
+2016-08-22 00:51:28,500 INFO  [Log] Waiting for alert to appear 
+2016-08-22 00:51:28,506 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 00:51:28,521 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 00:51:28,521 INFO  [Log] Accpeting the alert 
+2016-08-22 00:51:30,103 INFO  [Log] Flight booked successfully 
+2016-08-22 00:51:30,105 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 00:51:30,105 INFO  [Log] X 
+2016-08-22 00:51:30,105 INFO  [Log] X 
+2016-08-22 00:51:30,105 INFO  [Log] X 
+2016-08-22 00:51:30,105 INFO  [Log] X 
+2016-08-22 00:53:36,836 INFO  [Log] Login successful 
+2016-08-22 00:53:36,882 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 00:53:36,925 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 00:53:36,961 INFO  [Log] Populatig all the provided data 
+2016-08-22 00:53:38,797 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 00:53:38,831 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 00:53:38,868 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 00:53:38,901 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 00:53:40,271 INFO  [Log] Flights selected successfully 
+2016-08-22 00:53:40,291 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 00:53:40,324 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 00:53:40,360 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 00:53:40,399 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 00:53:40,450 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 00:53:40,484 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 00:53:40,517 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 00:53:40,549 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 00:53:40,620 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 00:53:40,620 INFO  [Log] Inputting all the details 
+2016-08-22 00:53:42,049 INFO  [Log] Waiting for alert to appear 
+2016-08-22 00:53:42,056 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 00:53:42,071 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 00:53:42,072 INFO  [Log] Accpeting the alert 
+2016-08-22 00:53:43,087 INFO  [Log] Flight booked successfully 
+2016-08-22 00:53:43,088 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 00:53:43,088 INFO  [Log] X 
+2016-08-22 00:53:43,088 INFO  [Log] X 
+2016-08-22 00:53:43,089 INFO  [Log] X 
+2016-08-22 00:53:43,089 INFO  [Log] X 
+2016-08-22 00:53:43,089 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 00:53:43,089 INFO  [Log] X 
+2016-08-22 00:53:43,089 INFO  [Log] X 
+2016-08-22 00:53:43,089 INFO  [Log] X 
+2016-08-22 00:53:43,089 INFO  [Log] X 
+2016-08-22 00:53:43,089 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 00:53:43,089 INFO  [Log] X 
+2016-08-22 00:53:43,089 INFO  [Log] X 
+2016-08-22 00:53:43,089 INFO  [Log] X 
+2016-08-22 00:53:43,089 INFO  [Log] X 
+2016-08-22 00:55:42,340 INFO  [Log] Login successful 
+2016-08-22 00:55:42,374 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 00:55:42,426 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 00:55:42,463 INFO  [Log] Populatig all the provided data 
+2016-08-22 00:55:44,271 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 00:55:44,299 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 00:55:44,335 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 00:55:44,369 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 00:57:52,785 INFO  [Log] **************************************************************************************** 
+2016-08-22 00:57:52,786 INFO  [Log] **************************************************************************************** 
+2016-08-22 00:57:52,786 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 00:57:52,786 INFO  [Log] **************************************************************************************** 
+2016-08-22 00:57:52,786 INFO  [Log] **************************************************************************************** 
+2016-08-22 00:58:12,580 INFO  [Log] **************************************************************************************** 
+2016-08-22 00:58:12,582 INFO  [Log] **************************************************************************************** 
+2016-08-22 00:58:12,582 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 00:58:12,582 INFO  [Log] **************************************************************************************** 
+2016-08-22 00:58:12,582 INFO  [Log] **************************************************************************************** 
+2016-08-22 00:58:16,744 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 00:58:16,745 INFO  [Log] X 
+2016-08-22 00:58:16,745 INFO  [Log] X 
+2016-08-22 00:58:16,745 INFO  [Log] X 
+2016-08-22 00:58:16,745 INFO  [Log] X 
+2016-08-22 00:58:16,859 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 00:58:16,860 INFO  [Log] X 
+2016-08-22 00:58:16,860 INFO  [Log] X 
+2016-08-22 00:58:16,860 INFO  [Log] X 
+2016-08-22 00:58:16,860 INFO  [Log] X 
+2016-08-22 00:58:18,851 INFO  [Log] Login successful 
+2016-08-22 00:58:18,853 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 00:58:18,853 INFO  [Log] X 
+2016-08-22 00:58:18,853 INFO  [Log] X 
+2016-08-22 00:58:18,853 INFO  [Log] X 
+2016-08-22 00:58:18,853 INFO  [Log] X 
+2016-08-22 00:58:18,884 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 00:58:18,917 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 00:58:18,948 INFO  [Log] Populatig all the provided data 
+2016-08-22 00:58:20,690 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 00:58:20,691 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 00:58:20,691 INFO  [Log] X 
+2016-08-22 00:58:20,691 INFO  [Log] X 
+2016-08-22 00:58:20,691 INFO  [Log] X 
+2016-08-22 00:58:20,691 INFO  [Log] X 
+2016-08-22 00:58:20,723 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 00:58:20,757 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 00:58:20,791 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 00:58:22,471 INFO  [Log] Flights selected successfully 
+2016-08-22 00:58:22,472 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 00:58:22,472 INFO  [Log] X 
+2016-08-22 00:58:22,472 INFO  [Log] X 
+2016-08-22 00:58:22,472 INFO  [Log] X 
+2016-08-22 00:58:22,472 INFO  [Log] X 
+2016-08-22 00:58:22,500 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 00:58:22,538 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 00:58:22,572 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 00:58:22,606 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 00:58:22,656 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 00:58:22,689 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 00:58:22,722 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 00:58:22,755 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 00:58:22,826 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 00:58:22,826 INFO  [Log] Inputting all the details 
+2016-08-22 00:58:24,251 INFO  [Log] Waiting for alert to appear 
+2016-08-22 00:58:24,258 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 00:58:24,274 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 00:58:24,274 INFO  [Log] Accpeting the alert 
+2016-08-22 00:58:25,666 INFO  [Log] Flight booked successfully 
+2016-08-22 00:58:25,667 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 00:58:25,667 INFO  [Log] X 
+2016-08-22 00:58:25,667 INFO  [Log] X 
+2016-08-22 00:58:25,667 INFO  [Log] X 
+2016-08-22 00:58:25,667 INFO  [Log] X 
+2016-08-22 01:00:11,930 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:00:11,931 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:00:11,931 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:00:11,931 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:00:11,931 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:00:18,801 INFO  [Log] Login successful 
+2016-08-22 01:00:18,831 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 01:00:18,860 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 01:00:18,886 INFO  [Log] Populatig all the provided data 
+2016-08-22 01:00:20,648 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 01:00:20,674 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 01:00:20,708 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 01:00:20,742 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 01:00:22,445 INFO  [Log] Flights selected successfully 
+2016-08-22 01:00:22,466 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 01:00:22,501 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 01:00:22,533 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 01:00:22,571 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 01:00:22,604 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 01:00:22,638 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 01:00:22,670 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 01:00:22,702 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 01:00:22,768 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 01:00:22,768 INFO  [Log] Inputting all the details 
+2016-08-22 01:00:24,133 INFO  [Log] Waiting for alert to appear 
+2016-08-22 01:00:24,139 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 01:00:24,154 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 01:00:24,154 INFO  [Log] Accpeting the alert 
+2016-08-22 01:00:25,715 INFO  [Log] Flight booked successfully 
+2016-08-22 01:00:25,716 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:00:25,716 INFO  [Log] X 
+2016-08-22 01:00:25,716 INFO  [Log] X 
+2016-08-22 01:00:25,716 INFO  [Log] X 
+2016-08-22 01:00:25,716 INFO  [Log] X 
+2016-08-22 01:05:05,013 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:05:05,013 INFO  [Log] X 
+2016-08-22 01:05:05,013 INFO  [Log] X 
+2016-08-22 01:05:05,013 INFO  [Log] X 
+2016-08-22 01:05:05,013 INFO  [Log] X 
+2016-08-22 01:05:05,015 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:05:05,015 INFO  [Log] X 
+2016-08-22 01:05:05,015 INFO  [Log] X 
+2016-08-22 01:05:05,015 INFO  [Log] X 
+2016-08-22 01:05:05,015 INFO  [Log] X 
+2016-08-22 01:05:05,015 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:05:05,015 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:05:05,015 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:05:05,015 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:05:05,015 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:05:11,689 INFO  [Log] Login successful 
+2016-08-22 01:05:11,722 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 01:05:11,758 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 01:05:11,789 INFO  [Log] Populatig all the provided data 
+2016-08-22 01:05:13,587 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 01:05:13,622 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 01:05:13,659 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 01:05:13,693 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 01:05:15,642 INFO  [Log] Flights selected successfully 
+2016-08-22 01:05:15,672 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 01:05:15,710 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 01:05:15,743 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 01:05:15,775 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 01:05:15,829 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 01:05:15,862 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 01:05:15,895 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 01:05:15,930 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 01:05:15,997 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 01:05:15,997 INFO  [Log] Inputting all the details 
+2016-08-22 01:05:17,403 INFO  [Log] Waiting for alert to appear 
+2016-08-22 01:05:17,412 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 01:05:17,428 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 01:05:17,428 INFO  [Log] Accpeting the alert 
+2016-08-22 01:05:18,897 INFO  [Log] Flight booked successfully 
+2016-08-22 01:05:19,145 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:05:19,145 INFO  [Log] X 
+2016-08-22 01:05:19,145 INFO  [Log] X 
+2016-08-22 01:05:19,145 INFO  [Log] X 
+2016-08-22 01:05:19,145 INFO  [Log] X 
+2016-08-22 01:05:19,145 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:05:19,145 INFO  [Log] X 
+2016-08-22 01:05:19,145 INFO  [Log] X 
+2016-08-22 01:05:19,145 INFO  [Log] X 
+2016-08-22 01:05:19,145 INFO  [Log] X 
+2016-08-22 01:05:19,146 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:05:19,146 INFO  [Log] X 
+2016-08-22 01:05:19,146 INFO  [Log] X 
+2016-08-22 01:05:19,146 INFO  [Log] X 
+2016-08-22 01:05:19,146 INFO  [Log] X 
+2016-08-22 01:08:47,285 INFO  [Log] ****************************************STARTING TEST CASE********************************** 
+2016-08-22 01:08:47,285 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:08:47,285 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:08:47,285 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:08:47,285 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:09:06,661 INFO  [Log] ****************************************STARTING TEST CASE********************************** 
+2016-08-22 01:09:06,662 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:09:06,662 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:09:06,662 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:09:06,662 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:09:13,144 INFO  [Log] Login successful 
+2016-08-22 01:09:13,183 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 01:09:13,216 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 01:09:13,251 INFO  [Log] Populatig all the provided data 
+2016-08-22 01:09:15,269 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 01:09:15,309 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 01:09:15,345 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 01:09:15,380 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 01:09:17,065 INFO  [Log] Flights selected successfully 
+2016-08-22 01:09:17,089 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 01:09:17,127 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 01:09:17,161 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 01:09:17,196 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 01:09:17,239 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 01:09:17,272 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 01:09:17,304 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 01:09:17,337 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 01:09:17,402 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 01:09:17,402 INFO  [Log] Inputting all the details 
+2016-08-22 01:09:18,800 INFO  [Log] Waiting for alert to appear 
+2016-08-22 01:09:18,807 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 01:09:18,822 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 01:09:18,822 INFO  [Log] Accpeting the alert 
+2016-08-22 01:09:20,256 INFO  [Log] Flight booked successfully 
+2016-08-22 01:09:20,465 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:09:20,465 INFO  [Log] X 
+2016-08-22 01:09:20,465 INFO  [Log] X 
+2016-08-22 01:09:20,465 INFO  [Log] X 
+2016-08-22 01:09:20,465 INFO  [Log] X 
+2016-08-22 01:09:43,964 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 01:09:43,964 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:09:43,964 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:09:43,964 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:09:43,964 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:11:03,741 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 01:11:03,741 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:11:03,741 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:11:03,741 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:11:03,741 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:11:08,858 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:11:08,858 INFO  [Log] X 
+2016-08-22 01:11:08,858 INFO  [Log] X 
+2016-08-22 01:11:08,858 INFO  [Log] X 
+2016-08-22 01:11:08,858 INFO  [Log] X 
+2016-08-22 01:11:08,858 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 01:11:08,858 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:11:08,858 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:11:08,858 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:11:08,858 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:11:08,933 INFO  [Log] Opening regisration page 
+2016-08-22 01:11:08,988 INFO  [Log] Inputting registration details 
+2016-08-22 01:11:10,975 INFO  [Log] Clicking Submit button 
+2016-08-22 01:11:11,021 INFO  [Log] Verifying user display name 
+2016-08-22 01:11:12,251 INFO  [Log] User Display name verification successful 
+2016-08-22 01:11:12,251 INFO  [Log] Verifying login username 
+2016-08-22 01:11:12,311 INFO  [Log] Login username verification successful 
+2016-08-22 01:11:12,312 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:11:12,312 INFO  [Log] X 
+2016-08-22 01:11:12,312 INFO  [Log] X 
+2016-08-22 01:11:12,312 INFO  [Log] X 
+2016-08-22 01:11:12,312 INFO  [Log] X 
+2016-08-22 01:11:12,312 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 01:11:12,312 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:11:12,312 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:11:12,312 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:11:12,312 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:11:12,442 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-22 01:11:12,457 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-22 01:11:12,472 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-22 01:11:12,641 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:11:12,641 INFO  [Log] X 
+2016-08-22 01:11:12,641 INFO  [Log] X 
+2016-08-22 01:11:12,641 INFO  [Log] X 
+2016-08-22 01:11:12,641 INFO  [Log] X 
+2016-08-22 01:16:51,992 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 01:16:51,992 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:16:51,992 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:16:51,992 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:16:51,992 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:16:56,789 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:16:56,789 INFO  [Log] X 
+2016-08-22 01:16:56,789 INFO  [Log] X 
+2016-08-22 01:16:56,789 INFO  [Log] X 
+2016-08-22 01:16:56,789 INFO  [Log] X 
+2016-08-22 01:16:56,789 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 01:16:56,789 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:16:56,789 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:16:56,789 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:16:56,789 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:16:56,856 INFO  [Log] Opening regisration page 
+2016-08-22 01:16:56,904 INFO  [Log] Inputting registration details 
+2016-08-22 01:16:59,845 INFO  [Log] Clicking Submit button 
+2016-08-22 01:16:59,891 INFO  [Log] Verifying user display name 
+2016-08-22 01:17:01,543 INFO  [Log] User Display name verification successful 
+2016-08-22 01:17:01,543 INFO  [Log] Verifying login username 
+2016-08-22 01:17:01,605 INFO  [Log] Login username verification successful 
+2016-08-22 01:17:01,606 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:17:01,606 INFO  [Log] X 
+2016-08-22 01:17:01,606 INFO  [Log] X 
+2016-08-22 01:17:01,606 INFO  [Log] X 
+2016-08-22 01:17:01,606 INFO  [Log] X 
+2016-08-22 01:17:01,606 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 01:17:01,606 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:17:01,606 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:17:01,606 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:17:01,606 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:17:01,728 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-22 01:17:01,746 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-22 01:17:01,764 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-22 01:17:01,906 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:17:01,906 INFO  [Log] X 
+2016-08-22 01:17:01,906 INFO  [Log] X 
+2016-08-22 01:17:01,906 INFO  [Log] X 
+2016-08-22 01:17:01,906 INFO  [Log] X 
+2016-08-22 01:18:46,973 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 01:18:46,973 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:18:46,973 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:18:46,973 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:18:46,973 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:18:51,680 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:18:51,680 INFO  [Log] X 
+2016-08-22 01:18:51,680 INFO  [Log] X 
+2016-08-22 01:18:51,680 INFO  [Log] X 
+2016-08-22 01:18:51,680 INFO  [Log] X 
+2016-08-22 01:18:51,680 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 01:18:51,680 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:18:51,680 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:18:51,680 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:18:51,680 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:18:51,762 INFO  [Log] Opening regisration page 
+2016-08-22 01:18:51,819 INFO  [Log] Inputting registration details 
+2016-08-22 01:18:53,728 INFO  [Log] Clicking Submit button 
+2016-08-22 01:18:53,774 INFO  [Log] Verifying user display name 
+2016-08-22 01:18:55,039 INFO  [Log] User Display name verification successful 
+2016-08-22 01:18:55,039 INFO  [Log] Verifying login username 
+2016-08-22 01:18:55,100 INFO  [Log] Login username verification successful 
+2016-08-22 01:18:55,101 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:18:55,101 INFO  [Log] X 
+2016-08-22 01:18:55,101 INFO  [Log] X 
+2016-08-22 01:18:55,101 INFO  [Log] X 
+2016-08-22 01:18:55,101 INFO  [Log] X 
+2016-08-22 01:18:55,101 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 01:18:55,101 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:18:55,101 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 01:18:55,101 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:18:55,101 INFO  [Log] **************************************************************************************** 
+2016-08-22 01:18:56,634 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 01:18:56,660 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 01:18:56,686 INFO  [Log] Populatig all the provided data 
+2016-08-22 01:18:58,448 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 01:18:58,467 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 01:18:58,504 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 01:18:58,544 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 01:19:00,222 INFO  [Log] Flights selected successfully 
+2016-08-22 01:19:00,242 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 01:19:00,276 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 01:19:00,310 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 01:19:00,344 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 01:19:00,376 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 01:19:00,409 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 01:19:00,441 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 01:19:00,473 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 01:19:00,535 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 01:19:00,536 INFO  [Log] Inputting all the details 
+2016-08-22 01:19:01,928 INFO  [Log] Waiting for alert to appear 
+2016-08-22 01:19:01,935 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 01:19:01,948 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 01:19:01,948 INFO  [Log] Accpeting the alert 
+2016-08-22 01:19:03,507 INFO  [Log] Flight booked successfully 
+2016-08-22 01:19:03,664 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 01:19:03,664 INFO  [Log] X 
+2016-08-22 01:19:03,664 INFO  [Log] X 
+2016-08-22 01:19:03,664 INFO  [Log] X 
+2016-08-22 01:19:03,664 INFO  [Log] X 
