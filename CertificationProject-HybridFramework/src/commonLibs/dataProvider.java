@@ -126,9 +126,9 @@ public class dataProvider {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
 			String Data[] = new String[4];
 			
-			Data[0] = oExcelDriver.getCellData(sheetName, 1, 2);
-			Data[1] = oExcelDriver.getCellData(sheetName, 2, 2);
-			Data[2] = oExcelDriver.getCellData(sheetName, 3, 2);
+			Data[0] = oExcelDriver.getCellData(sheetName, 1, 2); 
+			Data[1] = oExcelDriver.getCellData(sheetName, 2, 2); 
+			Data[2] = oExcelDriver.getCellData(sheetName, 3, 2); 
 			Data[3] = oExcelDriver.getCellData(sheetName, 4, 2);
 			
 			return Data;
@@ -136,6 +136,38 @@ public class dataProvider {
 			Log.error("dataProvider()->selectFlight()-> Error occured while getting data: "+ e);
 			return null;
 		}
-		
 	}
+	
+	
+	public String[] bookFlight(){
+		try {
+			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
+			String Data[] = new String[7];
+			
+			Data[0] = oExcelDriver.getCellData(sheetName, 1, 2); //Departure city
+			Data[1] = oExcelDriver.getCellData(sheetName, 2, 2); //Arrival city
+			Data[2] = oExcelDriver.getCellData(sheetName, 3, 2); //Departure flight
+			Data[3] = oExcelDriver.getCellData(sheetName, 4, 2); //Departure flight cost
+			Data[4] = oExcelDriver.getCellData(sheetName, 5, 2); //Return flight
+			Data[5] = oExcelDriver.getCellData(sheetName, 6, 2); //Return flight cost
+			Data[6] = oExcelDriver.getCellData(sheetName, 7, 2); //Number of passengers
+		
+			
+			return Data;
+		} catch (Exception e) {
+			Log.error("dataProvider()->bookFlight()-> Error occured while getting data: "+ e);
+			return null;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

@@ -133,7 +133,7 @@ public class commonDriver {
    try {
     return oDriver.findElement(oBy).getText();
    } catch (Exception e) {
-    System.out.println("Could not set the given text; here is some more detail: ");
+    System.out.println("Could not get text; here is some more detail: ");
     e.printStackTrace();
     return "";
    }

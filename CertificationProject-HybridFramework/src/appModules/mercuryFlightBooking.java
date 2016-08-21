@@ -1,6 +1,7 @@
 package appModules;
 
 import java.util.Properties;
+import java.util.regex.Pattern;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
@@ -25,8 +26,7 @@ public class mercuryFlightBooking {
 	private static By selectServiceClassBusiness = By.xpath("//input[@value='Business']");
 	private static By selectServiceClassFirst = By.xpath("//input[@value='First']");	
 	private static By selectAirline = By.name("airline");
-	private static By buttonContiue = By.name("findFlights");
-	private static By headerDepart = By.xpath("//b/font[contains(text(),'DEPART')]");
+	private static By buttonContiue = By.name("findFlights");	
 	private static By departText = By.xpath("//table[1]/tbody/tr[2]/td[1]/b/font");
 	private static By returnText = By.xpath("//table[2]/tbody/tr/td/table/tbody/tr[2]/td/b/font");
 	private static By radioSelectDepartureFlightBlueSky360 = By.xpath("//input[@value='Blue Skies Airlines$360$270$5:03']");	
@@ -38,22 +38,14 @@ public class mercuryFlightBooking {
 	private static By radioSelectArrivalFlightPangea632 = By.xpath("//input[@value='Pangea Airlines$632$282$16:37']");
 	private static By radioSelectArrivalFlightUnified633 = By.xpath("//input[@value='Unified Airlines$633$303$18:44']");	
 	private static By buttonContinuePage2 = By.name("reserveFlights");
+	private static By textDepart = By.xpath("//table/tbody/tr[1]/td[1]/font/b/font");
+	private static By textSummary = By.xpath("//table/tbody/tr[1]/td/font/font/b/font/font");
 	
-	private static By priceBlueSkies360 = By.xpath("//table[1]/tbody/tr[4]/td/font/font/b");
-	private static By priceBlueSkies361 = By.xpath("//table[1]/tbody/tr[4]/td/font/font/b");
-	private static By pricePangaea362 = By.xpath("//table[1]/tbody/tr[8]/td/font/font/b");
-	private static By priceUnified363 = By.xpath("//table[1]/tbody/tr[10]/td/font/font/b");
+	private static By flightBookingFromTo = By.xpath("//table/tbody/tr[1]/td[1]/b/font");
+	private static By flightBookingToFrom = By.xpath("//table/tbody/tr[4]/td[1]/b/font");
+	private static By bookingDepartureFlight = By.xpath("//table/tbody/tr[3]/td[1]/font/b");
+	private static By bookingReturnFlight = By.xpath("//table/tbody/tr[6]/td[1]/font/font/font[1]/b");
 	
-	private static By priceBlueSkies630 = By.xpath("//table[2]/tbody/tr[4]/td/font/font/b");
-	private static By priceBlueSkies631 = By.xpath("//table[2]/tbody/tr[6]/td/font/font/b");
-	private static By pricePangaea632 = By.xpath("//table[2]/tbody/tr[8]/td/font/font/b");
-	private static By priceUnified633 = By.xpath("//table[2]/tbody/tr[10]/td/font/font/b");
-	
-	
-	
-	private static By headerSummary = By.xpath("//table/tbody/tr[1]/td/font/font/b/font/font");
-	private static By summaryDepartText = By.xpath("//table/tbody/tr[1]/td[1]/b/font");
-	private static By summaryArrivalText = By.xpath("//table/tbody/tr[4]/td[1]/b/font");
 	private static By summaryDepartureFlightCost = By.xpath("//table/tbody/tr[3]/td[3]/font");
 	private static By summaryArrivalFlightCost = By.xpath("//table/tbody/tr[6]/td[3]/font");
 	private static By summaryNumberOfPassengers = By.xpath("//table/tbody/tr[7]/td[2]/font");
@@ -116,6 +108,15 @@ public class mercuryFlightBooking {
 	public String inputFlightDetails(){
 		try {
 			
+			if(oDriver.getTitle().equals("Find a Flight: Mercury Tours:")){
+				Log.info("mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page");
+			}
+			else{
+				Log.error("mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page");
+				return "ERROR: Page title mismatch, currently not on the find flight page";
+			}
+			
+						
 			String Data[] = getTestDataFor.inputFlightDetails();			
 			//Check which of the radio button is already selected
 			if (oDriver.isSelected(radioJourneyTypeRoundTrip)){
@@ -154,8 +155,9 @@ public class mercuryFlightBooking {
 				oDriver.click(selectServiceClassFirst);
 			}
 			
-			oDriver.selectByVisibleText(selectAirline, Data[9]);
+			oDriver.selectByVisibleText(selectAirline, Data[9]);			
 			oDriver.click(buttonContiue);
+			oDriver.waitTillElementVisible(textDepart, 30l);
 			Log.info("mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully");
 			return "All fields populated successfully";
 
@@ -167,15 +169,16 @@ public class mercuryFlightBooking {
 	}
 	
 	public String selectFlight(){
-		try {			
-			if(oDriver.isVisible(headerDepart) && oDriver.getText(headerDepart).equals("DEPART")){
+		try {		
+			if(oDriver.getTitle().equals("Select a Flight: Mercury Tours")){
 				Log.info("mercuryFlightBooking()->selectFlight()->Now on the flight selection page");
 			}
 			else{
-				Log.error("mercuryFlightBooking()->selectFlight()->Could not find DEPART header");
-				return "ERROR: Could not find DEPART header";
+				Log.error("mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page");
+				return "ERROR: Page title mismatch, currently not on the flight selection page";
 			}
 			
+						
 			String Data[] = getTestDataFor.selectFlight();
 			
 			if (oDriver.getText(departText).equalsIgnoreCase(Data[0] + " to " + Data[1])){
@@ -194,29 +197,31 @@ public class mercuryFlightBooking {
 				Log.error("mercuryFlightBooking()->selectFlight()-> TO and FROM flights doesn't match");
 				return "ERROR: TO and FROM flights doesn't match";
 			}
-			
-			if(Data[2].equalsIgnoreCase("Blue Skies Airlines 360")){
-				oDriver.click(radioSelectDepartureFlightBlueSky360);
-				departureFlightCost = oDriver.getText(priceBlueSkies360);
-			}else if (Data[3].equalsIgnoreCase("Blue Skies Airlines 361")){
+					
+			if(Data[2].trim().equalsIgnoreCase("Blue Skies Airlines 360")){
+				oDriver.click(radioSelectDepartureFlightBlueSky360);				
+			}else if (Data[2].trim().equalsIgnoreCase("Blue Skies Airlines 361")){
 				oDriver.click(radioSelectDepartureFlightBlueSky361);
-			}else if (Data[3].equalsIgnoreCase("Pangaea Airlines 362")){
+			}else if (Data[2].trim().equalsIgnoreCase("Pangaea Airlines 362")){
+				System.out.println("Selecting first flight");
 				oDriver.click(radioSelectDepartureFlightPangea362);
-			}else if (Data[3].equalsIgnoreCase("Unified Airlines 363")){
+			}else if (Data[2].trim().equalsIgnoreCase("Unified Airlines 363")){
 				oDriver.click(radioSelectDepartureFlightUnified363);
 			}
 			
-			if(Data[3].equalsIgnoreCase("Blue Skies Airlines 630")){
+			if(Data[3].trim().equalsIgnoreCase("Blue Skies Airlines 630")){
 				oDriver.click(radioSelectArrivalFlightBlueSky630);
-			}else if (Data[3].equalsIgnoreCase("Blue Skies Airlines 631")){
+			}else if (Data[3].trim().equalsIgnoreCase("Blue Skies Airlines 631")){
 				oDriver.click(radioSelectArrivalFlightBlueSky631);
-			}else if (Data[3].equalsIgnoreCase("Pangea Airlines 632")){
+			}else if (Data[3].trim().equalsIgnoreCase("Pangea Airlines 632")){
 				oDriver.click(radioSelectArrivalFlightPangea632);
-			}else if (Data[3].equalsIgnoreCase("Unified Airlines 633")){
+			}else if (Data[3].trim().equalsIgnoreCase("Unified Airlines 633")){
 				oDriver.click(radioSelectArrivalFlightUnified633);
 			}
 			
+			
 			oDriver.click(buttonContinuePage2);
+			oDriver.waitTillElementVisible(textSummary, 30l);
 			Log.info("Flights selected successfully");
 			return "Flight selected successfully";
 			
@@ -229,15 +234,135 @@ public class mercuryFlightBooking {
 	
 	public String bookFlight(){
 		try {
-			if(oDriver.isVisible(headerSummary) && oDriver.getText(headerSummary).equals("Summary")){
+			//Verify page title to make sure we are on the correct page
+			if(oDriver.getTitle().equals("Book a Flight: Mercury Tours")){
 				Log.info("mercuryFlightBooking()->bookFlight()->Now on the flight booking page");
-			}else{
-				Log.error("mercuryFlightBooking()->bookFlight()->Could not find Summary header");
-				return "ERROR: Could not find DEPART header";
+			}
+			else{
+				Log.error("mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page");
+				return "ERROR: Page title mismatch, currently not on the flight booking page";
+			}
+					
+			String Data[] = getTestDataFor.bookFlight();
+						
+			//Verify depart FROM -> TO, and TO -> FROM cities
+			if (oDriver.getText(flightBookingFromTo).equalsIgnoreCase(Data[0] + " to " + Data[1])){
+				Log.error("mercuryFlightBooking()->bookFlight()-> FROM and TO flights match");
+			}
+			else{
+				Log.error("mercuryFlightBooking()->bookFlight()-> FROM and TO flights doesn't match");
+				return "ERROR:  FROM and TO flights doesn't match";
 			}
 			
-			System.out.println("Departure Flight Cost: " + departureFlightCost);
 			
+			if (oDriver.getText(flightBookingToFrom).equalsIgnoreCase(Data[1] + " to " + Data[0])){
+				Log.error("mercuryFlightBooking()->bookFlight()-> TO and FROM flights match");
+			}
+			else{
+				Log.error("mercuryFlightBooking()->bookFlight()-> TO and FROM flights doesn't match");
+				return "ERROR:  TO and FROM flights doesn't match";
+			}
+			
+		
+			//Verify if the flights are correct
+			if (oDriver.getText(bookingDepartureFlight).equalsIgnoreCase(Data[2])){
+				Log.error("mercuryFlightBooking()->bookFlight()-> Departure flight is correct");
+			}
+			else{
+				Log.error("mercuryFlightBooking()->bookFlight()-> Wrong departure flight");
+				return "ERROR: Wrong departure flight";
+			}
+			
+			if (oDriver.getText(bookingReturnFlight).equalsIgnoreCase(Data[4])){
+				Log.error("mercuryFlightBooking()->bookFlight()-> Return flight is correct");
+			}
+			else{
+				Log.error("mercuryFlightBooking()->bookFlight()-> Wrong return flight");
+				return "ERROR: TO and FROM flights doesn't match";
+			}
+			
+			
+			//Verify flight costs are correct			
+			if (oDriver.getText(summaryDepartureFlightCost).equalsIgnoreCase(Data[3])){
+				Log.error("mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly");
+			}
+			else{
+				Log.error("mercuryFlightBooking()->bookFlight()-> Departure flight cost mismatch");	
+				return "ERROR: Departure flight cost mismatch";
+			}
+			
+			if (oDriver.getText(summaryArrivalFlightCost).equalsIgnoreCase(Data[5])){
+				Log.error("mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly");
+			}
+			else{
+				Log.error("mercuryFlightBooking()->bookFlight()-> Return flight cost mismatch");
+				return "ERROR: Return flight cost mismatch";
+			}
+			
+			//Verify number of passengers
+			if (oDriver.getText(summaryNumberOfPassengers).equalsIgnoreCase(Data[6])){
+				Log.error("mercuryFlightBooking()->bookFlight()-> Number of passenges are correct");
+			}
+			else{
+				Log.error("mercuryFlightBooking()->bookFlight()-> Wrong number of passengers");	
+				return "ERROR: Wrong number of passengers";
+			}
+			
+			//Verify flight cost calculation
+			String[] tempString =  oDriver.getText(summaryTaxes).split(Pattern.quote("$"));		
+			
+			int tempTaxes =  Integer.parseInt(tempString[1]);
+			tempString = oDriver.getText(summaryTotalCost).split(Pattern.quote("$"));
+			int actualTotalCost = Integer.parseInt(tempString[1]);
+			int NumberOfPassengers = Integer.parseInt(Data[6]);					
+			int expectedTotalCost = (Integer.parseInt(Data[3]) + Integer.parseInt(Data[5])) * NumberOfPassengers + tempTaxes;
+			
+			if (expectedTotalCost == actualTotalCost){
+				Log.info("mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches");
+			}
+			else{
+				Log.info("mercuryFlightBooking()->bookFlight()-> Expected and actual total cost mismatch");
+				return "ERROR: Expected and actual total cost mismatch";
+			}
+				
+				
+	
+			
+					
+					
+					
+					
+					
+					
+					
+//			private static By summaryTaxes = By.xpath("//table/tbody/tr[8]/td[2]/font");
+//			private static By summaryTotalCost = By.xpath("//table/tbody/tr[9]/td[2]/font/b");
+//			private static By txtFirstname;
+//			private static By txtLastName;
+//			private static By selectMeal;
+//			private static By selectCreditCard = By.name("creditCard");
+//			private static By txtCreditCardNumber = By.name("creditnumber");
+//			private static By selectExpiryMonth = By.name("cc_exp_dt_mn");
+//			private static By selectExpiryYear = By.name("cc_exp_dt_yr");
+//			private static By txtCCFirstName = By.name("cc_frst_name");
+//			private static By txtCCMiddleName = By.name("cc_mid_name");
+//			private static By txtCCLastName = By.name("cc_last_name");
+//			private static By checkboxTicketlessBilling = By.name("ticketLess");
+//			private static By txtBillingAddress1 = By.name("billAddress1");
+//			private static By txtBillingAddress2 = By.name("billAddress2");;
+//			private static By txtBillingCity = By.name("billCity");
+//			private static By txtBillingState = By.name("billState");
+//			private static By txtBillingPostalCode = By.name("billZip");
+//			private static By selectBillingCountry = By.name("billCountry");	
+//			private static By txtDeliveryAddress1 = By.name("delAddress1");
+//			private static By txtDeliveryAddress2 = By.name("delAddress2");;
+//			private static By txtDeliveryCity = By.name("delCity");
+//			private static By txtDeliveryState = By.name("delState");
+//			private static By txtDeliveryPostalCode = By.name("delZip");
+//			private static By selectDeliveryCountry = By.name("delCountry");
+//			private static By buttonSecurePurchase = By.name("buyFlights");		
+					
+					
 			return "";
 			
 		} catch (Exception e) {
