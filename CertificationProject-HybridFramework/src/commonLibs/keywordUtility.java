@@ -100,6 +100,11 @@ try {
 			return Setup.logout();		
 		}
 		
+		//Run method closeBrowser
+		else if(methodName.equalsIgnoreCase("closeBrowser")){						
+			return Setup.closeBrowser();		
+		}
+		
 		
 } catch (Exception e) {
 	System.out.println("keywordUtility->runMethod()->Error occured while performing an action; here is some more detail: ");
@@ -111,12 +116,12 @@ try {
  }
  
  public String takeScreenshot(String filePath){
-		try {
+		try {			
 			oDriver.takeScreenshot(filePath +utils.getDateTimeStamp()+".jpg");
-			return "Screenshot saved successfully";
+			Log.info("Screenshot captured successfully");
+			return "Screenshot captured successfully";
 		} catch (Exception e) {
-			Log.error("ERROR: Could not save screenshot; here are some more details: ");
-			Log.error(e.getStackTrace().toString());
+			Log.error("ERROR: Could not save screenshot; here are some more details: " + e);			
 			return "ERROR: Error occured while saving the screnshot";
 		}
 

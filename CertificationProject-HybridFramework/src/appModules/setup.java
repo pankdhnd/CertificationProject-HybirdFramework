@@ -4,18 +4,18 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import utility.Log;
 import commonLibs.dataProvider;
-import commonLibs.utils;
 import commonLibs.commonDriver;
 
 
 public class setup {	
-
+	
+	//Variable declaration, creating objects of controls to be operated
 	private static By txtUsername = By.name("userName");
 	private static By txtPassword = By.name("password");
 	private static By loginButton = By.name("login");
 	private static By signOffLink = By.linkText("SIGN-OFF");
-	private static String myAccountLink = "//a[contains(text(),'Howdy, admin')]";
-	private static String linkLogout = "//a[contains(text(),'Log Out')]";	
+	
+		
 	static commonDriver oDriver;	
 	dataProvider getTestDataFor = new dataProvider();
 	
@@ -141,24 +141,26 @@ public class setup {
 	
 	public String logout()
 	{		
-		try {			
-		
-			oDriver.waitTillElementVisible(By.xpath(myAccountLink), 60l);			
-			oDriver.moveToElement(By.xpath(myAccountLink));
-			oDriver.click(By.xpath(linkLogout));		
-			oDriver.implicitlyWait(30);
-			
-			if (oDriver.isVisible(txtUsername)){
-			return "Logout Successful";
-			}						
+		try {					
+			oDriver.click(signOffLink);
+			oDriver.waitTillElementVisible(txtUsername, 30l);
+			Log.info("Logged out successfully");
+			return "logged out successfully";									
 		} catch (Exception e) {
-			Log.error("ERROR: Logout failed; here are some more details: ");
-			Log.error(e.getStackTrace().toString());			
+			Log.error("setup()->Logout()-> Logout failed; here are some more details: " + e);						
 			return "ERROR: Logout failed";
-		}		
-		return "ERROR";
+		}	
+		
 	}
-					
-
-	
+		
+	 public String closeBrowser(){
+		 try {
+			oDriver.closeBrowser();
+			Log.info("Browser closed successfully");
+			return "Browser closed successfully";
+		} catch (Exception e) {
+			Log.error("setup()->closeBrowser()-> Error occured while closing the browser; here are some more details: " + e);				
+			return "ERROR: Could not close the browser";
+		}
+	 }
 }

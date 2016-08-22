@@ -34,5 +34,6 @@
 	<classpathentry kind="lib" path="D:/selenium/lib/selenium-java-2.53.1-srcs.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/testng-6.9.9.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/lib/selenium-java-2.53.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

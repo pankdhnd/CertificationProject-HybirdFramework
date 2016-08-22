@@ -1412,3 +1412,524 @@ Driver info: driver.version: commonDriver
 2016-08-22 01:19:03,664 INFO  [Log] X 
 2016-08-22 01:19:03,664 INFO  [Log] X 
 2016-08-22 01:19:03,664 INFO  [Log] X 
+2016-08-22 13:27:10,231 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:27:10,231 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:27:10,231 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:27:10,231 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:27:10,232 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:27:20,509 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:27:20,510 INFO  [Log] X 
+2016-08-22 13:27:20,510 INFO  [Log] X 
+2016-08-22 13:27:20,510 INFO  [Log] X 
+2016-08-22 13:27:20,510 INFO  [Log] X 
+2016-08-22 13:27:20,510 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:27:20,510 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:27:20,510 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:27:20,510 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:27:20,511 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:27:20,780 INFO  [Log] Opening regisration page 
+2016-08-22 13:27:20,861 INFO  [Log] Inputting registration details 
+2016-08-22 13:27:22,881 INFO  [Log] Clicking Submit button 
+2016-08-22 13:27:22,962 INFO  [Log] Verifying user display name 
+2016-08-22 13:27:24,299 INFO  [Log] User Display name verification successful 
+2016-08-22 13:27:24,300 INFO  [Log] Verifying login username 
+2016-08-22 13:27:24,420 INFO  [Log] Login username verification successful 
+2016-08-22 13:27:24,421 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:27:24,422 INFO  [Log] X 
+2016-08-22 13:27:24,422 INFO  [Log] X 
+2016-08-22 13:27:24,422 INFO  [Log] X 
+2016-08-22 13:27:24,422 INFO  [Log] X 
+2016-08-22 13:27:24,422 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:27:24,422 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:27:24,423 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:27:24,423 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:27:24,423 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:27:26,652 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 13:27:26,686 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 13:27:26,718 INFO  [Log] Populatig all the provided data 
+2016-08-22 13:27:29,522 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 13:27:29,585 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 13:27:29,635 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 13:27:29,680 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 13:27:31,615 INFO  [Log] Flights selected successfully 
+2016-08-22 13:27:31,653 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 13:27:31,702 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 13:27:31,749 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 13:27:31,794 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 13:27:31,839 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 13:27:31,883 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 13:27:31,924 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 13:27:31,967 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 13:27:32,051 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 13:27:32,051 INFO  [Log] Inputting all the details 
+2016-08-22 13:27:34,101 INFO  [Log] Waiting for alert to appear 
+2016-08-22 13:27:34,107 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 13:27:34,117 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 13:27:34,117 INFO  [Log] Accpeting the alert 
+2016-08-22 13:27:34,250 INFO  [Log] Flight booked successfully 
+2016-08-22 13:27:34,324 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:27:34,324 INFO  [Log] X 
+2016-08-22 13:27:34,324 INFO  [Log] X 
+2016-08-22 13:27:34,324 INFO  [Log] X 
+2016-08-22 13:27:34,324 INFO  [Log] X 
+2016-08-22 13:29:13,232 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:29:13,233 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:29:13,233 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:29:13,233 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:29:13,234 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:29:20,180 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:29:20,185 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:29:20,185 INFO  [Log] X 
+2016-08-22 13:29:20,185 INFO  [Log] X 
+2016-08-22 13:29:20,185 INFO  [Log] X 
+2016-08-22 13:29:20,186 INFO  [Log] X 
+2016-08-22 13:29:20,187 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:29:20,187 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:29:20,187 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:29:20,187 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:29:20,187 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:29:20,420 INFO  [Log] Opening regisration page 
+2016-08-22 13:29:20,506 INFO  [Log] Inputting registration details 
+2016-08-22 13:29:22,476 INFO  [Log] Clicking Submit button 
+2016-08-22 13:29:22,541 INFO  [Log] Verifying user display name 
+2016-08-22 13:29:23,792 INFO  [Log] User Display name verification successful 
+2016-08-22 13:29:23,792 INFO  [Log] Verifying login username 
+2016-08-22 13:29:23,895 INFO  [Log] Login username verification successful 
+2016-08-22 13:29:23,897 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:29:23,897 INFO  [Log] X 
+2016-08-22 13:29:23,897 INFO  [Log] X 
+2016-08-22 13:29:23,897 INFO  [Log] X 
+2016-08-22 13:29:23,897 INFO  [Log] X 
+2016-08-22 13:29:23,898 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:29:23,899 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:29:23,899 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:29:23,899 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:29:23,899 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:29:25,480 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 13:29:25,511 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 13:29:25,541 INFO  [Log] Populatig all the provided data 
+2016-08-22 13:29:27,482 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 13:29:27,527 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 13:29:27,592 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 13:29:27,637 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 13:29:29,343 INFO  [Log] Flights selected successfully 
+2016-08-22 13:29:29,375 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 13:29:29,423 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 13:29:29,468 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 13:29:29,513 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 13:29:29,562 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 13:29:29,609 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 13:29:29,654 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 13:29:29,700 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 13:29:29,790 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 13:29:29,790 INFO  [Log] Inputting all the details 
+2016-08-22 13:29:31,915 INFO  [Log] Waiting for alert to appear 
+2016-08-22 13:29:31,922 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 13:29:31,922 INFO  [Log] Accpeting the alert 
+2016-08-22 13:29:31,930 INFO  [Log] Alert accepted 
+2016-08-22 13:29:31,960 INFO  [Log] Flight booked successfully 
+2016-08-22 13:29:32,017 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:29:32,017 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:29:32,018 INFO  [Log] X 
+2016-08-22 13:29:32,018 INFO  [Log] X 
+2016-08-22 13:29:32,018 INFO  [Log] X 
+2016-08-22 13:29:32,018 INFO  [Log] X 
+2016-08-22 13:51:22,897 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:51:22,898 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:51:22,898 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:51:22,898 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:51:22,898 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:51:36,785 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:51:36,786 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:51:36,786 INFO  [Log] X 
+2016-08-22 13:51:36,786 INFO  [Log] X 
+2016-08-22 13:51:36,787 INFO  [Log] X 
+2016-08-22 13:51:36,787 INFO  [Log] X 
+2016-08-22 13:51:36,788 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:51:36,788 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:51:36,788 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:51:36,789 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:51:36,789 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:51:37,087 INFO  [Log] Opening regisration page 
+2016-08-22 13:51:37,298 INFO  [Log] Inputting registration details 
+2016-08-22 13:51:40,394 INFO  [Log] Clicking Submit button 
+2016-08-22 13:51:42,043 INFO  [Log] Verifying user display name 
+2016-08-22 13:51:42,118 INFO  [Log] User Display name verification successful 
+2016-08-22 13:51:42,118 INFO  [Log] Verifying login username 
+2016-08-22 13:51:42,242 INFO  [Log] Login username verification successful 
+2016-08-22 13:51:42,243 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:51:42,244 INFO  [Log] X 
+2016-08-22 13:51:42,244 INFO  [Log] X 
+2016-08-22 13:51:42,244 INFO  [Log] X 
+2016-08-22 13:51:42,244 INFO  [Log] X 
+2016-08-22 13:51:42,244 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:51:42,244 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:51:42,244 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:51:42,244 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:51:42,244 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:51:44,142 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 13:51:44,169 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 13:51:44,196 INFO  [Log] Populatig all the provided data 
+2016-08-22 13:51:47,392 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 13:51:47,439 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 13:51:47,474 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 13:51:47,511 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 13:51:49,483 INFO  [Log] Flights selected successfully 
+2016-08-22 13:51:49,521 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 13:51:49,570 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 13:51:49,621 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 13:51:49,665 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 13:51:49,712 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 13:51:49,754 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 13:51:49,797 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 13:51:49,839 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 13:51:49,920 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 13:51:49,921 INFO  [Log] Inputting all the details 
+2016-08-22 13:51:52,878 INFO  [Log] Waiting for alert to appear 
+2016-08-22 13:51:59,660 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 13:51:59,660 INFO  [Log] Accpeting the alert 
+2016-08-22 13:51:59,709 INFO  [Log] Alert accepted 
+2016-08-22 13:52:01,420 INFO  [Log] Flight booked successfully 
+2016-08-22 13:52:01,619 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:52:01,620 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:52:01,620 INFO  [Log] X 
+2016-08-22 13:52:01,620 INFO  [Log] X 
+2016-08-22 13:52:01,620 INFO  [Log] X 
+2016-08-22 13:52:01,620 INFO  [Log] X 
+2016-08-22 13:52:33,034 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:52:33,035 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:52:33,035 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:52:33,035 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:52:33,035 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:52:41,380 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:52:41,385 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:52:41,385 INFO  [Log] X 
+2016-08-22 13:52:41,385 INFO  [Log] X 
+2016-08-22 13:52:41,385 INFO  [Log] X 
+2016-08-22 13:52:41,385 INFO  [Log] X 
+2016-08-22 13:52:41,386 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:52:41,386 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:52:41,386 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:52:41,386 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:52:41,386 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:52:41,623 INFO  [Log] Opening regisration page 
+2016-08-22 13:52:41,707 INFO  [Log] Inputting registration details 
+2016-08-22 13:52:43,819 INFO  [Log] Clicking Submit button 
+2016-08-22 13:52:43,890 INFO  [Log] Verifying user display name 
+2016-08-22 13:52:45,395 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-22 13:52:45,396 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:52:45,396 INFO  [Log] X 
+2016-08-22 13:52:45,396 INFO  [Log] X 
+2016-08-22 13:52:45,396 INFO  [Log] X 
+2016-08-22 13:52:45,396 INFO  [Log] X 
+2016-08-22 13:52:45,397 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:52:45,397 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:52:45,397 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:52:45,397 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:52:45,397 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:52:47,261 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 13:52:47,314 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 13:52:47,357 INFO  [Log] Populatig all the provided data 
+2016-08-22 13:52:49,425 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 13:52:49,458 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 13:52:49,505 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 13:52:49,550 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 13:52:51,720 INFO  [Log] Flights selected successfully 
+2016-08-22 13:52:51,744 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 13:52:51,791 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 13:52:51,836 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 13:52:51,886 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 13:52:51,931 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 13:52:51,972 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 13:52:52,017 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 13:52:52,059 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 13:52:52,144 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 13:52:52,144 INFO  [Log] Inputting all the details 
+2016-08-22 13:52:54,227 INFO  [Log] Waiting for alert to appear 
+2016-08-22 13:52:54,238 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 13:52:54,239 INFO  [Log] Accpeting the alert 
+2016-08-22 13:52:54,248 INFO  [Log] Alert accepted 
+2016-08-22 13:52:55,934 INFO  [Log] Flight booked successfully 
+2016-08-22 13:52:56,155 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:52:56,156 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:52:56,156 INFO  [Log] X 
+2016-08-22 13:52:56,156 INFO  [Log] X 
+2016-08-22 13:52:56,156 INFO  [Log] X 
+2016-08-22 13:52:56,156 INFO  [Log] X 
+2016-08-22 13:53:30,971 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:53:30,972 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:53:30,972 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:53:30,972 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:53:30,972 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:53:42,401 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:53:42,406 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:53:42,406 INFO  [Log] X 
+2016-08-22 13:53:42,406 INFO  [Log] X 
+2016-08-22 13:53:42,406 INFO  [Log] X 
+2016-08-22 13:53:42,406 INFO  [Log] X 
+2016-08-22 13:53:42,407 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:53:42,407 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:53:42,407 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:53:42,407 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:53:42,407 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:53:42,688 INFO  [Log] Opening regisration page 
+2016-08-22 13:53:42,893 INFO  [Log] Inputting registration details 
+2016-08-22 13:53:45,945 INFO  [Log] Clicking Submit button 
+2016-08-22 13:53:47,442 INFO  [Log] Verifying user display name 
+2016-08-22 13:53:47,574 INFO  [Log] User Display name verification successful 
+2016-08-22 13:53:47,574 INFO  [Log] Verifying login username 
+2016-08-22 13:53:47,636 INFO  [Log] Login username verification successful 
+2016-08-22 13:53:47,637 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:53:47,637 INFO  [Log] X 
+2016-08-22 13:53:47,637 INFO  [Log] X 
+2016-08-22 13:53:47,637 INFO  [Log] X 
+2016-08-22 13:53:47,637 INFO  [Log] X 
+2016-08-22 13:53:47,638 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:53:47,638 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:53:47,638 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:53:47,638 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:53:47,638 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:53:49,401 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 13:53:49,447 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 13:53:49,476 INFO  [Log] Populatig all the provided data 
+2016-08-22 13:53:52,599 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 13:53:52,628 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 13:53:52,664 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 13:53:52,703 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 13:53:54,687 INFO  [Log] Flights selected successfully 
+2016-08-22 13:53:54,722 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 13:53:54,762 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 13:53:54,809 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 13:53:54,849 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 13:53:54,889 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 13:53:54,926 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 13:53:54,964 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 13:53:55,006 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 13:53:55,083 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 13:53:55,083 INFO  [Log] Inputting all the details 
+2016-08-22 13:53:58,554 INFO  [Log] Waiting for alert to appear 
+2016-08-22 13:54:02,816 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 13:54:02,866 INFO  [Log] Switched to alert 
+2016-08-22 13:54:02,903 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 13:54:02,903 INFO  [Log] Accpeting the alert 
+2016-08-22 13:54:02,940 INFO  [Log] Alert accepted 
+2016-08-22 13:54:04,730 INFO  [Log] Flight booked successfully 
+2016-08-22 13:54:04,946 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:54:04,947 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:54:04,947 INFO  [Log] X 
+2016-08-22 13:54:04,947 INFO  [Log] X 
+2016-08-22 13:54:04,947 INFO  [Log] X 
+2016-08-22 13:54:04,947 INFO  [Log] X 
+2016-08-22 13:55:09,293 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:55:09,294 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:55:09,294 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:55:09,294 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:55:09,294 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:55:21,218 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:55:21,222 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:55:21,222 INFO  [Log] X 
+2016-08-22 13:55:21,222 INFO  [Log] X 
+2016-08-22 13:55:21,222 INFO  [Log] X 
+2016-08-22 13:55:21,222 INFO  [Log] X 
+2016-08-22 13:55:21,223 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:55:21,223 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:55:21,223 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:55:21,223 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:55:21,223 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:55:21,462 INFO  [Log] Opening regisration page 
+2016-08-22 13:55:21,666 INFO  [Log] Inputting registration details 
+2016-08-22 13:55:24,813 INFO  [Log] Clicking Submit button 
+2016-08-22 13:55:26,423 INFO  [Log] Verifying user display name 
+2016-08-22 13:55:26,496 INFO  [Log] User Display name verification successful 
+2016-08-22 13:55:26,496 INFO  [Log] Verifying login username 
+2016-08-22 13:55:26,593 INFO  [Log] Login username verification successful 
+2016-08-22 13:55:26,594 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:55:26,594 INFO  [Log] X 
+2016-08-22 13:55:26,594 INFO  [Log] X 
+2016-08-22 13:55:26,594 INFO  [Log] X 
+2016-08-22 13:55:26,594 INFO  [Log] X 
+2016-08-22 13:55:26,594 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:55:26,594 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:55:26,594 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:55:26,594 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:55:26,594 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:55:28,416 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 13:55:28,446 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 13:55:28,473 INFO  [Log] Populatig all the provided data 
+2016-08-22 13:55:31,872 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 13:55:31,913 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 13:55:31,951 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 13:55:31,992 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 13:55:34,184 INFO  [Log] Flights selected successfully 
+2016-08-22 13:55:34,221 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 13:55:34,328 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 13:55:34,398 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 13:55:34,445 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 13:55:34,488 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 13:55:34,546 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 13:55:34,596 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 13:55:34,634 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 13:55:34,718 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 13:55:34,718 INFO  [Log] Inputting all the details 
+2016-08-22 13:55:37,724 INFO  [Log] Waiting for alert to appear 
+2016-08-22 13:55:41,977 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 13:55:42,027 INFO  [Log] Switched to alert 
+2016-08-22 13:55:42,055 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 13:55:42,056 INFO  [Log] Accpeting the alert 
+2016-08-22 13:55:42,096 INFO  [Log] Alert accepted 
+2016-08-22 13:55:43,881 INFO  [Log] Flight booked successfully 
+2016-08-22 13:55:44,031 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:55:45,437 INFO  [Log] Logged out successfully 
+2016-08-22 13:55:47,580 INFO  [Log] Browser closed successfully 
+2016-08-22 13:55:47,581 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:55:47,581 INFO  [Log] X 
+2016-08-22 13:55:47,581 INFO  [Log] X 
+2016-08-22 13:55:47,581 INFO  [Log] X 
+2016-08-22 13:55:47,581 INFO  [Log] X 
+2016-08-22 13:56:03,072 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:56:03,073 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:56:03,073 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:56:03,073 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:56:03,073 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:56:16,007 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:56:16,010 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:56:16,010 INFO  [Log] X 
+2016-08-22 13:56:16,010 INFO  [Log] X 
+2016-08-22 13:56:16,010 INFO  [Log] X 
+2016-08-22 13:56:16,010 INFO  [Log] X 
+2016-08-22 13:56:16,011 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:56:16,011 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:56:16,011 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:56:16,011 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:56:16,011 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:56:16,225 INFO  [Log] Opening regisration page 
+2016-08-22 13:56:16,425 INFO  [Log] Inputting registration details 
+2016-08-22 13:56:19,497 INFO  [Log] Clicking Submit button 
+2016-08-22 13:56:21,032 INFO  [Log] Verifying user display name 
+2016-08-22 13:56:21,105 INFO  [Log] User Display name verification successful 
+2016-08-22 13:56:21,106 INFO  [Log] Verifying login username 
+2016-08-22 13:56:21,170 INFO  [Log] Login username verification successful 
+2016-08-22 13:56:21,171 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:56:21,171 INFO  [Log] X 
+2016-08-22 13:56:21,171 INFO  [Log] X 
+2016-08-22 13:56:21,171 INFO  [Log] X 
+2016-08-22 13:56:21,171 INFO  [Log] X 
+2016-08-22 13:56:21,172 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 13:56:21,172 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:56:21,172 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 13:56:21,172 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:56:21,172 INFO  [Log] **************************************************************************************** 
+2016-08-22 13:56:23,001 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 13:56:23,029 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 13:56:23,055 INFO  [Log] Populatig all the provided data 
+2016-08-22 13:56:26,233 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-22 13:56:26,268 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-22 13:56:26,304 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-22 13:56:26,342 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-22 13:56:28,330 INFO  [Log] Flights selected successfully 
+2016-08-22 13:56:28,368 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-22 13:56:28,415 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-22 13:56:28,457 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-22 13:56:28,496 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-22 13:56:28,534 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-22 13:56:28,571 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-22 13:56:28,612 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-22 13:56:28,650 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-22 13:56:28,727 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-22 13:56:28,727 INFO  [Log] Inputting all the details 
+2016-08-22 13:56:32,028 INFO  [Log] Waiting for alert to appear 
+2016-08-22 13:56:43,381 INFO  [Log] Alert visible, switching to alert 
+2016-08-22 13:56:43,407 INFO  [Log] Switched to alert 
+2016-08-22 13:56:43,438 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-22 13:56:43,438 INFO  [Log] Accpeting the alert 
+2016-08-22 13:56:43,478 INFO  [Log] Alert accepted 
+2016-08-22 13:56:45,296 INFO  [Log] Flight booked successfully 
+2016-08-22 13:56:45,454 INFO  [Log] Screenshot captured successfully 
+2016-08-22 13:56:47,054 INFO  [Log] Logged out successfully 
+2016-08-22 13:56:48,529 INFO  [Log] Browser closed successfully 
+2016-08-22 13:56:48,530 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 13:56:48,530 INFO  [Log] X 
+2016-08-22 13:56:48,530 INFO  [Log] X 
+2016-08-22 13:56:48,530 INFO  [Log] X 
+2016-08-22 13:56:48,530 INFO  [Log] X 
+2016-08-22 14:30:23,119 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 14:30:23,120 INFO  [Log] **************************************************************************************** 
+2016-08-22 14:30:23,120 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 14:30:23,120 INFO  [Log] **************************************************************************************** 
+2016-08-22 14:30:23,120 INFO  [Log] **************************************************************************************** 
+2016-08-22 14:30:34,023 ERROR [Log] ERROR: Could not find Username textbox 
+2016-08-22 14:30:34,087 ERROR [Log] Entered username doesn't match with supplied username 
+2016-08-22 14:30:34,390 INFO  [Log] Screenshot captured successfully 
+2016-08-22 14:30:34,392 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 14:30:34,392 INFO  [Log] X 
+2016-08-22 14:30:34,392 INFO  [Log] X 
+2016-08-22 14:30:34,392 INFO  [Log] X 
+2016-08-22 14:30:34,392 INFO  [Log] X 
+2016-08-22 14:30:34,392 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 14:30:34,393 INFO  [Log] **************************************************************************************** 
+2016-08-22 14:30:34,393 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 14:30:34,393 INFO  [Log] **************************************************************************************** 
+2016-08-22 14:30:34,393 INFO  [Log] **************************************************************************************** 
+2016-08-22 14:30:34,667 INFO  [Log] Opening regisration page 
+2016-08-22 14:30:34,936 INFO  [Log] Inputting registration details 
+2016-08-22 14:30:37,940 INFO  [Log] Clicking Submit button 
+2016-08-22 14:30:39,662 INFO  [Log] Verifying user display name 
+2016-08-22 14:30:39,752 INFO  [Log] User Display name verification successful 
+2016-08-22 14:30:39,752 INFO  [Log] Verifying login username 
+2016-08-22 14:30:39,823 INFO  [Log] Login username verification successful 
+2016-08-22 14:30:39,825 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-22 14:30:39,825 INFO  [Log] X 
+2016-08-22 14:30:39,825 INFO  [Log] X 
+2016-08-22 14:30:39,825 INFO  [Log] X 
+2016-08-22 14:30:39,825 INFO  [Log] X 
+2016-08-22 14:30:39,826 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-22 14:30:39,826 INFO  [Log] **************************************************************************************** 
+2016-08-22 14:30:39,826 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-22 14:30:39,826 INFO  [Log] **************************************************************************************** 
+2016-08-22 14:30:39,826 INFO  [Log] **************************************************************************************** 
+2016-08-22 14:30:41,720 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-22 14:30:41,750 INFO  [Log] Return Trip checkbox is slected by default 
+2016-08-22 14:30:41,780 INFO  [Log] Populatig all the provided data 
+2016-08-22 14:30:42,417 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 351 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0269d7a3-2dd4-4cae-ae81-1e1800d64d0a 
+2016-08-22 14:30:43,423 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: commonDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0269d7a3-2dd4-4cae-ae81-1e1800d64d0a 
+2016-08-22 14:30:44,425 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: commonDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0269d7a3-2dd4-4cae-ae81-1e1800d64d0a 
+2016-08-22 14:30:45,438 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: commonDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0269d7a3-2dd4-4cae-ae81-1e1800d64d0a 
+2016-08-22 14:30:46,443 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: commonDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0269d7a3-2dd4-4cae-ae81-1e1800d64d0a 
+2016-08-22 14:30:47,447 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: commonDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0269d7a3-2dd4-4cae-ae81-1e1800d64d0a 
+2016-08-22 14:30:48,460 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: commonDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0269d7a3-2dd4-4cae-ae81-1e1800d64d0a 

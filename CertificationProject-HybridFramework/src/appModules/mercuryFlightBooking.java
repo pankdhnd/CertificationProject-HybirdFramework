@@ -1,18 +1,15 @@
 package appModules;
 
-import java.util.Properties;
 import java.util.regex.Pattern;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
-
 import commonLibs.commonDriver;
 import commonLibs.dataProvider;
-import commonLibs.utils;
 import utility.Log;
 
 public class mercuryFlightBooking {
-
+	
 	private static By linkFlightBooking = By.xpath("//a[contains(.,'Flights')]");
 	private static By headerFlightDetails = By.xpath("//table/tbody/tr[1]/td/font/font/b/font/font");
 	private static By radioJourneyTypeRoundTrip = By.xpath("//input[@value='roundtrip']");
@@ -79,24 +76,14 @@ public class mercuryFlightBooking {
 	private static By selectDeliveryCountry = By.name("delCountry");
 	private static By buttonSecurePurchase = By.name("buyFlights");
 	private static By headerConfirmation = By.xpath("//table/tbody/tr[3]/td/p/font/b/font[2]");
-//	private static By headerFlightConfirmatioNumber = By.xpath("//table/tbody/tr/td[1]/b/font/font/b/font[1]");
-//	private static By headerConfirmDeparting = By.xpath("//table/tbody/tr[3]/td/font/b");
-//	private static By headerConfirmReturning = By.xpath("//table/tbody/tr[5]/td/font");
-//	private static By headerConfirmNumberOfPessengers = By.xpath("//table/tbody/tr[7]/td/font");
-//	private static By headerBilledTo = By.xpath("//table/tbody/tr[9]/td/p");
-//	private static By headerDeliveryTo = By.xpath("//table/tbody/tr[11]/td/p");
-//	private static By headerTotalTaxes = By.xpath("//table/tbody/tr[1]/td[2]/font/font/font/b/font");
-//	private static By headerTotalPrice = By.xpath("//table/tbody/tr[2]/td[2]/font/b/font/font/b/font");
-//	private static By buttonBackToHome = By.xpath("//table/tbody/tr/td[2]/a/img");
-//	private static By buttonBackToFlights = By.xpath("//table/tbody/tr/td[1]/a/img");
-//	private static By buttonLogout = By.xpath("//table/tbody/tr/td[3]/a/img");
-//	private static String departureFlightCost;
-//	private static String arrivalFlightCost;
+	private static By buttonBackToFlights = By.xpath("//table/tbody/tr/td[1]/a/img");
+	private static By buttonBackToHome = By.xpath("//table/tbody/tr/td[2]/a/img");	
+	public static By txtUserName = By.name("userName");
 	
 	
 	static commonDriver oDriver;
 	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
-	private static Properties oDriverProperties;
+	//private static Properties oDriverProperties;
 
 	dataProvider getTestDataFor = new dataProvider();
 	
@@ -104,7 +91,7 @@ public class mercuryFlightBooking {
 	public mercuryFlightBooking(){
 		  DOMConfigurator.configure("log4j.xml");
 		  oDriver = new commonDriver();
-		  oDriverProperties = utils.getProperties(driverPropertyFile);	
+		//  oDriverProperties = utils.getProperties(driverPropertyFile);	
 		  //screenshotPath = oDriverProperties.getProperty("screenshotFolder").trim();
 	}
 	
@@ -216,8 +203,7 @@ public class mercuryFlightBooking {
 				oDriver.click(radioSelectDepartureFlightBlueSky360);				
 			}else if (Data[2].trim().equalsIgnoreCase("Blue Skies Airlines 361")){
 				oDriver.click(radioSelectDepartureFlightBlueSky361);
-			}else if (Data[2].trim().equalsIgnoreCase("Pangaea Airlines 362")){
-				System.out.println("Selecting first flight");
+			}else if (Data[2].trim().equalsIgnoreCase("Pangaea Airlines 362")){				
 				oDriver.click(radioSelectDepartureFlightPangea362);
 			}else if (Data[2].trim().equalsIgnoreCase("Unified Airlines 363")){
 				oDriver.click(radioSelectDepartureFlightUnified363);
@@ -378,11 +364,11 @@ public class mercuryFlightBooking {
 				oDriver.waitTillAlertVisible(30l);
 				Log.info("Alert visible, switching to alert");
 				oDriver.switchToAlert();
-				System.out.println(Data[31]);
-				Log.info("Alert Text: "+ oDriver.getAlertText());
-				
+				Log.info("Switched to alert");
+				Log.info("Alert Text: "+ oDriver.getAlertText());				
 				Log.info("Accpeting the alert");
 				oDriver.acceptAlert();
+				Log.info("Alert accepted");				
 			}
 								
 			oDriver.click(buttonSecurePurchase);			
@@ -397,4 +383,30 @@ public class mercuryFlightBooking {
 		}
 	}
 		
+	public String backToFlights(){
+		try {
+			oDriver.click(buttonBackToFlights);
+			oDriver.waitTillElementVisible(headerFlightDetails, 30l);
+			return "Flight booking page opened successfully";			
+		} catch (Exception e) {
+			Log.error("mercuryFlightBooking()->backToFlights()-> Error occurred while going back to flights page, here are the details: ");
+			Log.error(e.toString());
+			return "ERROR: Error occurred while going back to flights page";
+		}
+	}
+	
+	public String backToHome(){
+		try {
+			oDriver.click(buttonBackToHome);
+			oDriver.waitTillElementVisible(txtUserName, 30l);
+			return "Navigated to Home page successfully";				
+		} catch (Exception e) {
+			Log.error("mercuryFlightBooking()->backToHome()-> Error occurred while going back to home page, here are the details: ");
+			Log.error(e.toString());
+			return "ERROR: Error occurred while going back to home page";
+		}
+	}
+	
+
+	
 }
