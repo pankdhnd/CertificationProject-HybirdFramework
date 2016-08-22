@@ -29,17 +29,12 @@ public class mercuryFlightBooking {
 	private static By buttonContiue = By.name("findFlights");
 	private static By departText = By.xpath("//table[1]/tbody/tr[2]/td[1]/b/font");
 	private static By returnText = By.xpath("//table[2]/tbody/tr/td/table/tbody/tr[2]/td/b/font");
-	private static By radioSelectDepartureFlightBlueSky360 = By
-			.xpath("//input[@value='Blue Skies Airlines$360$270$5:03']");
-	private static By radioSelectDepartureFlightBlueSky361 = By
-			.xpath("//input[@value='Blue Skies Airlines$361$271$7:10']");
+	private static By radioSelectDepartureFlightBlueSky360 = By.xpath("//input[@value='Blue Skies Airlines$360$270$5:03']");
+	private static By radioSelectDepartureFlightBlueSky361 = By.xpath("//input[@value='Blue Skies Airlines$361$271$7:10']");
 	private static By radioSelectDepartureFlightPangea362 = By.xpath("//input[@value='Pangea Airlines$362$274$9:17']");
-	private static By radioSelectDepartureFlightUnified363 = By
-			.xpath("//input[@value='Unified Airlines$363$281$11:24']");
-	private static By radioSelectArrivalFlightBlueSky630 = By
-			.xpath("//input[@value='Blue Skies Airlines$630$270$12:23']");
-	private static By radioSelectArrivalFlightBlueSky631 = By
-			.xpath("//input[@value='Blue Skies Airlines$631$273$14:30']");
+	private static By radioSelectDepartureFlightUnified363 = By.xpath("//input[@value='Unified Airlines$363$281$11:24']");
+	private static By radioSelectArrivalFlightBlueSky630 = By.xpath("//input[@value='Blue Skies Airlines$630$270$12:23']");
+	private static By radioSelectArrivalFlightBlueSky631 = By.xpath("//input[@value='Blue Skies Airlines$631$273$14:30']");
 	private static By radioSelectArrivalFlightPangea632 = By.xpath("//input[@value='Pangea Airlines$632$282$16:37']");
 	private static By radioSelectArrivalFlightUnified633 = By.xpath("//input[@value='Unified Airlines$633$303$18:44']");
 	private static By buttonContinuePage2 = By.name("reserveFlights");

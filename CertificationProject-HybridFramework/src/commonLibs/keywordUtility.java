@@ -10,37 +10,34 @@ import commonLibs.utils;
 import utility.Log;
 
 public class keywordUtility { 
-	private static excelDriver oExcelDriver;
+//*******************************************************************************************************************************************************************
+// This class acts as a Keyword control panel. This class maintains the keywords, or lets call it test steps; along with the action to be performed when that keyword
+// is used. When the provided keyword matches, the method enclosed within is called. This method returns the output of the action performed to the calling class
+//*******************************************************************************************************************************************************************	
+	
+	//Variable declaration section	
 	static commonDriver oDriver;	
 	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
 	private static Properties oDriverProperties;
-	private static String screenshotPath;
-	
-	
+	private static String screenshotPath;	
 	setup Setup = new setup();
 	mercuryRegistration Register = new mercuryRegistration();
 	mercuryFlightBooking bookFlight = new mercuryFlightBooking();
 	dataProvider getTestDataFor = new dataProvider();
 	
-	
-	public keywordUtility(){
+//method keywordUtility
+//This method is constructor of this class
+ public keywordUtility(){
 		oDriver  = new commonDriver();
 		oDriverProperties = utils.getProperties(driverPropertyFile);	
 		screenshotPath = oDriverProperties.getProperty("screenshotFolder").trim();
 	}	
-	 
- public String runMethod(String methodName, String testDataFolder){
-try {		
-		//int Row, rowCount;
-		methodName = methodName.trim();		testDataFolder = testDataFolder.trim();
-		
-		if (methodName.isEmpty() || testDataFolder.isEmpty()){
-			return "ERROR: Invalid Method or Test Data Folder";
-		}
-		
-		oExcelDriver = new excelDriver();
-		oExcelDriver.openExcelSheet(testDataFolder+"\\TestData.xlsx");
-	
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//method runMethod
+//This method accepts the action to be perform, and matches it with the list enclosed, and if found, calls the specific method and returns the result to the calling class
+ public String runMethod(String methodName){
+try {			
 		//Run method openBrowser
 		if (methodName.equalsIgnoreCase("openBrowser")){
 			return  Setup.openBrowser();
@@ -82,13 +79,13 @@ try {
 		}
 		
 		//Run method bookFlight
-				else if (methodName.equalsIgnoreCase("bookFlight")){			
-					return bookFlight.bookFlight();
-				}
+		else if (methodName.equalsIgnoreCase("bookFlight")){			
+			return bookFlight.bookFlight();
+		}
 		//Run method openFlightBookingPage
-				else if (methodName.equalsIgnoreCase("openFlightBookingPage")){			
-					return bookFlight.openFlightBookingPage();
-				}
+		else if (methodName.equalsIgnoreCase("openFlightBookingPage")){			
+			return bookFlight.openFlightBookingPage();
+		}
 				
 		//Run method Login
 		else if(methodName.equalsIgnoreCase("Login")){
@@ -114,7 +111,10 @@ try {
 
 	 return "";
  }
- 
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//method takeScreenshot
+//This method captures the screenshot of the current page
  public String takeScreenshot(String filePath){
 		try {			
 			oDriver.takeScreenshot(filePath +utils.getDateTimeStamp()+".jpg");
