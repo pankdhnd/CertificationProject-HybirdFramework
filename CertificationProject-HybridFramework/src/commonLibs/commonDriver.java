@@ -30,17 +30,22 @@ public class commonDriver {
  private long pageLoadTimeOut;
  private long elementDetectionTimeOut;
 
+ //This is the constructor of the current class. This sets default value for pageLoadTimeOut and elementDetectionTimeout, in case automation engineer doesn't want to set it everywhere. 
  public commonDriver() {
    pageLoadTimeOut = 60l;
    elementDetectionTimeOut = 60l;
   }
   //------------------------------------------------------------------------------------------------------------------------------------------------------//
   //------------------------------------------------------------------------------------------------------------------------------------------------------//
+  //method setPageLoadTimeOut
+  //This method sets the page load time out to user provided value
  public void setPageLoadTimeOut(long pageLoadTimeOut) {
    this.pageLoadTimeOut = pageLoadTimeOut;
   }
   //------------------------------------------------------------------------------------------------------------------------------------------------------//
-  //------------------------------------------------------------------------------------------------------------------------------------------------------//	
+  //------------------------------------------------------------------------------------------------------------------------------------------------------//
+  //method setElementDetectionTimeOut
+  //This methods set the element detection timeout to a user provided value
  public void setElementDetectionTimeOut(long elementDetectionTimeOut) {
    this.elementDetectionTimeOut = elementDetectionTimeOut;
   }
@@ -106,7 +111,6 @@ public class commonDriver {
     e.printStackTrace();
    }
   } //END click
-
  //------------------------------------------------------------------------------------------------------------------------------------------------------//
  //------------------------------------------------------------------------------------------------------------------------------------------------------//
  public void clear(By oBy) {
@@ -416,7 +420,6 @@ public class commonDriver {
    e.printStackTrace();
   }
  }
-
  //------------------------------------------------------------------------------------------------------------------------------------------------------//
  //------------------------------------------------------------------------------------------------------------------------------------------------------//
  public void switchToAlert() {
@@ -506,28 +509,6 @@ public void highlightElement(By oBy){
 	JavascriptExecutor js = (JavascriptExecutor) oDriver;
 	js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
 }
-
-//------------------------------------------------------------------------------------------------------------------------------------------------------//
-//------------------------------------------------------------------------------------------------------------------------------------------------------//
-
- //public void switchToFrame(int frameId) {
-//   try {
-//    oDriver.switchTo().frame(frameId);
-//   } catch (Exception e) {
-//    System.out.println("Could not switch to specified frame; here is some more detail: ");
-//    e.printStackTrace();
-//   }
-//  }
-//  //------------------------------------------------------------------------------------------------------------------------------------------------------//
-//  //------------------------------------------------------------------------------------------------------------------------------------------------------//
-// public void switchToFrame(String frameName) {
-//   try {
-//    oDriver.switchTo().frame(frameName);
-//   } catch (Exception e) {
-//    System.out.println("Could not switch to specified frame; here is some more detail: ");
-//    e.printStackTrace();
-//   }
-//  }
 //------------------------------------------------------------------------------------------------------------------------------------------------------//
 //------------------------------------------------------------------------------------------------------------------------------------------------------//
 
@@ -540,4 +521,4 @@ public void highlightElement(By oBy){
 
 
 
-} //END CLASS
+} //END OF CLASS
