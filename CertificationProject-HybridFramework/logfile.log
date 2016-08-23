@@ -1933,3 +1933,864 @@ System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.
 Driver info: driver.version: commonDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
 Session ID: 0269d7a3-2dd4-4cae-ae81-1e1800d64d0a 
+2016-08-23 11:41:24,305 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:41:24,305 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:41:24,306 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:41:24,306 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:41:24,306 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:41:24,529 ERROR [Log] setup()->verifyLoginElementsExistance()-> ERROR: Could not verify the existance of login elements/controls, here are the details: java.lang.NullPointerException 
+2016-08-23 11:41:24,532 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:41:24,533 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:41:24,533 INFO  [Log] X 
+2016-08-23 11:41:24,533 INFO  [Log] X 
+2016-08-23 11:41:24,533 INFO  [Log] X 
+2016-08-23 11:41:24,533 INFO  [Log] X 
+2016-08-23 11:41:24,533 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:41:24,534 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:41:24,534 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:41:24,534 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:41:24,534 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:41:24,624 INFO  [Log] Opening regisration page 
+2016-08-23 11:41:24,625 INFO  [Log] Inputting registration details 
+2016-08-23 11:41:24,629 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-23 11:41:24,630 INFO  [Log] Clicking Submit button 
+2016-08-23 11:41:24,630 INFO  [Log] Verifying user display name 
+2016-08-23 11:41:24,634 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-23 11:41:24,635 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:41:24,635 INFO  [Log] X 
+2016-08-23 11:41:24,635 INFO  [Log] X 
+2016-08-23 11:41:24,635 INFO  [Log] X 
+2016-08-23 11:41:24,635 INFO  [Log] X 
+2016-08-23 11:41:24,636 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:41:24,636 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:41:24,636 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:41:24,636 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:41:24,636 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:41:24,723 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-23 11:41:24,724 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-23 11:41:24,725 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-23 11:41:24,725 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:41:24,727 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:41:24,727 INFO  [Log] X 
+2016-08-23 11:41:24,727 INFO  [Log] X 
+2016-08-23 11:41:24,727 INFO  [Log] X 
+2016-08-23 11:41:24,727 INFO  [Log] X 
+2016-08-23 11:43:05,945 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:43:05,945 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:43:05,945 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:43:05,945 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:43:05,946 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:43:14,957 ERROR [Log] setup()->verifyLoginElementsExistance()-> ERROR: Could not verify the existance of login elements/controls, here are the details: java.lang.NullPointerException 
+2016-08-23 11:43:14,960 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:43:14,961 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:43:14,961 INFO  [Log] X 
+2016-08-23 11:43:14,961 INFO  [Log] X 
+2016-08-23 11:43:14,961 INFO  [Log] X 
+2016-08-23 11:43:14,961 INFO  [Log] X 
+2016-08-23 11:43:14,961 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:43:14,961 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:43:14,962 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:43:14,962 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:43:14,962 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:43:15,057 INFO  [Log] Opening regisration page 
+2016-08-23 11:43:15,057 INFO  [Log] Inputting registration details 
+2016-08-23 11:43:15,059 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-23 11:43:15,059 INFO  [Log] Clicking Submit button 
+2016-08-23 11:43:15,059 INFO  [Log] Verifying user display name 
+2016-08-23 11:43:15,064 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-23 11:43:15,065 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:43:15,065 INFO  [Log] X 
+2016-08-23 11:43:15,065 INFO  [Log] X 
+2016-08-23 11:43:15,065 INFO  [Log] X 
+2016-08-23 11:43:15,065 INFO  [Log] X 
+2016-08-23 11:43:15,065 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:43:15,065 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:43:15,065 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:43:15,065 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:43:15,065 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:43:15,157 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-23 11:43:15,158 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-23 11:43:15,159 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-23 11:43:15,159 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:43:15,161 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:43:15,161 INFO  [Log] X 
+2016-08-23 11:43:15,161 INFO  [Log] X 
+2016-08-23 11:43:15,161 INFO  [Log] X 
+2016-08-23 11:43:15,161 INFO  [Log] X 
+2016-08-23 11:45:25,175 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:45:25,175 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:45:25,175 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:45:25,175 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:45:25,176 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:45:53,210 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:45:53,211 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:45:53,211 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:45:53,211 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:45:53,211 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:46:03,847 ERROR [Log] setup()->verifyLoginElementsExistance()-> ERROR: Could not verify the existance of login elements/controls, here are the details: java.lang.NullPointerException 
+2016-08-23 11:46:03,885 ERROR [Log] ERROR: inputLoginDetails failed due to some exception. Below are the details: java.lang.NullPointerException 
+2016-08-23 11:46:03,887 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:46:03,887 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:46:03,888 INFO  [Log] X 
+2016-08-23 11:46:03,888 INFO  [Log] X 
+2016-08-23 11:46:03,888 INFO  [Log] X 
+2016-08-23 11:46:03,888 INFO  [Log] X 
+2016-08-23 11:46:03,888 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:46:03,888 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:46:03,888 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:46:03,888 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:46:03,888 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:46:03,975 INFO  [Log] Opening regisration page 
+2016-08-23 11:46:03,976 INFO  [Log] Inputting registration details 
+2016-08-23 11:46:03,977 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-23 11:46:03,978 INFO  [Log] Clicking Submit button 
+2016-08-23 11:46:03,978 INFO  [Log] Verifying user display name 
+2016-08-23 11:46:03,982 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-23 11:46:03,983 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:46:03,983 INFO  [Log] X 
+2016-08-23 11:46:03,983 INFO  [Log] X 
+2016-08-23 11:46:03,983 INFO  [Log] X 
+2016-08-23 11:46:03,983 INFO  [Log] X 
+2016-08-23 11:46:03,984 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:46:03,984 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:46:03,984 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:46:03,984 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:46:03,984 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:46:04,065 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-23 11:46:04,066 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-23 11:46:04,067 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-23 11:46:04,068 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:46:04,069 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:46:04,069 INFO  [Log] X 
+2016-08-23 11:46:04,069 INFO  [Log] X 
+2016-08-23 11:46:04,070 INFO  [Log] X 
+2016-08-23 11:46:04,070 INFO  [Log] X 
+2016-08-23 11:47:40,504 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:47:40,505 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:47:40,505 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:47:40,505 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:47:40,505 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:47:48,836 INFO  [Log] Login details populated successfully 
+2016-08-23 11:47:48,838 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:47:48,839 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:47:48,839 INFO  [Log] X 
+2016-08-23 11:47:48,839 INFO  [Log] X 
+2016-08-23 11:47:48,839 INFO  [Log] X 
+2016-08-23 11:47:48,839 INFO  [Log] X 
+2016-08-23 11:47:48,839 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:47:48,839 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:47:48,839 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:47:48,839 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:47:48,839 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:47:48,931 INFO  [Log] Opening regisration page 
+2016-08-23 11:47:48,932 INFO  [Log] Inputting registration details 
+2016-08-23 11:47:48,934 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-23 11:47:48,934 INFO  [Log] Clicking Submit button 
+2016-08-23 11:47:48,934 INFO  [Log] Verifying user display name 
+2016-08-23 11:47:48,938 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-23 11:47:48,939 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:47:48,939 INFO  [Log] X 
+2016-08-23 11:47:48,939 INFO  [Log] X 
+2016-08-23 11:47:48,939 INFO  [Log] X 
+2016-08-23 11:47:48,939 INFO  [Log] X 
+2016-08-23 11:47:48,939 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:47:48,939 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:47:48,939 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:47:48,939 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:47:48,939 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:47:49,053 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-23 11:47:49,054 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-23 11:47:49,065 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-23 11:47:49,067 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:47:49,069 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:47:49,069 INFO  [Log] X 
+2016-08-23 11:47:49,069 INFO  [Log] X 
+2016-08-23 11:47:49,069 INFO  [Log] X 
+2016-08-23 11:47:49,069 INFO  [Log] X 
+2016-08-23 11:48:48,923 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:48:48,924 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:48:48,924 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:48:48,924 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:48:48,924 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:48:57,365 ERROR [Log] setup()->verifyLoginElementsExistance()-> ERROR: Could not verify the existance of login elements/controls, here are the details: java.lang.NullPointerException 
+2016-08-23 11:48:57,367 ERROR [Log] ERROR: inputLoginDetails failed due to some exception. Below are the details: java.lang.NullPointerException 
+2016-08-23 11:48:57,369 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:48:57,369 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:48:57,370 INFO  [Log] X 
+2016-08-23 11:48:57,370 INFO  [Log] X 
+2016-08-23 11:48:57,370 INFO  [Log] X 
+2016-08-23 11:48:57,370 INFO  [Log] X 
+2016-08-23 11:48:57,370 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:48:57,370 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:48:57,370 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:48:57,370 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:48:57,370 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:48:57,499 INFO  [Log] Opening regisration page 
+2016-08-23 11:48:57,500 INFO  [Log] Inputting registration details 
+2016-08-23 11:48:57,501 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-23 11:48:57,502 INFO  [Log] Clicking Submit button 
+2016-08-23 11:48:57,502 INFO  [Log] Verifying user display name 
+2016-08-23 11:48:57,505 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-23 11:48:57,506 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:48:57,506 INFO  [Log] X 
+2016-08-23 11:48:57,506 INFO  [Log] X 
+2016-08-23 11:48:57,506 INFO  [Log] X 
+2016-08-23 11:48:57,506 INFO  [Log] X 
+2016-08-23 11:48:57,507 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:48:57,507 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:48:57,507 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:48:57,507 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:48:57,507 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:48:57,638 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-23 11:48:57,640 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-23 11:48:57,641 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-23 11:48:57,644 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:48:57,647 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:48:57,648 INFO  [Log] X 
+2016-08-23 11:48:57,648 INFO  [Log] X 
+2016-08-23 11:48:57,648 INFO  [Log] X 
+2016-08-23 11:48:57,648 INFO  [Log] X 
+2016-08-23 11:51:54,028 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:51:54,028 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:51:54,028 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:51:54,028 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:51:54,028 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:52:03,011 INFO  [Log] Login details populated successfully 
+2016-08-23 11:52:03,013 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:52:03,014 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:52:03,014 INFO  [Log] X 
+2016-08-23 11:52:03,014 INFO  [Log] X 
+2016-08-23 11:52:03,014 INFO  [Log] X 
+2016-08-23 11:52:03,014 INFO  [Log] X 
+2016-08-23 11:52:03,014 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:52:03,014 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:52:03,014 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:52:03,014 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:52:03,014 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:52:03,104 INFO  [Log] Opening regisration page 
+2016-08-23 11:52:03,105 INFO  [Log] Inputting registration details 
+2016-08-23 11:52:03,106 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-23 11:52:03,107 INFO  [Log] Clicking Submit button 
+2016-08-23 11:52:03,107 INFO  [Log] Verifying user display name 
+2016-08-23 11:52:03,110 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-23 11:52:03,111 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:52:03,111 INFO  [Log] X 
+2016-08-23 11:52:03,111 INFO  [Log] X 
+2016-08-23 11:52:03,111 INFO  [Log] X 
+2016-08-23 11:52:03,111 INFO  [Log] X 
+2016-08-23 11:52:03,111 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:52:03,111 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:52:03,111 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:52:03,111 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:52:03,112 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:52:03,194 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-23 11:52:03,195 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-23 11:52:03,196 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-23 11:52:03,196 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:52:03,198 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:52:03,198 INFO  [Log] X 
+2016-08-23 11:52:03,198 INFO  [Log] X 
+2016-08-23 11:52:03,198 INFO  [Log] X 
+2016-08-23 11:52:03,198 INFO  [Log] X 
+2016-08-23 11:53:21,476 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:53:21,477 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:53:21,477 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:53:21,477 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:53:21,477 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:53:30,505 INFO  [Log] Login details populated successfully 
+2016-08-23 11:53:30,507 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:53:30,507 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:53:30,508 INFO  [Log] X 
+2016-08-23 11:53:30,508 INFO  [Log] X 
+2016-08-23 11:53:30,508 INFO  [Log] X 
+2016-08-23 11:53:30,508 INFO  [Log] X 
+2016-08-23 11:53:30,508 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:53:30,508 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:53:30,508 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:53:30,508 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:53:30,508 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:53:30,598 INFO  [Log] Opening regisration page 
+2016-08-23 11:53:30,599 INFO  [Log] Inputting registration details 
+2016-08-23 11:53:30,600 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-23 11:53:30,601 INFO  [Log] Clicking Submit button 
+2016-08-23 11:53:30,601 INFO  [Log] Verifying user display name 
+2016-08-23 11:53:30,604 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-23 11:53:30,605 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:53:30,605 INFO  [Log] X 
+2016-08-23 11:53:30,605 INFO  [Log] X 
+2016-08-23 11:53:30,605 INFO  [Log] X 
+2016-08-23 11:53:30,605 INFO  [Log] X 
+2016-08-23 11:53:30,606 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:53:30,606 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:53:30,606 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:53:30,606 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:53:30,606 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:53:30,694 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-23 11:53:30,695 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-23 11:53:30,695 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-23 11:53:30,696 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:53:30,697 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:53:30,697 INFO  [Log] X 
+2016-08-23 11:53:30,697 INFO  [Log] X 
+2016-08-23 11:53:30,697 INFO  [Log] X 
+2016-08-23 11:53:30,697 INFO  [Log] X 
+2016-08-23 11:54:51,741 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:54:51,741 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:54:51,742 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:54:51,742 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:54:51,742 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:55:03,160 INFO  [Log] Login details populated successfully 
+2016-08-23 11:55:03,161 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:55:03,162 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:55:03,162 INFO  [Log] X 
+2016-08-23 11:55:03,162 INFO  [Log] X 
+2016-08-23 11:55:03,162 INFO  [Log] X 
+2016-08-23 11:55:03,162 INFO  [Log] X 
+2016-08-23 11:55:03,163 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:55:03,163 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:55:03,163 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:55:03,163 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:55:03,163 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:55:03,249 INFO  [Log] Opening regisration page 
+2016-08-23 11:55:03,250 INFO  [Log] Inputting registration details 
+2016-08-23 11:55:03,251 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-23 11:55:03,252 INFO  [Log] Clicking Submit button 
+2016-08-23 11:55:03,252 INFO  [Log] Verifying user display name 
+2016-08-23 11:55:03,255 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-23 11:55:03,256 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:55:03,256 INFO  [Log] X 
+2016-08-23 11:55:03,256 INFO  [Log] X 
+2016-08-23 11:55:03,256 INFO  [Log] X 
+2016-08-23 11:55:03,256 INFO  [Log] X 
+2016-08-23 11:55:03,257 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 11:55:03,257 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:55:03,257 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 11:55:03,257 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:55:03,257 INFO  [Log] **************************************************************************************** 
+2016-08-23 11:55:03,343 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-23 11:55:03,344 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-23 11:55:03,344 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-23 11:55:03,345 INFO  [Log] Screenshot captured successfully 
+2016-08-23 11:55:03,346 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 11:55:03,346 INFO  [Log] X 
+2016-08-23 11:55:03,346 INFO  [Log] X 
+2016-08-23 11:55:03,347 INFO  [Log] X 
+2016-08-23 11:55:03,347 INFO  [Log] X 
+2016-08-23 12:48:16,248 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 12:48:16,249 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:48:16,249 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 12:48:16,249 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:48:16,249 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:48:25,250 INFO  [Log] Browser opened successfully 
+2016-08-23 12:48:25,525 INFO  [Log] Login details populated successfully 
+2016-08-23 12:48:25,527 INFO  [Log] Screenshot captured successfully 
+2016-08-23 12:48:25,527 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 12:48:25,528 INFO  [Log] X 
+2016-08-23 12:48:25,528 INFO  [Log] X 
+2016-08-23 12:48:25,528 INFO  [Log] X 
+2016-08-23 12:48:25,528 INFO  [Log] X 
+2016-08-23 12:48:25,528 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 12:48:25,528 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:48:25,528 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 12:48:25,528 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:48:25,528 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:48:25,623 INFO  [Log] Opening regisration page 
+2016-08-23 12:48:25,624 INFO  [Log] Inputting registration details 
+2016-08-23 12:48:25,628 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-23 12:48:25,629 INFO  [Log] Clicking Submit button 
+2016-08-23 12:48:25,629 INFO  [Log] Verifying user display name 
+2016-08-23 12:48:25,632 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-23 12:48:25,633 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 12:48:25,633 INFO  [Log] X 
+2016-08-23 12:48:25,633 INFO  [Log] X 
+2016-08-23 12:48:25,633 INFO  [Log] X 
+2016-08-23 12:48:25,633 INFO  [Log] X 
+2016-08-23 12:48:25,633 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 12:48:25,633 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:48:25,633 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 12:48:25,633 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:48:25,633 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:48:25,716 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-23 12:48:25,717 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-23 12:48:25,718 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-23 12:48:25,719 INFO  [Log] Screenshot captured successfully 
+2016-08-23 12:48:25,720 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 12:48:25,720 INFO  [Log] X 
+2016-08-23 12:48:25,720 INFO  [Log] X 
+2016-08-23 12:48:25,720 INFO  [Log] X 
+2016-08-23 12:48:25,720 INFO  [Log] X 
+2016-08-23 12:48:58,577 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 12:48:58,578 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:48:58,578 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 12:48:58,578 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:48:58,578 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:49:06,932 INFO  [Log] Browser opened successfully 
+2016-08-23 12:49:07,221 INFO  [Log] Login details populated successfully 
+2016-08-23 12:49:07,223 INFO  [Log] Screenshot captured successfully 
+2016-08-23 12:49:07,223 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 12:49:07,224 INFO  [Log] X 
+2016-08-23 12:49:07,224 INFO  [Log] X 
+2016-08-23 12:49:07,224 INFO  [Log] X 
+2016-08-23 12:49:07,224 INFO  [Log] X 
+2016-08-23 12:49:07,224 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 12:49:07,224 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:49:07,224 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 12:49:07,224 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:49:07,224 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:49:07,320 INFO  [Log] Opening regisration page 
+2016-08-23 12:49:07,321 INFO  [Log] Inputting registration details 
+2016-08-23 12:49:07,322 ERROR [Log] Could not select given element; here is some more detail: java.lang.NullPointerException 
+2016-08-23 12:49:07,323 INFO  [Log] Clicking Submit button 
+2016-08-23 12:49:07,323 INFO  [Log] Verifying user display name 
+2016-08-23 12:49:07,326 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-23 12:49:07,327 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 12:49:07,327 INFO  [Log] X 
+2016-08-23 12:49:07,327 INFO  [Log] X 
+2016-08-23 12:49:07,327 INFO  [Log] X 
+2016-08-23 12:49:07,327 INFO  [Log] X 
+2016-08-23 12:49:07,328 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 12:49:07,328 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:49:07,328 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 12:49:07,328 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:49:07,328 INFO  [Log] **************************************************************************************** 
+2016-08-23 12:49:07,425 ERROR [Log] mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page 
+2016-08-23 12:49:07,426 ERROR [Log] mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page 
+2016-08-23 12:49:07,427 ERROR [Log] mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page 
+2016-08-23 12:49:07,429 INFO  [Log] Screenshot captured successfully 
+2016-08-23 12:49:07,433 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 12:49:07,433 INFO  [Log] X 
+2016-08-23 12:49:07,433 INFO  [Log] X 
+2016-08-23 12:49:07,433 INFO  [Log] X 
+2016-08-23 12:49:07,433 INFO  [Log] X 
+2016-08-23 13:19:46,974 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:19:46,974 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:19:46,974 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:19:46,974 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:19:46,974 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:19:56,067 INFO  [Log] Browser opened successfully 
+2016-08-23 13:19:56,380 INFO  [Log] Login details populated successfully 
+2016-08-23 13:19:56,382 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:19:56,383 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:19:56,383 INFO  [Log] X 
+2016-08-23 13:19:56,383 INFO  [Log] X 
+2016-08-23 13:19:56,383 INFO  [Log] X 
+2016-08-23 13:19:56,383 INFO  [Log] X 
+2016-08-23 13:19:56,383 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:19:56,383 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:19:56,383 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:19:56,383 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:19:56,383 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:19:56,531 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:19:56,531 INFO  [Log] X 
+2016-08-23 13:19:56,531 INFO  [Log] X 
+2016-08-23 13:19:56,531 INFO  [Log] X 
+2016-08-23 13:19:56,531 INFO  [Log] X 
+2016-08-23 13:19:56,532 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:19:56,532 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:19:56,532 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:19:56,532 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:19:56,532 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:19:56,657 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:19:56,659 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:19:56,659 INFO  [Log] X 
+2016-08-23 13:19:56,659 INFO  [Log] X 
+2016-08-23 13:19:56,659 INFO  [Log] X 
+2016-08-23 13:19:56,659 INFO  [Log] X 
+2016-08-23 13:20:49,968 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:20:49,968 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:20:49,968 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:20:49,968 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:20:49,968 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:20:58,105 INFO  [Log] Browser opened successfully 
+2016-08-23 13:20:58,386 INFO  [Log] Login details populated successfully 
+2016-08-23 13:20:58,388 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:21:01,019 ERROR [Log] ERROR: Could not find Sign off link; login failed; details: java.lang.ClassCastException: com.sun.proxy.$Proxy2 cannot be cast to org.openqa.selenium.By 
+2016-08-23 13:21:01,021 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:21:01,021 INFO  [Log] X 
+2016-08-23 13:21:01,021 INFO  [Log] X 
+2016-08-23 13:21:01,021 INFO  [Log] X 
+2016-08-23 13:21:01,021 INFO  [Log] X 
+2016-08-23 13:21:01,022 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:21:01,022 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:21:01,022 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:21:01,023 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:21:01,023 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:21:01,138 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:21:01,138 INFO  [Log] X 
+2016-08-23 13:21:01,139 INFO  [Log] X 
+2016-08-23 13:21:01,139 INFO  [Log] X 
+2016-08-23 13:21:01,139 INFO  [Log] X 
+2016-08-23 13:21:01,139 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:21:01,139 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:21:01,139 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:21:01,139 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:21:01,139 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:21:01,219 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:21:01,221 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:21:01,221 INFO  [Log] X 
+2016-08-23 13:21:01,221 INFO  [Log] X 
+2016-08-23 13:21:01,221 INFO  [Log] X 
+2016-08-23 13:21:01,221 INFO  [Log] X 
+2016-08-23 13:23:38,435 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:23:38,436 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:23:38,436 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:23:38,436 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:23:38,436 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:23:46,257 INFO  [Log] Browser opened successfully 
+2016-08-23 13:23:46,538 INFO  [Log] Login details populated successfully 
+2016-08-23 13:23:46,540 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:23:49,669 ERROR [Log] ERROR: Could not find Sign off link; login failed; details: java.lang.ClassCastException: com.sun.proxy.$Proxy2 cannot be cast to org.openqa.selenium.By 
+2016-08-23 13:23:49,670 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:23:49,671 INFO  [Log] X 
+2016-08-23 13:23:49,671 INFO  [Log] X 
+2016-08-23 13:23:49,671 INFO  [Log] X 
+2016-08-23 13:23:49,671 INFO  [Log] X 
+2016-08-23 13:23:49,671 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:23:49,671 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:23:49,671 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:23:49,671 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:23:49,671 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:23:49,770 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:23:49,770 INFO  [Log] X 
+2016-08-23 13:23:49,771 INFO  [Log] X 
+2016-08-23 13:23:49,771 INFO  [Log] X 
+2016-08-23 13:23:49,771 INFO  [Log] X 
+2016-08-23 13:23:49,771 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:23:49,771 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:23:49,771 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:23:49,771 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:23:49,771 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:23:49,851 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:23:49,852 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:23:49,852 INFO  [Log] X 
+2016-08-23 13:23:49,852 INFO  [Log] X 
+2016-08-23 13:23:49,853 INFO  [Log] X 
+2016-08-23 13:23:49,853 INFO  [Log] X 
+2016-08-23 13:31:09,254 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:31:09,255 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:31:09,255 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:31:09,255 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:31:09,255 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:31:18,144 INFO  [Log] Browser opened successfully 
+2016-08-23 13:31:18,492 INFO  [Log] Login details populated successfully 
+2016-08-23 13:31:18,494 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:31:21,440 INFO  [Log] Login successful 
+2016-08-23 13:31:21,442 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:31:21,442 INFO  [Log] X 
+2016-08-23 13:31:21,442 INFO  [Log] X 
+2016-08-23 13:31:21,442 INFO  [Log] X 
+2016-08-23 13:31:21,442 INFO  [Log] X 
+2016-08-23 13:31:21,443 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:31:21,443 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:31:21,443 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:31:21,443 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:31:21,443 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:31:21,554 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:31:21,554 INFO  [Log] X 
+2016-08-23 13:31:21,554 INFO  [Log] X 
+2016-08-23 13:31:21,554 INFO  [Log] X 
+2016-08-23 13:31:21,554 INFO  [Log] X 
+2016-08-23 13:31:21,554 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:31:21,554 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:31:21,554 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:31:21,555 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:31:21,555 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:31:21,639 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:31:21,640 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:31:21,640 INFO  [Log] X 
+2016-08-23 13:31:21,640 INFO  [Log] X 
+2016-08-23 13:31:21,640 INFO  [Log] X 
+2016-08-23 13:31:21,640 INFO  [Log] X 
+2016-08-23 13:36:25,117 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:36:25,118 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:36:25,118 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:36:25,118 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:36:25,118 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:36:34,630 INFO  [Log] Browser opened successfully 
+2016-08-23 13:36:34,969 INFO  [Log] Login details populated successfully 
+2016-08-23 13:36:34,971 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:36:38,163 INFO  [Log] Login successful 
+2016-08-23 13:36:38,164 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:36:38,164 INFO  [Log] X 
+2016-08-23 13:36:38,164 INFO  [Log] X 
+2016-08-23 13:36:38,164 INFO  [Log] X 
+2016-08-23 13:36:38,164 INFO  [Log] X 
+2016-08-23 13:36:38,165 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:36:38,165 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:36:38,165 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:36:38,165 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:36:38,165 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:36:38,258 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:36:38,258 INFO  [Log] X 
+2016-08-23 13:36:38,258 INFO  [Log] X 
+2016-08-23 13:36:38,258 INFO  [Log] X 
+2016-08-23 13:36:38,258 INFO  [Log] X 
+2016-08-23 13:36:38,258 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:36:38,258 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:36:38,258 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:36:38,259 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:36:38,259 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:36:38,348 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:36:38,350 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:36:38,350 INFO  [Log] X 
+2016-08-23 13:36:38,350 INFO  [Log] X 
+2016-08-23 13:36:38,350 INFO  [Log] X 
+2016-08-23 13:36:38,350 INFO  [Log] X 
+2016-08-23 13:37:09,641 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:37:09,641 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:37:09,641 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:37:09,641 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:37:09,641 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:37:20,424 INFO  [Log] Browser opened successfully 
+2016-08-23 13:37:20,766 INFO  [Log] Login details populated successfully 
+2016-08-23 13:37:20,768 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 13:37:20,784 ERROR [Log] Entered username doesn't match with supplied username 
+2016-08-23 13:37:20,785 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:37:23,912 INFO  [Log] Login successful 
+2016-08-23 13:37:23,914 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:37:23,914 INFO  [Log] X 
+2016-08-23 13:37:23,914 INFO  [Log] X 
+2016-08-23 13:37:23,914 INFO  [Log] X 
+2016-08-23 13:37:23,914 INFO  [Log] X 
+2016-08-23 13:37:23,914 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:37:23,914 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:37:23,914 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:37:23,915 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:37:23,915 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:37:24,017 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:37:24,017 INFO  [Log] X 
+2016-08-23 13:37:24,017 INFO  [Log] X 
+2016-08-23 13:37:24,017 INFO  [Log] X 
+2016-08-23 13:37:24,017 INFO  [Log] X 
+2016-08-23 13:37:24,017 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:37:24,018 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:37:24,018 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:37:24,018 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:37:24,018 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:37:24,107 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:37:24,108 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:37:24,108 INFO  [Log] X 
+2016-08-23 13:37:24,108 INFO  [Log] X 
+2016-08-23 13:37:24,108 INFO  [Log] X 
+2016-08-23 13:37:24,108 INFO  [Log] X 
+2016-08-23 13:37:55,296 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:37:55,296 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:37:55,297 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:37:55,297 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:37:55,297 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:38:03,829 INFO  [Log] Browser opened successfully 
+2016-08-23 13:38:04,154 INFO  [Log] Login details populated successfully 
+2016-08-23 13:38:04,155 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 13:38:04,187 ERROR [Log] Entered username doesn't match with supplied username 
+2016-08-23 13:38:04,188 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:38:07,116 INFO  [Log] Login successful 
+2016-08-23 13:38:07,117 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:38:07,117 INFO  [Log] X 
+2016-08-23 13:38:07,117 INFO  [Log] X 
+2016-08-23 13:38:07,117 INFO  [Log] X 
+2016-08-23 13:38:07,117 INFO  [Log] X 
+2016-08-23 13:38:07,118 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:38:07,118 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:38:07,118 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:38:07,118 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:38:07,118 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:38:07,215 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:38:07,215 INFO  [Log] X 
+2016-08-23 13:38:07,215 INFO  [Log] X 
+2016-08-23 13:38:07,215 INFO  [Log] X 
+2016-08-23 13:38:07,215 INFO  [Log] X 
+2016-08-23 13:38:07,216 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:38:07,216 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:38:07,216 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:38:07,216 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:38:07,216 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:38:07,299 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:38:07,300 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:38:07,300 INFO  [Log] X 
+2016-08-23 13:38:07,300 INFO  [Log] X 
+2016-08-23 13:38:07,300 INFO  [Log] X 
+2016-08-23 13:38:07,300 INFO  [Log] X 
+2016-08-23 13:39:45,071 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:39:45,071 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:39:45,071 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:39:45,071 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:39:45,071 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:39:53,681 INFO  [Log] Browser opened successfully 
+2016-08-23 13:39:54,015 INFO  [Log] Login details populated successfully 
+2016-08-23 13:39:54,017 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 13:39:54,062 ERROR [Log] Entered username doesn't match with supplied username 
+2016-08-23 13:39:54,063 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:39:57,280 INFO  [Log] Login successful 
+2016-08-23 13:39:57,281 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:39:57,281 INFO  [Log] X 
+2016-08-23 13:39:57,281 INFO  [Log] X 
+2016-08-23 13:39:57,281 INFO  [Log] X 
+2016-08-23 13:39:57,281 INFO  [Log] X 
+2016-08-23 13:39:57,282 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:39:57,282 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:39:57,282 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:39:57,282 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:39:57,282 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:39:57,392 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:39:57,392 INFO  [Log] X 
+2016-08-23 13:39:57,392 INFO  [Log] X 
+2016-08-23 13:39:57,392 INFO  [Log] X 
+2016-08-23 13:39:57,392 INFO  [Log] X 
+2016-08-23 13:39:57,392 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:39:57,392 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:39:57,393 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:39:57,393 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:39:57,393 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:39:57,470 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:39:57,471 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:39:57,471 INFO  [Log] X 
+2016-08-23 13:39:57,471 INFO  [Log] X 
+2016-08-23 13:39:57,471 INFO  [Log] X 
+2016-08-23 13:39:57,471 INFO  [Log] X 
+2016-08-23 13:41:20,523 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:41:20,524 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:41:20,524 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:41:20,524 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:41:20,524 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:41:28,410 INFO  [Log] Browser opened successfully 
+2016-08-23 13:41:28,743 INFO  [Log] Login details populated successfully 
+2016-08-23 13:41:28,745 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 13:41:28,776 ERROR [Log] Entered username doesn't match with supplied username 
+2016-08-23 13:41:28,777 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:41:31,928 INFO  [Log] Login successful 
+2016-08-23 13:41:31,929 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:41:31,929 INFO  [Log] X 
+2016-08-23 13:41:31,929 INFO  [Log] X 
+2016-08-23 13:41:31,929 INFO  [Log] X 
+2016-08-23 13:41:31,929 INFO  [Log] X 
+2016-08-23 13:41:31,929 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:41:31,929 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:41:31,929 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:41:31,929 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:41:31,929 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:41:32,031 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:41:32,031 INFO  [Log] X 
+2016-08-23 13:41:32,031 INFO  [Log] X 
+2016-08-23 13:41:32,031 INFO  [Log] X 
+2016-08-23 13:41:32,031 INFO  [Log] X 
+2016-08-23 13:41:32,032 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:41:32,032 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:41:32,032 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:41:32,032 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:41:32,032 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:41:32,118 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:41:32,119 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:41:32,120 INFO  [Log] X 
+2016-08-23 13:41:32,120 INFO  [Log] X 
+2016-08-23 13:41:32,120 INFO  [Log] X 
+2016-08-23 13:41:32,120 INFO  [Log] X 
+2016-08-23 13:45:44,057 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:45:44,057 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:45:44,057 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:45:44,057 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:45:44,057 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:45:53,101 INFO  [Log] Browser opened successfully 
+2016-08-23 13:45:53,470 INFO  [Log] Login details populated successfully 
+2016-08-23 13:45:53,471 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 13:45:53,508 ERROR [Log] Entered username doesn't match with supplied username 
+2016-08-23 13:45:53,510 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:45:56,729 INFO  [Log] Login successful 
+2016-08-23 13:45:56,730 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:45:56,730 INFO  [Log] X 
+2016-08-23 13:45:56,730 INFO  [Log] X 
+2016-08-23 13:45:56,730 INFO  [Log] X 
+2016-08-23 13:45:56,730 INFO  [Log] X 
+2016-08-23 13:45:56,731 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:45:56,731 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:45:56,731 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:45:56,731 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:45:56,731 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:45:56,824 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:45:56,824 INFO  [Log] X 
+2016-08-23 13:45:56,824 INFO  [Log] X 
+2016-08-23 13:45:56,824 INFO  [Log] X 
+2016-08-23 13:45:56,824 INFO  [Log] X 
+2016-08-23 13:45:56,824 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:45:56,825 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:45:56,825 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:45:56,825 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:45:56,825 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:45:56,909 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:45:56,911 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:45:56,911 INFO  [Log] X 
+2016-08-23 13:45:56,911 INFO  [Log] X 
+2016-08-23 13:45:56,911 INFO  [Log] X 
+2016-08-23 13:45:56,911 INFO  [Log] X 
+2016-08-23 13:51:24,345 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:51:24,345 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:51:24,345 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:51:24,345 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:51:24,345 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:51:33,596 INFO  [Log] Browser opened successfully 
+2016-08-23 13:51:33,967 INFO  [Log] Login details populated successfully 
+2016-08-23 13:51:33,968 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 13:51:34,008 ERROR [Log] Entered username doesn't match with supplied username 
+2016-08-23 13:51:34,009 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:51:37,118 INFO  [Log] Login successful 
+2016-08-23 13:51:37,119 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:51:37,119 INFO  [Log] X 
+2016-08-23 13:51:37,119 INFO  [Log] X 
+2016-08-23 13:51:37,119 INFO  [Log] X 
+2016-08-23 13:51:37,119 INFO  [Log] X 
+2016-08-23 13:51:37,120 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:51:37,120 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:51:37,120 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:51:37,120 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:51:37,120 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:51:37,220 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:51:37,220 INFO  [Log] X 
+2016-08-23 13:51:37,220 INFO  [Log] X 
+2016-08-23 13:51:37,220 INFO  [Log] X 
+2016-08-23 13:51:37,220 INFO  [Log] X 
+2016-08-23 13:51:37,220 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:51:37,220 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:51:37,220 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:51:37,220 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:51:37,220 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:51:37,310 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:51:37,312 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:51:37,312 INFO  [Log] X 
+2016-08-23 13:51:37,313 INFO  [Log] X 
+2016-08-23 13:51:37,313 INFO  [Log] X 
+2016-08-23 13:51:37,313 INFO  [Log] X 
+2016-08-23 13:52:44,024 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:52:44,025 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:52:44,025 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:52:44,025 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:52:44,025 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:52:53,313 INFO  [Log] Browser opened successfully 
+2016-08-23 13:52:53,676 INFO  [Log] Login details populated successfully 
+2016-08-23 13:52:53,677 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 13:52:53,720 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:52:57,033 INFO  [Log] Login successful 
+2016-08-23 13:52:57,034 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:52:57,034 INFO  [Log] X 
+2016-08-23 13:52:57,034 INFO  [Log] X 
+2016-08-23 13:52:57,034 INFO  [Log] X 
+2016-08-23 13:52:57,034 INFO  [Log] X 
+2016-08-23 13:52:57,034 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:52:57,034 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:52:57,034 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:52:57,034 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:52:57,035 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:52:57,154 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:52:57,154 INFO  [Log] X 
+2016-08-23 13:52:57,154 INFO  [Log] X 
+2016-08-23 13:52:57,154 INFO  [Log] X 
+2016-08-23 13:52:57,154 INFO  [Log] X 
+2016-08-23 13:52:57,155 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 13:52:57,155 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:52:57,155 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 13:52:57,155 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:52:57,155 INFO  [Log] **************************************************************************************** 
+2016-08-23 13:52:57,248 INFO  [Log] Screenshot captured successfully 
+2016-08-23 13:52:57,249 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 13:52:57,249 INFO  [Log] X 
+2016-08-23 13:52:57,249 INFO  [Log] X 
+2016-08-23 13:52:57,249 INFO  [Log] X 
+2016-08-23 13:52:57,249 INFO  [Log] X 

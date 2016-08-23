@@ -109,7 +109,7 @@ public class automationEngine {
 			else
 			{				
 				try {
-					returnValue = kUtil.runMethod(methodName,testDataFolder);
+					returnValue = kUtil.runMethod(methodName);
 									
 					if (returnValue.contains("ERROR")){
 						Comment = returnValue;

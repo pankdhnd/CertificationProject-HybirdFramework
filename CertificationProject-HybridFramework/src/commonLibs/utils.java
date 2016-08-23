@@ -6,6 +6,9 @@ import java.util.Date;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class utils {
 
@@ -114,6 +117,11 @@ public static String getDateTimeStamp(){
 		
 }
 
+public static void highlightElement(WebDriver oDriver,WebElement Element){
+//	WebElement element = oDriver.findElement(oBy);
+	JavascriptExecutor js = (JavascriptExecutor) oDriver;
+	js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", Element);
+}
 
 
 }//END CLASS
