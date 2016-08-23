@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.google.gson.annotations.Until;
+
 import utility.Log;
 import commonLibs.dataProvider;
 import commonLibs.utils;
@@ -142,30 +144,17 @@ public class setup {
 //
 //	// method Logout
 //	// this method logs out user form the system.
-//	public String logout() {
-//		try {
-//			oDriver.click(signOffLink);
-//			oDriver.waitTillElementVisible(txtUsername, 30l);
-//			Log.info("Logged out successfully");
-//			return "logged out successfully";
-//		} catch (Exception e) {
-//			Log.error("setup()->Logout()-> Logout failed; here are some more details: " + e);
-//			return "ERROR: Logout failed";
-//		}
-//
-//	}
-//
-//	// method closeBrowser
-//	// This method closes currently open browser, and kills the driver.
-//	public String closeBrowser() {
-//		try {
-//			oDriver.closeBrowser();
-//			Log.info("Browser closed successfully");
-//			return "Browser closed successfully";
-//		} catch (Exception e) {
-//			Log.error("setup()->closeBrowser()-> Error occured while closing the browser; here are some more details: "
-//					+ e);
-//			return "ERROR: Could not close the browser";
-//		}
-//	}
+	public String logout() {
+		try {
+			signOffLink.click();
+			WebDriverWait Wait = new WebDriverWait(wDriver, 60l);
+			Wait.until(ExpectedConditions.titleIs("Sign-on: Mercury Tours"));			
+			Log.info("Logged out successfully");
+			return "logged out successfully";
+		} catch (Exception e) {
+			Log.error("setup()->Logout()-> Logout failed; here are some more details: " + e);
+			return "ERROR: Logout failed";
+		}
+	}
+
 }

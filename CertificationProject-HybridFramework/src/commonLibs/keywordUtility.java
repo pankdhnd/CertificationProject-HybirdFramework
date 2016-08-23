@@ -188,9 +188,26 @@ try {
 	   }
 	  } //END openBrowser
 
- public void initializePageObjects(WebDriver wDriver)
- {
-	   Setup = new setup(oDriver);
-	   
+ public void initializePageObjects(WebDriver wDriver) {
+	   Setup = new setup(oDriver);	   
  }
+ 
+	// method closeBrowser
+	// This method closes currently open browser, and kills the driver.
+	public String closeBrowser() {
+		try {
+			   if (!oDriver.equals(null)) {
+	    		oDriver.quit();
+			}		
+			Log.info("Browser closed successfully");
+			return "Browser closed successfully";
+		} catch (Exception e) {
+			Log.error("Error occured while closing the browser; here are some more details: "
+					+ e);
+			return "ERROR: Could not close the browser";
+		}
+	}
+ 
+ 
+ 
 }
