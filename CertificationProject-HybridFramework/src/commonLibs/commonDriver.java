@@ -569,8 +569,7 @@ public void dismissAlert() {
     File scrFile = ((TakesScreenshot) oDriver).getScreenshotAs(OutputType.FILE);
     FileUtils.copyFile(scrFile, new File(filePath));
    } catch (Exception e) {
-    System.out.println("Could not take screenshot; here is some more detail: ");
-    e.printStackTrace();
+    System.out.println("Could not take screenshot; here is some more detail: " + e);    
    }
   }
   //------------------------------------------------------------------------------------------------------------------------------------------------------//

@@ -3,7 +3,12 @@ package appModules;
 import java.util.regex.Pattern;
 
 import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindWebElement;
+
 import commonLibs.commonDriver;
 import commonLibs.dataProvider;
 import utility.Log;
@@ -11,79 +16,215 @@ import utility.Log;
 public class mercuryFlightBooking {
 
 	// Veriable declaration section
-	private static By linkFlightBooking = By.xpath("//a[contains(.,'Flights')]");
-	private static By headerFlightDetails = By.xpath("//table/tbody/tr[1]/td/font/font/b/font/font");
-	private static By radioJourneyTypeRoundTrip = By.xpath("//input[@value='roundtrip']");
-	private static By radioJourneyTypeOneWay = By.xpath("//input[@value='oneway']");
-	private static By selectPassengers = By.name("passCount");
-	private static By selectDepartingFrom = By.name("fromPort");
-	private static By selectOnMonth = By.name("fromMonth");
-	private static By selectOnDay = By.name("fromDay");
-	private static By selectArrivingIn = By.name("toPort");
-	private static By selectReturningMonth = By.name("toMonth");
-	private static By selectReturningDay = By.name("toDay");
-	private static By selectServiceClassEconomy = By.xpath("//input[@value='Coach']");
-	private static By selectServiceClassBusiness = By.xpath("//input[@value='Business']");
-	private static By selectServiceClassFirst = By.xpath("//input[@value='First']");
-	private static By selectAirline = By.name("airline");
-	private static By buttonContiue = By.name("findFlights");
-	private static By departText = By.xpath("//table[1]/tbody/tr[2]/td[1]/b/font");
-	private static By returnText = By.xpath("//table[2]/tbody/tr/td/table/tbody/tr[2]/td/b/font");
-	private static By radioSelectDepartureFlightBlueSky360 = By.xpath("//input[@value='Blue Skies Airlines$360$270$5:03']");
-	private static By radioSelectDepartureFlightBlueSky361 = By.xpath("//input[@value='Blue Skies Airlines$361$271$7:10']");
-	private static By radioSelectDepartureFlightPangea362 = By.xpath("//input[@value='Pangea Airlines$362$274$9:17']");
-	private static By radioSelectDepartureFlightUnified363 = By.xpath("//input[@value='Unified Airlines$363$281$11:24']");
-	private static By radioSelectArrivalFlightBlueSky630 = By.xpath("//input[@value='Blue Skies Airlines$630$270$12:23']");
-	private static By radioSelectArrivalFlightBlueSky631 = By.xpath("//input[@value='Blue Skies Airlines$631$273$14:30']");
-	private static By radioSelectArrivalFlightPangea632 = By.xpath("//input[@value='Pangea Airlines$632$282$16:37']");
-	private static By radioSelectArrivalFlightUnified633 = By.xpath("//input[@value='Unified Airlines$633$303$18:44']");
-	private static By buttonContinuePage2 = By.name("reserveFlights");
-	private static By textDepart = By.xpath("//table/tbody/tr[1]/td[1]/font/b/font");
-	private static By textSummary = By.xpath("//table/tbody/tr[1]/td/font/font/b/font/font");
-	private static By flightBookingFromTo = By.xpath("//table/tbody/tr[1]/td[1]/b/font");
-	private static By flightBookingToFrom = By.xpath("//table/tbody/tr[4]/td[1]/b/font");
-	private static By bookingDepartureFlight = By.xpath("//table/tbody/tr[3]/td[1]/font/b");
-	private static By bookingReturnFlight = By.xpath("//table/tbody/tr[6]/td[1]/font/font/font[1]/b");
-	private static By summaryDepartureFlightCost = By.xpath("//table/tbody/tr[3]/td[3]/font");
-	private static By summaryArrivalFlightCost = By.xpath("//table/tbody/tr[6]/td[3]/font");
-	private static By summaryNumberOfPassengers = By.xpath("//table/tbody/tr[7]/td[2]/font");
-	private static By summaryTaxes = By.xpath("//table/tbody/tr[8]/td[2]/font");
-	private static By summaryTotalCost = By.xpath("//table/tbody/tr[9]/td[2]/font/b");
-	private static By txtFirstname = By.name("passFirst0");
-	private static By txtLastName = By.name("passLast0");
-	private static By selectMeal = By.name("pass.0.meal");
-	private static By selectCreditCard = By.name("creditCard");
-	private static By txtCreditCardNumber = By.name("creditnumber");
-	private static By selectExpiryMonth = By.name("cc_exp_dt_mn");
-	private static By selectExpiryYear = By.name("cc_exp_dt_yr");
-	private static By txtCCFirstName = By.name("cc_frst_name");
-	private static By txtCCMiddleName = By.name("cc_mid_name");
-	private static By txtCCLastName = By.name("cc_last_name");
-	private static By checkboxTicketlessBilling = By.xpath("//tr[9]/td[2]/input[@name='ticketLess']");
-	private static By txtBillingAddress1 = By.name("billAddress1");
-	private static By txtBillingAddress2 = By.name("billAddress2");;
-	private static By txtBillingCity = By.name("billCity");
-	private static By txtBillingState = By.name("billState");
-	private static By txtBillingPostalCode = By.name("billZip");
-	private static By selectBillingCountry = By.name("billCountry");
-	private static By checkboxSameBillingDelivery = By.xpath("//tr[15]/td[2]/input[@name='ticketLess']");
-	private static By txtDeliveryAddress1 = By.name("delAddress1");
-	private static By txtDeliveryAddress2 = By.name("delAddress2");;
-	private static By txtDeliveryCity = By.name("delCity");
-	private static By txtDeliveryState = By.name("delState");
-	private static By txtDeliveryPostalCode = By.name("delZip");
-	private static By selectDeliveryCountry = By.name("delCountry");
-	private static By buttonSecurePurchase = By.name("buyFlights");
-	private static By headerConfirmation = By.xpath("//table/tbody/tr[3]/td/p/font/b/font[2]");
-	private static By buttonBackToFlights = By.xpath("//table/tbody/tr/td[1]/a/img");
-	private static By buttonBackToHome = By.xpath("//table/tbody/tr/td[2]/a/img");
-	public static By txtUserName = By.name("userName");
-	static commonDriver oDriver;
+	
+	@FindBy (xpath = "//a[contains(.,'Flights')]")	
+	private static WebElement linkFlightBooking;
+	
+	@FindBy (xpath = "//table/tbody/tr[1]/td/font/font/b/font/font")
+	private static WebElement headerFlightDetails;
+	
+	@FindBy (xpath = "//input[@value='roundtrip']")
+	private static WebElement radioJourneyTypeRoundTrip;
+	
+	@FindBy (xpath = "//input[@value='oneway']")
+	private static WebElement radioJourneyTypeOneWay;
+	
+	@FindBy (name = "passCount")
+	private static WebElement selectPassengers;
+	
+	@FindBy (name = "fromPort")	
+	private static WebElement selectDepartingFrom;
+	
+	@FindBy (name = "fromMonth")
+	private static WebElement selectOnMonth;
+
+	@FindBy (name = "fromDay")
+	private static WebElement selectOnDay;
+	
+	@FindBy (name = "toPort")
+	private static WebElement selectArrivingIn;
+	
+	@FindBy (name = "toMonth")
+	private static WebElement selectReturningMonth;
+	
+	@FindBy (name = "toDay")
+	private static WebElement selectReturningDay;
+	
+	@FindBy (xpath = "//input[@value='Coach']")
+	private static WebElement selectServiceClassEconomy;
+	
+	@FindBy (xpath = "//input[@value='Business']")
+	private static WebElement selectServiceClassBusiness;
+	
+	@FindBy (xpath = "//input[@value='First']")
+	private static WebElement selectServiceClassFirst;
+	
+	@FindBy (name = "airline")
+	private static WebElement selectAirline;
+	
+	@FindBy (name = "findFlights")
+	private static WebElement buttonContiue;
+	
+	@FindBy (xpath = "//table[1]/tbody/tr[2]/td[1]/b/font")
+	private static WebElement departText;
+	
+	@FindBy (xpath = "//table[2]/tbody/tr/td/table/tbody/tr[2]/td/b/font")
+	private static WebElement returnText;
+	
+	@FindBy (xpath = "//input[@value='Blue Skies Airlines$360$270$5:03']")	
+	private static WebElement radioSelectDepartureFlightBlueSky360;
+	
+	@FindBy (xpath = "//input[@value='Blue Skies Airlines$361$271$7:10']")
+	private static WebElement radioSelectDepartureFlightBlueSky361;
+
+	@FindBy (xpath = "//input[@value='Pangea Airlines$362$274$9:17']")
+	private static WebElement radioSelectDepartureFlightPangea362;
+	
+	@FindBy (xpath = "//input[@value='Unified Airlines$363$281$11:24']")
+	private static WebElement radioSelectDepartureFlightUnified363;
+	
+	@FindBy(xpath = "//input[@value='Blue Skies Airlines$630$270$12:23']")
+	private static WebElement radioSelectArrivalFlightBlueSky630;
+
+	@FindBy (xpath = "//input[@value='Blue Skies Airlines$631$273$14:30']")
+	private static WebElement radioSelectArrivalFlightBlueSky631;
+	
+	@FindBy (xpath = "//input[@value='Pangea Airlines$632$282$16:37']")
+	private static WebElement radioSelectArrivalFlightPangea632;
+	
+	@FindBy (xpath = "//input[@value='Unified Airlines$633$303$18:44']")
+	private static WebElement radioSelectArrivalFlightUnified633;
+	
+	@FindBy (name = "reserveFlights")
+	private static WebElement buttonContinuePage2;
+	
+	@FindBy (xpath = "//table/tbody/tr[1]/td[1]/font/b/font")
+	private static WebElement textDepart;
+	
+	@FindBy (xpath = "//table/tbody/tr[1]/td/font/font/b/font/font")
+	private static WebElement textSummary;
+	
+	@FindBy (xpath = "//table/tbody/tr[1]/td[1]/b/font")
+	private static WebElement flightBookingFromTo;
+	
+	@FindBy (xpath = "//table/tbody/tr[4]/td[1]/b/font")
+	private static WebElement flightBookingToFrom;
+	
+	@FindBy (xpath = "//table/tbody/tr[3]/td[1]/font/b")
+	private static WebElement bookingDepartureFlight;
+	
+	@FindBy (xpath = "//table/tbody/tr[6]/td[1]/font/font/font[1]/b")	
+	private static WebElement bookingReturnFlight;
+	
+	@FindBy (xpath = "//table/tbody/tr[3]/td[3]/font")	
+	private static WebElement summaryDepartureFlightCost;
+	
+	@FindBy (xpath = "//table/tbody/tr[6]/td[3]/font")
+	private static WebElement summaryArrivalFlightCost;
+	
+	@FindBy (xpath = "//table/tbody/tr[7]/td[2]/font")	
+	private static WebElement summaryNumberOfPassengers;
+	
+	@FindBy (xpath = "//table/tbody/tr[8]/td[2]/font")
+	private static WebElement summaryTaxes;
+	
+	@FindBy (xpath = "//table/tbody/tr[9]/td[2]/font/b")
+	private static WebElement summaryTotalCost;
+	
+	@FindBy (name = "passFirst0")
+	private static WebElement txtFirstname; 
+	
+	@FindBy (name = "passLast0")
+	private static WebElement txtLastName;
+	
+	@FindBy (name = "pass.0.meal")
+	private static WebElement selectMeal;
+	
+	@FindBy (name = "creditCard")
+	private static WebElement selectCreditCard;
+
+	@FindBy (name = "creditnumber")
+	private static WebElement txtCreditCardNumber;
+	
+	@FindBy (name = "cc_exp_dt_mn")
+	private static WebElement selectExpiryMonth;
+	
+	@FindBy (name = "cc_exp_dt_yr")
+	private static WebElement selectExpiryYear;
+	
+	@FindBy (name = "cc_frst_name")
+	private static WebElement txtCCFirstName;
+	
+	@FindBy (name = "cc_mid_name")
+	private static WebElement txtCCMiddleName;
+
+	@FindBy (name = "cc_last_name")
+	private static WebElement txtCCLastName;
+	
+	@FindBy (xpath = "//tr[9]/td[2]/input[@name='ticketLess']")
+	private static WebElement checkboxTicketlessBilling;
+	
+	@FindBy (name = "billAddress1")
+	private static WebElement txtBillingAddress1;
+	
+	@FindBy (name = "billAddress2")
+	private static WebElement txtBillingAddress2;
+	
+	@FindBy (name = "billCity")
+	private static WebElement txtBillingCity;
+	
+	@FindBy (name = "billState")
+	private static WebElement txtBillingState;
+
+	@FindBy (name = "billZip")
+	private static WebElement txtBillingPostalCode;
+	
+	@FindBy (name = "billCountry")	
+	private static WebElement selectBillingCountry;
+	
+	@FindBy (xpath = "//tr[15]/td[2]/input[@name='ticketLess']")
+	private static WebElement checkboxSameBillingDelivery;
+	
+	@FindBy (name = "delAddress1")
+	private static WebElement txtDeliveryAddress1;
+	
+	@FindBy (name = "delAddress2")
+	private static WebElement txtDeliveryAddress2;
+	
+	@FindBy (name = "delCity")
+	private static WebElement txtDeliveryCity;
+	
+	@FindBy (name = "delState")
+	private static WebElement txtDeliveryState;
+	
+	@FindBy (name = "delZip")
+	private static WebElement txtDeliveryPostalCode;
+	
+	@Findby (name = "delCountry")
+	private static WebElement selectDeliveryCountry;
+	
+	@FindBy (name = "buyFlights")
+	private static WebElement buttonSecurePurchase;
+	
+	@FindBy (xpath = "//table/tbody/tr[3]/td/p/font/b/font[2]")
+	private static WebElement headerConfirmation;
+	
+	@FindBy (xpath = "//table/tbody/tr/td[1]/a/img")
+	private static WebElement buttonBackToFlights;
+	
+	@FindBy (xpath = "//table/tbody/tr/td[2]/a/img")
+	private static WebElement buttonBackToHome;
+	
+	@FindBy (name = "userName")
+	public static WebElement txtUserName;
+
+	WebDriver wDriver;
 	dataProvider getTestDataFor = new dataProvider();
 
 	// method mercuryFlightBooking
 	// This is the constructor of the class
-	public mercuryFlightBooking() {
+	public mercuryFlightBooking(WebDriver driver) {
+		this.wDriver = driver;
 		DOMConfigurator.configure("log4j.xml");
 		oDriver = new commonDriver();
 	}// END OF CONSTRUCTOR
@@ -123,17 +264,17 @@ public class mercuryFlightBooking {
 			// Fetch the data from excel using dataProvider class
 			String Data[] = getTestDataFor.inputFlightDetails();
 
-			// Check which of the radio button is selected by default when the
+			// Check which of the radio button is selected WebElement default when the
 			// page is loaded.
 			if (oDriver.isSelected(radioJourneyTypeRoundTrip)) {
-				Log.info("Return Trip checkbox is slected by default");
+				Log.info("Return Trip checkbox is slected WebElement default");
 			}
 
 			if (oDriver.isSelected(radioJourneyTypeOneWay)) {
-				Log.info("Return Trip checkbox is slected by default");
+				Log.info("Return Trip checkbox is slected WebElement default");
 			}
 
-			// Populating all the order fields, as per the test data provided by
+			// Populating all the order fields, as per the test data provided WebElement
 			// dataProvider class.
 			Log.info("Populatig all the provided data");
 
@@ -143,13 +284,13 @@ public class mercuryFlightBooking {
 				oDriver.click(radioJourneyTypeOneWay);
 			}
 
-			oDriver.selectByVisibleText(selectPassengers, Data[1]);
-			oDriver.selectByVisibleText(selectDepartingFrom, Data[2]);
-			oDriver.selectByVisibleText(selectOnMonth, Data[3]);
-			oDriver.selectByVisibleText(selectOnDay, Data[4]);
-			oDriver.selectByVisibleText(selectArrivingIn, Data[5]);
-			oDriver.selectByVisibleText(selectReturningMonth, Data[6]);
-			oDriver.selectByVisibleText(selectReturningDay, Data[7]);
+			oDriver.selectWebElementVisibleText(selectPassengers, Data[1]);
+			oDriver.selectWebElementVisibleText(selectDepartingFrom, Data[2]);
+			oDriver.selectWebElementVisibleText(selectOnMonth, Data[3]);
+			oDriver.selectWebElementVisibleText(selectOnDay, Data[4]);
+			oDriver.selectWebElementVisibleText(selectArrivingIn, Data[5]);
+			oDriver.selectWebElementVisibleText(selectReturningMonth, Data[6]);
+			oDriver.selectWebElementVisibleText(selectReturningDay, Data[7]);
 
 			if (Data[8].equalsIgnoreCase("Economy")) {
 				oDriver.click(selectServiceClassEconomy);
@@ -159,7 +300,7 @@ public class mercuryFlightBooking {
 				oDriver.click(selectServiceClassFirst);
 			}
 
-			oDriver.selectByVisibleText(selectAirline, Data[9]);
+			oDriver.selectWebElementVisibleText(selectAirline, Data[9]);
 			oDriver.click(buttonContiue);
 			oDriver.waitTillElementVisible(textDepart, 30l);
 			Log.info("mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully");
@@ -336,11 +477,11 @@ public class mercuryFlightBooking {
 			Log.info("Inputting all the details");
 			oDriver.setText(txtFirstname, Data[7]);
 			oDriver.setText(txtLastName, Data[8]);
-			oDriver.selectByVisibleText(selectMeal, Data[9]);
-			oDriver.selectByVisibleText(selectCreditCard, Data[10]);
+			oDriver.selectWebElementVisibleText(selectMeal, Data[9]);
+			oDriver.selectWebElementVisibleText(selectCreditCard, Data[10]);
 			oDriver.setText(txtCreditCardNumber, Data[11]);
-			oDriver.selectByVisibleText(selectExpiryMonth, Data[12]);
-			oDriver.selectByVisibleText(selectExpiryYear, Data[13]);
+			oDriver.selectWebElementVisibleText(selectExpiryMonth, Data[12]);
+			oDriver.selectWebElementVisibleText(selectExpiryYear, Data[13]);
 			oDriver.setText(txtCCFirstName, Data[14]);
 			oDriver.setText(txtCCMiddleName, Data[15]);
 			oDriver.setText(txtCCLastName, Data[16]);
@@ -354,7 +495,7 @@ public class mercuryFlightBooking {
 			oDriver.setText(txtBillingCity, Data[20]);
 			oDriver.setText(txtBillingState, Data[21]);
 			oDriver.setText(txtBillingPostalCode, Data[22]);
-			oDriver.selectByVisibleText(selectBillingCountry, Data[23]);
+			oDriver.selectWebElementVisibleText(selectBillingCountry, Data[23]);
 
 			if (Data[24].equalsIgnoreCase("yes")) {
 				oDriver.click(checkboxSameBillingDelivery);

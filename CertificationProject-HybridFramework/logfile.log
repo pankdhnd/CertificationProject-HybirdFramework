@@ -2794,3 +2794,836 @@ Session ID: 0269d7a3-2dd4-4cae-ae81-1e1800d64d0a
 2016-08-23 13:52:57,249 INFO  [Log] X 
 2016-08-23 13:52:57,249 INFO  [Log] X 
 2016-08-23 13:52:57,249 INFO  [Log] X 
+2016-08-23 23:28:57,329 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:28:57,330 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:28:57,330 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:28:57,330 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:28:57,330 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:29:06,035 INFO  [Log] Login successful 
+2016-08-23 23:29:06,036 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:29:06,036 INFO  [Log] X 
+2016-08-23 23:29:06,036 INFO  [Log] X 
+2016-08-23 23:29:06,036 INFO  [Log] X 
+2016-08-23 23:29:06,036 INFO  [Log] X 
+2016-08-23 23:29:06,036 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:29:06,037 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:29:06,037 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:29:06,037 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:29:06,037 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:29:06,164 INFO  [Log] Opening regisration page 
+2016-08-23 23:29:09,647 INFO  [Log] Inputting registration details 
+2016-08-23 23:29:09,738 ERROR [Log] Could not select given element; here is some more detail: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: Opera with embedded Chromium 52.0.2743.82)
+  (Driver info: OperaDriver=0.2.0 (ba47709ed9e35ce26dbd960fb5d75be104290d96),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\Pankaj\AppData\Local\Temp\scoped_dir11420_19702}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=52.0.2743.82, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 076ad3ff6d77951cf859007bc13b1449
+*** Element info: {Using=name, value=country} 
+2016-08-23 23:29:09,761 INFO  [Log] Clicking Submit button 
+2016-08-23 23:29:09,768 INFO  [Log] Verifying user display name 
+2016-08-23 23:29:09,780 ERROR [Log] ERROR: Could not find post registration screen; screenshot captured 
+2016-08-23 23:29:09,781 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:29:09,781 INFO  [Log] X 
+2016-08-23 23:29:09,781 INFO  [Log] X 
+2016-08-23 23:29:09,781 INFO  [Log] X 
+2016-08-23 23:29:09,781 INFO  [Log] X 
+2016-08-23 23:29:09,781 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:29:09,781 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:29:09,781 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 FindAndBookFlight       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:29:09,781 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:29:09,781 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:32:20,183 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:32:20,184 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:32:20,184 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:32:20,184 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:32:20,184 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:32:29,724 INFO  [Log] Login successful 
+2016-08-23 23:32:29,725 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:32:29,725 INFO  [Log] X 
+2016-08-23 23:32:29,725 INFO  [Log] X 
+2016-08-23 23:32:29,725 INFO  [Log] X 
+2016-08-23 23:32:29,725 INFO  [Log] X 
+2016-08-23 23:32:29,725 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:32:29,725 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:32:29,725 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:32:29,725 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:32:29,725 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:32:29,847 INFO  [Log] Opening regisration page 
+2016-08-23 23:32:36,225 INFO  [Log] Inputting registration details 
+2016-08-23 23:34:58,558 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:34:58,559 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:34:58,559 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:34:58,559 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:34:58,559 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:35:02,675 INFO  [Log] Browser opened successfully 
+2016-08-23 23:35:02,973 INFO  [Log] Login details populated successfully 
+2016-08-23 23:35:02,974 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:35:03,010 ERROR [Log] Could not take screenshot; here is some more detail: java.lang.Exception: Screenshot filename already exists 
+2016-08-23 23:35:05,078 INFO  [Log] Login successful 
+2016-08-23 23:35:05,079 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:35:05,079 INFO  [Log] X 
+2016-08-23 23:35:05,079 INFO  [Log] X 
+2016-08-23 23:35:05,079 INFO  [Log] X 
+2016-08-23 23:35:05,079 INFO  [Log] X 
+2016-08-23 23:35:05,080 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:35:05,080 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:35:05,080 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:35:05,080 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:35:05,080 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:35:05,153 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:35:05,153 INFO  [Log] X 
+2016-08-23 23:35:05,153 INFO  [Log] X 
+2016-08-23 23:35:05,154 INFO  [Log] X 
+2016-08-23 23:35:05,154 INFO  [Log] X 
+2016-08-23 23:36:47,285 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:36:47,285 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:36:47,286 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:36:47,286 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:36:47,286 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:36:51,420 INFO  [Log] Browser opened successfully 
+2016-08-23 23:36:51,666 INFO  [Log] Login details populated successfully 
+2016-08-23 23:36:51,667 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:36:51,704 ERROR [Log] Could not take screenshot; here is some more detail: java.lang.Exception: Screenshot filename already exists 
+2016-08-23 23:36:53,698 INFO  [Log] Login successful 
+2016-08-23 23:36:53,700 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:36:53,700 INFO  [Log] X 
+2016-08-23 23:36:53,700 INFO  [Log] X 
+2016-08-23 23:36:53,700 INFO  [Log] X 
+2016-08-23 23:36:53,700 INFO  [Log] X 
+2016-08-23 23:36:53,700 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:36:53,700 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:36:53,700 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:36:53,700 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:36:53,700 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:36:53,816 INFO  [Log] Opening regisration page 
+2016-08-23 23:36:58,588 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: java.lang.NullPointerException 
+2016-08-23 23:36:58,589 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:36:58,589 INFO  [Log] X 
+2016-08-23 23:36:58,589 INFO  [Log] X 
+2016-08-23 23:36:58,589 INFO  [Log] X 
+2016-08-23 23:36:58,589 INFO  [Log] X 
+2016-08-23 23:38:34,382 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:38:34,382 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:38:34,382 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:38:34,382 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:38:34,382 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:38:42,954 INFO  [Log] Browser opened successfully 
+2016-08-23 23:38:43,232 INFO  [Log] Login details populated successfully 
+2016-08-23 23:38:43,233 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:38:43,268 ERROR [Log] Could not take screenshot; here is some more detail: java.lang.Exception: Screenshot filename already exists 
+2016-08-23 23:38:43,352 ERROR [Log] ERROR: Could not find Sign off link; login failed; details: org.openqa.selenium.WebDriverException: Element is not clickable at point (571, 307.5). Other element would receive the click: <div style="position: relative; display: block; height: auto; width: auto; padding: 35px 10px 11px; margin: 0px; text-align: left; border: 1px solid rgb(178, 178, 178); border-radius: 5px; background: rgb(255, 255, 255) url(&quot;http://ff.kis.scr.kaspersky-labs.com/F47249F2D417-491B-646C-69DF-9A326BD0/vk/VkTooltipBanner.png&quot;) no-repeat scroll 10px 9px; z-index: 2147483646;"></div>
+Command duration or timeout: 70 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2922280e-40c0-448f-9b53-d56be0974e41 
+2016-08-23 23:38:43,353 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:38:43,353 INFO  [Log] X 
+2016-08-23 23:38:43,353 INFO  [Log] X 
+2016-08-23 23:38:43,353 INFO  [Log] X 
+2016-08-23 23:38:43,353 INFO  [Log] X 
+2016-08-23 23:38:43,354 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:38:43,354 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:38:43,354 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:38:43,354 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:38:43,354 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:38:43,425 INFO  [Log] Opening regisration page 
+2016-08-23 23:38:44,776 INFO  [Log] Inputting registration details 
+2016-08-23 23:38:45,921 INFO  [Log] Clicking Submit button 
+2016-08-23 23:38:47,144 INFO  [Log] Verifying user display name 
+2016-08-23 23:38:47,209 INFO  [Log] User Display name verification successful 
+2016-08-23 23:38:47,209 INFO  [Log] Verifying login username 
+2016-08-23 23:38:47,259 INFO  [Log] Login username verification successful 
+2016-08-23 23:38:47,260 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:38:47,260 INFO  [Log] X 
+2016-08-23 23:38:47,260 INFO  [Log] X 
+2016-08-23 23:38:47,260 INFO  [Log] X 
+2016-08-23 23:38:47,260 INFO  [Log] X 
+2016-08-23 23:41:34,066 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:41:34,067 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:41:34,067 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:41:34,067 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:41:34,067 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:41:39,958 INFO  [Log] Browser opened successfully 
+2016-08-23 23:41:40,242 INFO  [Log] Login details populated successfully 
+2016-08-23 23:41:40,243 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:41:40,278 ERROR [Log] Could not take screenshot; here is some more detail: java.lang.Exception: Screenshot filename already exists 
+2016-08-23 23:41:40,361 ERROR [Log] ERROR: Title does not match after login; login failed; details: org.openqa.selenium.WebDriverException: Element is not clickable at point (571, 307.5). Other element would receive the click: <div style="position: relative; display: block; height: auto; width: auto; padding: 35px 10px 11px; margin: 0px; text-align: left; border: 1px solid rgb(178, 178, 178); border-radius: 5px; background: rgb(255, 255, 255) url(&quot;http://ff.kis.scr.kaspersky-labs.com/F47249F2D417-491B-646C-69DF-9A326BD0/vk/VkTooltipBanner.png&quot;) no-repeat scroll 10px 9px; z-index: 2147483646;"></div>
+Command duration or timeout: 69 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f5d6e708-061f-4e6e-98f2-f25c75490e66 
+2016-08-23 23:41:40,362 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:41:40,362 INFO  [Log] X 
+2016-08-23 23:41:40,362 INFO  [Log] X 
+2016-08-23 23:41:40,362 INFO  [Log] X 
+2016-08-23 23:41:40,362 INFO  [Log] X 
+2016-08-23 23:41:40,362 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:41:40,362 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:41:40,362 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:41:40,362 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:41:40,362 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:41:40,425 INFO  [Log] Opening regisration page 
+2016-08-23 23:41:41,511 INFO  [Log] Inputting registration details 
+2016-08-23 23:41:42,628 INFO  [Log] Clicking Submit button 
+2016-08-23 23:41:44,139 INFO  [Log] Verifying user display name 
+2016-08-23 23:41:44,214 INFO  [Log] User Display name verification successful 
+2016-08-23 23:41:44,214 INFO  [Log] Verifying login username 
+2016-08-23 23:41:44,254 INFO  [Log] Login username verification successful 
+2016-08-23 23:41:44,255 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:41:44,255 INFO  [Log] X 
+2016-08-23 23:41:44,255 INFO  [Log] X 
+2016-08-23 23:41:44,255 INFO  [Log] X 
+2016-08-23 23:41:44,255 INFO  [Log] X 
+2016-08-23 23:42:46,883 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:42:46,883 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:42:46,883 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:42:46,883 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:42:46,883 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:42:53,521 INFO  [Log] Browser opened successfully 
+2016-08-23 23:42:53,814 INFO  [Log] Login details populated successfully 
+2016-08-23 23:42:53,815 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:42:53,861 ERROR [Log] Could not take screenshot; here is some more detail: java.lang.Exception: Screenshot filename already exists 
+2016-08-23 23:42:53,950 ERROR [Log] ERROR: Title does not match after login; login failed; details: org.openqa.selenium.WebDriverException: Element is not clickable at point (571, 307.5). Other element would receive the click: <div style="position: relative; display: block; height: auto; width: auto; padding: 35px 10px 11px; margin: 0px; text-align: left; border: 1px solid rgb(178, 178, 178); border-radius: 5px; background: rgb(255, 255, 255) url(&quot;http://ff.kis.scr.kaspersky-labs.com/F47249F2D417-491B-646C-69DF-9A326BD0/vk/VkTooltipBanner.png&quot;) no-repeat scroll 10px 9px; z-index: 2147483646;"></div>
+Command duration or timeout: 72 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7820c42a-896d-4c1e-9ac6-195d3fbb8b82 
+2016-08-23 23:42:53,951 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:42:53,951 INFO  [Log] X 
+2016-08-23 23:42:53,951 INFO  [Log] X 
+2016-08-23 23:42:53,951 INFO  [Log] X 
+2016-08-23 23:42:53,951 INFO  [Log] X 
+2016-08-23 23:42:53,951 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:42:53,951 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:42:53,951 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:42:53,951 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:42:53,951 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:42:54,017 INFO  [Log] Opening regisration page 
+2016-08-23 23:42:55,566 INFO  [Log] Inputting registration details 
+2016-08-23 23:42:56,733 INFO  [Log] Clicking Submit button 
+2016-08-23 23:42:58,245 INFO  [Log] Verifying user display name 
+2016-08-23 23:42:58,330 INFO  [Log] User Display name verification successful 
+2016-08-23 23:42:58,330 INFO  [Log] Verifying login username 
+2016-08-23 23:42:58,373 INFO  [Log] Login username verification successful 
+2016-08-23 23:42:58,374 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:42:58,374 INFO  [Log] X 
+2016-08-23 23:42:58,374 INFO  [Log] X 
+2016-08-23 23:42:58,374 INFO  [Log] X 
+2016-08-23 23:42:58,374 INFO  [Log] X 
+2016-08-23 23:44:56,297 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:44:56,297 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:44:56,297 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:44:56,298 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:44:56,298 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:45:02,833 INFO  [Log] Browser opened successfully 
+2016-08-23 23:45:03,114 INFO  [Log] Login details populated successfully 
+2016-08-23 23:45:03,115 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:45:03,275 INFO  [Log] Screenshot captured successfully 
+2016-08-23 23:45:03,362 ERROR [Log] ERROR: Title does not match after login; login failed; details: org.openqa.selenium.WebDriverException: Element is not clickable at point (571, 307.5). Other element would receive the click: <div style="position: relative; display: block; height: auto; width: auto; padding: 35px 10px 11px; margin: 0px; text-align: left; border: 1px solid rgb(178, 178, 178); border-radius: 5px; background: rgb(255, 255, 255) url(&quot;http://ff.kis.scr.kaspersky-labs.com/F47249F2D417-491B-646C-69DF-9A326BD0/vk/VkTooltipBanner.png&quot;) no-repeat scroll 10px 9px; z-index: 2147483646;"></div>
+Command duration or timeout: 71 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e4fd368c-a1f5-4b83-949a-f681f8749e9e 
+2016-08-23 23:45:03,363 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:45:03,363 INFO  [Log] X 
+2016-08-23 23:45:03,363 INFO  [Log] X 
+2016-08-23 23:45:03,363 INFO  [Log] X 
+2016-08-23 23:45:03,363 INFO  [Log] X 
+2016-08-23 23:45:03,364 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:45:03,364 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:45:03,364 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:45:03,364 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:45:03,364 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:45:03,449 INFO  [Log] Opening regisration page 
+2016-08-23 23:45:05,181 INFO  [Log] Inputting registration details 
+2016-08-23 23:45:06,432 INFO  [Log] Clicking Submit button 
+2016-08-23 23:45:07,886 INFO  [Log] Verifying user display name 
+2016-08-23 23:45:07,935 INFO  [Log] User Display name verification successful 
+2016-08-23 23:45:07,935 INFO  [Log] Verifying login username 
+2016-08-23 23:45:07,998 INFO  [Log] Login username verification successful 
+2016-08-23 23:45:07,999 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:45:07,999 INFO  [Log] X 
+2016-08-23 23:45:07,999 INFO  [Log] X 
+2016-08-23 23:45:07,999 INFO  [Log] X 
+2016-08-23 23:45:07,999 INFO  [Log] X 
+2016-08-23 23:45:32,830 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:45:32,830 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:45:32,830 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:45:32,830 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:45:32,830 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:45:38,864 INFO  [Log] Browser opened successfully 
+2016-08-23 23:45:39,110 INFO  [Log] Login details populated successfully 
+2016-08-23 23:45:39,111 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:45:39,277 INFO  [Log] Screenshot captured successfully 
+2016-08-23 23:45:39,360 ERROR [Log] ERROR: Title does not match after login; login failed; details: org.openqa.selenium.WebDriverException: Element is not clickable at point (571, 307.5). Other element would receive the click: <div style="position: relative; display: block; height: auto; width: auto; padding: 35px 10px 11px; margin: 0px; text-align: left; border: 1px solid rgb(178, 178, 178); border-radius: 5px; background: rgb(255, 255, 255) url(&quot;http://ff.kis.scr.kaspersky-labs.com/F47249F2D417-491B-646C-69DF-9A326BD0/vk/VkTooltipBanner.png&quot;) no-repeat scroll 10px 9px; z-index: 2147483646;"></div>
+Command duration or timeout: 68 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5dbb53ce-6375-4c91-945d-d721f81fd584 
+2016-08-23 23:45:39,361 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:45:39,361 INFO  [Log] X 
+2016-08-23 23:45:39,361 INFO  [Log] X 
+2016-08-23 23:45:39,361 INFO  [Log] X 
+2016-08-23 23:45:39,361 INFO  [Log] X 
+2016-08-23 23:45:39,361 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:45:39,361 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:45:39,361 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:45:39,361 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:45:39,361 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:45:39,425 INFO  [Log] Opening regisration page 
+2016-08-23 23:45:41,570 INFO  [Log] Inputting registration details 
+2016-08-23 23:45:42,672 INFO  [Log] Clicking Submit button 
+2016-08-23 23:45:44,473 INFO  [Log] Verifying user display name 
+2016-08-23 23:45:44,516 INFO  [Log] User Display name verification successful 
+2016-08-23 23:45:44,516 INFO  [Log] Verifying login username 
+2016-08-23 23:45:44,555 INFO  [Log] Login username verification successful 
+2016-08-23 23:45:44,556 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:45:44,556 INFO  [Log] X 
+2016-08-23 23:45:44,556 INFO  [Log] X 
+2016-08-23 23:45:44,556 INFO  [Log] X 
+2016-08-23 23:45:44,556 INFO  [Log] X 
+2016-08-23 23:46:08,415 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:46:08,415 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:08,415 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:46:08,415 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:08,415 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:14,778 INFO  [Log] Browser opened successfully 
+2016-08-23 23:46:15,046 INFO  [Log] Login details populated successfully 
+2016-08-23 23:46:15,047 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:46:15,192 INFO  [Log] Screenshot captured successfully 
+2016-08-23 23:46:15,273 ERROR [Log] ERROR: Title does not match after login; login failed; details: org.openqa.selenium.WebDriverException: Element is not clickable at point (571, 307.5). Other element would receive the click: <div style="position: relative; display: block; height: auto; width: auto; padding: 35px 10px 11px; margin: 0px; text-align: left; border: 1px solid rgb(178, 178, 178); border-radius: 5px; background: rgb(255, 255, 255) url(&quot;http://ff.kis.scr.kaspersky-labs.com/F47249F2D417-491B-646C-69DF-9A326BD0/vk/VkTooltipBanner.png&quot;) no-repeat scroll 10px 9px; z-index: 2147483646;"></div>
+Command duration or timeout: 69 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 60501228-9c25-419e-9f7a-43b229d7be6e 
+2016-08-23 23:46:15,274 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:46:15,274 INFO  [Log] X 
+2016-08-23 23:46:15,274 INFO  [Log] X 
+2016-08-23 23:46:15,274 INFO  [Log] X 
+2016-08-23 23:46:15,274 INFO  [Log] X 
+2016-08-23 23:46:15,274 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:46:15,274 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:15,274 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:46:15,274 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:15,274 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:15,339 INFO  [Log] Opening regisration page 
+2016-08-23 23:46:21,554 INFO  [Log] Inputting registration details 
+2016-08-23 23:46:22,717 INFO  [Log] Clicking Submit button 
+2016-08-23 23:46:23,914 INFO  [Log] Verifying user display name 
+2016-08-23 23:46:26,941 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 60501228-9c25-419e-9f7a-43b229d7be6e 
+2016-08-23 23:46:26,943 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:46:26,943 INFO  [Log] X 
+2016-08-23 23:46:26,943 INFO  [Log] X 
+2016-08-23 23:46:26,943 INFO  [Log] X 
+2016-08-23 23:46:26,943 INFO  [Log] X 
+2016-08-23 23:46:43,210 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:46:43,210 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:43,210 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:46:43,210 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:43,210 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:51,925 INFO  [Log] Browser opened successfully 
+2016-08-23 23:46:52,195 INFO  [Log] Login details populated successfully 
+2016-08-23 23:46:52,196 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:46:52,340 INFO  [Log] Screenshot captured successfully 
+2016-08-23 23:46:55,800 INFO  [Log] Login successful 
+2016-08-23 23:46:55,801 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:46:55,801 INFO  [Log] X 
+2016-08-23 23:46:55,801 INFO  [Log] X 
+2016-08-23 23:46:55,801 INFO  [Log] X 
+2016-08-23 23:46:55,801 INFO  [Log] X 
+2016-08-23 23:46:55,801 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:46:55,801 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:55,801 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:46:55,801 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:55,801 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:46:55,839 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:46:55,839 INFO  [Log] X 
+2016-08-23 23:46:55,839 INFO  [Log] X 
+2016-08-23 23:46:55,839 INFO  [Log] X 
+2016-08-23 23:46:55,839 INFO  [Log] X 
+2016-08-23 23:48:48,232 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:48:48,232 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:48:48,233 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:48:48,233 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:48:48,233 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:48:54,371 INFO  [Log] Browser opened successfully 
+2016-08-23 23:48:54,653 INFO  [Log] Login details populated successfully 
+2016-08-23 23:48:54,676 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:48:54,816 INFO  [Log] Screenshot captured successfully 
+2016-08-23 23:48:57,578 INFO  [Log] Login successful 
+2016-08-23 23:48:57,579 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:48:57,579 INFO  [Log] X 
+2016-08-23 23:48:57,579 INFO  [Log] X 
+2016-08-23 23:48:57,579 INFO  [Log] X 
+2016-08-23 23:48:57,579 INFO  [Log] X 
+2016-08-23 23:48:57,580 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:48:57,580 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:48:57,580 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:48:57,580 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:48:57,580 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:48:57,632 INFO  [Log] Opening regisration page 
+2016-08-23 23:49:12,655 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e0588e54-5143-41ab-826f-92a8f8fff7b3 
+2016-08-23 23:49:12,658 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:49:12,658 INFO  [Log] X 
+2016-08-23 23:49:12,658 INFO  [Log] X 
+2016-08-23 23:49:12,658 INFO  [Log] X 
+2016-08-23 23:49:12,658 INFO  [Log] X 
+2016-08-23 23:49:29,763 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:49:29,764 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:49:29,764 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:49:29,764 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:49:29,764 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:49:45,375 INFO  [Log] Browser opened successfully 
+2016-08-23 23:49:45,650 INFO  [Log] Login details populated successfully 
+2016-08-23 23:49:45,671 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:49:45,819 INFO  [Log] Screenshot captured successfully 
+2016-08-23 23:49:48,407 INFO  [Log] Login successful 
+2016-08-23 23:49:48,408 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:49:48,408 INFO  [Log] X 
+2016-08-23 23:49:48,408 INFO  [Log] X 
+2016-08-23 23:49:48,408 INFO  [Log] X 
+2016-08-23 23:49:48,408 INFO  [Log] X 
+2016-08-23 23:49:48,409 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:49:48,409 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:49:48,409 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:49:48,409 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:49:48,409 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:49:48,472 INFO  [Log] Opening regisration page 
+2016-08-23 23:49:55,298 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 15df3f1b-c414-4a17-adc4-62bf9040ca8f 
+2016-08-23 23:49:55,301 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:49:55,301 INFO  [Log] X 
+2016-08-23 23:49:55,301 INFO  [Log] X 
+2016-08-23 23:49:55,301 INFO  [Log] X 
+2016-08-23 23:49:55,301 INFO  [Log] X 
+2016-08-23 23:50:46,312 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:50:46,312 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:50:46,312 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:50:46,313 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:50:46,313 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:50:51,897 INFO  [Log] Browser opened successfully 
+2016-08-23 23:50:52,188 INFO  [Log] Login details populated successfully 
+2016-08-23 23:50:52,212 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:50:52,375 INFO  [Log] Screenshot captured successfully 
+2016-08-23 23:50:54,904 INFO  [Log] Login successful 
+2016-08-23 23:50:54,905 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:50:54,905 INFO  [Log] X 
+2016-08-23 23:50:54,905 INFO  [Log] X 
+2016-08-23 23:50:54,905 INFO  [Log] X 
+2016-08-23 23:50:54,905 INFO  [Log] X 
+2016-08-23 23:50:54,906 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:50:54,906 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:50:54,906 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:50:54,906 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:50:54,906 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:50:54,962 INFO  [Log] Opening regisration page 
+2016-08-23 23:51:49,182 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:51:49,182 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:51:49,183 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:51:49,183 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:51:49,183 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:52:03,728 INFO  [Log] Browser opened successfully 
+2016-08-23 23:52:04,027 INFO  [Log] Login details populated successfully 
+2016-08-23 23:52:04,052 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-23 23:52:04,192 INFO  [Log] Screenshot captured successfully 
+2016-08-23 23:52:08,671 INFO  [Log] Login successful 
+2016-08-23 23:52:08,672 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:52:08,672 INFO  [Log] X 
+2016-08-23 23:52:08,672 INFO  [Log] X 
+2016-08-23 23:52:08,672 INFO  [Log] X 
+2016-08-23 23:52:08,672 INFO  [Log] X 
+2016-08-23 23:52:08,673 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:52:08,673 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:52:08,673 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:52:08,673 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:52:08,673 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:52:08,742 INFO  [Log] Opening regisration page 
+2016-08-23 23:53:08,809 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"REGISTER"}
+Command duration or timeout: 60.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ed63fe7e-9473-40fd-9b3f-fef2523c9a90
+*** Element info: {Using=link text, value=REGISTER} 
+2016-08-23 23:53:08,809 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:53:08,809 INFO  [Log] X 
+2016-08-23 23:53:08,809 INFO  [Log] X 
+2016-08-23 23:53:08,810 INFO  [Log] X 
+2016-08-23 23:53:08,810 INFO  [Log] X 
+2016-08-23 23:54:54,221 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:54:54,222 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:54:54,222 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:54:54,222 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:54:54,222 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:54:54,331 INFO  [Log] Opening regisration page 
+2016-08-23 23:54:54,331 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: java.lang.NullPointerException 
+2016-08-23 23:54:54,332 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:54:54,332 INFO  [Log] X 
+2016-08-23 23:54:54,332 INFO  [Log] X 
+2016-08-23 23:54:54,332 INFO  [Log] X 
+2016-08-23 23:54:54,332 INFO  [Log] X 
+2016-08-23 23:55:50,057 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:55:50,057 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:55:50,057 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:55:50,057 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:55:50,057 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:55:56,088 INFO  [Log] Browser opened successfully 
+2016-08-23 23:55:56,272 INFO  [Log] Login details populated successfully 
+2016-08-23 23:55:59,588 INFO  [Log] Login successful 
+2016-08-23 23:55:59,616 INFO  [Log] Opening regisration page 
+2016-08-23 23:56:14,730 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 116426bb-b0af-4851-899c-c587e91a2f72 
+2016-08-23 23:56:14,733 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:56:14,733 INFO  [Log] X 
+2016-08-23 23:56:14,733 INFO  [Log] X 
+2016-08-23 23:56:14,733 INFO  [Log] X 
+2016-08-23 23:56:14,733 INFO  [Log] X 
+2016-08-23 23:56:56,380 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-23 23:56:56,380 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:56:56,380 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-23 23:56:56,380 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:56:56,380 INFO  [Log] **************************************************************************************** 
+2016-08-23 23:57:02,404 INFO  [Log] Browser opened successfully 
+2016-08-23 23:57:02,461 INFO  [Log] Opening regisration page 
+2016-08-23 23:57:03,624 INFO  [Log] Inputting registration details 
+2016-08-23 23:57:04,791 INFO  [Log] Clicking Submit button 
+2016-08-23 23:57:06,026 INFO  [Log] Verifying user display name 
+2016-08-23 23:57:06,072 INFO  [Log] User Display name verification successful 
+2016-08-23 23:57:06,072 INFO  [Log] Verifying login username 
+2016-08-23 23:57:06,100 INFO  [Log] Login username verification successful 
+2016-08-23 23:57:06,101 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-23 23:57:06,101 INFO  [Log] X 
+2016-08-23 23:57:06,101 INFO  [Log] X 
+2016-08-23 23:57:06,101 INFO  [Log] X 
+2016-08-23 23:57:06,101 INFO  [Log] X 
+2016-08-24 00:14:05,364 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-24 00:14:05,365 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:14:05,365 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-24 00:14:05,365 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:14:05,365 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:15:16,656 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-24 00:15:16,657 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:15:16,657 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 RegisterNewUser       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-24 00:15:16,657 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:15:16,657 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:15:22,338 INFO  [Log] Browser opened successfully 
+2016-08-24 00:15:22,380 INFO  [Log] Opening regisration page 
+2016-08-24 00:15:23,558 INFO  [Log] Inputting registration details 
+2016-08-24 00:15:24,240 INFO  [Log] Clicking Submit button 
+2016-08-24 00:15:26,074 INFO  [Log] Verifying user display name 
+2016-08-24 00:15:26,135 INFO  [Log] User Display name verification successful 
+2016-08-24 00:15:26,135 INFO  [Log] Verifying login username 
+2016-08-24 00:15:26,166 INFO  [Log] Login username verification successful 
+2016-08-24 00:15:26,166 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:15:26,167 INFO  [Log] X 
+2016-08-24 00:15:26,167 INFO  [Log] X 
+2016-08-24 00:15:26,167 INFO  [Log] X 
+2016-08-24 00:15:26,167 INFO  [Log] X 
+2016-08-24 00:15:26,167 INFO  [Log] *************************************STARTING TEST CASE********************************* 
+2016-08-24 00:15:26,167 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:15:26,167 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-08-24 00:15:26,167 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:15:26,167 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:15:26,228 INFO  [Log] Opening URL for login page 
+2016-08-24 00:15:27,575 INFO  [Log] Login URL opened successfully 
+2016-08-24 00:15:27,772 INFO  [Log] Login details populated successfully 
+2016-08-24 00:15:27,789 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 00:15:27,934 INFO  [Log] Screenshot captured successfully 
+2016-08-24 00:15:29,866 INFO  [Log] Login successful 
+2016-08-24 00:15:29,866 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:15:29,866 INFO  [Log] X 
+2016-08-24 00:15:29,867 INFO  [Log] X 
+2016-08-24 00:15:29,867 INFO  [Log] X 
+2016-08-24 00:15:29,867 INFO  [Log] X 
+2016-08-24 00:19:39,752 INFO  [Log]                                                                                          
+2016-08-24 00:19:39,752 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:19:39,752 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 00:19:39,752 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:19:39,752 INFO  [Log]                                                                                          
+2016-08-24 00:19:45,888 INFO  [Log] Browser opened successfully 
+2016-08-24 00:19:45,939 INFO  [Log] Opening regisration page 
+2016-08-24 00:19:48,926 INFO  [Log] Inputting registration details 
+2016-08-24 00:19:50,123 INFO  [Log] Clicking Submit button 
+2016-08-24 00:19:52,086 INFO  [Log] Verifying user display name 
+2016-08-24 00:19:52,141 INFO  [Log] User Display name verification successful 
+2016-08-24 00:19:52,142 INFO  [Log] Verifying login username 
+2016-08-24 00:19:52,187 INFO  [Log] Login username verification successful 
+2016-08-24 00:19:52,187 INFO  [Log]                                                                                          
+2016-08-24 00:19:52,188 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:19:52,188 INFO  [Log] X 
+2016-08-24 00:19:52,188 INFO  [Log] X 
+2016-08-24 00:19:52,188 INFO  [Log]                                                                                          
+2016-08-24 00:19:52,188 INFO  [Log]                                                                                          
+2016-08-24 00:19:52,188 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:19:52,188 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 00:19:52,188 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:19:52,188 INFO  [Log]                                                                                          
+2016-08-24 00:19:52,248 INFO  [Log] Opening URL for login page 
+2016-08-24 00:19:54,212 INFO  [Log] Login URL opened successfully 
+2016-08-24 00:19:54,451 INFO  [Log] Login details populated successfully 
+2016-08-24 00:19:54,466 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 00:19:54,630 INFO  [Log] Screenshot captured successfully 
+2016-08-24 00:19:54,791 ERROR [Log] ERROR: Title does not match after login; login failed; details: org.openqa.selenium.WebDriverException: Element is not clickable at point (571, 307.5). Other element would receive the click: <div style="position: relative; display: block; height: auto; width: auto; padding: 35px 10px 11px; margin: 0px; text-align: left; border: 1px solid rgb(178, 178, 178); border-radius: 5px; background: rgb(255, 255, 255) url(&quot;http://ff.kis.scr.kaspersky-labs.com/F47249F2D417-491B-646C-69DF-9A326BD0/vk/VkTooltipBanner.png&quot;) no-repeat scroll 10px 9px; z-index: 2147483646;"></div>
+Command duration or timeout: 73 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0f327aaa-9980-4a0e-99ed-e831f796413c 
+2016-08-24 00:19:54,792 INFO  [Log]                                                                                          
+2016-08-24 00:19:54,792 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:19:54,793 INFO  [Log] X 
+2016-08-24 00:19:54,793 INFO  [Log] X 
+2016-08-24 00:19:54,793 INFO  [Log]                                                                                          
+2016-08-24 00:21:08,868 INFO  [Log]                                                                                          
+2016-08-24 00:21:08,869 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:21:08,869 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 00:21:08,869 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:21:08,869 INFO  [Log]                                                                                          
+2016-08-24 00:21:18,043 INFO  [Log] Browser opened successfully 
+2016-08-24 00:21:18,095 INFO  [Log] Opening regisration page 
+2016-08-24 00:21:20,361 INFO  [Log] Inputting registration details 
+2016-08-24 00:21:21,612 INFO  [Log] Clicking Submit button 
+2016-08-24 00:21:25,261 INFO  [Log] Verifying user display name 
+2016-08-24 00:21:25,319 INFO  [Log] User Display name verification successful 
+2016-08-24 00:21:25,319 INFO  [Log] Verifying login username 
+2016-08-24 00:21:25,361 INFO  [Log] Login username verification successful 
+2016-08-24 00:21:25,361 INFO  [Log]                                                                                          
+2016-08-24 00:21:25,362 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:21:25,362 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:21:25,362 INFO  [Log]                                                                                          
+2016-08-24 00:21:25,362 INFO  [Log]                                                                                          
+2016-08-24 00:21:25,362 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:21:25,362 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 00:21:25,362 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:21:25,362 INFO  [Log]                                                                                          
+2016-08-24 00:21:25,437 INFO  [Log] Opening URL for login page 
+2016-08-24 00:21:28,063 INFO  [Log] Login URL opened successfully 
+2016-08-24 00:21:28,281 INFO  [Log] Login details populated successfully 
+2016-08-24 00:21:28,309 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 00:21:28,494 INFO  [Log] Screenshot captured successfully 
+2016-08-24 00:21:28,597 ERROR [Log] ERROR: Title does not match after login; login failed; details: org.openqa.selenium.WebDriverException: Element is not clickable at point (571, 307.5). Other element would receive the click: <div style="position: relative; display: block; height: auto; width: auto; padding: 35px 10px 11px; margin: 0px; text-align: left; border: 1px solid rgb(178, 178, 178); border-radius: 5px; background: rgb(255, 255, 255) url(&quot;http://ff.kis.scr.kaspersky-labs.com/F47249F2D417-491B-646C-69DF-9A326BD0/vk/VkTooltipBanner.png&quot;) no-repeat scroll 10px 9px; z-index: 2147483646;"></div>
+Command duration or timeout: 69 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0f4fadad-b0ca-4428-828a-d7d9a8260a6b 
+2016-08-24 00:21:28,597 INFO  [Log]                                                                                          
+2016-08-24 00:21:28,597 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:21:28,597 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:21:28,597 INFO  [Log]                                                                                          
+2016-08-24 00:29:24,655 INFO  [Log]                                                                                          
+2016-08-24 00:29:24,656 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:29:24,656 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 00:29:24,656 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:29:24,656 INFO  [Log]                                                                                          
+2016-08-24 00:29:32,825 INFO  [Log] Browser opened successfully 
+2016-08-24 00:29:32,869 INFO  [Log] Opening regisration page 
+2016-08-24 00:29:34,572 INFO  [Log] Inputting registration details 
+2016-08-24 00:29:35,962 INFO  [Log] Clicking Submit button 
+2016-08-24 00:29:38,319 INFO  [Log] Verifying user display name 
+2016-08-24 00:29:38,388 INFO  [Log] User Display name verification successful 
+2016-08-24 00:29:38,388 INFO  [Log] Verifying login username 
+2016-08-24 00:29:38,433 INFO  [Log] Login username verification successful 
+2016-08-24 00:29:38,434 INFO  [Log]                                                                                          
+2016-08-24 00:29:38,434 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:29:38,434 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:29:38,434 INFO  [Log]                                                                                          
+2016-08-24 00:29:38,434 INFO  [Log]                                                                                          
+2016-08-24 00:29:38,434 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:29:38,434 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 00:29:38,434 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:29:38,434 INFO  [Log]                                                                                          
+2016-08-24 00:29:38,497 INFO  [Log] Opening URL for login page 
+2016-08-24 00:29:40,077 INFO  [Log] Login URL opened successfully 
+2016-08-24 00:29:40,325 INFO  [Log] Login details populated successfully 
+2016-08-24 00:29:40,344 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 00:29:40,502 INFO  [Log] Screenshot captured successfully 
+2016-08-24 00:29:40,644 ERROR [Log] ERROR: Title does not match after login; login failed; details: org.openqa.selenium.WebDriverException: Element is not clickable at point (571, 307.5). Other element would receive the click: <div style="position: relative; display: block; height: auto; width: auto; padding: 35px 10px 11px; margin: 0px; text-align: left; border: 1px solid rgb(178, 178, 178); border-radius: 5px; background: rgb(255, 255, 255) url(&quot;http://ff.kis.scr.kaspersky-labs.com/F47249F2D417-491B-646C-69DF-9A326BD0/vk/VkTooltipBanner.png&quot;) no-repeat scroll 10px 9px; z-index: 2147483646;"></div>
+Command duration or timeout: 68 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5f8900e9-d5dc-4395-9a32-8cd571be3595 
+2016-08-24 00:29:40,644 INFO  [Log]                                                                                          
+2016-08-24 00:29:40,645 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:29:40,645 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:29:40,645 INFO  [Log]                                                                                          
+2016-08-24 00:33:07,668 INFO  [Log]                                                                                          
+2016-08-24 00:33:07,668 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:33:07,668 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 00:33:07,668 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:33:07,668 INFO  [Log]                                                                                          
+2016-08-24 00:33:13,702 INFO  [Log] Browser opened successfully 
+2016-08-24 00:33:13,746 INFO  [Log] Opening regisration page 
+2016-08-24 00:33:15,178 INFO  [Log] Inputting registration details 
+2016-08-24 00:33:16,452 INFO  [Log] Clicking Submit button 
+2016-08-24 00:33:17,950 INFO  [Log] Verifying user display name 
+2016-08-24 00:33:18,013 INFO  [Log] User Display name verification successful 
+2016-08-24 00:33:18,013 INFO  [Log] Verifying login username 
+2016-08-24 00:33:18,052 INFO  [Log] Login username verification successful 
+2016-08-24 00:33:18,053 INFO  [Log]                                                                                          
+2016-08-24 00:33:18,053 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:33:18,053 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:33:18,053 INFO  [Log]                                                                                          
+2016-08-24 00:33:18,053 INFO  [Log]                                                                                          
+2016-08-24 00:33:18,053 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:33:18,053 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 00:33:18,053 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:33:18,053 INFO  [Log]                                                                                          
+2016-08-24 00:33:18,114 INFO  [Log] Opening URL for login page 
+2016-08-24 00:33:19,116 INFO  [Log] Login URL opened successfully 
+2016-08-24 00:33:19,426 INFO  [Log] Login details populated successfully 
+2016-08-24 00:33:19,441 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 00:33:19,600 INFO  [Log] Screenshot captured successfully 
+2016-08-24 00:33:19,702 ERROR [Log] ERROR: Title does not match after login; login failed; details: org.openqa.selenium.WebDriverException: Element is not clickable at point (571, 307.5). Other element would receive the click: <div style="position: relative; display: block; height: auto; width: auto; padding: 35px 10px 11px; margin: 0px; text-align: left; border: 1px solid rgb(178, 178, 178); border-radius: 5px; background: rgb(255, 255, 255) url(&quot;http://ff.kis.scr.kaspersky-labs.com/F47249F2D417-491B-646C-69DF-9A326BD0/vk/VkTooltipBanner.png&quot;) no-repeat scroll 10px 9px; z-index: 2147483646;"></div>
+Command duration or timeout: 71 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 82f2079a-3c47-4e53-b773-4fe1bdaf3a25 
+2016-08-24 00:33:19,703 INFO  [Log]                                                                                          
+2016-08-24 00:33:19,703 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:33:19,703 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:33:19,703 INFO  [Log]                                                                                          
+2016-08-24 00:34:29,157 INFO  [Log]                                                                                          
+2016-08-24 00:34:29,157 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:34:29,157 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 00:34:29,157 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:34:29,157 INFO  [Log]                                                                                          
+2016-08-24 00:34:35,232 INFO  [Log] Browser opened successfully 
+2016-08-24 00:34:35,291 INFO  [Log] Opening regisration page 
+2016-08-24 00:34:36,816 INFO  [Log] Inputting registration details 
+2016-08-24 00:34:38,134 INFO  [Log] Clicking Submit button 
+2016-08-24 00:34:39,366 INFO  [Log] Verifying user display name 
+2016-08-24 00:34:39,426 INFO  [Log] User Display name verification successful 
+2016-08-24 00:34:39,426 INFO  [Log] Verifying login username 
+2016-08-24 00:34:39,466 INFO  [Log] Login username verification successful 
+2016-08-24 00:34:39,467 INFO  [Log]                                                                                          
+2016-08-24 00:34:39,467 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:34:39,467 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:34:39,467 INFO  [Log]                                                                                          
+2016-08-24 00:34:39,467 INFO  [Log]                                                                                          
+2016-08-24 00:34:39,467 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:34:39,468 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 00:34:39,468 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:34:39,468 INFO  [Log]                                                                                          
+2016-08-24 00:34:39,527 INFO  [Log] Opening URL for login page 
+2016-08-24 00:34:41,059 INFO  [Log] Login URL opened successfully 
+2016-08-24 00:34:41,305 INFO  [Log] Login details populated successfully 
+2016-08-24 00:34:41,322 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 00:34:41,477 INFO  [Log] Screenshot captured successfully 
+2016-08-24 00:34:41,633 ERROR [Log] ERROR: Title does not match after login; login failed; details: org.openqa.selenium.WebDriverException: Element is not clickable at point (571, 307.5). Other element would receive the click: <div style="position: relative; display: block; height: auto; width: auto; padding: 35px 10px 11px; margin: 0px; text-align: left; border: 1px solid rgb(178, 178, 178); border-radius: 5px; background: rgb(255, 255, 255) url(&quot;http://ff.kis.scr.kaspersky-labs.com/F47249F2D417-491B-646C-69DF-9A326BD0/vk/VkTooltipBanner.png&quot;) no-repeat scroll 10px 9px; z-index: 2147483646;"></div>
+Command duration or timeout: 73 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: db60a6f0-049d-411e-bc45-be8043b9fe62 
+2016-08-24 00:34:41,634 INFO  [Log]                                                                                          
+2016-08-24 00:34:41,634 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:34:41,634 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:34:41,634 INFO  [Log]                                                                                          
+2016-08-24 00:48:46,994 INFO  [Log]                                                                                          
+2016-08-24 00:48:46,994 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:48:46,995 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 00:48:46,995 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:48:46,995 INFO  [Log]                                                                                          
+2016-08-24 00:48:53,010 INFO  [Log] Browser opened successfully 
+2016-08-24 00:48:53,065 INFO  [Log] Opening regisration page 
+2016-08-24 00:48:54,510 INFO  [Log] Inputting registration details 
+2016-08-24 00:48:55,884 INFO  [Log] Clicking Submit button 
+2016-08-24 00:48:58,530 INFO  [Log] Verifying user display name 
+2016-08-24 00:48:58,581 INFO  [Log] User Display name verification successful 
+2016-08-24 00:48:58,581 INFO  [Log] Verifying login username 
+2016-08-24 00:48:58,667 INFO  [Log] Login username verification successful 
+2016-08-24 00:48:58,668 INFO  [Log]                                                                                          
+2016-08-24 00:48:58,668 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:48:58,668 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:48:58,668 INFO  [Log]                                                                                          
+2016-08-24 00:48:58,669 INFO  [Log]                                                                                          
+2016-08-24 00:48:58,669 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:48:58,669 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 00:48:58,669 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:48:58,669 INFO  [Log]                                                                                          
+2016-08-24 00:48:58,737 INFO  [Log] Opening URL for login page 
+2016-08-24 00:49:00,068 INFO  [Log] Login URL opened successfully 
+2016-08-24 00:49:00,318 INFO  [Log] Login details populated successfully 
+2016-08-24 00:49:00,337 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 00:49:00,552 INFO  [Log] Screenshot captured successfully 
+2016-08-24 00:49:02,683 INFO  [Log] Login successful 
+2016-08-24 00:49:02,684 INFO  [Log]                                                                                          
+2016-08-24 00:49:02,684 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:49:02,684 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:49:02,684 INFO  [Log]                                                                                          
+2016-08-24 00:49:37,588 INFO  [Log]                                                                                          
+2016-08-24 00:49:37,588 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:49:37,588 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 00:49:37,588 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:49:37,588 INFO  [Log]                                                                                          
+2016-08-24 00:49:43,925 INFO  [Log] Browser opened successfully 
+2016-08-24 00:49:43,973 INFO  [Log] Opening regisration page 
+2016-08-24 00:49:45,446 INFO  [Log] Inputting registration details 
+2016-08-24 00:49:46,703 INFO  [Log] Clicking Submit button 
+2016-08-24 00:49:48,165 INFO  [Log] Verifying user display name 
+2016-08-24 00:49:48,229 INFO  [Log] User Display name verification successful 
+2016-08-24 00:49:48,229 INFO  [Log] Verifying login username 
+2016-08-24 00:49:48,267 INFO  [Log] Login username verification successful 
+2016-08-24 00:49:48,268 INFO  [Log]                                                                                          
+2016-08-24 00:49:48,268 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:49:48,268 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:49:48,268 INFO  [Log]                                                                                          
+2016-08-24 00:49:48,269 INFO  [Log]                                                                                          
+2016-08-24 00:49:48,269 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 00:49:48,269 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 00:49:48,269 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:49:48,269 INFO  [Log]                                                                                          
+2016-08-24 00:49:48,350 INFO  [Log] Opening URL for login page 
+2016-08-24 00:49:49,395 INFO  [Log] Login URL opened successfully 
+2016-08-24 00:49:49,633 INFO  [Log] Login details populated successfully 
+2016-08-24 00:49:49,649 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 00:49:49,857 INFO  [Log] Screenshot captured successfully 
+2016-08-24 00:49:51,938 INFO  [Log] Login successful 
+2016-08-24 00:49:51,939 INFO  [Log]                                                                                          
+2016-08-24 00:49:51,939 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 00:49:51,939 INFO  [Log] **************************************************************************************** 
+2016-08-24 00:49:51,939 INFO  [Log]                                                                                          

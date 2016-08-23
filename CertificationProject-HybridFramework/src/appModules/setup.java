@@ -1,22 +1,17 @@
 package appModules;
-
-import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import com.google.gson.annotations.Until;
-
 import utility.Log;
 import commonLibs.dataProvider;
 import commonLibs.utils;
-import commonLibs.commonDriver;
+
 
 public class setup {
 
@@ -37,16 +32,16 @@ public class setup {
 	dataProvider getTestDataFor = new dataProvider();
 	WebDriver wDriver;
 
-	// setting up constructor
+//	 setting up constructor
 	public setup(WebDriver driver) {
 		this.wDriver = driver;	
 		DOMConfigurator.configure("log4j.xml");
 		PageFactory.initElements(wDriver, this);
 	}
 
-	// method verifyLoginElementsExistance
-	// This method verifies whether the contros like username textbox, password
-	// textbox and login button exist on the page
+//	 method verifyLoginElementsExistance
+//	 This method verifies whether the contros like username textbox, password
+//	 textbox and login button exist on the page
 	public String verifyLoginElementsExistance() {
 		try {
 			if (!txtUsername.isDisplayed()) {
@@ -85,13 +80,14 @@ public class setup {
 			System.out.println("inside login");					
 			try {
 			    loginButton.click();
-				 WebDriverWait oWait = new WebDriverWait(wDriver, 60l);				 
+			    System.out.println(wDriver.getTitle());
+				 WebDriverWait oWait = new WebDriverWait(wDriver, 30);				 
 				 oWait.until(ExpectedConditions.titleIs("Find a Flight: Mercury Tours:"));					
 				Log.info("Login successful");
 				return "Login Successful";
 			} catch (Exception e) {
-				Log.error("ERROR: Could not find Sign off link; login failed; details: " + e);
-				return "ERROR: Could not find Sign off link; login failed";
+				Log.error("ERROR: Title does not match after login; login failed; details: " + e);
+				return "ERROR: Title does not match after login; login failed";
 			}
 		} catch (Exception e) {
 			Log.error("ERROR: Login failed due to some exception. Below are the details: " + e);
@@ -99,8 +95,8 @@ public class setup {
 		}
 	}
 //
-	// method inputLoginDetails
-	// this method inputs the data required for login, like username, password.
+//	 method inputLoginDetails
+//	 this method inputs the data required for login, like username, password.
 	public String inputLoginDetails() {
 		try {
 			String Data[] = getTestDataFor.inputLoginDetails();
@@ -118,9 +114,9 @@ public class setup {
 		}
 	}
 //
-//	// method verifyEnteredValues
-//	// This method verified already entered value. It compares the value typed
-//	// in the textbox, with the values provided as parameters from the excel//	// sheet
+//	method verifyEnteredValues
+//	This method verified already entered value. It compares the value typed
+//	in the textbox, with the values provided as parameters from the excel//	// sheet
 	public String verifyEnteredValues() {
 		try {
 			String Data[] = getTestDataFor.inputLoginDetails();
@@ -145,6 +141,8 @@ public class setup {
 //	// method Logout
 //	// this method logs out user form the system.
 	public String logout() {
+
+		
 		try {
 			signOffLink.click();
 			WebDriverWait Wait = new WebDriverWait(wDriver, 60l);
@@ -157,4 +155,22 @@ public class setup {
 		}
 	}
 
+//method openLoginURL
+// This metod navigates to login page URL
+	public String openLoginURL(){
+		try {
+			Log.info("Opening URL for login page");;
+			String Data[] = getTestDataFor.openBrowser();			
+			String sURL = Data[1];
+			wDriver.navigate().to(sURL);
+			wDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Log.info("Login URL opened successfully");
+			return "Login URL opened successfully";
+		} catch (Exception e) {
+			Log.error("Error occured while opening the login URL, here are the details: "+ e );			
+			return "ERROR: Error occurred while entering registration details";
+		}		
+	}
+	
+	
 }
