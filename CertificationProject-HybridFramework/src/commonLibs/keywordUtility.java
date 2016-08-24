@@ -83,7 +83,7 @@ try {
 		//Run method RegisterNewUser
 		else if (methodName.equalsIgnoreCase("RegisterNewUser")){
 			Register = new mercuryRegistration(wDriver);
-			return Register.registerNewUser();
+			return Register.registerNewUser(screenshotPath);
 		}
 		
 		//Run method InputFlightDetails

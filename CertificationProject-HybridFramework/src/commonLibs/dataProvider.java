@@ -8,9 +8,14 @@ public class dataProvider {
 	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
 	private static Properties oDriverProperties;	
 	private static String testDataFolder;
+
+//*******************************************************************************************************************************************************************
+// This is the data provider class. This class contains methods that fetches data from Excel sheets for test cases. This class may return the data fetches form 
+// Excel sheet either as single value, arrays, or objects.
+//*******************************************************************************************************************************************************************
 	
-	
-	
+	//method dataProvider
+	//This is the constructor of this class
 	public dataProvider(){
 		oDriverProperties = utils.getProperties(driverPropertyFile);
 		testDataFolder = oDriverProperties.getProperty("TestDataFolder");
@@ -18,6 +23,9 @@ public class dataProvider {
 		oExcelDriver.openExcelSheet(testDataFolder+"\\TestData.xlsx");
 	}
 	
+	
+	//method openBrowser
+	//Fetches browser type and URL from excel sheet for openBrowser method
 	public String[] openBrowser(){
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();		
@@ -35,6 +43,9 @@ public class dataProvider {
 		
 	}
 	
+	
+	//method inputLoginDetails
+	//Fetches login details like user name and password from excel sheet for inputLoginDetails method.
 	public String[] inputLoginDetails()
 	{		
 		try {
@@ -51,6 +62,9 @@ public class dataProvider {
 		
 	}
 	
+	
+	//method verifyEnteredValues
+	//This method fetches data from excel sheet for method verifyEnteredValues
 	public String[] verifyEnteredValues()
 	{
 		
@@ -69,6 +83,9 @@ public class dataProvider {
 		
 	}
 	
+	
+	//method registerNewUser
+	//This method fetches the data from excel sheet for method registerNewUser
 	public String[] registerNewUser(){
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
@@ -97,6 +114,9 @@ public class dataProvider {
 		
 	}
 	
+	
+	//method inputFlightDetails
+	//This method fetches the data from excel sheet for method inputFlightDetails
 	public String [] inputFlightDetails(){
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
@@ -120,6 +140,9 @@ public class dataProvider {
 		
 	}
 	
+	
+	//method selectFlight
+	//This method fetches the data from excel sheet for method selectFlight
 	public String[] selectFlight(){
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
@@ -138,6 +161,8 @@ public class dataProvider {
 	}
 	
 	
+	//method bookFlight
+	//This method fetches the data from excel sheet for method bookFlight
 	public String[] bookFlight(){
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();

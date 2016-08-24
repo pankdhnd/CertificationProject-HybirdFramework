@@ -40,7 +40,7 @@ public class setup {
 	}
 
 //	 method verifyLoginElementsExistance
-//	 This method verifies whether the contros like username textbox, password
+//	 This method verifies whether the controls like username textbox, password
 //	 textbox and login button exist on the page
 	public String verifyLoginElementsExistance() {
 		try {

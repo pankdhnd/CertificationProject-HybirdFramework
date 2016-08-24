@@ -49,7 +49,7 @@ public class mercuryRegistration {
 	@FindBy (tagName = "select")
 	private static WebElement selectCountry;
 	
-	@FindBy (name = "email")
+	@FindBy (id = "email")
 	private static WebElement txtUsername;
 	
 	@FindBy (name = "password")
@@ -68,11 +68,7 @@ public class mercuryRegistration {
 	private static WebElement loginUsername;
 	
 	WebDriver wDriver;
-	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
-	private static Properties oDriverProperties;
-	private static String screenshotPath;
-	dataProvider getTestDataFor = new dataProvider();
-	
+	dataProvider getTestDataFor = new dataProvider();	
 	
 	//method mercuryRegistration
 	//This is the constructor for this class.
@@ -80,14 +76,12 @@ public class mercuryRegistration {
 	{
 		  this.wDriver = driver;
 		  PageFactory.initElements(wDriver, this);
-		  DOMConfigurator.configure("log4j.xml");		  
-		  oDriverProperties = utils.getProperties(driverPropertyFile);	
-		  screenshotPath = oDriverProperties.getProperty("screenshotFolder").trim();
+		  DOMConfigurator.configure("log4j.xml");
 	}
 	
 	//method registerNewUser
 	//This method gets all the needed data from the class dataProvider, and creates a new user using that data.
-	public String registerNewUser(){
+	public String registerNewUser(String screenshotPath){
 		try {
 			//Get the data from dataProvider method and put it in a string array
 			String Data[] = getTestDataFor.registerNewUser();

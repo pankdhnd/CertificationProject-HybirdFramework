@@ -16,206 +16,206 @@ import commonLibs.utils;
 public class mercuryFlightBooking {
 
 	// Veriable declaration section
-	
-	@FindBy (xpath = "//a[contains(.,'Flights')]")	
+
+	@FindBy(xpath = "//a[contains(.,'Flights')]")
 	private static WebElement linkFlightBooking;
-	
-	@FindBy (xpath = "//table/tbody/tr[1]/td/font/font/b/font/font")
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td/font/font/b/font/font")
 	private static WebElement headerFlightDetails;
-	
-	@FindBy (xpath = "//input[@value='roundtrip']")
+
+	@FindBy(xpath = "//input[@value='roundtrip']")
 	private static WebElement radioJourneyTypeRoundTrip;
-	
-	@FindBy (xpath = "//input[@value='oneway']")
+
+	@FindBy(xpath = "//input[@value='oneway']")
 	private static WebElement radioJourneyTypeOneWay;
-	
-	@FindBy (name = "passCount")
+
+	@FindBy(name = "passCount")
 	private static WebElement selectPassengers;
-	
-	@FindBy (name = "fromPort")	
+
+	@FindBy(name = "fromPort")
 	private static WebElement selectDepartingFrom;
-	
-	@FindBy (name = "fromMonth")
+
+	@FindBy(name = "fromMonth")
 	private static WebElement selectOnMonth;
 
-	@FindBy (name = "fromDay")
+	@FindBy(name = "fromDay")
 	private static WebElement selectOnDay;
-	
-	@FindBy (name = "toPort")
+
+	@FindBy(name = "toPort")
 	private static WebElement selectArrivingIn;
-	
-	@FindBy (name = "toMonth")
+
+	@FindBy(name = "toMonth")
 	private static WebElement selectReturningMonth;
-	
-	@FindBy (name = "toDay")
+
+	@FindBy(name = "toDay")
 	private static WebElement selectReturningDay;
-	
-	@FindBy (xpath = "//input[@value='Coach']")
+
+	@FindBy(xpath = "//input[@value='Coach']")
 	private static WebElement selectServiceClassEconomy;
-	
-	@FindBy (xpath = "//input[@value='Business']")
+
+	@FindBy(xpath = "//input[@value='Business']")
 	private static WebElement selectServiceClassBusiness;
-	
-	@FindBy (xpath = "//input[@value='First']")
+
+	@FindBy(xpath = "//input[@value='First']")
 	private static WebElement selectServiceClassFirst;
-	
-	@FindBy (name = "airline")
+
+	@FindBy(name = "airline")
 	private static WebElement selectAirline;
-	
-	@FindBy (name = "findFlights")
+
+	@FindBy(name = "findFlights")
 	private static WebElement buttonContiue;
-	
-	@FindBy (xpath = "//table[1]/tbody/tr[2]/td[1]/b/font")
+
+	@FindBy(xpath = "//table[1]/tbody/tr[2]/td[1]/b/font")
 	private static WebElement departText;
-	
-	@FindBy (xpath = "//table[2]/tbody/tr/td/table/tbody/tr[2]/td/b/font")
+
+	@FindBy(xpath = "//table[2]/tbody/tr/td/table/tbody/tr[2]/td/b/font")
 	private static WebElement returnText;
-	
-	@FindBy (xpath = "//input[@value='Blue Skies Airlines$360$270$5:03']")	
+
+	@FindBy(xpath = "//input[@value='Blue Skies Airlines$360$270$5:03']")
 	private static WebElement radioSelectDepartureFlightBlueSky360;
-	
-	@FindBy (xpath = "//input[@value='Blue Skies Airlines$361$271$7:10']")
+
+	@FindBy(xpath = "//input[@value='Blue Skies Airlines$361$271$7:10']")
 	private static WebElement radioSelectDepartureFlightBlueSky361;
 
-	@FindBy (xpath = "//input[@value='Pangea Airlines$362$274$9:17']")
+	@FindBy(xpath = "//input[@value='Pangea Airlines$362$274$9:17']")
 	private static WebElement radioSelectDepartureFlightPangea362;
-	
-	@FindBy (xpath = "//input[@value='Unified Airlines$363$281$11:24']")
+
+	@FindBy(xpath = "//input[@value='Unified Airlines$363$281$11:24']")
 	private static WebElement radioSelectDepartureFlightUnified363;
-	
+
 	@FindBy(xpath = "//input[@value='Blue Skies Airlines$630$270$12:23']")
 	private static WebElement radioSelectArrivalFlightBlueSky630;
 
-	@FindBy (xpath = "//input[@value='Blue Skies Airlines$631$273$14:30']")
+	@FindBy(xpath = "//input[@value='Blue Skies Airlines$631$273$14:30']")
 	private static WebElement radioSelectArrivalFlightBlueSky631;
-	
-	@FindBy (xpath = "//input[@value='Pangea Airlines$632$282$16:37']")
+
+	@FindBy(xpath = "//input[@value='Pangea Airlines$632$282$16:37']")
 	private static WebElement radioSelectArrivalFlightPangea632;
-	
-	@FindBy (xpath = "//input[@value='Unified Airlines$633$303$18:44']")
+
+	@FindBy(xpath = "//input[@value='Unified Airlines$633$303$18:44']")
 	private static WebElement radioSelectArrivalFlightUnified633;
-	
-	@FindBy (name = "reserveFlights")
+
+	@FindBy(name = "reserveFlights")
 	private static WebElement buttonContinuePage2;
-	
-	@FindBy (xpath = "//table/tbody/tr[1]/td[1]/font/b/font")
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td[1]/font/b/font")
 	private static WebElement textDepart;
-	
-	@FindBy (xpath = "//table/tbody/tr[1]/td/font/font/b/font/font")
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td/font/font/b/font/font")
 	private static WebElement textSummary;
-	
-	@FindBy (xpath = "//table/tbody/tr[1]/td[1]/b/font")
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td[1]/b/font")
 	private static WebElement flightBookingFromTo;
-	
-	@FindBy (xpath = "//table/tbody/tr[4]/td[1]/b/font")
+
+	@FindBy(xpath = "//table/tbody/tr[4]/td[1]/b/font")
 	private static WebElement flightBookingToFrom;
-	
-	@FindBy (xpath = "//table/tbody/tr[3]/td[1]/font/b")
+
+	@FindBy(xpath = "//table/tbody/tr[3]/td[1]/font/b")
 	private static WebElement bookingDepartureFlight;
-	
-	@FindBy (xpath = "//table/tbody/tr[6]/td[1]/font/font/font[1]/b")	
+
+	@FindBy(xpath = "//table/tbody/tr[6]/td[1]/font/font/font[1]/b")
 	private static WebElement bookingReturnFlight;
-	
-	@FindBy (xpath = "//table/tbody/tr[3]/td[3]/font")	
+
+	@FindBy(xpath = "//table/tbody/tr[3]/td[3]/font")
 	private static WebElement summaryDepartureFlightCost;
-	
-	@FindBy (xpath = "//table/tbody/tr[6]/td[3]/font")
+
+	@FindBy(xpath = "//table/tbody/tr[6]/td[3]/font")
 	private static WebElement summaryArrivalFlightCost;
-	
-	@FindBy (xpath = "//table/tbody/tr[7]/td[2]/font")	
+
+	@FindBy(xpath = "//table/tbody/tr[7]/td[2]/font")
 	private static WebElement summaryNumberOfPassengers;
-	
-	@FindBy (xpath = "//table/tbody/tr[8]/td[2]/font")
+
+	@FindBy(xpath = "//table/tbody/tr[8]/td[2]/font")
 	private static WebElement summaryTaxes;
-	
-	@FindBy (xpath = "//table/tbody/tr[9]/td[2]/font/b")
+
+	@FindBy(xpath = "//table/tbody/tr[9]/td[2]/font/b")
 	private static WebElement summaryTotalCost;
-	
-	@FindBy (name = "passFirst0")
-	private static WebElement txtFirstname; 
-	
-	@FindBy (name = "passLast0")
+
+	@FindBy(name = "passFirst0")
+	private static WebElement txtFirstname;
+
+	@FindBy(name = "passLast0")
 	private static WebElement txtLastName;
-	
-	@FindBy (name = "pass.0.meal")
+
+	@FindBy(name = "pass.0.meal")
 	private static WebElement selectMeal;
-	
-	@FindBy (name = "creditCard")
+
+	@FindBy(name = "creditCard")
 	private static WebElement selectCreditCard;
 
-	@FindBy (name = "creditnumber")
+	@FindBy(name = "creditnumber")
 	private static WebElement txtCreditCardNumber;
-	
-	@FindBy (name = "cc_exp_dt_mn")
+
+	@FindBy(name = "cc_exp_dt_mn")
 	private static WebElement selectExpiryMonth;
-	
-	@FindBy (name = "cc_exp_dt_yr")
+
+	@FindBy(name = "cc_exp_dt_yr")
 	private static WebElement selectExpiryYear;
-	
-	@FindBy (name = "cc_frst_name")
+
+	@FindBy(name = "cc_frst_name")
 	private static WebElement txtCCFirstName;
-	
-	@FindBy (name = "cc_mid_name")
+
+	@FindBy(name = "cc_mid_name")
 	private static WebElement txtCCMiddleName;
 
-	@FindBy (name = "cc_last_name")
+	@FindBy(name = "cc_last_name")
 	private static WebElement txtCCLastName;
-	
-	@FindBy (xpath = "//tr[9]/td[2]/input[@name='ticketLess']")
+
+	@FindBy(xpath = "//tr[9]/td[2]/input[@name='ticketLess']")
 	private static WebElement checkboxTicketlessBilling;
-	
-	@FindBy (name = "billAddress1")
+
+	@FindBy(name = "billAddress1")
 	private static WebElement txtBillingAddress1;
-	
-	@FindBy (name = "billAddress2")
+
+	@FindBy(name = "billAddress2")
 	private static WebElement txtBillingAddress2;
-	
-	@FindBy (name = "billCity")
+
+	@FindBy(name = "billCity")
 	private static WebElement txtBillingCity;
-	
-	@FindBy (name = "billState")
+
+	@FindBy(name = "billState")
 	private static WebElement txtBillingState;
 
-	@FindBy (name = "billZip")
+	@FindBy(name = "billZip")
 	private static WebElement txtBillingPostalCode;
-	
-	@FindBy (name = "billCountry")	
+
+	@FindBy(name = "billCountry")
 	private static WebElement selectBillingCountry;
-	
-	@FindBy (xpath = "//tr[15]/td[2]/input[@name='ticketLess']")
+
+	@FindBy(xpath = "//tr[15]/td[2]/input[@name='ticketLess']")
 	private static WebElement checkboxSameBillingDelivery;
-	
-	@FindBy (name = "delAddress1")
+
+	@FindBy(name = "delAddress1")
 	private static WebElement txtDeliveryAddress1;
-	
-	@FindBy (name = "delAddress2")
+
+	@FindBy(name = "delAddress2")
 	private static WebElement txtDeliveryAddress2;
-	
-	@FindBy (name = "delCity")
+
+	@FindBy(name = "delCity")
 	private static WebElement txtDeliveryCity;
-	
-	@FindBy (name = "delState")
+
+	@FindBy(name = "delState")
 	private static WebElement txtDeliveryState;
-	
-	@FindBy (name = "delZip")
+
+	@FindBy(name = "delZip")
 	private static WebElement txtDeliveryPostalCode;
-	
-	@FindBy (name = "delCountry")
+
+	@FindBy(name = "delCountry")
 	private static WebElement selectDeliveryCountry;
-	
-	@FindBy (name = "buyFlights")
+
+	@FindBy(name = "buyFlights")
 	private static WebElement buttonSecurePurchase;
-	
-	@FindBy (xpath = "//table/tbody/tr[3]/td/p/font/b/font[2]")
+
+	@FindBy(xpath = "//table/tbody/tr[3]/td/p/font/b/font[2]")
 	private static WebElement headerConfirmation;
-	
-	@FindBy (xpath = "//table/tbody/tr/td[1]/a/img")
+
+	@FindBy(xpath = "//table/tbody/tr/td[1]/a/img")
 	private static WebElement buttonBackToFlights;
-	
-	@FindBy (xpath = "//table/tbody/tr/td[2]/a/img")
+
+	@FindBy(xpath = "//table/tbody/tr/td[2]/a/img")
 	private static WebElement buttonBackToHome;
-	
-	@FindBy (name = "userName")
+
+	@FindBy(name = "userName")
 	public static WebElement txtUserName;
 
 	WebDriver wDriver;
@@ -226,7 +226,7 @@ public class mercuryFlightBooking {
 	public mercuryFlightBooking(WebDriver driver) {
 		this.wDriver = driver;
 		PageFactory.initElements(wDriver, this);
-		DOMConfigurator.configure("log4j.xml");		
+		DOMConfigurator.configure("log4j.xml");
 	}// END OF CONSTRUCTOR
 
 	// method openFlightBookingPage
@@ -236,17 +236,19 @@ public class mercuryFlightBooking {
 		try {
 			linkFlightBooking.click();
 			utils.waitTillElementVisible(wDriver, headerFlightDetails, 30);
-			//WebDriverWait oWait = new WebDriverWait(wDriver, 30);				 
-			//oWait.until(ExpectedConditions.visibilityOf(headerFlightDetails));			
+			// WebDriverWait oWait = new WebDriverWait(wDriver, 30);
+			// oWait.until(ExpectedConditions.visibilityOf(headerFlightDetails));
 			return "Flight booking page opened successfully";
 		} catch (Exception e) {
-			Log.error("mercuryFlightBooking()->openFlightBookingPage()-> Could not open flight booking page, here is the error: " + e);
+			Log.error(
+					"mercuryFlightBooking()->openFlightBookingPage()-> Could not open flight booking page, here is the error: "
+							+ e);
 			return "ERROR: Could not open flight booking page";
 		}
 	}// END OF METHOD openFlightBookingPage
 
 	// method inputFlightDetails
-	// This method inputs basic flighs details. The data is fetched from excel
+	// This method inputs basic flights details. The data is fetched from excel
 	// sheet using dataProvider class.
 	public String inputFlightDetails() {
 		try {
@@ -264,7 +266,8 @@ public class mercuryFlightBooking {
 			// Fetch the data from excel using dataProvider class
 			String Data[] = getTestDataFor.inputFlightDetails();
 
-			// Check which of the radio button is selected WebElement default when the
+			// Check which of the radio button is selected WebElement default
+			// when the
 			// page is loaded.
 			if (radioJourneyTypeRoundTrip.isSelected()) {
 				Log.info("Return Trip checkbox is slected WebElement default");
@@ -274,7 +277,8 @@ public class mercuryFlightBooking {
 				Log.info("Return Trip checkbox is slected WebElement default");
 			}
 
-			// Populating all the order fields, as per the test data provided WebElement
+			// Populating all the order fields, as per the test data provided
+			// WebElement
 			// dataProvider class.
 			Log.info("Populatig all the provided data");
 
@@ -284,7 +288,7 @@ public class mercuryFlightBooking {
 				radioJourneyTypeOneWay.click();
 			}
 			Select select;
-			
+
 			utils.selectByVisibleText(wDriver, selectPassengers, Data[1]);
 			utils.selectByVisibleText(wDriver, selectDepartingFrom, Data[2]);
 			utils.selectByVisibleText(wDriver, selectOnMonth, Data[3]);
@@ -292,30 +296,29 @@ public class mercuryFlightBooking {
 			utils.selectByVisibleText(wDriver, selectArrivingIn, Data[5]);
 			utils.selectByVisibleText(wDriver, selectReturningMonth, Data[6]);
 			utils.selectByVisibleText(wDriver, selectReturningDay, Data[7]);
-				
-			
-			/*
-			select = new Select(selectPassengers);
-			select.selectByVisibleText(Data[1]);
-			
-			select = new Select(selectDepartingFrom);
-			select.selectByVisibleText(Data[2]);
-			
-			select = new Select(selectOnMonth);
-			select.selectByVisibleText(Data[3]);
-			
-			select = new Select(selectOnDay);
-			select.selectByVisibleText(Data[4]);
-		
-			select = new Select(selectArrivingIn);
-			select.selectByVisibleText(Data[5]);
-			
-			select = new Select(selectReturningMonth);
-			select.selectByVisibleText(Data[6]);
 
-			select = new Select(selectReturningDay);
-			select.selectByVisibleText(Data[7]);*/
-			
+			/*
+			 * select = new Select(selectPassengers);
+			 * select.selectByVisibleText(Data[1]);
+			 * 
+			 * select = new Select(selectDepartingFrom);
+			 * select.selectByVisibleText(Data[2]);
+			 * 
+			 * select = new Select(selectOnMonth);
+			 * select.selectByVisibleText(Data[3]);
+			 * 
+			 * select = new Select(selectOnDay);
+			 * select.selectByVisibleText(Data[4]);
+			 * 
+			 * select = new Select(selectArrivingIn);
+			 * select.selectByVisibleText(Data[5]);
+			 * 
+			 * select = new Select(selectReturningMonth);
+			 * select.selectByVisibleText(Data[6]);
+			 * 
+			 * select = new Select(selectReturningDay);
+			 * select.selectByVisibleText(Data[7]);
+			 */
 
 			if (Data[8].equalsIgnoreCase("Economy")) {
 				selectServiceClassEconomy.click();
@@ -326,12 +329,12 @@ public class mercuryFlightBooking {
 			}
 
 			utils.selectByVisibleText(wDriver, selectAirline, Data[9]);
-			
-//			select = new Select(selectAirline);
-//			select.selectByVisibleText(Data[9]);
-			
+
+			// select = new Select(selectAirline);
+			// select.selectByVisibleText(Data[9]);
+
 			buttonContiue.click();
-			utils.waitTillElementVisible(wDriver, textDepart, 30l);			
+			utils.waitTillElementVisible(wDriver, textDepart, 30l);
 			Log.info("mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully");
 			return "All fields populated successfully";
 
@@ -405,12 +408,12 @@ public class mercuryFlightBooking {
 			// Click Continue button to proceed to next page to complete the
 			// registration
 			buttonContinuePage2.click();
-			utils.waitTillElementVisible(wDriver, textSummary, 30l);			
+			utils.waitTillElementVisible(wDriver, textSummary, 30l);
 			Log.info("Flights selected successfully");
 			return "Flight selected successfully";
 
 		} catch (Exception e) {
-			Log.error("mercuryFlightBooking()->selectFlight()-> Error occured, here are the details: " + e);			
+			Log.error("mercuryFlightBooking()->selectFlight()-> Error occured, here are the details: " + e);
 			return "ERROR: Error occurred while selecting flight";
 		}
 	}// END OF METHOD selectFlight
@@ -513,8 +516,7 @@ public class mercuryFlightBooking {
 			txtCCFirstName.sendKeys(Data[14]);
 			txtCCMiddleName.sendKeys(Data[15]);
 			txtCCLastName.sendKeys(Data[16]);
-			
-		
+
 			if (Data[17].equalsIgnoreCase("yes")) {
 				checkboxTicketlessBilling.click();
 			}
@@ -525,8 +527,7 @@ public class mercuryFlightBooking {
 			txtBillingState.sendKeys(Data[21]);
 			txtBillingPostalCode.sendKeys(Data[22]);
 			utils.selectByVisibleText(wDriver, selectBillingCountry, Data[23]);
-			
-			
+
 			if (Data[24].equalsIgnoreCase("yes")) {
 				checkboxSameBillingDelivery.click();
 			}
@@ -536,16 +537,16 @@ public class mercuryFlightBooking {
 			txtDeliveryState.sendKeys(Data[27]);
 			txtDeliveryCity.sendKeys(Data[28]);
 			txtDeliveryPostalCode.sendKeys(Data[29]);
-			
+
 			// If ticket delivery country is not UNITED STATES, a popup is
 			// displayed showing the extra delivery charges. The popup is
 			// handled here.
 			if (!Data[30].equals("UNITED STATES")) {
-				utils.selectByVisibleText(wDriver, selectDeliveryCountry, Data[30]);				
-				Log.info("Waiting for alert to appear");				
-				utils.waitTillAlertVisible(wDriver, 60l);				
+				utils.selectByVisibleText(wDriver, selectDeliveryCountry, Data[30]);
+				Log.info("Waiting for alert to appear");
+				utils.waitTillAlertVisible(wDriver, 60l);
 				Log.info("Alert visible, switching to alert");
-				utils.switchToAlert(wDriver);				
+				utils.switchToAlert(wDriver);
 				Log.info("Switched to alert");
 				Log.info("Alert Text: " + utils.getAlertText(wDriver));
 				Log.info("Accpeting the alert");
@@ -554,7 +555,7 @@ public class mercuryFlightBooking {
 			}
 
 			buttonSecurePurchase.click();
-			utils.waitTillElementVisible(wDriver, headerConfirmation, 30l);			
+			utils.waitTillElementVisible(wDriver, headerConfirmation, 30l);
 			Log.info("Flight booked successfully");
 			return "Flight booked successfully";
 
@@ -571,7 +572,8 @@ public class mercuryFlightBooking {
 	public String backToFlights() {
 		try {
 			buttonBackToFlights.click();
-			utils.waitTillElementVisible(wDriver, headerFlightDetails, 30l);;			
+			utils.waitTillElementVisible(wDriver, headerFlightDetails, 30l);
+			;
 			return "Flight booking page opened successfully";
 		} catch (Exception e) {
 			Log.error(
@@ -587,7 +589,7 @@ public class mercuryFlightBooking {
 	public String backToHome() {
 		try {
 			buttonBackToHome.click();
-			utils.waitTillElementVisible(wDriver, txtUserName, 30l);			
+			utils.waitTillElementVisible(wDriver, txtUserName, 30l);
 			return "Navigated to Home page successfully";
 		} catch (Exception e) {
 			Log.error(

@@ -21,6 +21,14 @@ public class excelDriver {
  private Workbook excelWorkbook;
  private String excelFileName;
 
+ 
+//*******************************************************************************************************************************************************************
+//This is the excelDriver class. This class contains all the methods that are needed by framework to interact with excel sheets. Using this class
+//the activities like creating, opening, saving, excel files and workbooks.
+//*******************************************************************************************************************************************************************
+ 
+ //method createExcelWorkbook
+ //This method creates a new excel workbook with the filename and path provided.
  public void createExcelWorkbook(String fileName) {
    try {
     fileName = fileName.trim();
@@ -51,7 +59,9 @@ public class excelDriver {
    }
   } //END createExcelWorkbook
   //---------------------------------------------------------------------------------------------------------------------------------------------	
-  //---------------------------------------------------------------------------------------------------------------------------------------------	
+  //---------------------------------------------------------------------------------------------------------------------------------------------
+  //method openExcelSheet
+  //This method opens the excel files from the given path
  public void openExcelSheet(String fileName) {
    try {
     fileName = fileName.trim();
@@ -70,7 +80,9 @@ public class excelDriver {
    }
   } //END openExcelSheet
   //---------------------------------------------------------------------------------------------------------------------------------------------	
-  //---------------------------------------------------------------------------------------------------------------------------------------------	
+  //---------------------------------------------------------------------------------------------------------------------------------------------
+  //method save
+  //This method saves an open excel file.
  public void save() {
    try {
     oFileWriter = new FileOutputStream(excelFileName);
@@ -83,6 +95,8 @@ public class excelDriver {
   } //END save
   //---------------------------------------------------------------------------------------------------------------------------------------------	
   //---------------------------------------------------------------------------------------------------------------------------------------------
+  //method saveAs
+  //This method saves a currently open excel file, into a new file
  public void saveAs(String newFileName) {
    try {
     newFileName = newFileName.trim();
