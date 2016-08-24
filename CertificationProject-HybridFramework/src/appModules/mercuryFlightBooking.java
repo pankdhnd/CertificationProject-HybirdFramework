@@ -5,13 +5,13 @@ import java.util.regex.Pattern;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindWebElement;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
-import commonLibs.commonDriver;
+import commonLibs.Log;
 import commonLibs.dataProvider;
-import utility.Log;
+import commonLibs.utils;
 
 public class mercuryFlightBooking {
 
@@ -200,7 +200,7 @@ public class mercuryFlightBooking {
 	@FindBy (name = "delZip")
 	private static WebElement txtDeliveryPostalCode;
 	
-	@Findby (name = "delCountry")
+	@FindBy (name = "delCountry")
 	private static WebElement selectDeliveryCountry;
 	
 	@FindBy (name = "buyFlights")
@@ -225,8 +225,8 @@ public class mercuryFlightBooking {
 	// This is the constructor of the class
 	public mercuryFlightBooking(WebDriver driver) {
 		this.wDriver = driver;
-		DOMConfigurator.configure("log4j.xml");
-		oDriver = new commonDriver();
+		PageFactory.initElements(wDriver, this);
+		DOMConfigurator.configure("log4j.xml");		
 	}// END OF CONSTRUCTOR
 
 	// method openFlightBookingPage
@@ -234,13 +234,13 @@ public class mercuryFlightBooking {
 	// text to exist
 	public String openFlightBookingPage() {
 		try {
-			oDriver.click(linkFlightBooking);
-			oDriver.waitTillElementVisible(headerFlightDetails, 30l);
+			linkFlightBooking.click();
+			utils.waitTillElementVisible(wDriver, headerFlightDetails, 30);
+			//WebDriverWait oWait = new WebDriverWait(wDriver, 30);				 
+			//oWait.until(ExpectedConditions.visibilityOf(headerFlightDetails));			
 			return "Flight booking page opened successfully";
 		} catch (Exception e) {
-			Log.error(
-					"mercuryFlightBooking()->openFlightBookingPage()-> Could not open flight booking page, here is the error: "
-							+ e);
+			Log.error("mercuryFlightBooking()->openFlightBookingPage()-> Could not open flight booking page, here is the error: " + e);
 			return "ERROR: Could not open flight booking page";
 		}
 	}// END OF METHOD openFlightBookingPage
@@ -253,7 +253,7 @@ public class mercuryFlightBooking {
 
 			// Verify title of the page , just to make sure that we are on the
 			// correct page before we proceed further
-			if (oDriver.getTitle().equals("Find a Flight: Mercury Tours:")) {
+			if (wDriver.getTitle().equals("Find a Flight: Mercury Tours:")) {
 				Log.info("mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page");
 			} else {
 				Log.error(
@@ -266,11 +266,11 @@ public class mercuryFlightBooking {
 
 			// Check which of the radio button is selected WebElement default when the
 			// page is loaded.
-			if (oDriver.isSelected(radioJourneyTypeRoundTrip)) {
+			if (radioJourneyTypeRoundTrip.isSelected()) {
 				Log.info("Return Trip checkbox is slected WebElement default");
 			}
 
-			if (oDriver.isSelected(radioJourneyTypeOneWay)) {
+			if (radioJourneyTypeOneWay.isSelected()) {
 				Log.info("Return Trip checkbox is slected WebElement default");
 			}
 
@@ -279,30 +279,59 @@ public class mercuryFlightBooking {
 			Log.info("Populatig all the provided data");
 
 			if (Data[0].equals("Round Trip")) {
-				oDriver.click(radioJourneyTypeRoundTrip);
+				radioJourneyTypeRoundTrip.click();
 			} else if (Data[0].equals("One way")) {
-				oDriver.click(radioJourneyTypeOneWay);
+				radioJourneyTypeOneWay.click();
 			}
+			Select select;
+			
+			utils.selectByVisibleText(wDriver, selectPassengers, Data[1]);
+			utils.selectByVisibleText(wDriver, selectDepartingFrom, Data[2]);
+			utils.selectByVisibleText(wDriver, selectOnMonth, Data[3]);
+			utils.selectByVisibleText(wDriver, selectOnDay, Data[4]);
+			utils.selectByVisibleText(wDriver, selectArrivingIn, Data[5]);
+			utils.selectByVisibleText(wDriver, selectReturningMonth, Data[6]);
+			utils.selectByVisibleText(wDriver, selectReturningDay, Data[7]);
+				
+			
+			/*
+			select = new Select(selectPassengers);
+			select.selectByVisibleText(Data[1]);
+			
+			select = new Select(selectDepartingFrom);
+			select.selectByVisibleText(Data[2]);
+			
+			select = new Select(selectOnMonth);
+			select.selectByVisibleText(Data[3]);
+			
+			select = new Select(selectOnDay);
+			select.selectByVisibleText(Data[4]);
+		
+			select = new Select(selectArrivingIn);
+			select.selectByVisibleText(Data[5]);
+			
+			select = new Select(selectReturningMonth);
+			select.selectByVisibleText(Data[6]);
 
-			oDriver.selectWebElementVisibleText(selectPassengers, Data[1]);
-			oDriver.selectWebElementVisibleText(selectDepartingFrom, Data[2]);
-			oDriver.selectWebElementVisibleText(selectOnMonth, Data[3]);
-			oDriver.selectWebElementVisibleText(selectOnDay, Data[4]);
-			oDriver.selectWebElementVisibleText(selectArrivingIn, Data[5]);
-			oDriver.selectWebElementVisibleText(selectReturningMonth, Data[6]);
-			oDriver.selectWebElementVisibleText(selectReturningDay, Data[7]);
+			select = new Select(selectReturningDay);
+			select.selectByVisibleText(Data[7]);*/
+			
 
 			if (Data[8].equalsIgnoreCase("Economy")) {
-				oDriver.click(selectServiceClassEconomy);
+				selectServiceClassEconomy.click();
 			} else if (Data[8].equalsIgnoreCase("Business")) {
-				oDriver.click(selectServiceClassBusiness);
+				selectServiceClassBusiness.click();
 			} else if (Data[8].equalsIgnoreCase("First")) {
-				oDriver.click(selectServiceClassFirst);
+				selectServiceClassFirst.click();
 			}
 
-			oDriver.selectWebElementVisibleText(selectAirline, Data[9]);
-			oDriver.click(buttonContiue);
-			oDriver.waitTillElementVisible(textDepart, 30l);
+			utils.selectByVisibleText(wDriver, selectAirline, Data[9]);
+			
+//			select = new Select(selectAirline);
+//			select.selectByVisibleText(Data[9]);
+			
+			buttonContiue.click();
+			utils.waitTillElementVisible(wDriver, textDepart, 30l);			
 			Log.info("mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully");
 			return "All fields populated successfully";
 
@@ -319,7 +348,7 @@ public class mercuryFlightBooking {
 
 			// verify page title to make sure that we are on the correct page
 			// before we proceed.
-			if (oDriver.getTitle().equals("Select a Flight: Mercury Tours")) {
+			if (wDriver.getTitle().equals("Select a Flight: Mercury Tours")) {
 				Log.info("mercuryFlightBooking()->selectFlight()->Now on the flight selection page");
 			} else {
 				Log.error(
@@ -333,7 +362,7 @@ public class mercuryFlightBooking {
 
 			// Verify FROM->TO flight text is correct and as per the values we
 			// entered in first step.
-			if (oDriver.getText(departText).equalsIgnoreCase(Data[0] + " to " + Data[1])) {
+			if (departText.getText().equalsIgnoreCase(Data[0] + " to " + Data[1])) {
 				Log.error("mercuryFlightBooking()->selectFlight()-> FROM and TO flights match");
 			} else {
 				Log.error("mercuryFlightBooking()->selectFlight()-> FROM and TO flights doesn't match");
@@ -342,7 +371,7 @@ public class mercuryFlightBooking {
 
 			// Verify To->FROM flight text is correct and as per the values we
 			// entered in first step.
-			if (oDriver.getText(returnText).equalsIgnoreCase(Data[1] + " to " + Data[0])) {
+			if (returnText.getText().equalsIgnoreCase(Data[1] + " to " + Data[0])) {
 				Log.error("mercuryFlightBooking()->selectFlight()-> TO and FROM flights match");
 			} else {
 				Log.error("mercuryFlightBooking()->selectFlight()-> TO and FROM flights doesn't match");
@@ -352,37 +381,36 @@ public class mercuryFlightBooking {
 			// Select appropriate departure flight as per the input test data
 			// from excel sheet
 			if (Data[2].trim().equalsIgnoreCase("Blue Skies Airlines 360")) {
-				oDriver.click(radioSelectDepartureFlightBlueSky360);
+				radioSelectDepartureFlightBlueSky360.click();
 			} else if (Data[2].trim().equalsIgnoreCase("Blue Skies Airlines 361")) {
-				oDriver.click(radioSelectDepartureFlightBlueSky361);
+				radioSelectDepartureFlightBlueSky361.click();
 			} else if (Data[2].trim().equalsIgnoreCase("Pangaea Airlines 362")) {
-				oDriver.click(radioSelectDepartureFlightPangea362);
+				radioSelectDepartureFlightPangea362.click();
 			} else if (Data[2].trim().equalsIgnoreCase("Unified Airlines 363")) {
-				oDriver.click(radioSelectDepartureFlightUnified363);
+				radioSelectDepartureFlightUnified363.click();
 			}
 
 			// Select appropriate return flight as per the input test data from
 			// excel sheet
 			if (Data[3].trim().equalsIgnoreCase("Blue Skies Airlines 630")) {
-				oDriver.click(radioSelectArrivalFlightBlueSky630);
+				radioSelectArrivalFlightBlueSky630.click();
 			} else if (Data[3].trim().equalsIgnoreCase("Blue Skies Airlines 631")) {
-				oDriver.click(radioSelectArrivalFlightBlueSky631);
+				radioSelectArrivalFlightBlueSky631.click();
 			} else if (Data[3].trim().equalsIgnoreCase("Pangea Airlines 632")) {
-				oDriver.click(radioSelectArrivalFlightPangea632);
+				radioSelectArrivalFlightPangea632.click();
 			} else if (Data[3].trim().equalsIgnoreCase("Unified Airlines 633")) {
-				oDriver.click(radioSelectArrivalFlightUnified633);
+				radioSelectArrivalFlightUnified633.click();
 			}
 
 			// Click Continue button to proceed to next page to complete the
 			// registration
-			oDriver.click(buttonContinuePage2);
-			oDriver.waitTillElementVisible(textSummary, 30l);
+			buttonContinuePage2.click();
+			utils.waitTillElementVisible(wDriver, textSummary, 30l);			
 			Log.info("Flights selected successfully");
 			return "Flight selected successfully";
 
 		} catch (Exception e) {
-			Log.error("mercuryFlightBooking()->selectFlight()-> Error occured, here are the details: ");
-			Log.error(e.toString());
+			Log.error("mercuryFlightBooking()->selectFlight()-> Error occured, here are the details: " + e);			
 			return "ERROR: Error occurred while selecting flight";
 		}
 	}// END OF METHOD selectFlight
@@ -393,7 +421,7 @@ public class mercuryFlightBooking {
 	public String bookFlight() {
 		try {
 			// Verify page title to make sure we are on the correct page
-			if (oDriver.getTitle().equals("Book a Flight: Mercury Tours")) {
+			if (wDriver.getTitle().equals("Book a Flight: Mercury Tours")) {
 				Log.info("mercuryFlightBooking()->bookFlight()->Now on the flight booking page");
 			} else {
 				Log.error(
@@ -404,14 +432,14 @@ public class mercuryFlightBooking {
 			String Data[] = getTestDataFor.bookFlight();
 
 			// Verify depart FROM -> TO, and TO -> FROM cities
-			if (oDriver.getText(flightBookingFromTo).equalsIgnoreCase(Data[0] + " to " + Data[1])) {
+			if (flightBookingFromTo.getText().equalsIgnoreCase(Data[0] + " to " + Data[1])) {
 				Log.error("mercuryFlightBooking()->bookFlight()-> FROM and TO flights match");
 			} else {
 				Log.error("mercuryFlightBooking()->bookFlight()-> FROM and TO flights doesn't match");
 				return "ERROR:  FROM and TO flights doesn't match";
 			}
 
-			if (oDriver.getText(flightBookingToFrom).equalsIgnoreCase(Data[1] + " to " + Data[0])) {
+			if (flightBookingToFrom.getText().equalsIgnoreCase(Data[1] + " to " + Data[0])) {
 				Log.error("mercuryFlightBooking()->bookFlight()-> TO and FROM flights match");
 			} else {
 				Log.error("mercuryFlightBooking()->bookFlight()-> TO and FROM flights doesn't match");
@@ -419,14 +447,14 @@ public class mercuryFlightBooking {
 			}
 
 			// Verify if the flights are correct
-			if (oDriver.getText(bookingDepartureFlight).equalsIgnoreCase(Data[2])) {
+			if (bookingDepartureFlight.getText().equalsIgnoreCase(Data[2])) {
 				Log.error("mercuryFlightBooking()->bookFlight()-> Departure flight is correct");
 			} else {
 				Log.error("mercuryFlightBooking()->bookFlight()-> Wrong departure flight");
 				return "ERROR: Wrong departure flight";
 			}
 
-			if (oDriver.getText(bookingReturnFlight).equalsIgnoreCase(Data[4])) {
+			if (bookingReturnFlight.getText().equalsIgnoreCase(Data[4])) {
 				Log.error("mercuryFlightBooking()->bookFlight()-> Return flight is correct");
 			} else {
 				Log.error("mercuryFlightBooking()->bookFlight()-> Wrong return flight");
@@ -434,14 +462,14 @@ public class mercuryFlightBooking {
 			}
 
 			// Verify flight costs are correct
-			if (oDriver.getText(summaryDepartureFlightCost).equalsIgnoreCase(Data[3])) {
+			if (summaryDepartureFlightCost.getText().equalsIgnoreCase(Data[3])) {
 				Log.error("mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly");
 			} else {
 				Log.error("mercuryFlightBooking()->bookFlight()-> Departure flight cost mismatch");
 				return "ERROR: Departure flight cost mismatch";
 			}
 
-			if (oDriver.getText(summaryArrivalFlightCost).equalsIgnoreCase(Data[5])) {
+			if (summaryArrivalFlightCost.getText().equalsIgnoreCase(Data[5])) {
 				Log.error("mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly");
 			} else {
 				Log.error("mercuryFlightBooking()->bookFlight()-> Return flight cost mismatch");
@@ -449,7 +477,7 @@ public class mercuryFlightBooking {
 			}
 
 			// Verify number of passengers
-			if (oDriver.getText(summaryNumberOfPassengers).equalsIgnoreCase(Data[6])) {
+			if (summaryNumberOfPassengers.getText().equalsIgnoreCase(Data[6])) {
 				Log.error("mercuryFlightBooking()->bookFlight()-> Number of passenges are correct");
 			} else {
 				Log.error("mercuryFlightBooking()->bookFlight()-> Wrong number of passengers");
@@ -457,10 +485,10 @@ public class mercuryFlightBooking {
 			}
 
 			// Verify flight cost calculation
-			String[] tempString = oDriver.getText(summaryTaxes).split(Pattern.quote("$"));
+			String[] tempString = summaryTaxes.getText().split(Pattern.quote("$"));
 
 			int tempTaxes = Integer.parseInt(tempString[1]);
-			tempString = oDriver.getText(summaryTotalCost).split(Pattern.quote("$"));
+			tempString = summaryTotalCost.getText().split(Pattern.quote("$"));
 			int actualTotalCost = Integer.parseInt(tempString[1]);
 			int NumberOfPassengers = Integer.parseInt(Data[6]);
 			int expectedTotalCost = (Integer.parseInt(Data[3]) + Integer.parseInt(Data[5])) * NumberOfPassengers
@@ -475,56 +503,58 @@ public class mercuryFlightBooking {
 
 			// select remaining data from the excel
 			Log.info("Inputting all the details");
-			oDriver.setText(txtFirstname, Data[7]);
-			oDriver.setText(txtLastName, Data[8]);
-			oDriver.selectWebElementVisibleText(selectMeal, Data[9]);
-			oDriver.selectWebElementVisibleText(selectCreditCard, Data[10]);
-			oDriver.setText(txtCreditCardNumber, Data[11]);
-			oDriver.selectWebElementVisibleText(selectExpiryMonth, Data[12]);
-			oDriver.selectWebElementVisibleText(selectExpiryYear, Data[13]);
-			oDriver.setText(txtCCFirstName, Data[14]);
-			oDriver.setText(txtCCMiddleName, Data[15]);
-			oDriver.setText(txtCCLastName, Data[16]);
-
+			txtFirstname.sendKeys(Data[7]);
+			txtLastName.sendKeys(Data[8]);
+			utils.selectByVisibleText(wDriver, selectMeal, Data[9]);
+			utils.selectByVisibleText(wDriver, selectCreditCard, Data[10]);
+			txtCreditCardNumber.sendKeys(Data[11]);
+			utils.selectByVisibleText(wDriver, selectExpiryMonth, Data[12]);
+			utils.selectByVisibleText(wDriver, selectExpiryYear, Data[13]);
+			txtCCFirstName.sendKeys(Data[14]);
+			txtCCMiddleName.sendKeys(Data[15]);
+			txtCCLastName.sendKeys(Data[16]);
+			
+		
 			if (Data[17].equalsIgnoreCase("yes")) {
-				oDriver.click(checkboxTicketlessBilling);
+				checkboxTicketlessBilling.click();
 			}
 
-			oDriver.setText(txtBillingAddress1, Data[18]);
-			oDriver.setText(txtBillingAddress2, Data[19]);
-			oDriver.setText(txtBillingCity, Data[20]);
-			oDriver.setText(txtBillingState, Data[21]);
-			oDriver.setText(txtBillingPostalCode, Data[22]);
-			oDriver.selectWebElementVisibleText(selectBillingCountry, Data[23]);
-
+			txtBillingAddress1.sendKeys(Data[18]);
+			txtBillingAddress2.sendKeys(Data[19]);
+			txtBillingCity.sendKeys(Data[20]);
+			txtBillingState.sendKeys(Data[21]);
+			txtBillingPostalCode.sendKeys(Data[22]);
+			utils.selectByVisibleText(wDriver, selectBillingCountry, Data[23]);
+			
+			
 			if (Data[24].equalsIgnoreCase("yes")) {
-				oDriver.click(checkboxSameBillingDelivery);
+				checkboxSameBillingDelivery.click();
 			}
 
-			oDriver.setText(txtDeliveryAddress1, Data[25]);
-			oDriver.setText(txtDeliveryAddress2, Data[26]);
-			oDriver.setText(txtDeliveryState, Data[27]);
-			oDriver.setText(txtDeliveryCity, Data[28]);
-			oDriver.setText(txtDeliveryPostalCode, Data[29]);
-
+			txtDeliveryAddress1.sendKeys(Data[25]);
+			txtDeliveryAddress2.sendKeys(Data[26]);
+			txtDeliveryState.sendKeys(Data[27]);
+			txtDeliveryCity.sendKeys(Data[28]);
+			txtDeliveryPostalCode.sendKeys(Data[29]);
+			
 			// If ticket delivery country is not UNITED STATES, a popup is
 			// displayed showing the extra delivery charges. The popup is
 			// handled here.
 			if (!Data[30].equals("UNITED STATES")) {
-				oDriver.setText(selectDeliveryCountry, Data[30]);
+				selectDeliveryCountry.sendKeys(Data[30]);				
 				Log.info("Waiting for alert to appear");
-				oDriver.waitTillAlertVisible(30l);
+				utils.waitTillAlertVisible(wDriver, 30l);				
 				Log.info("Alert visible, switching to alert");
-				oDriver.switchToAlert();
+				utils.switchToAlert(wDriver);				
 				Log.info("Switched to alert");
-				Log.info("Alert Text: " + oDriver.getAlertText());
+				Log.info("Alert Text: " + utils.getAlertText(wDriver));
 				Log.info("Accpeting the alert");
-				oDriver.acceptAlert();
+				utils.acceptAlert(wDriver);
 				Log.info("Alert accepted");
 			}
 
-			oDriver.click(buttonSecurePurchase);
-			oDriver.waitTillElementVisible(headerConfirmation, 30l);
+			buttonSecurePurchase.click();
+			utils.waitTillElementVisible(wDriver, headerConfirmation, 30l);			
 			Log.info("Flight booked successfully");
 			return "Flight booked successfully";
 
@@ -540,8 +570,8 @@ public class mercuryFlightBooking {
 	// to flights page again.
 	public String backToFlights() {
 		try {
-			oDriver.click(buttonBackToFlights);
-			oDriver.waitTillElementVisible(headerFlightDetails, 30l);
+			buttonBackToFlights.click();
+			utils.waitTillElementVisible(wDriver, headerFlightDetails, 30l);;			
 			return "Flight booking page opened successfully";
 		} catch (Exception e) {
 			Log.error(
@@ -556,8 +586,8 @@ public class mercuryFlightBooking {
 	// home page.
 	public String backToHome() {
 		try {
-			oDriver.click(buttonBackToHome);
-			oDriver.waitTillElementVisible(txtUserName, 30l);
+			buttonBackToHome.click();
+			utils.waitTillElementVisible(wDriver, txtUserName, 30l);			
 			return "Navigated to Home page successfully";
 		} catch (Exception e) {
 			Log.error(

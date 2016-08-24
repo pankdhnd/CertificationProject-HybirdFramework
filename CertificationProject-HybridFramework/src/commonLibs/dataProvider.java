@@ -2,7 +2,6 @@ package commonLibs;
 
 import java.util.Properties;
 import commonLibs.excelDriver;
-import utility.Log;
 
 public class dataProvider {
 	private static excelDriver oExcelDriver;	

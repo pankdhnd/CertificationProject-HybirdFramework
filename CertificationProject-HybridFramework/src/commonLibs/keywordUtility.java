@@ -14,7 +14,6 @@ import commonLibs.dataProvider;
 import appModules.mercuryRegistration;
 import appModules.*;
 import commonLibs.utils;
-import utility.Log;
 
 public class keywordUtility { 
 //*******************************************************************************************************************************************************************
@@ -29,7 +28,7 @@ public class keywordUtility {
 	private static String screenshotPath;	
 	setup Setup;
 	mercuryRegistration Register;
-	mercuryFlightBooking bookFlight = new mercuryFlightBooking();
+	mercuryFlightBooking bookFlight;
 	dataProvider getTestDataFor = new dataProvider();
 	
 	
@@ -88,22 +87,26 @@ try {
 		}
 		
 		//Run method InputFlightDetails
-		else if (methodName.equalsIgnoreCase("InputFlightDetails")){			
-			//return bookFlight.inputFlightDetails();
+		else if (methodName.equalsIgnoreCase("InputFlightDetails")){
+			bookFlight = new mercuryFlightBooking(wDriver);
+			return bookFlight.inputFlightDetails();
 		}
 		
 		//Run method selectFlight
-		else if (methodName.equalsIgnoreCase("selectFlight")){			
-			//return bookFlight.selectFlight();
+		else if (methodName.equalsIgnoreCase("selectFlight")){
+			bookFlight = new mercuryFlightBooking(wDriver);
+			return bookFlight.selectFlight();
 		}
 		
 		//Run method bookFlight
-		else if (methodName.equalsIgnoreCase("bookFlight")){			
-			//return bookFlight.bookFlight();
+		else if (methodName.equalsIgnoreCase("bookFlight")){
+			bookFlight = new mercuryFlightBooking(wDriver);
+			return bookFlight.bookFlight();
 		}
 		//Run method openFlightBookingPage
-		else if (methodName.equalsIgnoreCase("openFlightBookingPage")){			
-			//return bookFlight.openFlightBookingPage();
+		else if (methodName.equalsIgnoreCase("openFlightBookingPage")){
+			bookFlight = new mercuryFlightBooking(wDriver);
+			return bookFlight.openFlightBookingPage();
 		}
 				
 		//Run method Login
@@ -120,7 +123,7 @@ try {
 		
 		//Run method closeBrowser
 		else if(methodName.equalsIgnoreCase("closeBrowser")){						
-	//		return Setup.closeBrowser();		
+			return closeBrowser();		
 		}
 		
 		

@@ -14,8 +14,9 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import utility.Log;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class utils {
 
@@ -151,5 +152,70 @@ public class utils {
 		}
 
 	}
+	
+	
+	 public static void selectByVisibleText(WebDriver driver, WebElement Element, String visibleText) {
+		   try {	    
+		    
+		    Select select = new Select(Element);
+		    select.selectByVisibleText(visibleText);
 
+		   } catch (Exception e) {
+			Log.error("Could not select given element; here is some more detail: "+ e);
+		    System.out.println("Could not select given element; here is some more detail: ");    
+		   }
+		  }
+	
+	 public static void waitTillElementVisible(WebDriver driver, WebElement Element, long timeOut) {
+
+		   try {
+		    WebDriverWait oWait = new WebDriverWait(driver, timeOut);
+		    oWait.until(ExpectedConditions.visibilityOf(Element));
+		   } catch (Exception e) {
+		    System.out.println("Error while waiting for element to be visible; here is some more detail: ");
+		    e.printStackTrace();
+		   }
+		  }
+	 
+	 public static void waitTillAlertVisible(WebDriver driver, long timeOut) {
+		   try {			 
+		    WebDriverWait oWait = new WebDriverWait(driver, timeOut);
+		    oWait.until(ExpectedConditions.alertIsPresent());
+		   } catch (Exception e) {
+		    System.out.println("commonDriver()->waitTillElementClickable()->Error while waiting for element to be clickable; here is some more detail: ");
+		    e.printStackTrace();
+		   }
+		  }
+
+	 public static void switchToAlert(WebDriver driver) {
+		   try {
+			   driver.switchTo().alert();
+		   } catch (Exception e) {
+		    System.out.println("Could not switch to specified alert; here is some more detail: ");
+		    e.printStackTrace();
+		   }
+		  }
+	 
+	 public static String getAlertText(WebDriver driver) {
+		   try {
+		    return driver.switchTo().alert().getText();
+		   } catch (Exception e) {
+		    System.out.println("Could not get alert text; here is some more detail: ");
+		    e.printStackTrace();
+		    return "";
+		   }
+		  }
+	 
+	 public static void acceptAlert(WebDriver driver) {
+		   try {
+			driver.switchTo().alert().accept();
+		   } catch (Exception e) {
+		    System.out.println("Could not accept the specified alert; here is some more detail: ");
+		    e.printStackTrace();
+		   }
+		  }
+	 
+	 
+	 
+	 
 }// END CLASS
