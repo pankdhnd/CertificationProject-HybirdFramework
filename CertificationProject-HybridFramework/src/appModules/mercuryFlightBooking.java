@@ -15,7 +15,7 @@ import commonLibs.utils;
 
 public class mercuryFlightBooking {
 
-	// Veriable declaration section
+	// Variable declaration section
 
 	@FindBy(xpath = "//a[contains(.,'Flights')]")
 	private static WebElement linkFlightBooking;
