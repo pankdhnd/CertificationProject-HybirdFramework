@@ -541,9 +541,9 @@ public class mercuryFlightBooking {
 			// displayed showing the extra delivery charges. The popup is
 			// handled here.
 			if (!Data[30].equals("UNITED STATES")) {
-				selectDeliveryCountry.sendKeys(Data[30]);				
-				Log.info("Waiting for alert to appear");
-				utils.waitTillAlertVisible(wDriver, 30l);				
+				utils.selectByVisibleText(wDriver, selectDeliveryCountry, Data[30]);				
+				Log.info("Waiting for alert to appear");				
+				utils.waitTillAlertVisible(wDriver, 60l);				
 				Log.info("Alert visible, switching to alert");
 				utils.switchToAlert(wDriver);				
 				Log.info("Switched to alert");

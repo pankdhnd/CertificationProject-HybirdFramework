@@ -46,7 +46,7 @@ public class mercuryRegistration {
 	@FindBy (name = "postalCode")	
 	private static WebElement txtPostalcode;
 	
-	@FindBy (name = "country")
+	@FindBy (tagName = "select")
 	private static WebElement selectCountry;
 	
 	@FindBy (name = "email")
@@ -58,7 +58,7 @@ public class mercuryRegistration {
 	@FindBy (name = "confirmPassword")	
 	private static WebElement txtConfirmPassword;
 	
-	@FindBy (name = "register")
+	@FindBy (css = "input[name='register']")
 	private static WebElement buttonSubmit;
 	
 	@FindBy (xpath = "//b[contains(text(),'Dear')]")

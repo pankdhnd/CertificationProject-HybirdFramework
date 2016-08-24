@@ -1,6 +1,6 @@
 package appModules;
-import java.util.concurrent.TimeUnit;
 
+import java.util.concurrent.TimeUnit;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import commonLibs.Log;
 import commonLibs.dataProvider;
 import commonLibs.utils;
@@ -77,11 +76,9 @@ public class setup {
 //	 method Login
 //	 This method logs user into the system
 	public String login() {
-		try {
-			System.out.println("inside login");					
+		try {							
 			try {
-			    loginButton.click();
-			    System.out.println(wDriver.getTitle());
+				loginButton.click();			    
 				 WebDriverWait oWait = new WebDriverWait(wDriver, 30);				 
 				 oWait.until(ExpectedConditions.titleIs("Find a Flight: Mercury Tours:"));					
 				Log.info("Login successful");
@@ -141,9 +138,7 @@ public class setup {
 //
 //	// method Logout
 //	// this method logs out user form the system.
-	public String logout() {
-
-		
+	public String logout() {		
 		try {
 			signOffLink.click();
 			WebDriverWait Wait = new WebDriverWait(wDriver, 60l);

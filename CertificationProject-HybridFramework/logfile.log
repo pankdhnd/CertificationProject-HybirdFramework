@@ -3699,3 +3699,1238 @@ Session ID: db60a6f0-049d-411e-bc45-be8043b9fe62
 2016-08-24 14:23:20,662 INFO  [Log] TSET CASE NAME : RegisterNewUser 
 2016-08-24 14:23:20,663 INFO  [Log] **************************************************************************************** 
 2016-08-24 14:23:20,663 INFO  [Log]                                                                                          
+2016-08-24 14:26:55,719 INFO  [Log]                                                                                          
+2016-08-24 14:26:55,720 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:26:55,720 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 14:26:55,720 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:26:55,720 INFO  [Log]                                                                                          
+2016-08-24 14:27:05,800 INFO  [Log] Browser opened successfully 
+2016-08-24 14:27:05,935 INFO  [Log] Opening regisration page 
+2016-08-24 14:27:06,190 INFO  [Log] Inputting registration details 
+2016-08-24 14:27:09,295 INFO  [Log] Clicking Submit button 
+2016-08-24 14:27:10,888 INFO  [Log] Verifying user display name 
+2016-08-24 14:27:10,973 INFO  [Log] User Display name verification successful 
+2016-08-24 14:27:10,973 INFO  [Log] Verifying login username 
+2016-08-24 14:27:11,048 INFO  [Log] Login username verification successful 
+2016-08-24 14:27:11,050 INFO  [Log]                                                                                          
+2016-08-24 14:27:11,050 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:27:11,050 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:27:11,050 INFO  [Log]                                                                                          
+2016-08-24 14:27:11,051 INFO  [Log]                                                                                          
+2016-08-24 14:27:11,051 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:27:11,051 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 14:27:11,051 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:27:11,051 INFO  [Log]                                                                                          
+2016-08-24 14:27:11,228 INFO  [Log] Opening URL for login page 
+2016-08-24 14:27:12,270 INFO  [Log] Login URL opened successfully 
+2016-08-24 14:27:12,327 ERROR [Log] setup()->verifyLoginElementsExistance()-> ERROR: Could not verify the existance of login elements/controls, here are the details: java.lang.NullPointerException 
+2016-08-24 14:27:12,419 ERROR [Log] ERROR: inputLoginDetails failed due to some exception. Below are the details: java.lang.NullPointerException 
+2016-08-24 14:27:12,482 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 14:27:12,482 ERROR [Log] ERROR: verifyEnteredValues failed due to some exception. Below are the details: java.lang.NullPointerException 
+2016-08-24 14:27:12,683 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:27:12,731 ERROR [Log] ERROR: Title does not match after login; login failed; details: java.lang.NullPointerException 
+2016-08-24 14:27:12,732 INFO  [Log]                                                                                          
+2016-08-24 14:27:12,733 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:27:12,733 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:27:12,733 INFO  [Log]                                                                                          
+2016-08-24 14:27:12,734 INFO  [Log]                                                                                          
+2016-08-24 14:27:12,734 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:27:12,734 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 14:27:12,734 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:27:12,734 INFO  [Log]                                                                                          
+2016-08-24 14:27:14,307 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 14:27:14,340 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 14:27:14,376 INFO  [Log] Populatig all the provided data 
+2016-08-24 14:27:17,713 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 14:27:17,777 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 14:27:17,817 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 14:27:17,852 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 14:27:19,841 INFO  [Log] Flights selected successfully 
+2016-08-24 14:27:19,937 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 14:27:19,988 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 14:27:20,031 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 14:27:20,129 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 14:27:20,176 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 14:27:20,241 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 14:27:20,283 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 14:27:20,338 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 14:27:20,432 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 14:27:20,432 INFO  [Log] Inputting all the details 
+2016-08-24 14:27:23,527 INFO  [Log] Waiting for alert to appear 
+2016-08-24 14:27:41,303 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 14:27:41,346 INFO  [Log] Switched to alert 
+2016-08-24 14:27:41,380 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 14:27:41,381 INFO  [Log] Accpeting the alert 
+2016-08-24 14:27:41,422 INFO  [Log] Alert accepted 
+2016-08-24 14:27:43,449 INFO  [Log] Flight booked successfully 
+2016-08-24 14:27:43,573 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:27:43,574 INFO  [Log]                                                                                          
+2016-08-24 14:27:43,574 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:27:43,574 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:27:43,574 INFO  [Log]                                                                                          
+2016-08-24 14:33:28,849 INFO  [Log]                                                                                          
+2016-08-24 14:33:28,849 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:33:28,849 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 14:33:28,849 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:33:28,850 INFO  [Log]                                                                                          
+2016-08-24 14:33:38,996 INFO  [Log] Browser opened successfully 
+2016-08-24 14:33:39,137 INFO  [Log] Opening regisration page 
+2016-08-24 14:33:39,385 INFO  [Log] Inputting registration details 
+2016-08-24 14:33:42,516 INFO  [Log] Clicking Submit button 
+2016-08-24 14:33:44,202 INFO  [Log] Verifying user display name 
+2016-08-24 14:33:44,296 INFO  [Log] User Display name verification successful 
+2016-08-24 14:33:44,296 INFO  [Log] Verifying login username 
+2016-08-24 14:33:44,364 INFO  [Log] Login username verification successful 
+2016-08-24 14:33:44,366 INFO  [Log]                                                                                          
+2016-08-24 14:33:44,366 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:33:44,366 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:33:44,366 INFO  [Log]                                                                                          
+2016-08-24 14:33:44,367 INFO  [Log]                                                                                          
+2016-08-24 14:33:44,368 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:33:44,368 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 14:33:44,368 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:33:44,368 INFO  [Log]                                                                                          
+2016-08-24 14:33:44,504 INFO  [Log] Opening URL for login page 
+2016-08-24 14:33:45,828 INFO  [Log] Login URL opened successfully 
+2016-08-24 14:33:46,251 INFO  [Log] Login details populated successfully 
+2016-08-24 14:33:46,328 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 14:33:46,590 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:33:49,312 INFO  [Log] Login successful 
+2016-08-24 14:33:49,314 INFO  [Log]                                                                                          
+2016-08-24 14:33:49,314 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:33:49,314 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:33:49,314 INFO  [Log]                                                                                          
+2016-08-24 14:33:49,314 INFO  [Log]                                                                                          
+2016-08-24 14:33:49,314 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:33:49,314 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 14:33:49,314 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:33:49,314 INFO  [Log]                                                                                          
+2016-08-24 14:33:50,793 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 14:33:50,831 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 14:33:50,866 INFO  [Log] Populatig all the provided data 
+2016-08-24 14:33:55,786 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 14:33:55,851 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 14:33:55,896 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 14:33:55,938 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 14:33:57,923 INFO  [Log] Flights selected successfully 
+2016-08-24 14:33:57,990 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 14:33:58,037 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 14:33:58,078 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 14:33:58,118 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 14:33:58,155 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 14:33:58,192 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 14:33:58,231 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 14:33:58,269 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 14:33:58,347 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 14:33:58,347 INFO  [Log] Inputting all the details 
+2016-08-24 14:34:01,780 INFO  [Log] Waiting for alert to appear 
+2016-08-24 14:34:33,057 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 14:34:35,190 INFO  [Log] Switched to alert 
+2016-08-24 14:34:37,322 INFO  [Log] Alert Text:  
+2016-08-24 14:34:37,322 INFO  [Log] Accpeting the alert 
+2016-08-24 14:34:39,478 INFO  [Log] Alert accepted 
+2016-08-24 14:34:39,785 INFO  [Log] Flight booked successfully 
+2016-08-24 14:34:42,621 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:34:42,622 INFO  [Log]                                                                                          
+2016-08-24 14:34:42,622 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:34:42,622 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:34:42,623 INFO  [Log]                                                                                          
+2016-08-24 14:39:21,165 INFO  [Log]                                                                                          
+2016-08-24 14:39:21,165 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:39:21,166 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 14:39:21,166 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:39:21,166 INFO  [Log]                                                                                          
+2016-08-24 14:39:33,659 INFO  [Log] Browser opened successfully 
+2016-08-24 14:39:33,841 INFO  [Log] Opening regisration page 
+2016-08-24 14:39:34,109 INFO  [Log] Inputting registration details 
+2016-08-24 14:39:38,846 INFO  [Log] Clicking Submit button 
+2016-08-24 14:39:42,471 INFO  [Log] Verifying user display name 
+2016-08-24 14:39:42,549 INFO  [Log] User Display name verification successful 
+2016-08-24 14:39:42,549 INFO  [Log] Verifying login username 
+2016-08-24 14:39:42,613 INFO  [Log] Login username verification successful 
+2016-08-24 14:39:42,614 INFO  [Log]                                                                                          
+2016-08-24 14:39:42,615 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:39:42,615 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:39:42,615 INFO  [Log]                                                                                          
+2016-08-24 14:39:42,615 INFO  [Log]                                                                                          
+2016-08-24 14:39:42,616 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:39:42,616 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 14:39:42,616 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:39:42,616 INFO  [Log]                                                                                          
+2016-08-24 14:39:42,762 INFO  [Log] Opening URL for login page 
+2016-08-24 14:39:44,596 INFO  [Log] Login URL opened successfully 
+2016-08-24 14:39:45,083 INFO  [Log] Login details populated successfully 
+2016-08-24 14:39:45,128 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 14:39:45,436 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:39:48,157 INFO  [Log] Login successful 
+2016-08-24 14:39:48,158 INFO  [Log]                                                                                          
+2016-08-24 14:39:48,158 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:39:48,158 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:39:48,158 INFO  [Log]                                                                                          
+2016-08-24 14:39:48,159 INFO  [Log]                                                                                          
+2016-08-24 14:39:48,159 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:39:48,159 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 14:39:48,159 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:39:48,159 INFO  [Log]                                                                                          
+2016-08-24 14:39:50,652 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 14:39:50,688 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 14:39:50,721 INFO  [Log] Populatig all the provided data 
+2016-08-24 14:39:54,486 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 14:39:54,568 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 14:39:54,603 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 14:39:54,639 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 14:39:56,628 INFO  [Log] Flights selected successfully 
+2016-08-24 14:39:56,689 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 14:39:56,727 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 14:39:56,771 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 14:39:56,807 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 14:39:56,843 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 14:39:56,884 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 14:39:56,921 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 14:39:56,957 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 14:39:57,037 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 14:39:57,037 INFO  [Log] Inputting all the details 
+2016-08-24 14:40:00,705 INFO  [Log] Waiting for alert to appear 
+2016-08-24 14:40:00,802 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Error occured, here are the details:  
+2016-08-24 14:40:00,815 ERROR [Log] org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge.): You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d5f8c1f2-5791-4227-aebe-d4a480e69ce3
+*** Element info: {Using=name, value=delCountry} 
+2016-08-24 14:40:01,008 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:40:01,009 INFO  [Log]                                                                                          
+2016-08-24 14:40:01,009 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:40:01,009 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:40:01,009 INFO  [Log]                                                                                          
+2016-08-24 14:41:05,496 INFO  [Log]                                                                                          
+2016-08-24 14:41:05,497 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:41:05,497 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 14:41:05,497 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:41:05,497 INFO  [Log]                                                                                          
+2016-08-24 14:41:14,892 INFO  [Log] Browser opened successfully 
+2016-08-24 14:41:15,046 INFO  [Log] Opening regisration page 
+2016-08-24 14:41:15,309 INFO  [Log] Inputting registration details 
+2016-08-24 14:41:18,522 INFO  [Log] Clicking Submit button 
+2016-08-24 14:41:20,169 INFO  [Log] Verifying user display name 
+2016-08-24 14:41:20,257 INFO  [Log] User Display name verification successful 
+2016-08-24 14:41:20,257 INFO  [Log] Verifying login username 
+2016-08-24 14:41:20,330 INFO  [Log] Login username verification successful 
+2016-08-24 14:41:20,332 INFO  [Log]                                                                                          
+2016-08-24 14:41:20,332 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:41:20,332 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:41:20,332 INFO  [Log]                                                                                          
+2016-08-24 14:41:20,334 INFO  [Log]                                                                                          
+2016-08-24 14:41:20,335 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:41:20,335 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 14:41:20,335 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:41:20,335 INFO  [Log]                                                                                          
+2016-08-24 14:41:20,504 INFO  [Log] Opening URL for login page 
+2016-08-24 14:41:21,844 INFO  [Log] Login URL opened successfully 
+2016-08-24 14:41:22,282 INFO  [Log] Login details populated successfully 
+2016-08-24 14:41:22,360 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 14:41:22,605 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:41:25,377 INFO  [Log] Login successful 
+2016-08-24 14:41:25,378 INFO  [Log]                                                                                          
+2016-08-24 14:41:25,378 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:41:25,378 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:41:25,378 INFO  [Log]                                                                                          
+2016-08-24 14:41:25,379 INFO  [Log]                                                                                          
+2016-08-24 14:41:25,379 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:41:25,379 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 14:41:25,379 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:41:25,379 INFO  [Log]                                                                                          
+2016-08-24 14:41:26,810 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 14:41:26,838 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 14:41:26,874 INFO  [Log] Populatig all the provided data 
+2016-08-24 14:41:30,607 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 14:41:30,682 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 14:41:30,724 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 14:41:30,771 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 14:41:32,799 INFO  [Log] Flights selected successfully 
+2016-08-24 14:41:32,898 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 14:41:32,944 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 14:41:32,984 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 14:41:33,023 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 14:41:33,066 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 14:41:33,103 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 14:41:33,144 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 14:41:33,181 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 14:41:33,258 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 14:41:33,258 INFO  [Log] Inputting all the details 
+2016-08-24 14:41:36,842 INFO  [Log] Waiting for alert to appear 
+2016-08-24 14:41:36,889 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 14:41:36,901 INFO  [Log] Switched to alert 
+2016-08-24 14:41:36,924 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 14:41:36,924 INFO  [Log] Accpeting the alert 
+2016-08-24 14:41:36,986 INFO  [Log] Alert accepted 
+2016-08-24 14:41:39,445 INFO  [Log] Flight booked successfully 
+2016-08-24 14:41:39,588 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:41:39,589 INFO  [Log]                                                                                          
+2016-08-24 14:41:39,590 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:41:39,590 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:41:39,590 INFO  [Log]                                                                                          
+2016-08-24 14:47:19,769 INFO  [Log]                                                                                          
+2016-08-24 14:47:19,770 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:47:19,770 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 14:47:19,770 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:47:19,770 INFO  [Log]                                                                                          
+2016-08-24 14:47:29,371 INFO  [Log] Browser opened successfully 
+2016-08-24 14:47:29,509 INFO  [Log] Opening regisration page 
+2016-08-24 14:47:29,771 INFO  [Log] Inputting registration details 
+2016-08-24 14:47:33,255 INFO  [Log] Clicking Submit button 
+2016-08-24 14:47:34,790 INFO  [Log] Verifying user display name 
+2016-08-24 14:47:34,870 INFO  [Log] User Display name verification successful 
+2016-08-24 14:47:34,870 INFO  [Log] Verifying login username 
+2016-08-24 14:47:34,946 INFO  [Log] Login username verification successful 
+2016-08-24 14:47:34,948 INFO  [Log]                                                                                          
+2016-08-24 14:47:34,948 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:47:34,948 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:47:34,948 INFO  [Log]                                                                                          
+2016-08-24 14:47:34,949 INFO  [Log]                                                                                          
+2016-08-24 14:47:34,949 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:47:34,949 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 14:47:34,949 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:47:34,949 INFO  [Log]                                                                                          
+2016-08-24 14:47:35,091 INFO  [Log] Opening URL for login page 
+2016-08-24 14:47:36,528 INFO  [Log] Login URL opened successfully 
+2016-08-24 14:47:36,928 INFO  [Log] Login details populated successfully 
+2016-08-24 14:47:36,987 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 14:47:37,323 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:47:40,037 INFO  [Log] Login successful 
+2016-08-24 14:47:40,039 INFO  [Log]                                                                                          
+2016-08-24 14:47:40,040 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:47:40,040 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:47:40,040 INFO  [Log]                                                                                          
+2016-08-24 14:47:40,042 INFO  [Log]                                                                                          
+2016-08-24 14:47:40,042 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:47:40,042 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 14:47:40,042 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:47:40,042 INFO  [Log]                                                                                          
+2016-08-24 14:47:41,512 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 14:47:41,541 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 14:47:41,576 INFO  [Log] Populatig all the provided data 
+2016-08-24 14:47:45,836 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 14:47:45,889 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 14:47:45,935 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 14:47:45,989 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 14:47:47,973 INFO  [Log] Flights selected successfully 
+2016-08-24 14:47:48,021 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 14:47:48,062 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 14:47:48,105 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 14:47:48,148 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 14:47:48,187 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 14:47:48,225 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 14:47:48,265 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 14:47:48,302 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 14:47:48,380 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 14:47:48,380 INFO  [Log] Inputting all the details 
+2016-08-24 14:47:52,070 INFO  [Log] Waiting for alert to appear 
+2016-08-24 14:47:52,118 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 14:47:52,131 INFO  [Log] Switched to alert 
+2016-08-24 14:47:52,154 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 14:47:52,155 INFO  [Log] Accpeting the alert 
+2016-08-24 14:47:52,211 INFO  [Log] Alert accepted 
+2016-08-24 14:47:54,355 INFO  [Log] Flight booked successfully 
+2016-08-24 14:47:54,481 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:47:54,485 INFO  [Log]                                                                                          
+2016-08-24 14:47:54,485 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:47:54,485 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:47:54,485 INFO  [Log]                                                                                          
+2016-08-24 14:49:59,407 INFO  [Log]                                                                                          
+2016-08-24 14:49:59,408 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:49:59,408 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 14:49:59,409 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:49:59,409 INFO  [Log]                                                                                          
+2016-08-24 14:50:10,136 INFO  [Log] Browser opened successfully 
+2016-08-24 14:50:10,238 INFO  [Log] Opening regisration page 
+2016-08-24 14:50:10,489 INFO  [Log] Inputting registration details 
+2016-08-24 14:50:13,653 INFO  [Log] Clicking Submit button 
+2016-08-24 14:50:15,431 INFO  [Log] Verifying user display name 
+2016-08-24 14:50:15,522 INFO  [Log] User Display name verification successful 
+2016-08-24 14:50:15,522 INFO  [Log] Verifying login username 
+2016-08-24 14:50:15,592 INFO  [Log] Login username verification successful 
+2016-08-24 14:50:15,593 INFO  [Log]                                                                                          
+2016-08-24 14:50:15,593 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:50:15,593 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:50:15,593 INFO  [Log]                                                                                          
+2016-08-24 14:50:15,594 INFO  [Log]                                                                                          
+2016-08-24 14:50:15,594 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:50:15,594 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 14:50:15,594 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:50:15,594 INFO  [Log]                                                                                          
+2016-08-24 14:50:15,744 INFO  [Log] Opening URL for login page 
+2016-08-24 14:50:17,064 INFO  [Log] Login URL opened successfully 
+2016-08-24 14:50:17,473 INFO  [Log] Login details populated successfully 
+2016-08-24 14:50:17,525 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 14:50:17,807 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:50:20,655 INFO  [Log] Login successful 
+2016-08-24 14:50:20,656 INFO  [Log]                                                                                          
+2016-08-24 14:50:20,657 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:50:20,657 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:50:20,657 INFO  [Log]                                                                                          
+2016-08-24 14:50:20,658 INFO  [Log]                                                                                          
+2016-08-24 14:50:20,658 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 14:50:20,658 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 14:50:20,658 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:50:20,658 INFO  [Log]                                                                                          
+2016-08-24 14:50:22,462 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 14:50:22,493 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 14:50:22,523 INFO  [Log] Populatig all the provided data 
+2016-08-24 14:50:26,880 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 14:50:26,930 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 14:50:26,975 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 14:50:27,019 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 14:50:29,000 INFO  [Log] Flights selected successfully 
+2016-08-24 14:50:29,050 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 14:50:29,094 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 14:50:29,135 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 14:50:29,180 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 14:50:29,218 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 14:50:29,259 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 14:50:29,298 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 14:50:29,336 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 14:50:29,418 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 14:50:29,418 INFO  [Log] Inputting all the details 
+2016-08-24 14:50:32,944 INFO  [Log] Waiting for alert to appear 
+2016-08-24 14:50:33,036 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 14:50:33,047 INFO  [Log] Switched to alert 
+2016-08-24 14:50:33,069 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 14:50:33,069 INFO  [Log] Accpeting the alert 
+2016-08-24 14:50:33,130 INFO  [Log] Alert accepted 
+2016-08-24 14:50:34,824 INFO  [Log] Flight booked successfully 
+2016-08-24 14:50:34,962 INFO  [Log] Screenshot captured successfully 
+2016-08-24 14:50:34,963 INFO  [Log]                                                                                          
+2016-08-24 14:50:34,963 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 14:50:34,963 INFO  [Log] **************************************************************************************** 
+2016-08-24 14:50:34,963 INFO  [Log]                                                                                          
+2016-08-24 15:10:06,438 INFO  [Log]                                                                                          
+2016-08-24 15:10:06,439 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:10:06,439 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 15:10:06,439 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:10:06,439 INFO  [Log]                                                                                          
+2016-08-24 15:10:18,943 INFO  [Log] Browser opened successfully 
+2016-08-24 15:10:19,079 INFO  [Log] Opening regisration page 
+2016-08-24 15:10:19,322 INFO  [Log] Inputting registration details 
+2016-08-24 15:10:22,560 INFO  [Log] Clicking Submit button 
+2016-08-24 15:10:24,120 INFO  [Log] Verifying user display name 
+2016-08-24 15:10:24,192 INFO  [Log] User Display name verification successful 
+2016-08-24 15:10:24,192 INFO  [Log] Verifying login username 
+2016-08-24 15:10:24,256 INFO  [Log] Login username verification successful 
+2016-08-24 15:10:24,257 INFO  [Log]                                                                                          
+2016-08-24 15:10:24,257 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:10:24,257 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:10:24,257 INFO  [Log]                                                                                          
+2016-08-24 15:10:24,258 INFO  [Log]                                                                                          
+2016-08-24 15:10:24,258 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:10:24,258 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 15:10:24,258 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:10:24,258 INFO  [Log]                                                                                          
+2016-08-24 15:10:24,388 INFO  [Log] Opening URL for login page 
+2016-08-24 15:10:26,998 INFO  [Log] Login URL opened successfully 
+2016-08-24 15:10:27,440 INFO  [Log] Login details populated successfully 
+2016-08-24 15:10:27,491 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 15:10:27,791 INFO  [Log] Screenshot captured successfully 
+2016-08-24 15:10:30,798 INFO  [Log] Login successful 
+2016-08-24 15:10:30,800 INFO  [Log]                                                                                          
+2016-08-24 15:10:30,800 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:10:30,800 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:10:30,800 INFO  [Log]                                                                                          
+2016-08-24 15:10:30,801 INFO  [Log]                                                                                          
+2016-08-24 15:10:30,801 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:10:30,801 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 15:10:30,801 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:10:30,801 INFO  [Log]                                                                                          
+2016-08-24 15:10:32,259 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 15:10:32,291 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 15:10:32,323 INFO  [Log] Populatig all the provided data 
+2016-08-24 15:10:36,011 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 15:10:36,071 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 15:10:36,105 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 15:10:36,142 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 15:10:38,141 INFO  [Log] Flights selected successfully 
+2016-08-24 15:10:38,212 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 15:10:38,258 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 15:10:38,298 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 15:10:38,338 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 15:10:38,376 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 15:10:38,414 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 15:10:38,448 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 15:10:38,483 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 15:10:38,560 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 15:10:38,560 INFO  [Log] Inputting all the details 
+2016-08-24 15:10:42,191 INFO  [Log] Waiting for alert to appear 
+2016-08-24 15:10:42,238 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 15:10:42,250 INFO  [Log] Switched to alert 
+2016-08-24 15:10:42,271 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 15:10:42,272 INFO  [Log] Accpeting the alert 
+2016-08-24 15:10:42,330 INFO  [Log] Alert accepted 
+2016-08-24 15:10:44,035 INFO  [Log] Flight booked successfully 
+2016-08-24 15:10:44,162 INFO  [Log] Screenshot captured successfully 
+2016-08-24 15:10:44,164 INFO  [Log]                                                                                          
+2016-08-24 15:10:44,164 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:10:44,165 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:10:44,165 INFO  [Log]                                                                                          
+2016-08-24 15:15:26,949 INFO  [Log]                                                                                          
+2016-08-24 15:15:26,950 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:15:26,950 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 15:15:26,950 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:15:26,950 INFO  [Log]                                                                                          
+2016-08-24 15:15:39,568 INFO  [Log] Browser opened successfully 
+2016-08-24 15:15:39,728 INFO  [Log] Opening regisration page 
+2016-08-24 15:15:39,987 INFO  [Log] Inputting registration details 
+2016-08-24 15:15:43,435 INFO  [Log] Clicking Submit button 
+2016-08-24 15:15:45,561 INFO  [Log] Verifying user display name 
+2016-08-24 15:15:45,649 INFO  [Log] User Display name verification successful 
+2016-08-24 15:15:45,650 INFO  [Log] Verifying login username 
+2016-08-24 15:15:45,715 INFO  [Log] Login username verification successful 
+2016-08-24 15:15:45,717 INFO  [Log]                                                                                          
+2016-08-24 15:15:45,717 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:15:45,717 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:15:45,717 INFO  [Log]                                                                                          
+2016-08-24 15:15:45,718 INFO  [Log]                                                                                          
+2016-08-24 15:15:45,718 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:15:45,718 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 15:15:45,718 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:15:45,718 INFO  [Log]                                                                                          
+2016-08-24 15:15:45,864 INFO  [Log] Opening URL for login page 
+2016-08-24 15:15:47,827 INFO  [Log] Login URL opened successfully 
+2016-08-24 15:15:48,236 INFO  [Log] Login details populated successfully 
+2016-08-24 15:15:48,312 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 15:15:48,636 INFO  [Log] Screenshot captured successfully 
+2016-08-24 15:15:53,001 INFO  [Log] Login successful 
+2016-08-24 15:15:53,003 INFO  [Log]                                                                                          
+2016-08-24 15:15:53,003 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:15:53,003 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:15:53,003 INFO  [Log]                                                                                          
+2016-08-24 15:15:53,004 INFO  [Log]                                                                                          
+2016-08-24 15:15:53,004 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:15:53,004 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 15:15:53,004 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:15:53,004 INFO  [Log]                                                                                          
+2016-08-24 15:15:54,814 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 15:15:54,847 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 15:15:54,880 INFO  [Log] Populatig all the provided data 
+2016-08-24 15:15:59,079 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 15:15:59,150 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 15:15:59,196 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 15:15:59,244 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 15:16:01,376 INFO  [Log] Flights selected successfully 
+2016-08-24 15:16:01,489 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 15:16:01,540 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 15:16:01,588 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 15:16:01,637 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 15:16:01,679 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 15:16:01,718 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 15:16:01,759 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 15:16:01,799 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 15:16:01,878 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 15:16:01,878 INFO  [Log] Inputting all the details 
+2016-08-24 15:16:05,545 INFO  [Log] Waiting for alert to appear 
+2016-08-24 15:16:05,634 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 15:16:05,645 INFO  [Log] Switched to alert 
+2016-08-24 15:16:05,667 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 15:16:05,667 INFO  [Log] Accpeting the alert 
+2016-08-24 15:16:05,729 INFO  [Log] Alert accepted 
+2016-08-24 15:16:09,197 INFO  [Log] Flight booked successfully 
+2016-08-24 15:16:09,321 INFO  [Log] Screenshot captured successfully 
+2016-08-24 15:16:09,321 INFO  [Log]                                                                                          
+2016-08-24 15:16:09,322 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:16:09,322 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:16:09,323 INFO  [Log]                                                                                          
+2016-08-24 15:17:04,857 INFO  [Log]                                                                                          
+2016-08-24 15:17:04,857 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:17:04,858 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 15:17:04,858 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:17:04,858 INFO  [Log]                                                                                          
+2016-08-24 15:17:35,899 INFO  [Log] Browser opened successfully 
+2016-08-24 15:17:36,047 INFO  [Log] Opening regisration page 
+2016-08-24 15:17:36,303 INFO  [Log] Inputting registration details 
+2016-08-24 15:17:39,733 INFO  [Log] Clicking Submit button 
+2016-08-24 15:17:41,392 INFO  [Log] Verifying user display name 
+2016-08-24 15:17:41,475 INFO  [Log] User Display name verification successful 
+2016-08-24 15:17:41,476 INFO  [Log] Verifying login username 
+2016-08-24 15:17:41,547 INFO  [Log] Login username verification successful 
+2016-08-24 15:17:41,549 INFO  [Log]                                                                                          
+2016-08-24 15:17:41,549 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:17:41,549 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:17:41,549 INFO  [Log]                                                                                          
+2016-08-24 15:17:41,550 INFO  [Log]                                                                                          
+2016-08-24 15:17:41,550 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:17:41,550 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 15:17:41,550 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:17:41,550 INFO  [Log]                                                                                          
+2016-08-24 15:17:41,715 INFO  [Log] Opening URL for login page 
+2016-08-24 15:17:43,166 INFO  [Log] Login URL opened successfully 
+2016-08-24 15:17:43,622 INFO  [Log] Login details populated successfully 
+2016-08-24 15:17:43,674 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 15:17:43,921 INFO  [Log] Screenshot captured successfully 
+2016-08-24 15:17:46,758 INFO  [Log] Login successful 
+2016-08-24 15:17:46,760 INFO  [Log]                                                                                          
+2016-08-24 15:17:46,760 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:17:46,760 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:17:46,760 INFO  [Log]                                                                                          
+2016-08-24 15:17:46,761 INFO  [Log]                                                                                          
+2016-08-24 15:17:46,761 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:17:46,761 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 15:17:46,761 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:17:46,761 INFO  [Log]                                                                                          
+2016-08-24 15:17:48,443 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 15:17:48,483 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 15:17:48,519 INFO  [Log] Populatig all the provided data 
+2016-08-24 15:17:52,172 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 15:17:52,271 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 15:17:52,316 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 15:17:52,351 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 15:17:54,499 INFO  [Log] Flights selected successfully 
+2016-08-24 15:17:54,603 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 15:17:54,652 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 15:17:54,694 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 15:17:54,738 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 15:17:54,781 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 15:17:54,819 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 15:17:54,861 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 15:17:54,898 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 15:17:54,977 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 15:17:54,977 INFO  [Log] Inputting all the details 
+2016-08-24 15:17:58,227 INFO  [Log] Waiting for alert to appear 
+2016-08-24 15:17:58,275 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 15:17:58,287 INFO  [Log] Switched to alert 
+2016-08-24 15:17:58,310 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 15:17:58,310 INFO  [Log] Accpeting the alert 
+2016-08-24 15:17:58,369 INFO  [Log] Alert accepted 
+2016-08-24 15:18:00,266 INFO  [Log] Flight booked successfully 
+2016-08-24 15:18:00,399 INFO  [Log] Screenshot captured successfully 
+2016-08-24 15:18:00,400 INFO  [Log]                                                                                          
+2016-08-24 15:18:00,401 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:18:00,401 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:18:00,401 INFO  [Log]                                                                                          
+2016-08-24 15:18:35,523 INFO  [Log]                                                                                          
+2016-08-24 15:18:35,524 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:18:35,524 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 15:18:35,524 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:18:35,525 INFO  [Log]                                                                                          
+2016-08-24 15:18:45,985 INFO  [Log] Browser opened successfully 
+2016-08-24 15:18:46,129 INFO  [Log] Opening regisration page 
+2016-08-24 15:18:46,384 INFO  [Log] Inputting registration details 
+2016-08-24 15:18:49,652 INFO  [Log] Clicking Submit button 
+2016-08-24 15:18:51,162 INFO  [Log] Verifying user display name 
+2016-08-24 15:18:51,240 INFO  [Log] User Display name verification successful 
+2016-08-24 15:18:51,240 INFO  [Log] Verifying login username 
+2016-08-24 15:18:51,307 INFO  [Log] Login username verification successful 
+2016-08-24 15:18:51,308 INFO  [Log]                                                                                          
+2016-08-24 15:18:51,309 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:18:51,309 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:18:51,309 INFO  [Log]                                                                                          
+2016-08-24 15:18:51,310 INFO  [Log]                                                                                          
+2016-08-24 15:18:51,310 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:18:51,310 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 15:18:51,310 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:18:51,310 INFO  [Log]                                                                                          
+2016-08-24 15:18:51,479 INFO  [Log] Opening URL for login page 
+2016-08-24 15:18:52,804 INFO  [Log] Login URL opened successfully 
+2016-08-24 15:18:53,209 INFO  [Log] Login details populated successfully 
+2016-08-24 15:18:53,259 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 15:18:53,486 INFO  [Log] Screenshot captured successfully 
+2016-08-24 15:18:56,081 INFO  [Log] Login successful 
+2016-08-24 15:18:56,083 INFO  [Log]                                                                                          
+2016-08-24 15:18:56,083 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:18:56,083 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:18:56,083 INFO  [Log]                                                                                          
+2016-08-24 15:18:56,085 INFO  [Log]                                                                                          
+2016-08-24 15:18:56,085 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:18:56,085 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 15:18:56,085 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:18:56,085 INFO  [Log]                                                                                          
+2016-08-24 15:18:57,616 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 15:18:57,648 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 15:18:57,679 INFO  [Log] Populatig all the provided data 
+2016-08-24 15:19:01,286 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 15:19:01,357 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 15:19:01,401 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 15:19:01,444 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 15:19:03,712 INFO  [Log] Flights selected successfully 
+2016-08-24 15:19:03,777 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 15:19:03,834 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 15:19:03,877 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 15:19:03,917 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 15:19:03,958 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 15:19:04,000 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 15:19:04,040 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 15:19:04,080 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 15:19:04,159 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 15:19:04,159 INFO  [Log] Inputting all the details 
+2016-08-24 15:19:07,776 INFO  [Log] Waiting for alert to appear 
+2016-08-24 15:19:07,799 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 15:19:07,811 INFO  [Log] Switched to alert 
+2016-08-24 15:19:07,834 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 15:19:07,834 INFO  [Log] Accpeting the alert 
+2016-08-24 15:19:07,879 INFO  [Log] Alert accepted 
+2016-08-24 15:19:09,698 INFO  [Log] Flight booked successfully 
+2016-08-24 15:19:09,824 INFO  [Log] Screenshot captured successfully 
+2016-08-24 15:19:09,826 INFO  [Log]                                                                                          
+2016-08-24 15:19:09,826 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:19:09,826 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:19:09,826 INFO  [Log]                                                                                          
+2016-08-24 15:20:37,891 INFO  [Log]                                                                                          
+2016-08-24 15:20:37,891 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:20:37,891 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 15:20:37,891 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:20:37,892 INFO  [Log]                                                                                          
+2016-08-24 15:20:48,387 INFO  [Log] Browser opened successfully 
+2016-08-24 15:20:48,505 INFO  [Log] Opening regisration page 
+2016-08-24 15:20:48,749 INFO  [Log] Inputting registration details 
+2016-08-24 15:20:51,866 INFO  [Log] Clicking Submit button 
+2016-08-24 15:20:53,610 INFO  [Log] Verifying user display name 
+2016-08-24 15:20:53,687 INFO  [Log] User Display name verification successful 
+2016-08-24 15:20:53,687 INFO  [Log] Verifying login username 
+2016-08-24 15:20:53,751 INFO  [Log] Login username verification successful 
+2016-08-24 15:20:53,753 INFO  [Log]                                                                                          
+2016-08-24 15:20:53,753 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:20:53,753 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:20:53,753 INFO  [Log]                                                                                          
+2016-08-24 15:20:53,754 INFO  [Log]                                                                                          
+2016-08-24 15:20:53,754 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:20:53,754 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 15:20:53,754 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:20:53,754 INFO  [Log]                                                                                          
+2016-08-24 15:20:53,877 INFO  [Log] Opening URL for login page 
+2016-08-24 15:20:56,137 INFO  [Log] Login URL opened successfully 
+2016-08-24 15:20:56,542 INFO  [Log] Login details populated successfully 
+2016-08-24 15:20:56,588 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 15:20:56,825 INFO  [Log] Screenshot captured successfully 
+2016-08-24 15:20:59,980 INFO  [Log] Login successful 
+2016-08-24 15:20:59,982 INFO  [Log]                                                                                          
+2016-08-24 15:20:59,982 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:20:59,982 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:20:59,982 INFO  [Log]                                                                                          
+2016-08-24 15:20:59,984 INFO  [Log]                                                                                          
+2016-08-24 15:20:59,984 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:20:59,984 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 15:20:59,984 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:20:59,984 INFO  [Log]                                                                                          
+2016-08-24 15:21:02,004 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 15:21:02,085 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 15:21:02,119 INFO  [Log] Populatig all the provided data 
+2016-08-24 15:21:06,433 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 15:21:06,496 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 15:21:06,537 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 15:21:06,576 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 15:21:08,671 INFO  [Log] Flights selected successfully 
+2016-08-24 15:21:08,740 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 15:21:08,785 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 15:21:08,829 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 15:21:08,872 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 15:21:08,916 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 15:21:08,955 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 15:21:08,993 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 15:21:09,036 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 15:21:09,117 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 15:21:09,117 INFO  [Log] Inputting all the details 
+2016-08-24 15:21:12,513 INFO  [Log] Waiting for alert to appear 
+2016-08-24 15:21:12,537 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 15:21:12,550 INFO  [Log] Switched to alert 
+2016-08-24 15:21:12,573 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 15:21:12,573 INFO  [Log] Accpeting the alert 
+2016-08-24 15:21:12,647 INFO  [Log] Alert accepted 
+2016-08-24 15:21:14,783 INFO  [Log] Flight booked successfully 
+2016-08-24 15:21:14,980 INFO  [Log] Screenshot captured successfully 
+2016-08-24 15:21:14,981 INFO  [Log]                                                                                          
+2016-08-24 15:21:14,982 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:21:14,982 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:21:14,982 INFO  [Log]                                                                                          
+2016-08-24 15:37:39,810 INFO  [Log]                                                                                          
+2016-08-24 15:37:39,811 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:37:39,811 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 15:37:39,811 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:37:39,811 INFO  [Log]                                                                                          
+2016-08-24 15:37:49,203 INFO  [Log] Browser opened successfully 
+2016-08-24 15:37:49,323 INFO  [Log] Opening regisration page 
+2016-08-24 15:37:49,569 INFO  [Log] Inputting registration details 
+2016-08-24 15:37:53,646 INFO  [Log] Clicking Submit button 
+2016-08-24 15:37:56,076 INFO  [Log] Verifying user display name 
+2016-08-24 15:37:56,156 INFO  [Log] User Display name verification successful 
+2016-08-24 15:37:56,156 INFO  [Log] Verifying login username 
+2016-08-24 15:37:56,225 INFO  [Log] Login username verification successful 
+2016-08-24 15:37:56,226 INFO  [Log]                                                                                          
+2016-08-24 15:37:56,226 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 15:37:56,226 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:37:56,226 INFO  [Log]                                                                                          
+2016-08-24 15:37:56,228 INFO  [Log]                                                                                          
+2016-08-24 15:37:56,228 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 15:37:56,228 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 15:37:56,228 INFO  [Log] **************************************************************************************** 
+2016-08-24 15:37:56,228 INFO  [Log]                                                                                          
+2016-08-24 15:37:56,410 INFO  [Log] Opening URL for login page 
+2016-08-24 15:37:57,724 INFO  [Log] Login URL opened successfully 
+2016-08-24 15:37:58,464 INFO  [Log] Login details populated successfully 
+2016-08-24 15:37:58,539 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 16:05:44,415 INFO  [Log]                                                                                          
+2016-08-24 16:05:44,416 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:05:44,416 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 16:05:44,416 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:05:44,416 INFO  [Log]                                                                                          
+2016-08-24 16:05:56,325 INFO  [Log] Browser opened successfully 
+2016-08-24 16:05:56,477 INFO  [Log] Opening regisration page 
+2016-08-24 16:05:56,719 INFO  [Log] Inputting registration details 
+2016-08-24 16:06:01,412 INFO  [Log] Clicking Submit button 
+2016-08-24 16:06:55,353 INFO  [Log]                                                                                          
+2016-08-24 16:06:55,354 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:06:55,354 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 16:06:55,354 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:06:55,355 INFO  [Log]                                                                                          
+2016-08-24 16:07:05,903 INFO  [Log] Browser opened successfully 
+2016-08-24 16:07:06,061 INFO  [Log] Opening regisration page 
+2016-08-24 16:07:06,303 INFO  [Log] Inputting registration details 
+2016-08-24 16:07:25,989 INFO  [Log] Clicking Submit button 
+2016-08-24 16:14:08,178 INFO  [Log]                                                                                          
+2016-08-24 16:14:08,179 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:14:08,179 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 16:14:08,179 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:14:08,179 INFO  [Log]                                                                                          
+2016-08-24 16:14:21,924 INFO  [Log] Browser opened successfully 
+2016-08-24 16:14:22,075 INFO  [Log] Opening regisration page 
+2016-08-24 16:14:22,336 INFO  [Log] Inputting registration details 
+2016-08-24 16:14:27,678 INFO  [Log] Clicking Submit button 
+2016-08-24 16:14:29,502 INFO  [Log] Verifying user display name 
+2016-08-24 16:14:29,582 INFO  [Log] User Display name verification successful 
+2016-08-24 16:14:29,582 INFO  [Log] Verifying login username 
+2016-08-24 16:14:29,649 INFO  [Log] Login username verification successful 
+2016-08-24 16:14:29,650 INFO  [Log]                                                                                          
+2016-08-24 16:14:29,650 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:14:29,650 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:14:29,650 INFO  [Log]                                                                                          
+2016-08-24 16:14:29,651 INFO  [Log]                                                                                          
+2016-08-24 16:14:29,651 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:14:29,651 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 16:14:29,651 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:14:29,651 INFO  [Log]                                                                                          
+2016-08-24 16:14:29,804 INFO  [Log] Opening URL for login page 
+2016-08-24 16:14:32,983 INFO  [Log] Login URL opened successfully 
+2016-08-24 16:14:33,475 INFO  [Log] Login details populated successfully 
+2016-08-24 16:14:33,540 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 16:14:33,799 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:14:37,579 INFO  [Log] Login successful 
+2016-08-24 16:14:37,581 INFO  [Log]                                                                                          
+2016-08-24 16:14:37,581 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:14:37,581 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:14:37,581 INFO  [Log]                                                                                          
+2016-08-24 16:14:37,582 INFO  [Log]                                                                                          
+2016-08-24 16:14:37,582 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:14:37,583 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 16:14:37,583 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:14:37,583 INFO  [Log]                                                                                          
+2016-08-24 16:14:39,667 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 16:14:39,709 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 16:14:39,749 INFO  [Log] Populatig all the provided data 
+2016-08-24 16:14:45,808 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 16:14:45,876 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 16:14:45,925 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 16:14:45,975 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 16:14:49,456 INFO  [Log] Flights selected successfully 
+2016-08-24 16:14:49,514 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 16:14:49,558 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 16:14:49,597 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 16:14:49,639 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 16:14:49,679 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 16:14:49,718 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 16:14:49,758 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 16:14:49,795 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 16:14:49,873 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 16:14:49,873 INFO  [Log] Inputting all the details 
+2016-08-24 16:14:53,538 INFO  [Log] Waiting for alert to appear 
+2016-08-24 16:14:53,585 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 16:14:53,598 INFO  [Log] Switched to alert 
+2016-08-24 16:14:53,624 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 16:14:53,624 INFO  [Log] Accpeting the alert 
+2016-08-24 16:14:53,685 INFO  [Log] Alert accepted 
+2016-08-24 16:14:57,437 INFO  [Log] Flight booked successfully 
+2016-08-24 16:14:57,583 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:14:57,583 INFO  [Log]                                                                                          
+2016-08-24 16:14:57,583 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:14:57,583 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:14:57,584 INFO  [Log]                                                                                          
+2016-08-24 16:16:24,906 INFO  [Log]                                                                                          
+2016-08-24 16:16:24,907 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:16:24,907 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 16:16:24,907 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:16:24,907 INFO  [Log]                                                                                          
+2016-08-24 16:17:02,325 INFO  [Log]                                                                                          
+2016-08-24 16:17:02,326 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:17:02,326 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 16:17:02,326 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:17:02,326 INFO  [Log]                                                                                          
+2016-08-24 16:17:14,744 INFO  [Log] Browser opened successfully 
+2016-08-24 16:17:14,875 INFO  [Log] Opening regisration page 
+2016-08-24 16:17:15,262 INFO  [Log] Inputting registration details 
+2016-08-24 16:17:20,224 INFO  [Log] Clicking Submit button 
+2016-08-24 16:18:28,169 INFO  [Log]                                                                                          
+2016-08-24 16:18:28,170 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:18:28,170 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 16:18:28,170 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:18:28,170 INFO  [Log]                                                                                          
+2016-08-24 16:18:39,048 INFO  [Log] Opening regisration page 
+2016-08-24 16:18:40,054 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5615b544-d3b9-4608-983b-f8de9576106f 
+2016-08-24 16:18:40,057 INFO  [Log]                                                                                          
+2016-08-24 16:18:40,057 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:18:40,057 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:18:40,057 INFO  [Log]                                                                                          
+2016-08-24 16:18:40,058 INFO  [Log]                                                                                          
+2016-08-24 16:18:40,058 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:18:40,058 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 16:18:40,058 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:18:40,058 INFO  [Log]                                                                                          
+2016-08-24 16:18:40,185 INFO  [Log] Opening URL for login page 
+2016-08-24 16:18:41,189 ERROR [Log] Error occured while opening the login URL, here are the details: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5615b544-d3b9-4608-983b-f8de9576106f 
+2016-08-24 16:18:42,260 ERROR [Log] setup()->verifyLoginElementsExistance()-> ERROR: Could not verify the existance of login elements/controls, here are the details: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'wkspu00391', ip: '169.254.183.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5615b544-d3b9-4608-983b-f8de9576106f 
+2016-08-24 16:19:48,351 INFO  [Log]                                                                                          
+2016-08-24 16:19:48,353 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:19:48,353 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 16:19:48,353 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:19:48,353 INFO  [Log]                                                                                          
+2016-08-24 16:20:00,956 INFO  [Log] Browser opened successfully 
+2016-08-24 16:20:01,128 INFO  [Log] Opening regisration page 
+2016-08-24 16:20:01,499 INFO  [Log] Inputting registration details 
+2016-08-24 16:20:08,996 INFO  [Log]                                                                                          
+2016-08-24 16:20:08,996 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:20:08,997 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 16:20:08,997 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:20:08,997 INFO  [Log]                                                                                          
+2016-08-24 16:20:10,232 INFO  [Log] Clicking Submit button 
+2016-08-24 16:20:12,563 INFO  [Log] Verifying user display name 
+2016-08-24 16:20:12,658 INFO  [Log] User Display name verification successful 
+2016-08-24 16:20:12,659 INFO  [Log] Verifying login username 
+2016-08-24 16:20:12,731 INFO  [Log] Login username verification successful 
+2016-08-24 16:20:12,733 INFO  [Log]                                                                                          
+2016-08-24 16:20:12,733 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:20:12,733 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:20:12,733 INFO  [Log]                                                                                          
+2016-08-24 16:20:12,734 INFO  [Log]                                                                                          
+2016-08-24 16:20:12,734 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:20:12,734 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 16:20:12,734 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:20:12,734 INFO  [Log]                                                                                          
+2016-08-24 16:20:12,908 INFO  [Log] Opening URL for login page 
+2016-08-24 16:20:18,644 INFO  [Log] Login URL opened successfully 
+2016-08-24 16:20:19,144 INFO  [Log] Login details populated successfully 
+2016-08-24 16:20:19,202 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 16:20:19,532 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:20:22,365 INFO  [Log] Browser opened successfully 
+2016-08-24 16:20:22,517 INFO  [Log] Opening regisration page 
+2016-08-24 16:20:22,810 INFO  [Log] Inputting registration details 
+2016-08-24 16:20:25,977 INFO  [Log] Login successful 
+2016-08-24 16:20:25,978 INFO  [Log]                                                                                          
+2016-08-24 16:20:25,979 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:20:25,979 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:20:25,979 INFO  [Log]                                                                                          
+2016-08-24 16:20:25,981 INFO  [Log]                                                                                          
+2016-08-24 16:20:25,981 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:20:25,981 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 16:20:25,981 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:20:25,981 INFO  [Log]                                                                                          
+2016-08-24 16:20:28,604 INFO  [Log] Clicking Submit button 
+2016-08-24 16:20:29,127 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 16:20:29,167 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 16:20:29,209 INFO  [Log] Populatig all the provided data 
+2016-08-24 16:20:30,716 INFO  [Log] Verifying user display name 
+2016-08-24 16:20:30,802 INFO  [Log] User Display name verification successful 
+2016-08-24 16:20:30,802 INFO  [Log] Verifying login username 
+2016-08-24 16:20:30,871 INFO  [Log] Login username verification successful 
+2016-08-24 16:20:30,874 INFO  [Log]                                                                                          
+2016-08-24 16:20:30,874 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:20:30,874 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:20:30,874 INFO  [Log]                                                                                          
+2016-08-24 16:20:30,876 INFO  [Log]                                                                                          
+2016-08-24 16:20:30,876 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:20:30,876 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 16:20:30,876 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:20:30,876 INFO  [Log]                                                                                          
+2016-08-24 16:20:31,069 INFO  [Log] Opening URL for login page 
+2016-08-24 16:20:33,352 INFO  [Log] Login URL opened successfully 
+2016-08-24 16:20:33,944 INFO  [Log] Login details populated successfully 
+2016-08-24 16:20:34,011 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 16:20:34,244 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:20:37,853 INFO  [Log] Login successful 
+2016-08-24 16:20:37,856 INFO  [Log]                                                                                          
+2016-08-24 16:20:37,856 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:20:37,856 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:20:37,856 INFO  [Log]                                                                                          
+2016-08-24 16:20:37,857 INFO  [Log]                                                                                          
+2016-08-24 16:20:37,857 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:20:37,857 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 16:20:37,857 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:20:37,857 INFO  [Log]                                                                                          
+2016-08-24 16:20:40,531 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 16:20:40,593 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 16:20:40,636 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 16:20:40,639 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 16:20:40,679 INFO  [Log] Populatig all the provided data 
+2016-08-24 16:20:40,748 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 16:20:40,793 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 16:20:44,529 INFO  [Log] Flights selected successfully 
+2016-08-24 16:20:44,651 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 16:20:44,712 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 16:20:44,761 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 16:20:44,806 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 16:20:44,856 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 16:20:44,899 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 16:20:44,938 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 16:20:44,978 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 16:20:45,068 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 16:20:45,068 INFO  [Log] Inputting all the details 
+2016-08-24 16:20:46,261 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 16:20:46,372 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 16:20:46,417 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 16:20:46,464 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 16:20:48,806 INFO  [Log] Waiting for alert to appear 
+2016-08-24 16:20:48,833 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 16:20:48,844 INFO  [Log] Switched to alert 
+2016-08-24 16:20:48,867 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 16:20:48,867 INFO  [Log] Accpeting the alert 
+2016-08-24 16:20:48,914 INFO  [Log] Alert accepted 
+2016-08-24 16:20:51,075 INFO  [Log] Flights selected successfully 
+2016-08-24 16:20:51,179 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 16:20:51,228 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 16:20:51,273 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 16:20:51,322 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 16:20:51,368 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 16:20:51,407 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 16:20:51,446 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 16:20:51,489 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 16:20:51,569 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 16:20:51,569 INFO  [Log] Inputting all the details 
+2016-08-24 16:20:53,318 INFO  [Log] Flight booked successfully 
+2016-08-24 16:20:53,447 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:20:53,449 INFO  [Log]                                                                                          
+2016-08-24 16:20:53,449 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:20:53,449 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:20:53,449 INFO  [Log]                                                                                          
+2016-08-24 16:20:55,522 INFO  [Log] Waiting for alert to appear 
+2016-08-24 16:20:55,549 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 16:20:55,559 INFO  [Log] Switched to alert 
+2016-08-24 16:20:55,584 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 16:20:55,584 INFO  [Log] Accpeting the alert 
+2016-08-24 16:20:55,634 INFO  [Log] Alert accepted 
+2016-08-24 16:21:01,458 INFO  [Log] Flight booked successfully 
+2016-08-24 16:21:01,605 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:21:01,606 INFO  [Log]                                                                                          
+2016-08-24 16:21:01,606 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:21:01,606 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:21:01,606 INFO  [Log]                                                                                          
+2016-08-24 16:21:49,549 INFO  [Log]                                                                                          
+2016-08-24 16:21:49,550 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:21:49,550 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 16:21:49,550 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:21:49,550 INFO  [Log]                                                                                          
+2016-08-24 16:22:02,724 INFO  [Log] Browser opened successfully 
+2016-08-24 16:22:02,847 INFO  [Log] Opening regisration page 
+2016-08-24 16:22:03,099 INFO  [Log] Inputting registration details 
+2016-08-24 16:22:08,557 INFO  [Log] Clicking Submit button 
+2016-08-24 16:22:11,266 INFO  [Log] Verifying user display name 
+2016-08-24 16:22:11,344 INFO  [Log] User Display name verification successful 
+2016-08-24 16:22:11,344 INFO  [Log] Verifying login username 
+2016-08-24 16:22:11,407 INFO  [Log] Login username verification successful 
+2016-08-24 16:22:11,409 INFO  [Log]                                                                                          
+2016-08-24 16:22:11,409 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:22:11,409 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:22:11,409 INFO  [Log]                                                                                          
+2016-08-24 16:22:11,409 INFO  [Log]                                                                                          
+2016-08-24 16:22:11,409 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:22:11,410 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 16:22:11,410 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:22:11,410 INFO  [Log]                                                                                          
+2016-08-24 16:22:11,528 INFO  [Log] Opening URL for login page 
+2016-08-24 16:22:13,807 INFO  [Log] Login URL opened successfully 
+2016-08-24 16:22:14,321 INFO  [Log] Login details populated successfully 
+2016-08-24 16:22:14,391 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 16:22:14,656 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:22:24,819 INFO  [Log] Login successful 
+2016-08-24 16:22:24,821 INFO  [Log]                                                                                          
+2016-08-24 16:22:24,821 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:22:24,821 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:22:24,821 INFO  [Log]                                                                                          
+2016-08-24 16:22:24,821 INFO  [Log]                                                                                          
+2016-08-24 16:22:24,821 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:22:24,821 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 16:22:24,821 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:22:24,821 INFO  [Log]                                                                                          
+2016-08-24 16:22:27,880 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 16:22:27,919 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 16:22:27,953 INFO  [Log] Populatig all the provided data 
+2016-08-24 16:22:33,691 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 16:22:33,748 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 16:22:33,794 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 16:22:33,846 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 16:22:38,825 INFO  [Log] Flights selected successfully 
+2016-08-24 16:22:38,917 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 16:22:38,971 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 16:22:39,105 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 16:22:39,160 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 16:22:39,210 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 16:22:39,255 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 16:22:39,297 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 16:22:39,339 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 16:22:39,431 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 16:22:39,431 INFO  [Log] Inputting all the details 
+2016-08-24 16:22:42,716 INFO  [Log] Waiting for alert to appear 
+2016-08-24 16:22:42,741 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 16:22:42,751 INFO  [Log] Switched to alert 
+2016-08-24 16:22:42,773 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 16:22:42,773 INFO  [Log] Accpeting the alert 
+2016-08-24 16:22:42,816 INFO  [Log] Alert accepted 
+2016-08-24 16:22:50,966 INFO  [Log] Flight booked successfully 
+2016-08-24 16:22:51,225 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:22:51,226 INFO  [Log]                                                                                          
+2016-08-24 16:22:51,226 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:22:51,226 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:22:51,226 INFO  [Log]                                                                                          
+2016-08-24 16:24:52,431 INFO  [Log]                                                                                          
+2016-08-24 16:24:52,431 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:24:52,432 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 16:24:52,432 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:24:52,432 INFO  [Log]                                                                                          
+2016-08-24 16:25:02,090 INFO  [Log] Browser opened successfully 
+2016-08-24 16:25:02,218 INFO  [Log] Opening regisration page 
+2016-08-24 16:25:02,471 INFO  [Log] Inputting registration details 
+2016-08-24 16:25:05,765 INFO  [Log] Clicking Submit button 
+2016-08-24 16:25:08,407 INFO  [Log] Verifying user display name 
+2016-08-24 16:25:08,515 INFO  [Log] User Display name verification successful 
+2016-08-24 16:25:08,515 INFO  [Log] Verifying login username 
+2016-08-24 16:25:08,591 INFO  [Log] Login username verification successful 
+2016-08-24 16:25:08,593 INFO  [Log]                                                                                          
+2016-08-24 16:25:08,593 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:25:08,593 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:25:08,593 INFO  [Log]                                                                                          
+2016-08-24 16:25:08,594 INFO  [Log]                                                                                          
+2016-08-24 16:25:08,594 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:25:08,594 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 16:25:08,594 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:25:08,594 INFO  [Log]                                                                                          
+2016-08-24 16:25:08,753 INFO  [Log] Opening URL for login page 
+2016-08-24 16:25:10,183 INFO  [Log] Login URL opened successfully 
+2016-08-24 16:25:10,617 INFO  [Log] Login details populated successfully 
+2016-08-24 16:25:10,672 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 16:25:10,919 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:25:13,704 INFO  [Log] Login successful 
+2016-08-24 16:25:13,706 INFO  [Log]                                                                                          
+2016-08-24 16:25:13,706 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:25:13,706 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:25:13,706 INFO  [Log]                                                                                          
+2016-08-24 16:25:13,707 INFO  [Log]                                                                                          
+2016-08-24 16:25:13,707 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:25:13,707 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 16:25:13,707 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:25:13,707 INFO  [Log]                                                                                          
+2016-08-24 16:25:15,658 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 16:25:15,702 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 16:25:15,732 INFO  [Log] Populatig all the provided data 
+2016-08-24 16:25:20,664 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 16:25:20,735 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 16:25:20,773 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 16:25:20,820 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 16:25:25,863 INFO  [Log] Flights selected successfully 
+2016-08-24 16:25:25,930 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 16:25:25,975 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 16:25:26,021 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 16:25:26,066 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 16:25:26,116 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 16:25:26,158 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 16:25:26,201 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 16:25:26,238 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 16:25:26,319 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 16:25:26,319 INFO  [Log] Inputting all the details 
+2016-08-24 16:25:29,962 INFO  [Log] Waiting for alert to appear 
+2016-08-24 16:25:30,018 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 16:25:30,028 INFO  [Log] Switched to alert 
+2016-08-24 16:25:30,052 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 16:25:30,052 INFO  [Log] Accpeting the alert 
+2016-08-24 16:25:30,117 INFO  [Log] Alert accepted 
+2016-08-24 16:25:35,427 INFO  [Log] Flight booked successfully 
+2016-08-24 16:25:35,549 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:25:35,550 INFO  [Log]                                                                                          
+2016-08-24 16:25:35,552 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:25:35,552 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:25:35,552 INFO  [Log]                                                                                          
+2016-08-24 16:26:21,884 INFO  [Log]                                                                                          
+2016-08-24 16:26:21,885 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:26:21,885 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-24 16:26:21,885 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:26:21,886 INFO  [Log]                                                                                          
+2016-08-24 16:26:37,803 INFO  [Log] Browser opened successfully 
+2016-08-24 16:26:37,939 INFO  [Log] Opening regisration page 
+2016-08-24 16:26:38,235 INFO  [Log] Inputting registration details 
+2016-08-24 16:26:44,043 INFO  [Log] Clicking Submit button 
+2016-08-24 16:26:46,528 INFO  [Log] Verifying user display name 
+2016-08-24 16:26:46,620 INFO  [Log] User Display name verification successful 
+2016-08-24 16:26:46,621 INFO  [Log] Verifying login username 
+2016-08-24 16:26:46,699 INFO  [Log] Login username verification successful 
+2016-08-24 16:26:46,703 INFO  [Log]                                                                                          
+2016-08-24 16:26:46,703 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:26:46,703 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:26:46,703 INFO  [Log]                                                                                          
+2016-08-24 16:26:46,704 INFO  [Log]                                                                                          
+2016-08-24 16:26:46,704 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:26:46,704 INFO  [Log] TSET CASE NAME : Login 
+2016-08-24 16:26:46,704 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:26:46,704 INFO  [Log]                                                                                          
+2016-08-24 16:26:46,851 INFO  [Log] Opening URL for login page 
+2016-08-24 16:26:48,443 INFO  [Log] Login URL opened successfully 
+2016-08-24 16:26:48,920 INFO  [Log] Login details populated successfully 
+2016-08-24 16:26:49,000 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-24 16:26:49,255 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:26:52,040 INFO  [Log] Login successful 
+2016-08-24 16:26:52,041 INFO  [Log]                                                                                          
+2016-08-24 16:26:52,041 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:26:52,041 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:26:52,041 INFO  [Log]                                                                                          
+2016-08-24 16:26:52,042 INFO  [Log]                                                                                          
+2016-08-24 16:26:52,042 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-24 16:26:52,042 INFO  [Log] TSET CASE NAME : FindAndBookFlight 
+2016-08-24 16:26:52,042 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:26:52,042 INFO  [Log]                                                                                          
+2016-08-24 16:26:54,444 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page 
+2016-08-24 16:26:54,479 INFO  [Log] Return Trip checkbox is slected WebElement default 
+2016-08-24 16:26:54,514 INFO  [Log] Populatig all the provided data 
+2016-08-24 16:27:00,265 INFO  [Log] mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully 
+2016-08-24 16:27:00,345 INFO  [Log] mercuryFlightBooking()->selectFlight()->Now on the flight selection page 
+2016-08-24 16:27:00,387 ERROR [Log] mercuryFlightBooking()->selectFlight()-> FROM and TO flights match 
+2016-08-24 16:27:00,432 ERROR [Log] mercuryFlightBooking()->selectFlight()-> TO and FROM flights match 
+2016-08-24 16:27:05,168 INFO  [Log] Flights selected successfully 
+2016-08-24 16:27:05,222 INFO  [Log] mercuryFlightBooking()->bookFlight()->Now on the flight booking page 
+2016-08-24 16:27:05,266 ERROR [Log] mercuryFlightBooking()->bookFlight()-> FROM and TO flights match 
+2016-08-24 16:27:05,313 ERROR [Log] mercuryFlightBooking()->bookFlight()-> TO and FROM flights match 
+2016-08-24 16:27:05,358 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight is correct 
+2016-08-24 16:27:05,407 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight is correct 
+2016-08-24 16:27:05,447 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly 
+2016-08-24 16:27:05,483 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly 
+2016-08-24 16:27:05,523 ERROR [Log] mercuryFlightBooking()->bookFlight()-> Number of passenges are correct 
+2016-08-24 16:27:05,597 INFO  [Log] mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches 
+2016-08-24 16:27:05,597 INFO  [Log] Inputting all the details 
+2016-08-24 16:27:08,840 INFO  [Log] Waiting for alert to appear 
+2016-08-24 16:27:08,903 INFO  [Log] Alert visible, switching to alert 
+2016-08-24 16:27:08,916 INFO  [Log] Switched to alert 
+2016-08-24 16:27:08,938 INFO  [Log] Alert Text: You have chosen a mailing location outside of the United States and its territories. An additional charge of $6.5 will be added as mailing charge. 
+2016-08-24 16:27:08,938 INFO  [Log] Accpeting the alert 
+2016-08-24 16:27:08,999 INFO  [Log] Alert accepted 
+2016-08-24 16:27:15,188 INFO  [Log] Flight booked successfully 
+2016-08-24 16:27:15,315 INFO  [Log] Screenshot captured successfully 
+2016-08-24 16:27:15,317 INFO  [Log]                                                                                          
+2016-08-24 16:27:15,319 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-24 16:27:15,319 INFO  [Log] **************************************************************************************** 
+2016-08-24 16:27:15,319 INFO  [Log]                                                                                          

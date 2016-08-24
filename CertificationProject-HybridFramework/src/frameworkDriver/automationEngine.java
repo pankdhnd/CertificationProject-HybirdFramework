@@ -28,9 +28,12 @@ public class automationEngine {
 		testSuiteFolder = oDriverProperties.getProperty("TestSuiteFolder").trim();
 		TestSuite = oDriverProperties.getProperty("TestSuite").trim();
 		testDataFolder = oDriverProperties.getProperty("TestDataFolder");
-		resultFolder = oDriverProperties.getProperty("resultFolder").trim();		
+		resultFolder = oDriverProperties.getProperty("resultFolder").trim();
+		System.out.println("****************STARTING EXECUTION******************");	
 		testSuiteDriver();
 		exportToExcel();
+		System.out.println("");
+		System.out.println("****************FINISHED EXECUTION******************");
 		}
 
 	
@@ -54,8 +57,10 @@ public class automationEngine {
 			testCaseSheetName = testCaseSheetName.trim();			
 			runFlag = runFlag.toLowerCase().trim();				
 			if(runFlag.equalsIgnoreCase(("Y"))) {
-				kUtil = null;	
-				System.out.println("Starting Test Case");
+				kUtil = null;
+				System.out.println("");
+				System.out.println("----------------------------------------------------");
+				System.out.println("Starting Test Case >> " + testCaseSheetName);
 				Log.startOfTestCase(testCaseSheetName);
 				runStatus = testCaseDriver(testCaseSheetName);				
 				if (runStatus.equals("")){					
@@ -100,8 +105,8 @@ public class automationEngine {
 			kUtil = new keywordUtility();	
 			rowCount = oExcelDriver.getRowCount(sheetName);			
 			for(Row = 2; Row <= rowCount; Row++){
-			methodName = oExcelDriver.getCellData(sheetName, Row, 2);				
-			System.out.println("Executing method >> "+ methodName);
+			methodName = oExcelDriver.getCellData(sheetName, Row, 2);			
+			System.out.println("    --Executing method >> "+ methodName);
 			if (methodName.equals("")){
 				runStatus = "Skipped";
 				Comment = "Invalid action keyword";
@@ -140,13 +145,11 @@ public class automationEngine {
 			testCaseDriverReturnValue = e.getMessage();
 			currentTestCaseStatus = "FAIL";
 		}
-		
+		System.out.println("----------------------------------------------------");
 		return testCaseDriverReturnValue;
 	}//END testCaseDriver
 	
-	
-	
-	
+		
 	private static void exportToExcel()
 	{
 		String outputFileName = "";
