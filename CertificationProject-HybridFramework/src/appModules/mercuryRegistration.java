@@ -1,7 +1,5 @@
 package appModules;
 
-import java.util.Properties;
-
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

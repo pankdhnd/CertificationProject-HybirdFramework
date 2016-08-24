@@ -2,8 +2,6 @@ package frameworkDriver;
 import java.util.Properties;
 
 import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.By;
-
 import commonLibs.Log;
 import commonLibs.excelDriver;
 import commonLibs.keywordUtility;
@@ -13,8 +11,7 @@ public class automationEngine {
 	private static keywordUtility kUtil;
 	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
 	private static Properties oDriverProperties;
-	private static String testSuiteFolder;
-	private static String testDataFolder;
+	private static String testSuiteFolder;	
 	private static String resultFolder;
 	private static String TestSuite;	
 	private static excelDriver oExcelDriver;
@@ -26,8 +23,7 @@ public class automationEngine {
 		DOMConfigurator.configure("log4j.xml");
 		oDriverProperties = utils.getProperties(driverPropertyFile);	
 		testSuiteFolder = oDriverProperties.getProperty("TestSuiteFolder").trim();
-		TestSuite = oDriverProperties.getProperty("TestSuite").trim();
-		testDataFolder = oDriverProperties.getProperty("TestDataFolder");
+		TestSuite = oDriverProperties.getProperty("TestSuite").trim();		
 		resultFolder = oDriverProperties.getProperty("resultFolder").trim();
 		System.out.println("****************STARTING EXECUTION******************");	
 		testSuiteDriver();
@@ -99,7 +95,6 @@ public class automationEngine {
 		String runStatus = "";
 		String Comment = "";
 		String returnValue = "";
-		By oBy = null;
 		
 		try {			
 			kUtil = new keywordUtility();	
