@@ -5070,3 +5070,68 @@ Session ID: 5615b544-d3b9-4608-983b-f8de9576106f
 2016-08-24 17:02:16,108 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
 2016-08-24 17:02:16,108 INFO  [Log] **************************************************************************************** 
 2016-08-24 17:02:16,108 INFO  [Log]                                                                                          
+2016-08-26 01:04:53,222 INFO  [Log]                                                                                          
+2016-08-26 01:04:53,233 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-26 01:04:53,233 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-26 01:04:53,233 INFO  [Log] **************************************************************************************** 
+2016-08-26 01:04:53,233 INFO  [Log]                                                                                          
+2016-08-26 01:05:05,786 INFO  [Log] Browser opened successfully 
+2016-08-26 01:05:05,854 INFO  [Log] Opening regisration page 
+2016-08-26 01:05:10,819 INFO  [Log] Inputting registration details 
+2016-08-26 01:05:12,240 INFO  [Log] Clicking Submit button 
+2016-08-26 01:05:15,835 INFO  [Log] Verifying user display name 
+2016-08-26 01:05:15,904 INFO  [Log] User Display name verification successful 
+2016-08-26 01:05:15,904 INFO  [Log] Verifying login username 
+2016-08-26 01:05:15,943 INFO  [Log] Login username verification successful 
+2016-08-26 01:05:15,951 INFO  [Log]                                                                                          
+2016-08-26 01:05:15,951 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-26 01:05:15,951 INFO  [Log] **************************************************************************************** 
+2016-08-26 01:05:15,951 INFO  [Log]                                                                                          
+2016-08-26 01:05:15,952 INFO  [Log]                                                                                          
+2016-08-26 01:05:15,952 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-26 01:05:15,952 INFO  [Log] TSET CASE NAME : Login 
+2016-08-26 01:05:15,952 INFO  [Log] **************************************************************************************** 
+2016-08-26 01:05:15,952 INFO  [Log]                                                                                          
+2016-08-26 01:05:16,013 INFO  [Log] Opening URL for login page 
+2016-08-26 01:05:19,038 INFO  [Log] Login URL opened successfully 
+2016-08-26 01:05:19,502 INFO  [Log] Login details populated successfully 
+2016-08-26 01:05:19,536 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-26 01:05:19,768 INFO  [Log] Screenshot captured successfully 
+2016-08-26 01:05:23,141 INFO  [Log] Login successful 
+2016-08-26 01:05:23,142 INFO  [Log]                                                                                          
+2016-08-26 01:05:23,142 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-26 01:05:23,142 INFO  [Log] **************************************************************************************** 
+2016-08-26 01:05:23,142 INFO  [Log]                                                                                          
+2016-08-26 01:09:35,967 INFO  [Log]                                                                                          
+2016-08-26 01:09:35,967 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-26 01:09:35,968 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-26 01:09:35,968 INFO  [Log] **************************************************************************************** 
+2016-08-26 01:09:35,968 INFO  [Log]                                                                                          
+2016-08-26 01:09:45,806 INFO  [Log] Browser opened successfully 
+2016-08-26 01:09:45,875 INFO  [Log] Opening regisration page 
+2016-08-26 01:09:48,350 INFO  [Log] Inputting registration details 
+2016-08-26 01:09:49,655 INFO  [Log] Clicking Submit button 
+2016-08-26 01:09:51,670 INFO  [Log] Current page URL is as expected 
+2016-08-26 01:09:51,671 INFO  [Log] Verifying user display name 
+2016-08-26 01:09:51,717 INFO  [Log] User Display name verification successful 
+2016-08-26 01:09:51,718 INFO  [Log] Verifying login username 
+2016-08-26 01:09:51,759 INFO  [Log] Login username verification successful 
+2016-08-26 01:09:51,760 INFO  [Log]                                                                                          
+2016-08-26 01:09:51,760 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-26 01:09:51,760 INFO  [Log] **************************************************************************************** 
+2016-08-26 01:09:51,760 INFO  [Log]                                                                                          
+2016-08-26 01:09:51,760 INFO  [Log]                                                                                          
+2016-08-26 01:09:51,760 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-26 01:09:51,760 INFO  [Log] TSET CASE NAME : Login 
+2016-08-26 01:09:51,760 INFO  [Log] **************************************************************************************** 
+2016-08-26 01:09:51,760 INFO  [Log]                                                                                          
+2016-08-26 01:09:51,802 INFO  [Log] Opening URL for login page 
+2016-08-26 01:09:53,809 INFO  [Log] Login URL opened successfully 
+2016-08-26 01:09:54,037 INFO  [Log] Login details populated successfully 
+2016-08-26 01:09:54,056 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-26 01:09:54,225 INFO  [Log] Screenshot captured successfully 
+2016-08-26 01:09:57,559 INFO  [Log] Login successful 
+2016-08-26 01:09:57,560 INFO  [Log]                                                                                          
+2016-08-26 01:09:57,560 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-26 01:09:57,560 INFO  [Log] **************************************************************************************** 
+2016-08-26 01:09:57,560 INFO  [Log]                                                                                          

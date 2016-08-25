@@ -109,14 +109,22 @@ public class mercuryRegistration {
 			buttonSubmit.click();
 			
 			
-			
+			//Verify whether current page URL is correct
+			if(wDriver.getCurrentUrl().equals(Data[13])){
+				Log.info("Current page URL is as expected");				
+			}else{
+				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"_wrongURL.jpg");	
+				Log.error("ERROR: Page URL is not the one we expected");				
+				return "ERROR: Page URL is not the one we expected";
+			}				
+				
 			//Verify user display name from UI with the value provided from excel sheet
 			Log.info("Verifying user display name");			
 			if(displayUsername.isDisplayed() && displayUsername.getText().equals("Dear "+ Data[0] + " " + Data[1] + ",")){
 				Log.info("User Display name verification successful");
 			}
 			else{
-				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+".jpg");	
+				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"_wrongDisplayName.jpg");	
 				Log.error("ERROR: Could not find post registration screen; screenshot captured");				
 				return "ERROR: Could not find post registration screen";
 			}
@@ -127,11 +135,11 @@ public class mercuryRegistration {
 				Log.info("Login username verification successful");
 			}
 			else{
-				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+".jpg");	
+				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"._wrongLoginIDjpg");	
 				Log.error("ERROR: Login username displayed is different than the username we provided; screenshot taken");				
 				return "ERROR: Login username displayed is different than the username we provided";
 			}
-			
+									
 			//if all is good, return successful response
 			return "Registration successful";
 		} catch (Exception e) {

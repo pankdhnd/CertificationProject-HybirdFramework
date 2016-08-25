@@ -89,7 +89,7 @@ public class dataProvider {
 	public String[] registerNewUser(){
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
-			String Data[] = new String[13];
+			String Data[] = new String[14];
 			
 			Data[0] = oExcelDriver.getCellData(sheetName, 1, 2);
 			Data[1] = oExcelDriver.getCellData(sheetName, 2, 2);
@@ -104,7 +104,8 @@ public class dataProvider {
 			Data[10] = oExcelDriver.getCellData(sheetName, 11, 2);
 			Data[11] = oExcelDriver.getCellData(sheetName, 12, 2);
 			Data[12] = oExcelDriver.getCellData(sheetName, 13, 2);	
-			 
+			Data[13] = oExcelDriver.getCellData(sheetName, 14, 2);
+			
 			return Data;
 		} catch (Exception e) {
 			Log.error("dataProvider()->registerNewUser()-> Error occured while getting data: "+ e);
