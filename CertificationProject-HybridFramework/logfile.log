@@ -5135,3 +5135,197 @@ Session ID: 5615b544-d3b9-4608-983b-f8de9576106f
 2016-08-26 01:09:57,560 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
 2016-08-26 01:09:57,560 INFO  [Log] **************************************************************************************** 
 2016-08-26 01:09:57,560 INFO  [Log]                                                                                          
+2016-08-27 00:09:42,144 INFO  [Log]                                                                                          
+2016-08-27 00:09:42,153 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:09:42,153 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-27 00:09:42,153 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:09:42,153 INFO  [Log]                                                                                          
+2016-08-27 00:09:42,290 INFO  [Log] Opening regisration page 
+2016-08-27 00:09:42,290 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: java.lang.NullPointerException 
+2016-08-27 00:09:42,291 INFO  [Log]                                                                                          
+2016-08-27 00:09:42,292 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-27 00:09:42,292 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:09:42,292 INFO  [Log]                                                                                          
+2016-08-27 00:09:42,292 INFO  [Log]                                                                                          
+2016-08-27 00:09:42,292 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:09:42,292 INFO  [Log] TSET CASE NAME : Login 
+2016-08-27 00:09:42,292 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:09:42,292 INFO  [Log]                                                                                          
+2016-08-27 00:09:42,335 INFO  [Log] Opening URL for login page 
+2016-08-27 00:09:42,335 ERROR [Log] Error occured while opening the login URL, here are the details: java.lang.NullPointerException 
+2016-08-27 00:09:42,355 ERROR [Log] setup()->verifyLoginElementsExistance()-> ERROR: Could not verify the existance of login elements/controls, here are the details: java.lang.NullPointerException 
+2016-08-27 00:09:42,422 ERROR [Log] ERROR: inputLoginDetails failed due to some exception. Below are the details: java.lang.NullPointerException 
+2016-08-27 00:09:42,478 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-27 00:09:42,478 ERROR [Log] ERROR: verifyEnteredValues failed due to some exception. Below are the details: java.lang.NullPointerException 
+2016-08-27 00:09:42,499 ERROR [Log] Could not take screenshot; here is some more detail: java.lang.NullPointerException 
+2016-08-27 00:09:42,534 ERROR [Log] ERROR: Title does not match after login; login failed; details: java.lang.NullPointerException 
+2016-08-27 00:09:42,535 INFO  [Log]                                                                                          
+2016-08-27 00:09:42,535 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-27 00:09:42,535 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:09:42,536 INFO  [Log]                                                                                          
+2016-08-27 00:10:07,862 INFO  [Log]                                                                                          
+2016-08-27 00:10:07,863 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:10:07,863 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-27 00:10:07,863 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:10:07,863 INFO  [Log]                                                                                          
+2016-08-27 00:10:07,949 INFO  [Log] Opening regisration page 
+2016-08-27 00:10:07,949 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: java.lang.NullPointerException 
+2016-08-27 00:10:07,950 INFO  [Log]                                                                                          
+2016-08-27 00:10:07,950 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-27 00:10:07,950 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:10:07,950 INFO  [Log]                                                                                          
+2016-08-27 00:10:07,950 INFO  [Log]                                                                                          
+2016-08-27 00:10:07,951 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:10:07,951 INFO  [Log] TSET CASE NAME : Login 
+2016-08-27 00:10:07,951 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:10:07,951 INFO  [Log]                                                                                          
+2016-08-27 00:10:08,004 INFO  [Log] Opening URL for login page 
+2016-08-27 00:10:08,005 ERROR [Log] Error occured while opening the login URL, here are the details: java.lang.NullPointerException 
+2016-08-27 00:10:08,029 ERROR [Log] setup()->verifyLoginElementsExistance()-> ERROR: Could not verify the existance of login elements/controls, here are the details: java.lang.NullPointerException 
+2016-08-27 00:10:08,049 ERROR [Log] ERROR: inputLoginDetails failed due to some exception. Below are the details: java.lang.NullPointerException 
+2016-08-27 00:10:08,080 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-27 00:10:08,080 ERROR [Log] ERROR: verifyEnteredValues failed due to some exception. Below are the details: java.lang.NullPointerException 
+2016-08-27 00:10:08,084 ERROR [Log] Could not take screenshot; here is some more detail: java.lang.NullPointerException 
+2016-08-27 00:10:08,103 ERROR [Log] ERROR: Title does not match after login; login failed; details: java.lang.NullPointerException 
+2016-08-27 00:10:08,104 INFO  [Log]                                                                                          
+2016-08-27 00:10:08,105 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-27 00:10:08,105 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:10:08,105 INFO  [Log]                                                                                          
+2016-08-27 00:10:41,227 INFO  [Log]                                                                                          
+2016-08-27 00:10:41,227 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:10:41,227 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-27 00:10:41,227 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:10:41,227 INFO  [Log]                                                                                          
+2016-08-27 00:10:53,014 INFO  [Log] Browser opened successfully 
+2016-08-27 00:10:53,065 INFO  [Log] Opening regisration page 
+2016-08-27 00:10:54,705 INFO  [Log] Inputting registration details 
+2016-08-27 00:10:56,369 INFO  [RetryExec] I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:7055: The target server failed to respond 
+2016-08-27 00:10:56,369 INFO  [RetryExec] Retrying request to {}->http://127.0.0.1:7055 
+2016-08-27 00:10:57,477 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.43.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 00083896-7765-4fe4-9fc3-d356c057be13 
+2016-08-27 00:10:57,480 INFO  [Log]                                                                                          
+2016-08-27 00:10:57,481 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-27 00:10:57,481 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:10:57,481 INFO  [Log]                                                                                          
+2016-08-27 00:10:57,483 INFO  [Log]                                                                                          
+2016-08-27 00:10:57,483 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:10:57,483 INFO  [Log] TSET CASE NAME : Login 
+2016-08-27 00:10:57,483 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:10:57,483 INFO  [Log]                                                                                          
+2016-08-27 00:10:57,546 INFO  [Log] Opening URL for login page 
+2016-08-27 00:10:58,560 ERROR [Log] Error occured while opening the login URL, here are the details: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.43.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 00083896-7765-4fe4-9fc3-d356c057be13 
+2016-08-27 00:11:12,288 INFO  [Log]                                                                                          
+2016-08-27 00:11:12,288 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:11:12,288 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-27 00:11:12,288 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:11:12,288 INFO  [Log]                                                                                          
+2016-08-27 00:11:12,378 INFO  [Log] Opening regisration page 
+2016-08-27 00:11:12,378 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: java.lang.NullPointerException 
+2016-08-27 00:11:12,379 INFO  [Log]                                                                                          
+2016-08-27 00:11:12,379 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-27 00:11:12,379 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:11:12,379 INFO  [Log]                                                                                          
+2016-08-27 00:11:12,379 INFO  [Log]                                                                                          
+2016-08-27 00:11:12,379 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:11:12,379 INFO  [Log] TSET CASE NAME : Login 
+2016-08-27 00:11:12,379 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:11:12,379 INFO  [Log]                                                                                          
+2016-08-27 00:11:12,424 INFO  [Log] Opening URL for login page 
+2016-08-27 00:11:12,425 ERROR [Log] Error occured while opening the login URL, here are the details: java.lang.NullPointerException 
+2016-08-27 00:11:12,458 ERROR [Log] setup()->verifyLoginElementsExistance()-> ERROR: Could not verify the existance of login elements/controls, here are the details: java.lang.NullPointerException 
+2016-08-27 00:11:12,479 ERROR [Log] ERROR: inputLoginDetails failed due to some exception. Below are the details: java.lang.NullPointerException 
+2016-08-27 00:11:12,499 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-27 00:11:12,499 ERROR [Log] ERROR: verifyEnteredValues failed due to some exception. Below are the details: java.lang.NullPointerException 
+2016-08-27 00:11:12,503 ERROR [Log] Could not take screenshot; here is some more detail: java.lang.NullPointerException 
+2016-08-27 00:11:12,522 ERROR [Log] ERROR: Title does not match after login; login failed; details: java.lang.NullPointerException 
+2016-08-27 00:11:12,524 INFO  [Log]                                                                                          
+2016-08-27 00:11:12,524 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-27 00:11:12,524 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:11:12,524 INFO  [Log]                                                                                          
+2016-08-27 00:12:03,362 INFO  [Log]                                                                                          
+2016-08-27 00:12:03,363 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:12:03,363 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-27 00:12:03,363 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:12:03,363 INFO  [Log]                                                                                          
+2016-08-27 00:12:10,162 INFO  [Log] Browser opened successfully 
+2016-08-27 00:12:10,211 INFO  [Log] Opening regisration page 
+2016-08-27 00:12:11,529 INFO  [Log] Inputting registration details 
+2016-08-27 00:12:12,823 INFO  [Log] Clicking Submit button 
+2016-08-27 00:12:14,807 INFO  [Log] Current page URL is as expected 
+2016-08-27 00:12:14,807 INFO  [Log] Verifying user display name 
+2016-08-27 00:12:14,873 INFO  [Log] User Display name verification successful 
+2016-08-27 00:12:14,873 INFO  [Log] Verifying login username 
+2016-08-27 00:12:14,911 INFO  [Log] Login username verification successful 
+2016-08-27 00:12:14,911 INFO  [Log]                                                                                          
+2016-08-27 00:12:14,912 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-27 00:12:14,912 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:12:14,912 INFO  [Log]                                                                                          
+2016-08-27 00:12:14,912 INFO  [Log]                                                                                          
+2016-08-27 00:12:14,912 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:12:14,912 INFO  [Log] TSET CASE NAME : Login 
+2016-08-27 00:12:14,912 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:12:14,912 INFO  [Log]                                                                                          
+2016-08-27 00:12:14,954 INFO  [Log] Opening URL for login page 
+2016-08-27 00:12:16,482 INFO  [Log] Login URL opened successfully 
+2016-08-27 00:12:16,754 INFO  [Log] Login details populated successfully 
+2016-08-27 00:12:16,784 INFO  [Log] Verifying the already populated value with the values supplied from excel Sheet 
+2016-08-27 00:12:16,981 INFO  [Log] Screenshot captured successfully 
+2016-08-27 00:12:20,158 INFO  [Log] Login successful 
+2016-08-27 00:12:20,160 INFO  [Log]                                                                                          
+2016-08-27 00:12:20,160 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-27 00:12:20,160 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:12:20,160 INFO  [Log]                                                                                          
+2016-08-27 00:13:25,020 INFO  [Log]                                                                                          
+2016-08-27 00:13:25,020 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:13:25,020 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-27 00:13:25,020 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:13:25,020 INFO  [Log]                                                                                          
+2016-08-27 00:13:32,285 INFO  [Log] Browser opened successfully 
+2016-08-27 00:13:32,379 INFO  [Log] Opening regisration page 
+2016-08-27 00:13:33,599 INFO  [Log] Inputting registration details 
+2016-08-27 00:13:34,837 INFO  [Log] Clicking Submit button 
+2016-08-27 00:13:36,408 INFO  [RetryExec] I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7055: Connection reset 
+2016-08-27 00:13:36,408 INFO  [RetryExec] Retrying request to {}->http://127.0.0.1:7055 
+2016-08-27 00:13:37,414 ERROR [Log] mercuryRegistration()->registerNewUser()-> Error occured, here are the details: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Home', ip: '192.168.43.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 46ce9e14-f1f1-4d86-ac1c-532b226f7254 
+2016-08-27 00:13:37,416 INFO  [Log]                                                                                          
+2016-08-27 00:13:37,416 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-08-27 00:13:37,416 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:13:37,416 INFO  [Log]                                                                                          
+2016-08-27 00:13:37,417 INFO  [Log]                                                                                          
+2016-08-27 00:13:37,417 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:13:37,417 INFO  [Log] TSET CASE NAME : Login 
+2016-08-27 00:13:37,417 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:13:37,417 INFO  [Log]                                                                                          
+2016-08-27 00:13:37,465 INFO  [Log] Opening URL for login page 
+2016-08-27 00:29:46,724 INFO  [Log]                                                                                          
+2016-08-27 00:29:46,724 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:29:46,724 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-27 00:29:46,724 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:29:46,724 INFO  [Log]                                                                                          
+2016-08-27 00:40:55,185 INFO  [Log]                                                                                          
+2016-08-27 00:40:55,186 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:40:55,186 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-27 00:40:55,186 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:40:55,186 INFO  [Log]                                                                                          
+2016-08-27 00:42:10,581 INFO  [Log] Opening regisration page 
+2016-08-27 00:42:54,572 INFO  [Log]                                                                                          
+2016-08-27 00:42:54,572 INFO  [Log] ******************************** START OF NEW TEST CASE  ******************************* 
+2016-08-27 00:42:54,572 INFO  [Log] TSET CASE NAME : RegisterNewUser 
+2016-08-27 00:42:54,572 INFO  [Log] **************************************************************************************** 
+2016-08-27 00:42:54,572 INFO  [Log]                                                                                          
+2016-08-27 00:42:59,875 INFO  [Log] Browser opened successfully 
+2016-08-27 00:42:59,923 INFO  [Log] Opening regisration page 

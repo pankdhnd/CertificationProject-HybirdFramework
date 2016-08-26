@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import commonLibs.utils;
+import commonLibs.Extent;
 import commonLibs.Log;
 import commonLibs.dataProvider;
 
@@ -81,6 +82,7 @@ public class mercuryRegistration {
 	//This method gets all the needed data from the class dataProvider, and creates a new user using that data.
 	public String registerNewUser(String screenshotPath){
 		try {
+			Extent.logInfo("Loading test data for the test case: registerNewUser");
 			//Get the data from dataProvider method and put it in a string array
 			String Data[] = getTestDataFor.registerNewUser();
 			Log.info("Opening regisration page");
@@ -88,6 +90,7 @@ public class mercuryRegistration {
 			Select select;
 			
 			//Input registration details, which are provided by dataProvider class form the input excel file
+			Extent.logInfo("Test data loaded; populating registration data on UI");
 			Log.info("Inputting registration details");
 			txtFirstname.sendKeys(Data[0]);
 			txtLastname.sendKeys(Data[1]);
@@ -108,12 +111,15 @@ public class mercuryRegistration {
 			Log.info("Clicking Submit button");
 			buttonSubmit.click();
 			
-			
+			Extent.logInfo("Data population complete.");
+			Extent.logInfo("Verifying URL of the page opened");
 			//Verify whether current page URL is correct
 			if(wDriver.getCurrentUrl().equals(Data[13])){
+				Extent.logInfo("Verified current page URL");
 				Log.info("Current page URL is as expected");				
 			}else{
 				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"_wrongURL.jpg");	
+				Extent.logError("Page URL is not the one we expected");
 				Log.error("ERROR: Page URL is not the one we expected");				
 				return "ERROR: Page URL is not the one we expected";
 			}				
@@ -121,22 +127,27 @@ public class mercuryRegistration {
 			//Verify user display name from UI with the value provided from excel sheet
 			Log.info("Verifying user display name");			
 			if(displayUsername.isDisplayed() && displayUsername.getText().equals("Dear "+ Data[0] + " " + Data[1] + ",")){
-				Log.info("User Display name verification successful");
+				Extent.logInfo("User Display name verification successful");
+				//Log.info("User Display name verification successful");
 			}
 			else{
-				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"_wrongDisplayName.jpg");	
-				Log.error("ERROR: Could not find post registration screen; screenshot captured");				
+				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"_wrongDisplayName.jpg");
+				Extent.logError("Could not find post registration screen; screenshot captured");
+				//Log.error("ERROR: Could not find post registration screen; screenshot captured");				
 				return "ERROR: Could not find post registration screen";
 			}
 			
 			//Verify user login id  from UI with the value provided from excel sheet
-			Log.info("Verifying login username");			
+			Extent.logInfo("Verifying login username");
+//			Log.info("Verifying login username");			
 			if(loginUsername.isDisplayed() && loginUsername.getText().equals("Note: Your user name is " + Data[10] + ".")){
-				Log.info("Login username verification successful");
+				Extent.logInfo("Login username verification successful");				
+				//Log.info("Login username verification successful");
 			}
 			else{
-				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"._wrongLoginIDjpg");	
-				Log.error("ERROR: Login username displayed is different than the username we provided; screenshot taken");				
+				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"._wrongLoginIDjpg");
+				Extent.logError("ERROR: Login username displayed is different than the username we provided; screenshot taken");
+				//Log.error("ERROR: Login username displayed is different than the username we provided; screenshot taken");				
 				return "ERROR: Login username displayed is different than the username we provided";
 			}
 									

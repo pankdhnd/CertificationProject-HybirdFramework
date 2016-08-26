@@ -34,5 +34,17 @@
 	<classpathentry kind="lib" path="D:/selenium/lib/testng-6.9.9.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/ant-1.7.0.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/ant-launcher-1.7.0.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/extentreports-java-2.41.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/snakeyaml-1.15.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

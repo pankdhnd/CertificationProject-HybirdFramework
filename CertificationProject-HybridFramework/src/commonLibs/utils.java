@@ -137,15 +137,17 @@ public class utils {
 		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", Element);
 	}
 
-	public static String takeScreenshot(WebDriver driver, String filePath) {
-		try {			
+	public static String takeScreenshot(WebDriver driver, String FolderPath) {
+		try {
+			String filePath = FolderPath + utils.getDateTimeStamp() + ".jpg";
+			
 			if (new File(filePath).exists()) {
 				throw new Exception("Screenshot filename already exists");
-			}
+			}			
 			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(scrFile, new File(filePath));
 			Log.info("Screenshot captured successfully");
-			return "Screenshot captured successfully";
+			return filePath;
 		} catch (Exception e) {
 			Log.error("Could not take screenshot; here is some more detail: " + e);
 			return "ERROR: Error occured while saving the screnshot";
@@ -154,7 +156,7 @@ public class utils {
 	}
 	
 	
-	 public static void selectByVisibleText(WebDriver driver, WebElement Element, String visibleText) {
+	public static void selectByVisibleText(WebDriver driver, WebElement Element, String visibleText) {
 		   try {	    
 		    
 		    Select select = new Select(Element);
@@ -166,7 +168,7 @@ public class utils {
 		   }
 		  }
 	
-	 public static void waitTillElementVisible(WebDriver driver, WebElement Element, long timeOut) {
+	public static void waitTillElementVisible(WebDriver driver, WebElement Element, long timeOut) {
 
 		   try {
 		    WebDriverWait oWait = new WebDriverWait(driver, timeOut);
@@ -177,7 +179,7 @@ public class utils {
 		   }
 		  }
 	 
-	 public static void waitTillAlertVisible(WebDriver driver, long timeOut) {
+	public static void waitTillAlertVisible(WebDriver driver, long timeOut) {
 		   try {			 
 		    WebDriverWait oWait = new WebDriverWait(driver, timeOut);
 		    oWait.until(ExpectedConditions.alertIsPresent());
@@ -187,7 +189,7 @@ public class utils {
 		   }
 		  }
 
-	 public static void switchToAlert(WebDriver driver) {
+	public static void switchToAlert(WebDriver driver) {
 		   try {
 			   driver.switchTo().alert();
 		   } catch (Exception e) {

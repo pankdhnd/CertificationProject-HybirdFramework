@@ -2,6 +2,8 @@ package frameworkDriver;
 import java.util.Properties;
 
 import org.apache.log4j.xml.DOMConfigurator;
+
+import commonLibs.Extent;
 import commonLibs.Log;
 import commonLibs.excelDriver;
 import commonLibs.keywordUtility;
@@ -25,7 +27,8 @@ public class automationEngine {
 		testSuiteFolder = oDriverProperties.getProperty("TestSuiteFolder").trim();
 		TestSuite = oDriverProperties.getProperty("TestSuite").trim();		
 		resultFolder = oDriverProperties.getProperty("resultFolder").trim();
-		System.out.println("****************STARTING EXECUTION******************");	
+		System.out.println("****************STARTING EXECUTION******************");
+		Extent.startReporting();
 		testSuiteDriver();
 		exportToExcel();
 		System.out.println("");
@@ -56,6 +59,7 @@ public class automationEngine {
 				kUtil = null;
 				System.out.println("");
 				System.out.println("----------------------------------------------------");
+				Extent.startTest(testCaseSheetName, "");
 				System.out.println("Starting Test Case >> " + testCaseSheetName);
 				Log.startOfTestCase(testCaseSheetName);
 				runStatus = testCaseDriver(testCaseSheetName);				

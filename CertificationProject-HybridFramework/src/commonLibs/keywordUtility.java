@@ -77,7 +77,7 @@ try {
 		
 		//Run method takeScreenshot
 		else if (methodName.equalsIgnoreCase("takeScreenshot")){			
-			return utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp() + ".jpg");
+			return utils.takeScreenshot(wDriver, screenshotPath);
 		}
 		
 		//Run method RegisterNewUser
@@ -138,14 +138,13 @@ try {
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
- 
  public String openBrowser() {	   	  
 	   try {
 		    String Data[] = getTestDataFor.openBrowser();
 			String sBrowserType = Data[0];
 			String sURL = Data[1];
 			String expectedTitle = Data[2];
+			Extent.logInfo("Choosing in between browser types");
 	    if (sBrowserType.equalsIgnoreCase("firefox") || sBrowserType.equalsIgnoreCase("ff") || sBrowserType.equalsIgnoreCase("mozilla")) {
 	     wDriver = new FirefoxDriver();
 	    } else if (sBrowserType.equalsIgnoreCase("chrome") || sBrowserType.equalsIgnoreCase("google chrome") || sBrowserType.equalsIgnoreCase("gc")) {
@@ -161,28 +160,30 @@ try {
 	    } else {
 	     throw new Exception("Invalid browser type " + sBrowserType);
 	     //System.out.println("Invalid driver type "+sBrowserType+" Setting default browser to Firefox...");
-	     //wDriver = new FirefoxDriver();
+	    //wDriver = new FirefoxDriver();
 	    }
+	    Extent.logInfo("Launching browser "+ sBrowserType);
 	    wDriver.manage().window().maximize();
 	    wDriver.manage().deleteAllCookies();
 	    wDriver.manage().timeouts().pageLoadTimeout(60l, TimeUnit.SECONDS); //set page load time out
 	    wDriver.manage().timeouts().implicitlyWait(60l, TimeUnit.SECONDS); // set implicit wait
-
+        Extent.logInfo("Navigating to the URL");
 	    if (sURL.isEmpty()) {
 	     sURL = "about:blank";
 	    }
 	    wDriver.get(sURL);
-	    
+	    Extent.logInfo("Verifying title of the page opened");
 	    WebDriverWait oWait = new WebDriverWait(wDriver, 60l);
-	    oWait.until(ExpectedConditions.titleIs(expectedTitle));
-	    
+	    oWait.until(ExpectedConditions.titleIs(expectedTitle));	 
+	    Extent.logInfo("Title verified successfully.");
 	    Log.info("Browser opened successfully");
     	initializePageObjects(wDriver);
 		return "Browser opened successfully";	
 	    
 	    	   
 	   } catch (Exception e) {
-	    System.out.println("Could not open browser; here is some more detail: " + e);	    
+	    System.out.println("Could not open browser; here is some more detail: " + e);
+	    Extent. logError("Error occured while opening browser; here is some more detail: " + e);
 	    return "ERROR: Error occured while opening browser";
 	   }
 	  } //END openBrowser
@@ -193,7 +194,7 @@ try {
  
 	// method closeBrowser
 	// This method closes currently open browser, and kills the driver.
-	public String closeBrowser() {
+ public String closeBrowser() {
 		try {
 			   if (!wDriver.equals(null)) {
 	    		wDriver.quit();
