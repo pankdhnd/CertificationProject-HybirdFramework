@@ -7,8 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-
 import commonLibs.Log;
 import commonLibs.dataProvider;
 import commonLibs.utils;
@@ -286,8 +284,7 @@ public class mercuryFlightBooking {
 				radioJourneyTypeRoundTrip.click();
 			} else if (Data[0].equals("One way")) {
 				radioJourneyTypeOneWay.click();
-			}
-			Select select;
+			}		
 
 			utils.selectByVisibleText(wDriver, selectPassengers, Data[1]);
 			utils.selectByVisibleText(wDriver, selectDepartingFrom, Data[2]);
@@ -296,29 +293,6 @@ public class mercuryFlightBooking {
 			utils.selectByVisibleText(wDriver, selectArrivingIn, Data[5]);
 			utils.selectByVisibleText(wDriver, selectReturningMonth, Data[6]);
 			utils.selectByVisibleText(wDriver, selectReturningDay, Data[7]);
-
-			/*
-			 * select = new Select(selectPassengers);
-			 * select.selectByVisibleText(Data[1]);
-			 * 
-			 * select = new Select(selectDepartingFrom);
-			 * select.selectByVisibleText(Data[2]);
-			 * 
-			 * select = new Select(selectOnMonth);
-			 * select.selectByVisibleText(Data[3]);
-			 * 
-			 * select = new Select(selectOnDay);
-			 * select.selectByVisibleText(Data[4]);
-			 * 
-			 * select = new Select(selectArrivingIn);
-			 * select.selectByVisibleText(Data[5]);
-			 * 
-			 * select = new Select(selectReturningMonth);
-			 * select.selectByVisibleText(Data[6]);
-			 * 
-			 * select = new Select(selectReturningDay);
-			 * select.selectByVisibleText(Data[7]);
-			 */
 
 			if (Data[8].equalsIgnoreCase("Economy")) {
 				selectServiceClassEconomy.click();
@@ -329,10 +303,7 @@ public class mercuryFlightBooking {
 			}
 
 			utils.selectByVisibleText(wDriver, selectAirline, Data[9]);
-
-			// select = new Select(selectAirline);
-			// select.selectByVisibleText(Data[9]);
-
+		
 			buttonContiue.click();
 			utils.waitTillElementVisible(wDriver, textDepart, 30l);
 			Log.info("mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully");
@@ -344,6 +315,7 @@ public class mercuryFlightBooking {
 		}
 	}// END OF METHOD inputFlightDetails
 
+	
 	// method selectFlight
 	// This method selects the departure and returning flights
 	public String selectFlight() {
@@ -584,7 +556,7 @@ public class mercuryFlightBooking {
 	}// END OF METHOD backToFlight
 
 	// method backToHome
-	// This method clisk Back To Home button on the UI and navigates the user to
+	// This method click Back To Home button on the UI and navigates the user to
 	// home page.
 	public String backToHome() {
 		try {
