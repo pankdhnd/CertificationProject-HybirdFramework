@@ -1,18 +1,16 @@
 package frameworkDriver;
-import java.util.Properties;
+//import java.util.Properties;
 
 import org.apache.log4j.xml.DOMConfigurator;
 
 import commonLibs.Extent;
-import commonLibs.Log;
+//import commonLibs.Log;
 import commonLibs.excelDriver;
 import commonLibs.keywordUtility;
 import commonLibs.utils;;
 public class automationEngine {
 
 	private static keywordUtility kUtil;
-	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
-	private static Properties oDriverProperties;
 	private static String testSuiteFolder;	
 	private static String resultFolder;
 	private static String TestSuite;	
@@ -22,17 +20,17 @@ public class automationEngine {
 	
 	public static void main(String[] args) {
 		
-		DOMConfigurator.configure("log4j.xml");
-		oDriverProperties = utils.getProperties(driverPropertyFile);	
-		testSuiteFolder = oDriverProperties.getProperty("TestSuiteFolder").trim();
-		TestSuite = oDriverProperties.getProperty("TestSuite").trim();		
-		resultFolder = oDriverProperties.getProperty("resultFolder").trim();
+		DOMConfigurator.configure("log4j.xml");	
+		testSuiteFolder =utils.getProperty("TestSuiteFolder");
+		TestSuite =utils.getProperty("TestSuite");
+		resultFolder =utils.getProperty("resultFolder");		
 		System.out.println("****************STARTING EXECUTION******************");
 		Extent.startReporting();
 		testSuiteDriver();
 		exportToExcel();
 		System.out.println("");
 		System.out.println("****************FINISHED EXECUTION******************");
+		Extent.flushExtent();
 		}
 
 	
@@ -61,22 +59,26 @@ public class automationEngine {
 				System.out.println("----------------------------------------------------");
 				Extent.startTest(testCaseSheetName, "");
 				System.out.println("Starting Test Case >> " + testCaseSheetName);
-				Log.startOfTestCase(testCaseSheetName);
+				//Log.startOfTestCase(testCaseSheetName);
 				runStatus = testCaseDriver(testCaseSheetName);				
 				if (runStatus.equals("")){					
 					if (currentTestCaseStatus.equals("PASS")){
-					runStatus = "PASS";					
+					runStatus = "PASS";
+					Extent.passTestCase("Passed test case: "+testCaseSheetName);
 					}
 					else{
 						currentTestCaseStatus = "FAIL";
-						Comment = "Failure occured";	
+						Comment = "Failure occured";
+						Extent.failTestCase("Failed test case: "+testCaseSheetName);
 					}										
 				}
 				else{
+					Extent.failTestCase("Failed test case: "+testCaseSheetName);
 					Comment = runStatus;
 					runStatus = "FAIL";
 				}
-				Log.endOfTestCase();
+				Extent.endTestCase();
+				//Log.endOfTestCase();
 			}
 			else
 			{				
@@ -117,20 +119,21 @@ public class automationEngine {
 									
 					if (returnValue.contains("ERROR")){
 						Comment = returnValue;
-						runStatus = "FAIL";
+						runStatus = "FAIL";						
 						testCaseDriverReturnValue = "FAIL: Failure occured in method: "+methodName;
-						currentTestCaseStatus = "FAIL";
+						currentTestCaseStatus = "FAIL";						
 					}
 					else{
 						runStatus = "PASS";
 						currentTestCaseStatus = "PASS";
-						Comment = returnValue;						
+						Comment = returnValue;												
 					}	
 					
 				} catch (Exception e) {
-					Comment = e.getMessage();
+					Comment = e.toString();
 					runStatus = "EXCEPTION";
 					currentTestCaseStatus = "FAIL: "+e.getMessage();
+					Extent.logFatel("testCaseDriver", "EXCEPTION: "+ Comment);					
 				}
 			
 			oExcelDriver.setCellData(sheetName, runStatus, Row, 3);

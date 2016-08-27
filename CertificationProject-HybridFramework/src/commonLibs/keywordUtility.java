@@ -22,10 +22,7 @@ public class keywordUtility {
 //*******************************************************************************************************************************************************************	
 	
 	//Variable declaration section	
-    private static WebDriver wDriver;	
-	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
-	private static Properties wDriverProperties;
-	private static String screenshotPath;	
+    private static WebDriver wDriver;		
 	setup Setup;
 	mercuryRegistration Register;
 	mercuryFlightBooking bookFlight;
@@ -35,9 +32,7 @@ public class keywordUtility {
 //method keywordUtility
 //This method is constructor of this class
  public keywordUtility(){
-		//wDriver  = new commonDriver();
-		wDriverProperties = utils.getProperties(driverPropertyFile);	
-		screenshotPath = wDriverProperties.getProperty("screenshotFolder").trim();
+	
 	}	
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -77,13 +72,13 @@ try {
 		
 		//Run method takeScreenshot
 		else if (methodName.equalsIgnoreCase("takeScreenshot")){			
-			return utils.takeScreenshot(wDriver, screenshotPath);
+			return utils.takeScreenshot(wDriver, utils.getProperty("screenshotFolder"));
 		}
 		
 		//Run method RegisterNewUser
 		else if (methodName.equalsIgnoreCase("RegisterNewUser")){
 			Register = new mercuryRegistration(wDriver);
-			return Register.registerNewUser(screenshotPath);
+			return Register.registerNewUser();
 		}
 		
 		//Run method InputFlightDetails
@@ -137,14 +132,14 @@ try {
  }
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
  public String openBrowser() {	   	  
 	   try {
+		   String currentMethodName = Thread.currentThread().getStackTrace()[1].getMethodName();	
 		    String Data[] = getTestDataFor.openBrowser();
 			String sBrowserType = Data[0];
 			String sURL = Data[1];
 			String expectedTitle = Data[2];
-			Extent.logInfo("Choosing in between browser types");
+			Extent.logInfo(currentMethodName,"Choosing in between browser types");
 	    if (sBrowserType.equalsIgnoreCase("firefox") || sBrowserType.equalsIgnoreCase("ff") || sBrowserType.equalsIgnoreCase("mozilla")) {
 	     wDriver = new FirefoxDriver();
 	    } else if (sBrowserType.equalsIgnoreCase("chrome") || sBrowserType.equalsIgnoreCase("google chrome") || sBrowserType.equalsIgnoreCase("gc")) {
@@ -162,20 +157,20 @@ try {
 	     //System.out.println("Invalid driver type "+sBrowserType+" Setting default browser to Firefox...");
 	    //wDriver = new FirefoxDriver();
 	    }
-	    Extent.logInfo("Launching browser "+ sBrowserType);
+	    Extent.logInfo(currentMethodName,"Launching browser "+ sBrowserType);
 	    wDriver.manage().window().maximize();
 	    wDriver.manage().deleteAllCookies();
 	    wDriver.manage().timeouts().pageLoadTimeout(60l, TimeUnit.SECONDS); //set page load time out
 	    wDriver.manage().timeouts().implicitlyWait(60l, TimeUnit.SECONDS); // set implicit wait
-        Extent.logInfo("Navigating to the URL");
+	    Extent.logInfo(currentMethodName,"Navigating to the URL");
 	    if (sURL.isEmpty()) {
 	     sURL = "about:blank";
 	    }
 	    wDriver.get(sURL);
-	    Extent.logInfo("Verifying title of the page opened");
+	    Extent.logInfo(currentMethodName,"Verifying title of the page opened");
 	    WebDriverWait oWait = new WebDriverWait(wDriver, 60l);
 	    oWait.until(ExpectedConditions.titleIs(expectedTitle));	 
-	    Extent.logInfo("Title verified successfully.");
+	    Extent.logInfo(currentMethodName,"Title verified successfully.");
 	    Log.info("Browser opened successfully");
     	initializePageObjects(wDriver);
 		return "Browser opened successfully";	
@@ -183,7 +178,7 @@ try {
 	    	   
 	   } catch (Exception e) {
 	    System.out.println("Could not open browser; here is some more detail: " + e);
-	    Extent. logError("Error occured while opening browser; here is some more detail: " + e);
+	    Extent. logError("openBrowser","Error occured while opening browser; here is some more detail: " + e);
 	    return "ERROR: Error occured while opening browser";
 	   }
 	  } //END openBrowser
@@ -196,13 +191,14 @@ try {
 	// This method closes currently open browser, and kills the driver.
  public String closeBrowser() {
 		try {
+			 Extent.logInfo("closeBrowser","Closing browser...");
 			   if (!wDriver.equals(null)) {
 	    		wDriver.quit();
 			}		
-			Log.info("Browser closed successfully");
+			   Extent.logInfo("closeBrowser","Browser closed successfully");
 			return "Browser closed successfully";
 		} catch (Exception e) {
-			Log.error("Error occured while closing the browser; here are some more details: "
+			Extent.logError("closeBrowser","Error occured while closing the browser; here are some more details: "
 					+ e);
 			return "ERROR: Could not close the browser";
 		}

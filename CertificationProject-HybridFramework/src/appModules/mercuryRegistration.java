@@ -80,18 +80,19 @@ public class mercuryRegistration {
 	
 	//method registerNewUser
 	//This method gets all the needed data from the class dataProvider, and creates a new user using that data.
-	public String registerNewUser(String screenshotPath){
+	public String registerNewUser(){
 		try {
-			Extent.logInfo("Loading test data for the test case: registerNewUser");
+			String currentMethodName = Thread.currentThread().getStackTrace()[1].getMethodName();	
+			String screenshotPath = utils.getProperty("screenshotFolder");
+			Extent.logInfo(currentMethodName,"Loading test data for the test case: registerNewUser");
 			//Get the data from dataProvider method and put it in a string array
 			String Data[] = getTestDataFor.registerNewUser();
-			Log.info("Opening regisration page");
+			Extent.logInfo(currentMethodName,"Opening regisration page");		
 			linkRegister.click();
 			Select select;
 			
 			//Input registration details, which are provided by dataProvider class form the input excel file
-			Extent.logInfo("Test data loaded; populating registration data on UI");
-			Log.info("Inputting registration details");
+			Extent.logInfo(currentMethodName,"Test data loaded; populating registration data on UI");		
 			txtFirstname.sendKeys(Data[0]);
 			txtLastname.sendKeys(Data[1]);
 			txtPhone.sendKeys(Data[2]);
@@ -107,54 +108,46 @@ public class mercuryRegistration {
 			
 			txtUsername.sendKeys(Data[10]);
 			txtPassword.sendKeys(Data[11]);
-			txtConfirmPassword.sendKeys( Data[12]);					
-			Log.info("Clicking Submit button");
+			txtConfirmPassword.sendKeys( Data[12]);
+			Extent.logInfo(currentMethodName,"Clicking Submit button");		
 			buttonSubmit.click();
 			
-			Extent.logInfo("Data population complete.");
-			Extent.logInfo("Verifying URL of the page opened");
+			Extent.logInfo(currentMethodName,"Data population complete.");
+			Extent.logInfo(currentMethodName,"Verifying URL of the page opened");
 			//Verify whether current page URL is correct
 			if(wDriver.getCurrentUrl().equals(Data[13])){
-				Extent.logInfo("Verified current page URL");
-				Log.info("Current page URL is as expected");				
+				Extent.logInfo(currentMethodName,"Verified current page URL");							
 			}else{
-				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"_wrongURL.jpg");	
-				Extent.logError("Page URL is not the one we expected");
-				Log.error("ERROR: Page URL is not the one we expected");				
+				String scrPath = utils.takeScreenshot(wDriver, screenshotPath);
+				Extent.logError(currentMethodName, "Page URL is not the one we expected, screenshot: "+scrPath);							
 				return "ERROR: Page URL is not the one we expected";
 			}				
 				
 			//Verify user display name from UI with the value provided from excel sheet
-			Log.info("Verifying user display name");			
+			Extent.logInfo(currentMethodName,"Verifying user display name");			
 			if(displayUsername.isDisplayed() && displayUsername.getText().equals("Dear "+ Data[0] + " " + Data[1] + ",")){
-				Extent.logInfo("User Display name verification successful");
-				//Log.info("User Display name verification successful");
+				Extent.logInfo(currentMethodName,"User Display name verification successful");				
 			}
 			else{
-				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"_wrongDisplayName.jpg");
-				Extent.logError("Could not find post registration screen; screenshot captured");
-				//Log.error("ERROR: Could not find post registration screen; screenshot captured");				
+				String scrPath = utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"_wrongDisplayName.jpg");			
+				Extent.logError(currentMethodName,"Could not find post registration screen; screenshot: "+scrPath);				
 				return "ERROR: Could not find post registration screen";
 			}
 			
 			//Verify user login id  from UI with the value provided from excel sheet
-			Extent.logInfo("Verifying login username");
-//			Log.info("Verifying login username");			
+			Extent.logInfo(currentMethodName,"Verifying login username");			
 			if(loginUsername.isDisplayed() && loginUsername.getText().equals("Note: Your user name is " + Data[10] + ".")){
-				Extent.logInfo("Login username verification successful");				
-				//Log.info("Login username verification successful");
+				Extent.logInfo("registerNewUser","Login username verification successful");				
 			}
 			else{
-				utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"._wrongLoginIDjpg");
-				Extent.logError("ERROR: Login username displayed is different than the username we provided; screenshot taken");
-				//Log.error("ERROR: Login username displayed is different than the username we provided; screenshot taken");				
+				String scrPath = utils.takeScreenshot(wDriver, screenshotPath + utils.getDateTimeStamp()+"._wrongLoginIDjpg");
+				Extent.logError(currentMethodName,"Login username displayed is different than the username we provided; screenshot: "+scrPath);				
 				return "ERROR: Login username displayed is different than the username we provided";
 			}
-									
-			//if all is good, return successful response
+			Extent.logInfo(currentMethodName,"New user registration successful");			
 			return "Registration successful";
 		} catch (Exception e) {
-			Log.error("mercuryRegistration()->registerNewUser()-> Error occured, here are the details: "+ e );			
+			Extent.logError("registerNewUser", "Unexpected exception occured, details: " + e);			
 			return "ERROR: Error occurred while entering registration details";
 		}		
 	}

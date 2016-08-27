@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import commonLibs.Extent;
 import commonLibs.Log;
 import commonLibs.dataProvider;
 import commonLibs.utils;
@@ -232,15 +234,13 @@ public class mercuryFlightBooking {
 	// text to exist
 	public String openFlightBookingPage() {
 		try {
+			Extent.logInfo("openFlightBookingPage", "Opening flight booking page...");
 			linkFlightBooking.click();
 			utils.waitTillElementVisible(wDriver, headerFlightDetails, 30);
-			// WebDriverWait oWait = new WebDriverWait(wDriver, 30);
-			// oWait.until(ExpectedConditions.visibilityOf(headerFlightDetails));
+			Extent.logInfo("openFlightBookingPage", "Flight booking page opened successfully");
 			return "Flight booking page opened successfully";
 		} catch (Exception e) {
-			Log.error(
-					"mercuryFlightBooking()->openFlightBookingPage()-> Could not open flight booking page, here is the error: "
-							+ e);
+			Extent.logError("openFlightBookingPage","Could not open flight booking page, here is the error: "+ e);							
 			return "ERROR: Could not open flight booking page";
 		}
 	}// END OF METHOD openFlightBookingPage
@@ -249,36 +249,34 @@ public class mercuryFlightBooking {
 	// This method inputs basic flights details. The data is fetched from excel
 	// sheet using dataProvider class.
 	public String inputFlightDetails() {
-		try {
-
-			// Verify title of the page , just to make sure that we are on the
-			// correct page before we proceed further
+		try {			
+			// Verify title of the page , just to make sure that we are on the correct page before we proceed further
+			String currentMethodName = Thread.currentThread().getStackTrace()[1].getMethodName();
 			if (wDriver.getTitle().equals("Find a Flight: Mercury Tours:")) {
-				Log.info("mercuryFlightBooking()->inputFlightDetails()->Now on the find flight page");
+				Extent.logInfo(currentMethodName,"Now on the find flight page");
 			} else {
-				Log.error(
-						"mercuryFlightBooking()->inputFlightDetails()-> Page title mismatch, currently not on the find flight page");
+				Extent.logError(currentMethodName,"Page title mismatch, currently not on the find flight page");
 				return "ERROR: Page title mismatch, currently not on the find flight page";
 			}
 
 			// Fetch the data from excel using dataProvider class
+			Extent.logInfo(currentMethodName,"Fetching test data from excel...");
 			String Data[] = getTestDataFor.inputFlightDetails();
-
 			// Check which of the radio button is selected WebElement default
 			// when the
 			// page is loaded.
 			if (radioJourneyTypeRoundTrip.isSelected()) {
-				Log.info("Return Trip checkbox is slected WebElement default");
+				Extent.logInfo(currentMethodName,"Return Trip checkbox is slected WebElement default");
 			}
 
 			if (radioJourneyTypeOneWay.isSelected()) {
-				Log.info("Return Trip checkbox is slected WebElement default");
+				Extent.logInfo(currentMethodName,"One Way checkbox is slected WebElement default");
 			}
 
 			// Populating all the order fields, as per the test data provided
 			// WebElement
 			// dataProvider class.
-			Log.info("Populatig all the provided data");
+			Extent.logInfo(currentMethodName,"Populatig all the provided data");
 
 			if (Data[0].equals("Round Trip")) {
 				radioJourneyTypeRoundTrip.click();
@@ -306,11 +304,11 @@ public class mercuryFlightBooking {
 		
 			buttonContiue.click();
 			utils.waitTillElementVisible(wDriver, textDepart, 30l);
-			Log.info("mercuryFlightBooking()->inputFlightDetails()->All fields populated successfully");
+			Extent.logInfo(currentMethodName,"All fields populated successfully");
 			return "All fields populated successfully";
 
-		} catch (Exception e) {
-			Log.error("mercuryFlightBooking()->inputFlightDetails()-> Error occured, here are the details: " + e);
+		} catch (Exception e) {			
+			Extent.logError("inputFlightDetails","Error occured, here are the details: " + e);
 			return "ERROR: Error occurred while entering flight details";
 		}
 	}// END OF METHOD inputFlightDetails
@@ -320,36 +318,37 @@ public class mercuryFlightBooking {
 	// This method selects the departure and returning flights
 	public String selectFlight() {
 		try {
-
+			String currentMethodName = Thread.currentThread().getStackTrace()[1].getMethodName();
 			// verify page title to make sure that we are on the correct page
 			// before we proceed.
+			Extent.logInfo(currentMethodName, "Verifying page title for flight selection page");
 			if (wDriver.getTitle().equals("Select a Flight: Mercury Tours")) {
-				Log.info("mercuryFlightBooking()->selectFlight()->Now on the flight selection page");
+				Extent.logInfo(currentMethodName,"Now on the flight selection page");
 			} else {
-				Log.error(
-						"mercuryFlightBooking()->selectFlight()->Page title mismatch, currently not on the flight selection page");
+				Extent.logError(currentMethodName,"Page title mismatch, currently not on the flight selection page");
 				return "ERROR: Page title mismatch, currently not on the flight selection page";
 			}
 
 			// Fetch the input test data from excle sheet using dataProvider
 			// class
+			Extent.logInfo(currentMethodName,"Fetching test data from excel...");
 			String Data[] = getTestDataFor.selectFlight();
 
 			// Verify FROM->TO flight text is correct and as per the values we
 			// entered in first step.
 			if (departText.getText().equalsIgnoreCase(Data[0] + " to " + Data[1])) {
-				Log.error("mercuryFlightBooking()->selectFlight()-> FROM and TO flights match");
+				Extent.logInfo(currentMethodName,"FROM and TO flights match");
 			} else {
-				Log.error("mercuryFlightBooking()->selectFlight()-> FROM and TO flights doesn't match");
+				Extent.logError(currentMethodName,"FROM and TO flights doesn't match");
 				return "ERROR: FROM and TO flights doesn't match";
 			}
 
 			// Verify To->FROM flight text is correct and as per the values we
 			// entered in first step.
 			if (returnText.getText().equalsIgnoreCase(Data[1] + " to " + Data[0])) {
-				Log.error("mercuryFlightBooking()->selectFlight()-> TO and FROM flights match");
+				Extent.logInfo(currentMethodName,"TO and FROM flights match");
 			} else {
-				Log.error("mercuryFlightBooking()->selectFlight()-> TO and FROM flights doesn't match");
+				Extent.logError(currentMethodName,"TO and FROM flights doesn't match");
 				return "ERROR: TO and FROM flights doesn't match";
 			}
 
@@ -381,11 +380,11 @@ public class mercuryFlightBooking {
 			// registration
 			buttonContinuePage2.click();
 			utils.waitTillElementVisible(wDriver, textSummary, 30l);
-			Log.info("Flights selected successfully");
+			Extent.logInfo(currentMethodName,"Flights selected successfully");
 			return "Flight selected successfully";
 
 		} catch (Exception e) {
-			Log.error("mercuryFlightBooking()->selectFlight()-> Error occured, here are the details: " + e);
+			Extent.logError("selectFlight","Error occured, here are the details: " + e);
 			return "ERROR: Error occurred while selecting flight";
 		}
 	}// END OF METHOD selectFlight
@@ -395,67 +394,69 @@ public class mercuryFlightBooking {
 	// page showing all the details of the passenger and flight
 	public String bookFlight() {
 		try {
+			String currentMethodName = Thread.currentThread().getStackTrace()[1].getMethodName();			
+			Extent.logInfo(currentMethodName, "Verifying page title for flight booking page");
 			// Verify page title to make sure we are on the correct page
 			if (wDriver.getTitle().equals("Book a Flight: Mercury Tours")) {
-				Log.info("mercuryFlightBooking()->bookFlight()->Now on the flight booking page");
+				Extent.logInfo(currentMethodName, "Now on the flight booking page");
 			} else {
-				Log.error(
-						"mercuryFlightBooking()->bookFlight()->Page title mismatch, currently not on the flight booking page");
+				Extent.logError(currentMethodName, "Page title mismatch, currently not on the flight booking page");
 				return "ERROR: Page title mismatch, currently not on the flight booking page";
 			}
-
+			
+			Extent.logInfo(currentMethodName, "Fetching test data from excel...");
 			String Data[] = getTestDataFor.bookFlight();
 
 			// Verify depart FROM -> TO, and TO -> FROM cities
 			if (flightBookingFromTo.getText().equalsIgnoreCase(Data[0] + " to " + Data[1])) {
-				Log.error("mercuryFlightBooking()->bookFlight()-> FROM and TO flights match");
+				Extent.logInfo(currentMethodName, "FROM and TO flights match");
 			} else {
-				Log.error("mercuryFlightBooking()->bookFlight()-> FROM and TO flights doesn't match");
+				Extent.logError(currentMethodName, "FROM and TO flights doesn't match");
 				return "ERROR:  FROM and TO flights doesn't match";
 			}
 
 			if (flightBookingToFrom.getText().equalsIgnoreCase(Data[1] + " to " + Data[0])) {
-				Log.error("mercuryFlightBooking()->bookFlight()-> TO and FROM flights match");
+				Extent.logInfo(currentMethodName, "TO and FROM flights match");
 			} else {
-				Log.error("mercuryFlightBooking()->bookFlight()-> TO and FROM flights doesn't match");
+				Extent.logError(currentMethodName, "TO and FROM flights doesn't match");
 				return "ERROR:  TO and FROM flights doesn't match";
 			}
 
 			// Verify if the flights are correct
 			if (bookingDepartureFlight.getText().equalsIgnoreCase(Data[2])) {
-				Log.error("mercuryFlightBooking()->bookFlight()-> Departure flight is correct");
+				Extent.logInfo(currentMethodName, "Departure flight is correct");
 			} else {
-				Log.error("mercuryFlightBooking()->bookFlight()-> Wrong departure flight");
+				Extent.logError(currentMethodName, "Wrong departure flight");
 				return "ERROR: Wrong departure flight";
 			}
 
 			if (bookingReturnFlight.getText().equalsIgnoreCase(Data[4])) {
-				Log.error("mercuryFlightBooking()->bookFlight()-> Return flight is correct");
+				Extent.logInfo(currentMethodName, "Return flight is correct");
 			} else {
-				Log.error("mercuryFlightBooking()->bookFlight()-> Wrong return flight");
+				Extent.logError(currentMethodName, "Wrong return flight");
 				return "ERROR: TO and FROM flights doesn't match";
 			}
 
 			// Verify flight costs are correct
 			if (summaryDepartureFlightCost.getText().equalsIgnoreCase(Data[3])) {
-				Log.error("mercuryFlightBooking()->bookFlight()-> Departure flight cost is displayed corretly");
+				Extent.logInfo(currentMethodName, "Departure flight cost is displayed corretly");
 			} else {
-				Log.error("mercuryFlightBooking()->bookFlight()-> Departure flight cost mismatch");
+				Extent.logError(currentMethodName, "Departure flight cost mismatch");
 				return "ERROR: Departure flight cost mismatch";
 			}
 
 			if (summaryArrivalFlightCost.getText().equalsIgnoreCase(Data[5])) {
-				Log.error("mercuryFlightBooking()->bookFlight()-> Return flight cost is displayed correctly");
+				Extent.logInfo(currentMethodName, "Return flight cost is displayed correctly");
 			} else {
-				Log.error("mercuryFlightBooking()->bookFlight()-> Return flight cost mismatch");
+				Extent.logError(currentMethodName, "Return flight cost mismatch");
 				return "ERROR: Return flight cost mismatch";
 			}
 
 			// Verify number of passengers
 			if (summaryNumberOfPassengers.getText().equalsIgnoreCase(Data[6])) {
-				Log.error("mercuryFlightBooking()->bookFlight()-> Number of passenges are correct");
+				Extent.logInfo(currentMethodName, "Number of passenges are correct");
 			} else {
-				Log.error("mercuryFlightBooking()->bookFlight()-> Wrong number of passengers");
+				Extent.logError(currentMethodName, "Wrong number of passengers");
 				return "ERROR: Wrong number of passengers";
 			}
 
@@ -470,14 +471,14 @@ public class mercuryFlightBooking {
 					+ tempTaxes;
 
 			if (expectedTotalCost == actualTotalCost) {
-				Log.info("mercuryFlightBooking()->bookFlight()-> Expected and actual total cost matches");
+				Extent.logInfo(currentMethodName, "Expected and actual total cost matches");
 			} else {
-				Log.info("mercuryFlightBooking()->bookFlight()-> Expected and actual total cost mismatch");
+				Extent.logError(currentMethodName, "Expected and actual total cost mismatch");
 				return "ERROR: Expected and actual total cost mismatch";
 			}
 
 			// select remaining data from the excel
-			Log.info("Inputting all the details");
+			Extent.logInfo(currentMethodName, "Inputting all the details");
 			txtFirstname.sendKeys(Data[7]);
 			txtLastName.sendKeys(Data[8]);
 			utils.selectByVisibleText(wDriver, selectMeal, Data[9]);
@@ -515,25 +516,24 @@ public class mercuryFlightBooking {
 			// handled here.
 			if (!Data[30].equals("UNITED STATES")) {
 				utils.selectByVisibleText(wDriver, selectDeliveryCountry, Data[30]);
-				Log.info("Waiting for alert to appear");
+				Extent.logInfo(currentMethodName, "Waiting for alert to appear");
 				utils.waitTillAlertVisible(wDriver, 60l);
-				Log.info("Alert visible, switching to alert");
+				Extent.logInfo(currentMethodName, "Alert visible, switching to alert");
 				utils.switchToAlert(wDriver);
-				Log.info("Switched to alert");
-				Log.info("Alert Text: " + utils.getAlertText(wDriver));
-				Log.info("Accpeting the alert");
+				Extent.logInfo(currentMethodName, "Switched to alert");
+				Extent.logInfo(currentMethodName, "Alert Text: " + utils.getAlertText(wDriver));
+				Extent.logInfo(currentMethodName, "Accpeting the alert");
 				utils.acceptAlert(wDriver);
-				Log.info("Alert accepted");
+				Extent.logInfo(currentMethodName, "Alert accepted");
 			}
 
 			buttonSecurePurchase.click();
 			utils.waitTillElementVisible(wDriver, headerConfirmation, 30l);
-			Log.info("Flight booked successfully");
+			Extent.logInfo(currentMethodName, "Flight booked successfully");
 			return "Flight booked successfully";
 
 		} catch (Exception e) {
-			Log.error("mercuryFlightBooking()->bookFlight()-> Error occured, here are the details: ");
-			Log.error(e.toString());
+			Extent.logError("bookFlight", "Error occured, here are the details: " +e);			
 			return "ERROR: Error occurred while booking flight";
 		}
 	}// END OF METHOD bookFlight
@@ -543,14 +543,13 @@ public class mercuryFlightBooking {
 	// to flights page again.
 	public String backToFlights() {
 		try {
+			Extent.logInfo("backToFlights","Navigating back to flight booking page...");
 			buttonBackToFlights.click();
 			utils.waitTillElementVisible(wDriver, headerFlightDetails, 30l);
-			;
+			Extent.logInfo("backToFlights", "Flight booking page opened successfully");
 			return "Flight booking page opened successfully";
 		} catch (Exception e) {
-			Log.error(
-					"mercuryFlightBooking()->backToFlights()-> Error occurred while going back to flights page, here are the details: ");
-			Log.error(e.toString());
+			Extent.logError("backToFlights","Error occurred while going back to flights page, here are the details: " +e);			
 			return "ERROR: Error occurred while going back to flights page";
 		}
 	}// END OF METHOD backToFlight
@@ -560,13 +559,13 @@ public class mercuryFlightBooking {
 	// home page.
 	public String backToHome() {
 		try {
+			Extent.logInfo("backToHome", "Navigtaing back to home page");
 			buttonBackToHome.click();
 			utils.waitTillElementVisible(wDriver, txtUserName, 30l);
+			Extent.logInfo("backToHome", "Navigated to Home page successfully");
 			return "Navigated to Home page successfully";
 		} catch (Exception e) {
-			Log.error(
-					"mercuryFlightBooking()->backToHome()-> Error occurred while going back to home page, here are the details: ");
-			Log.error(e.toString());
+			Extent.logInfo("backToHome","Error occurred while going back to home page, here are the details: " +e);			
 			return "ERROR: Error occurred while going back to home page";
 		}
 	}// END OF METHOD backToHome
