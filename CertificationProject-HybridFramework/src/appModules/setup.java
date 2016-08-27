@@ -1,16 +1,14 @@
 package appModules;
 
 import java.util.concurrent.TimeUnit;
-import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import commonLibs.Extent;
-import commonLibs.Log;
+
 import commonLibs.dataProvider;
 import commonLibs.utils;
 
@@ -36,8 +34,7 @@ public class setup {
 
 //	 setting up constructor
 	public setup(WebDriver driver) {
-		this.wDriver = driver;	
-		DOMConfigurator.configure("log4j.xml");
+		this.wDriver = driver;		
 		PageFactory.initElements(wDriver, this);
 	}
 
@@ -65,8 +62,7 @@ public class setup {
 			return "Pre-login validations complete";
 
 		} catch (Exception e) {
-			Log.error(
-					"setup()->verifyLoginElementsExistance()-> ERROR: Could not verify the existance of login elements/controls, here are the details: "
+			Extent.logError("verifyLoginElementsExistance", "Could not verify the existance of login elements/controls, here are the details: "
 							+ e);
 			return "ERROR: Could not verify the existance of login elements/controls";
 		}

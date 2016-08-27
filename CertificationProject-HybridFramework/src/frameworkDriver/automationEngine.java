@@ -17,7 +17,10 @@ public class automationEngine {
 	private static excelDriver oExcelDriver;
 	private static String currentTestCaseStatus;
 	
-	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method main
+	//This is the main method, which is the entry point for entire framework. Execution beings form main method.
 	public static void main(String[] args) {
 		
 		DOMConfigurator.configure("log4j.xml");	
@@ -33,7 +36,10 @@ public class automationEngine {
 		Extent.flushExtent();
 		}
 
-	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method testSuiteDriver
+	//This method reads the test suite excel file and picks up the test cases one by one and sends them to testCaseDriver. It also logs the status for test cases
 	private static void testSuiteDriver(){
 		String testCaseSheetName, runFlag, runStatus, Comment, excelFile;
 		int Row, rowCount;
@@ -77,8 +83,7 @@ public class automationEngine {
 					Comment = runStatus;
 					runStatus = "FAIL";
 				}
-				Extent.endTestCase();
-				//Log.endOfTestCase();
+				Extent.endTestCase();				
 			}
 			else
 			{				
@@ -91,8 +96,12 @@ public class automationEngine {
 		
 			
 	}//END  testSuiteDriver
-//--------------------------------------------------------------------------------------------------------------------
-//--------------------------------------------------------------------------------------------------------------------
+
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method testCaseDriver
+	//This method reads the test cases and run the test steps one by one. It also logs the status for individual test steps.
 	public static String testCaseDriver(String sheetName){
 		int Row, rowCount;
 		
@@ -151,14 +160,22 @@ public class automationEngine {
 		return testCaseDriverReturnValue;
 	}//END testCaseDriver
 	
-		
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method exportToExcel
+	//This method exports the test results to an excel file
 	private static void exportToExcel()
 	{
-		String outputFileName = "";
-		String timeStamp = utils.getDateTimeStamp();
-		
-		outputFileName = resultFolder + "\\" + "Result_"+timeStamp+".xlsx";
-		oExcelDriver.saveAs(outputFileName);
+		try {			
+			String outputFileName = "";
+			String timeStamp = utils.getDateTimeStamp();		
+			outputFileName = resultFolder + "\\" + "Result_"+timeStamp+".xlsx";
+			oExcelDriver.saveAs(outputFileName);
+		} catch (Exception e) {
+			System.out.println("Exception occured while exporting results to excel; details: " + e);
+		}
+	
 	}//END exportToExcel
 	
 	

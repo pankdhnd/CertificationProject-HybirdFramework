@@ -5,10 +5,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Date;
 import java.util.Properties;
-
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -20,10 +17,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class utils {
 
-	public utils() {
-		DOMConfigurator.configure("log4j.xml");
-	}
-
+	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";	
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method waitForSeconds
+	//This method sleeps the thread for the specific number of seconds
 	public static void waitForSeconds(long Seconds) {
 		try {
 			Thread.sleep(Seconds * 1000L);
@@ -31,87 +30,12 @@ public class utils {
 			// Intentionally empty
 		}
 	}
-
-	public static Properties getProperties(String propertyFileName) {
-		try {
-
-			InputStream ofileReader;
-			Properties oProperty;
-
-			ofileReader = new FileInputStream(propertyFileName);
-			oProperty = new Properties();
-			oProperty.load(ofileReader);
-			return oProperty;
-		} catch (Exception e) {
-			System.out.println("utils->getProperties()->Error while reading config file; here is some more detail: ");
-			e.printStackTrace();
-			return null;
-		}
-
-	}
 	
-	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
-	private static Properties oDriverProperties;
-	
+	 
 	// ---------------------------------------------------------------------------------------------------------------------------------------------
 	// ---------------------------------------------------------------------------------------------------------------------------------------------
-	public static By getLocatorBy(String locatorString) {
-		try {
-
-			String[] Locator;
-			locatorString = locatorString.trim();
-
-			// if(locatorString.isEmpty() || locatorString.contains(":=")){
-			// throw new Exception ("utils->getLocatorBy()->Invalid locator");
-			// }
-			if (locatorString.isEmpty()) {
-				throw new Exception("utils->getLocatorBy()->Invalid locator");
-			}
-
-			Locator = locatorString.split(":=");
-
-			if (Locator[0].equalsIgnoreCase("id")) {
-				return By.id(Locator[1]);
-			}
-
-			if (Locator[0].equalsIgnoreCase("class")) {
-				return By.className(Locator[1]);
-			}
-
-			if (Locator[0].equalsIgnoreCase("xpath")) {
-				return By.xpath(Locator[1]);
-			}
-
-			if (Locator[0].equalsIgnoreCase("css")) {
-				return By.cssSelector(Locator[1]);
-			}
-
-			if (Locator[0].equalsIgnoreCase("link")) {
-				return By.linkText(Locator[1]);
-			}
-
-			if (Locator[0].equalsIgnoreCase("partiallink")) {
-				return By.partialLinkText(Locator[1]);
-			}
-
-			if (Locator[0].equalsIgnoreCase("name")) {
-				return By.name(Locator[1]);
-			}
-
-			if (Locator[0].equalsIgnoreCase("tagname")) {
-				return By.tagName(Locator[1]);
-			}
-
-			throw new Exception("utils->getLocatorBy()->Invalid locator");
-		} catch (Exception e) {
-			System.out.println("utils->getLocatorBy()->Error while getting locator; here is some more detail: ");
-			e.printStackTrace();
-			return null;
-		}
-	}
-
-	// ---------------------------------------------------------------------------------------------------------------------------------------------
-	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method getDateTimeStamp
+	//This method returns date and timestamp 
 	public static String getDateTimeStamp() {
 
 		try {
@@ -134,10 +58,19 @@ public class utils {
 
 	}
 
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method getProperty
+	//This method returns the asked property
 	public static String getProperty(String Property){
 		try {
-			oDriverProperties = utils.getProperties(driverPropertyFile);		
-			return oDriverProperties.getProperty(Property).trim();	
+			InputStream ofileReader;
+			Properties oProperty;
+			ofileReader = new FileInputStream(driverPropertyFile);
+			oProperty = new Properties();
+			oProperty.load(ofileReader);	
+			return	oProperty.getProperty(Property).trim();						
 		} catch (Exception e) {
 			Extent.logFatel("utils.getProperty", "Exception occured: " +e);
 			return "EXCEPTION";
@@ -145,30 +78,44 @@ public class utils {
 				
 	}
 	
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method highlightElement
+	//This method highlights the given web control
 	public static void highlightElement(WebDriver oDriver, WebElement Element) {
 		// WebElement element = oDriver.findElement(oBy);
 		JavascriptExecutor js = (JavascriptExecutor) oDriver;
 		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", Element);
 	}
 
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method highlightElement
+	//This method highlights the given web control
 	public static String takeScreenshot(WebDriver driver, String FolderPath) {
 		try {
 			String filePath = FolderPath + utils.getDateTimeStamp() + ".jpg";
-
 			if (new File(filePath).exists()) {
 				throw new Exception("Screenshot filename already exists");
 			}
 			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(scrFile, new File(filePath));
-			Log.info("Screenshot captured successfully");
+			Extent.logInfo("takeScreenshot","Screenshot captured successfully");
 			return filePath;
 		} catch (Exception e) {
-			Log.error("Could not take screenshot; here is some more detail: " + e);
+			Extent.logError("takeScreenshot","Could not take screenshot; here is some more detail: " + e);
 			return "ERROR: Error occured while saving the screnshot";
 		}
 
 	}
 
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method selectByVisibleText
+	//This method selects from a drop down using visible text
 	public static void selectByVisibleText(WebDriver driver, WebElement Element, String visibleText) {
 		try {
 
@@ -176,11 +123,16 @@ public class utils {
 			select.selectByVisibleText(visibleText);
 
 		} catch (Exception e) {
-			Log.error("Could not select given element; here is some more detail: " + e);
+			Extent.logError("selectByVisibleText","Could not select given element; here is some more detail: " + e);
 			System.out.println("Could not select given element; here is some more detail: ");
 		}
 	}
 
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method waitTillElementVisible
+	//This method waits till the given element is visible on the UI
 	public static void waitTillElementVisible(WebDriver driver, WebElement Element, long timeOut) {
 
 		try {
@@ -192,6 +144,11 @@ public class utils {
 		}
 	}
 
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method waitTillAlertVisible
+	//This method waits till the alert is visible
 	public static void waitTillAlertVisible(WebDriver driver, long timeOut) {
 		try {
 			WebDriverWait oWait = new WebDriverWait(driver, timeOut);
@@ -203,6 +160,11 @@ public class utils {
 		}
 	}
 
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method switchToAlert
+	//This method switches the control to the open alert
 	public static void switchToAlert(WebDriver driver) {
 		try {
 			driver.switchTo().alert();
@@ -212,6 +174,11 @@ public class utils {
 		}
 	}
 
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method getAlertText
+	//This method returns the text of an open alert
 	public static String getAlertText(WebDriver driver) {
 		try {
 			return driver.switchTo().alert().getText();
@@ -222,6 +189,11 @@ public class utils {
 		}
 	}
 
+	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method acceptAlert
+	//This method accepts an open alert
 	public static void acceptAlert(WebDriver driver) {
 		try {
 			driver.switchTo().alert().accept();
@@ -231,4 +203,7 @@ public class utils {
 		}
 	}
 
+	
+		
+	
 }// END CLASS

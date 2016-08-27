@@ -1,6 +1,5 @@
 package appModules;
 
-import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import commonLibs.utils;
 import commonLibs.Extent;
-import commonLibs.Log;
 import commonLibs.dataProvider;
 
 
@@ -74,8 +72,7 @@ public class mercuryRegistration {
 	public mercuryRegistration(WebDriver driver)
 	{
 		  this.wDriver = driver;
-		  PageFactory.initElements(wDriver, this);
-		  DOMConfigurator.configure("log4j.xml");
+		  PageFactory.initElements(wDriver, this);		  
 	}
 	
 	//method registerNewUser

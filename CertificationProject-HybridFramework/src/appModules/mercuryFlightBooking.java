@@ -2,14 +2,11 @@ package appModules;
 
 import java.util.regex.Pattern;
 
-import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import commonLibs.Extent;
-import commonLibs.Log;
 import commonLibs.dataProvider;
 import commonLibs.utils;
 
@@ -225,8 +222,7 @@ public class mercuryFlightBooking {
 	// This is the constructor of the class
 	public mercuryFlightBooking(WebDriver driver) {
 		this.wDriver = driver;
-		PageFactory.initElements(wDriver, this);
-		DOMConfigurator.configure("log4j.xml");
+		PageFactory.initElements(wDriver, this);		
 	}// END OF CONSTRUCTOR
 
 	// method openFlightBookingPage

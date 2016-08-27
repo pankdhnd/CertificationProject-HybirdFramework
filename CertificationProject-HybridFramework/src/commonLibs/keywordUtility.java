@@ -1,7 +1,6 @@
 package commonLibs;
 
 
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -171,7 +170,7 @@ try {
 	    WebDriverWait oWait = new WebDriverWait(wDriver, 60l);
 	    oWait.until(ExpectedConditions.titleIs(expectedTitle));	 
 	    Extent.logInfo(currentMethodName,"Title verified successfully.");
-	    Log.info("Browser opened successfully");
+	    Extent.logInfo(currentMethodName,"Browser opened successfully");
     	initializePageObjects(wDriver);
 		return "Browser opened successfully";	
 	    

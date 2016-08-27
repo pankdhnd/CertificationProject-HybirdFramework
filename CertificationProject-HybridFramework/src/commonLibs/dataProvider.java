@@ -1,12 +1,9 @@
 package commonLibs;
 
-import java.util.Properties;
 import commonLibs.excelDriver;
 
 public class dataProvider {
-	private static excelDriver oExcelDriver;	
-	private static String driverPropertyFile = "D:\\selenium\\Framework\\config\\config.properties";
-	private static Properties oDriverProperties;	
+	private static excelDriver oExcelDriver;			
 	private static String testDataFolder;
 
 //*******************************************************************************************************************************************************************
@@ -16,9 +13,8 @@ public class dataProvider {
 	
 	//method dataProvider
 	//This is the constructor of this class
-	public dataProvider(){
-		oDriverProperties = utils.getProperties(driverPropertyFile);
-		testDataFolder = oDriverProperties.getProperty("TestDataFolder");
+	public dataProvider(){		
+		testDataFolder = utils.getProperty("TestDataFolder");
 		oExcelDriver = new excelDriver();
 		oExcelDriver.openExcelSheet(testDataFolder+"\\TestData.xlsx");
 	}
@@ -37,7 +33,7 @@ public class dataProvider {
 			
 			return Data;
 		} catch (Exception e) {
-			Log.error("dataProvider()->openBrowser()-> Error occured while getting data: "+ e);
+			Extent.logError("dataProvider()->openBrowser()->", "Error occured while getting data: "+ e);			
 			return null;
 		}
 		
@@ -56,7 +52,7 @@ public class dataProvider {
 			
 			return Data;
 		} catch (Exception e) {
-			Log.error("dataProvider()->inputLoginDetails()-> Error occured while getting data: "+ e);
+			Extent.logError("dataProvider()->inputLoginDetails()->","Error occured while getting data: "+ e);
 			return null;
 		}
 		
@@ -77,7 +73,7 @@ public class dataProvider {
 			
 			return Data;
 		} catch (Exception e) {
-			Log.error("dataProvider()->verifyEnteredValues()-> Error occured while getting data: "+ e);
+			Extent.logError("dataProvider()->verifyEnteredValues()->", "Error occured while getting data: "+ e);
 			return null;
 		}
 		
@@ -108,7 +104,7 @@ public class dataProvider {
 			
 			return Data;
 		} catch (Exception e) {
-			Log.error("dataProvider()->registerNewUser()-> Error occured while getting data: "+ e);
+			Extent.logError("dataProvider()->registerNewUser()->","Error occured while getting data: "+ e);
 			return null;
 		}
 		
@@ -135,7 +131,7 @@ public class dataProvider {
 			
 			return Data;
 		} catch (Exception e) {
-			Log.error("dataProvider()->inputFlightDetails()-> Error occured while getting data: "+ e);
+			Extent.logError("dataProvider()->inputFlightDetails()->","Error occured while getting data: "+ e);
 			return null;
 		}
 		
@@ -156,7 +152,7 @@ public class dataProvider {
 			
 			return Data;
 		} catch (Exception e) {
-			Log.error("dataProvider()->selectFlight()-> Error occured while getting data: "+ e);
+			Extent.logError("dataProvider()->selectFlight()->","Error occured while getting data: "+ e);
 			return null;
 		}
 	}
@@ -204,7 +200,7 @@ public class dataProvider {
 			
 			return Data;
 		} catch (Exception e) {
-			Log.error("dataProvider()->bookFlight()-> Error occured while getting data: "+ e);
+			Extent.logError("dataProvider()->bookFlight()->","Error occured while getting data: "+ e);
 			return null;
 		}
 	}
