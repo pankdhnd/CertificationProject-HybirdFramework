@@ -20,9 +20,11 @@ public class dataProvider {
 	}
 	
 	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------	
 	//method openBrowser
 	//Fetches browser type and URL from excel sheet for openBrowser method
-	public String[] openBrowser(){
+	public static String[] openBrowser(){
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();		
 			String Data[] = new String[3];
@@ -40,9 +42,11 @@ public class dataProvider {
 	}
 	
 	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
 	//method inputLoginDetails
 	//Fetches login details like user name and password from excel sheet for inputLoginDetails method.
-	public String[] inputLoginDetails()
+	public static String[] inputLoginDetails()
 	{		
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
@@ -59,9 +63,11 @@ public class dataProvider {
 	}
 	
 	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
 	//method verifyEnteredValues
 	//This method fetches data from excel sheet for method verifyEnteredValues
-	public String[] verifyEnteredValues()
+	public static String[] verifyEnteredValues()
 	{
 		
 		try {
@@ -79,10 +85,12 @@ public class dataProvider {
 		
 	}
 	
-	
+
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
 	//method registerNewUser
 	//This method fetches the data from excel sheet for method registerNewUser
-	public String[] registerNewUser(){
+	public static String[] registerNewUser(){
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
 			String Data[] = new String[14];
@@ -111,10 +119,12 @@ public class dataProvider {
 		
 	}
 	
-	
+
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
 	//method inputFlightDetails
 	//This method fetches the data from excel sheet for method inputFlightDetails
-	public String [] inputFlightDetails(){
+	public static String [] inputFlightDetails(){
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
 			String Data[] = new String[10];
@@ -137,10 +147,12 @@ public class dataProvider {
 		
 	}
 	
-	
+
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
 	//method selectFlight
 	//This method fetches the data from excel sheet for method selectFlight
-	public String[] selectFlight(){
+	public static String[] selectFlight(){
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
 			String Data[] = new String[4];
@@ -157,10 +169,12 @@ public class dataProvider {
 		}
 	}
 	
-	
+
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
 	//method bookFlight
 	//This method fetches the data from excel sheet for method bookFlight
-	public String[] bookFlight(){
+	public static String[] bookFlight(){
 		try {
 			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
 			String Data[] = new String[32];
@@ -206,11 +220,24 @@ public class dataProvider {
 	}
 	
 	
-	
-	
-	
-	
-	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method emailData
+	//This method fetches the data from excel sheet for method emailData
+	public static String[] emailData(){
+		try {
+			String sheetName =  Thread.currentThread().getStackTrace()[1].getMethodName();
+			String Data[] = new String[3];
+			Data[0] = oExcelDriver.getCellData(sheetName, 1, 2);
+			Data[1] = oExcelDriver.getCellData(sheetName, 2, 2);
+			Data[2] = oExcelDriver.getCellData(sheetName, 3, 2);
+			
+			return Data;
+		} catch (Exception e) {
+			Extent.logError("dataProvider()->emailData()->","Error occured while getting data: "+ e);
+			return null;
+		}
+	}
 	
 	
 	

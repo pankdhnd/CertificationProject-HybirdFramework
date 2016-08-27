@@ -65,7 +65,7 @@ public class mercuryRegistration {
 	private static WebElement loginUsername;
 	
 	WebDriver wDriver;
-	dataProvider getTestDataFor = new dataProvider();	
+	//dataProvider getTestDataFor = new dataProvider();	
 	
 	//method mercuryRegistration
 	//This is the constructor for this class.
@@ -83,7 +83,7 @@ public class mercuryRegistration {
 			String screenshotPath = utils.getProperty("screenshotFolder");
 			Extent.logInfo(currentMethodName,"Loading test data for the test case: registerNewUser");
 			//Get the data from dataProvider method and put it in a string array
-			String Data[] = getTestDataFor.registerNewUser();
+			String Data[] = dataProvider.registerNewUser();
 			Extent.logInfo(currentMethodName,"Opening regisration page");		
 			linkRegister.click();
 			Select select;

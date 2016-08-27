@@ -1,9 +1,9 @@
 package frameworkDriver;
 //import java.util.Properties;
 
-import org.apache.log4j.xml.DOMConfigurator;
 
 import commonLibs.Extent;
+import commonLibs.dataProvider;
 //import commonLibs.Log;
 import commonLibs.excelDriver;
 import commonLibs.keywordUtility;
@@ -23,17 +23,18 @@ public class automationEngine {
 	//This is the main method, which is the entry point for entire framework. Execution beings form main method.
 	public static void main(String[] args) {
 		
-		DOMConfigurator.configure("log4j.xml");	
+		String reportFileName;	
 		testSuiteFolder =utils.getProperty("TestSuiteFolder");
 		TestSuite =utils.getProperty("TestSuite");
-		resultFolder =utils.getProperty("resultFolder");		
+		resultFolder =utils.getProperty("resultFolder");			
 		System.out.println("****************STARTING EXECUTION******************");
-		Extent.startReporting();
+		reportFileName = Extent.startReporting();
 		testSuiteDriver();
 		exportToExcel();
 		System.out.println("");
 		System.out.println("****************FINISHED EXECUTION******************");
 		Extent.flushExtent();
+		emailReport(reportFileName);		
 		}
 
 	// ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -178,6 +179,19 @@ public class automationEngine {
 	
 	}//END exportToExcel
 	
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------------------------------------------------------------
+	//method emailReport
+	//This method emails the test execution report in HTML format
+	private static void emailReport(String reportFileName){
+		String Data[] = dataProvider.emailData();
+		String adminEmail = Data[0];
+		String adminPass = Data[1];
+		String toAddress = Data[2];
+		
+	
+		utils.sendEmail(adminEmail, adminPass, toAddress, reportFileName);
+	}
 	
 	
 }//END CLASS AUTOMATIONENGINE

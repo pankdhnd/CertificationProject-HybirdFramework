@@ -216,7 +216,7 @@ public class mercuryFlightBooking {
 	public static WebElement txtUserName;
 
 	WebDriver wDriver;
-	dataProvider getTestDataFor = new dataProvider();
+	//dataProvider getTestDataFor = new dataProvider();
 
 	// method mercuryFlightBooking
 	// This is the constructor of the class
@@ -257,7 +257,7 @@ public class mercuryFlightBooking {
 
 			// Fetch the data from excel using dataProvider class
 			Extent.logInfo(currentMethodName,"Fetching test data from excel...");
-			String Data[] = getTestDataFor.inputFlightDetails();
+			String Data[] = dataProvider.inputFlightDetails();
 			// Check which of the radio button is selected WebElement default
 			// when the
 			// page is loaded.
@@ -328,7 +328,7 @@ public class mercuryFlightBooking {
 			// Fetch the input test data from excle sheet using dataProvider
 			// class
 			Extent.logInfo(currentMethodName,"Fetching test data from excel...");
-			String Data[] = getTestDataFor.selectFlight();
+			String Data[] = dataProvider.selectFlight();
 
 			// Verify FROM->TO flight text is correct and as per the values we
 			// entered in first step.
@@ -401,7 +401,7 @@ public class mercuryFlightBooking {
 			}
 			
 			Extent.logInfo(currentMethodName, "Fetching test data from excel...");
-			String Data[] = getTestDataFor.bookFlight();
+			String Data[] = dataProvider.bookFlight();
 
 			// Verify depart FROM -> TO, and TO -> FROM cities
 			if (flightBookingFromTo.getText().equalsIgnoreCase(Data[0] + " to " + Data[1])) {

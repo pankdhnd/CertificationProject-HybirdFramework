@@ -12,8 +12,10 @@ public class Extent {
 
 	}
 
-	public static void startReporting() {
-		Report = new ExtentReports(utils.getProperty("reportsFolder") + "TestReport_" + utils.getDateTimeStamp() + ".html");
+	public static String startReporting() {
+		String ReportFileName = utils.getProperty("reportsFolder") + "TestReport_" + utils.getDateTimeStamp() + ".html";
+		 Report = new ExtentReports(ReportFileName);
+		 return ReportFileName;
 	}
 
 	public static void startTest(String testName, String Description) {

@@ -33,6 +33,8 @@ public class keywordUtility {
  public keywordUtility(){
 	
 	}	
+
+ 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //method runMethod
@@ -129,12 +131,16 @@ try {
 
 	 return "";
  }
+
+ 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//method openBrowser
+//This method opens the browser and gets the base URL
  public String openBrowser() {	   	  
 	   try {
 		   String currentMethodName = Thread.currentThread().getStackTrace()[1].getMethodName();	
-		    String Data[] = getTestDataFor.openBrowser();
+		    String Data[] = dataProvider.openBrowser();
 			String sBrowserType = Data[0];
 			String sURL = Data[1];
 			String expectedTitle = Data[2];
@@ -170,10 +176,8 @@ try {
 	    WebDriverWait oWait = new WebDriverWait(wDriver, 60l);
 	    oWait.until(ExpectedConditions.titleIs(expectedTitle));	 
 	    Extent.logInfo(currentMethodName,"Title verified successfully.");
-	    Extent.logInfo(currentMethodName,"Browser opened successfully");
-    	initializePageObjects(wDriver);
-		return "Browser opened successfully";	
-	    
+	    Extent.logInfo(currentMethodName,"Browser opened successfully");    	
+		return "Browser opened successfully";		    
 	    	   
 	   } catch (Exception e) {
 	    System.out.println("Could not open browser; here is some more detail: " + e);
@@ -182,12 +186,11 @@ try {
 	   }
 	  } //END openBrowser
 
- public void initializePageObjects(WebDriver wDriver) {	   
-	   
- }
  
-	// method closeBrowser
-	// This method closes currently open browser, and kills the driver.
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// method closeBrowser
+// This method closes currently open browser, and kills the driver.
  public String closeBrowser() {
 		try {
 			 Extent.logInfo("closeBrowser","Closing browser...");

@@ -29,7 +29,7 @@ public class setup {
 	private static WebElement signOffLink;
 
 	
-	dataProvider getTestDataFor = new dataProvider();
+//	dataProvider getTestDataFor = new dataProvider();
 	WebDriver wDriver;
 
 //	 setting up constructor
@@ -94,7 +94,7 @@ public class setup {
 	public String inputLoginDetails() {
 		try {
 			Extent.logInfo("inputLoginDetails", "Fetching input data from excel...");
-			String Data[] = getTestDataFor.inputLoginDetails();
+			String Data[] = dataProvider.inputLoginDetails();
 			String userName = Data[0];
 			String passWord = Data[1];
 			txtUsername.sendKeys(userName);
@@ -113,7 +113,7 @@ public class setup {
 	public String verifyEnteredValues() {
 		try {
 			Extent.logInfo("verifyEnteredValues","Fetching data from excel...");
-			String Data[] = getTestDataFor.inputLoginDetails();
+			String Data[] = dataProvider.inputLoginDetails();
 			String userName = Data[0];
 			String passWord = Data[1];
 			Extent.logInfo("verifyEnteredValues","Verifying the already populated value with the values supplied from excel Sheet");			
@@ -153,7 +153,7 @@ public class setup {
 	public String openLoginURL(){
 		try {
 			Extent.logInfo("openLoginURL","Opening URL for login page");			
-			String Data[] = getTestDataFor.openBrowser();			
+			String Data[] = dataProvider.openBrowser();			
 			String sURL = Data[1];
 			wDriver.navigate().to(sURL);
 			wDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

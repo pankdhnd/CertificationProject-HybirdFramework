@@ -46,5 +46,11 @@
 	<classpathentry kind="lib" path="D:/selenium/lib/mongodb-driver-core-3.0.4.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/snakeyaml-1.15.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/dsn.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/imap.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/mail.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/pop3.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/smtp.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
