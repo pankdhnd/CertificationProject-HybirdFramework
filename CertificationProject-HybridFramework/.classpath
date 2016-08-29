@@ -20,7 +20,6 @@
 	<classpathentry kind="lib" path="D:/selenium/lib/jna-4.1.0.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/jna-platform-4.1.0.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/junit-4.12.jar"/>
-	<classpathentry kind="lib" path="D:/selenium/lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/netty-3.5.7.Final.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/phantomjsdriver-1.2.1.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/poi-3.14-20160307.jar"/>
@@ -46,10 +45,9 @@
 	<classpathentry kind="lib" path="D:/selenium/lib/mongodb-driver-core-3.0.4.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/snakeyaml-1.15.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/lib/javax.mail-1.5.0.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/dsn.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/imap.jar"/>
-	<classpathentry kind="lib" path="D:/selenium/lib/mail.jar"/>
-	<classpathentry kind="lib" path="D:/selenium/lib/mailapi.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/pop3.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/lib/smtp.jar"/>
 	<classpathentry kind="output" path="bin"/>

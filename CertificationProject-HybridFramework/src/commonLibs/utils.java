@@ -210,26 +210,26 @@ public class utils {
 	// ---------------------------------------------------------------------------------------------------------------------------------------------
 	// ---------------------------------------------------------------------------------------------------------------------------------------------
 	// method acceptAlert
-	// This method sends the email to the addresses which are passed to it
-	public static void sendEmail(final String adminEmail, final String adminPass, String toAddress, String fileName) {
+	// This method sends the email to the addresses which are passed to it	
+	public static void sendEmail(String adminEmail, String adminPass, String toAddress, String fileName) {
 
+		
 		Properties props = new Properties();
 		props.put("mail.smtp.host", "smtp.gmail.com");
 		props.put("mail.smtp.auth", "true");
-		props.put("mail.debug", "true");
+	//	props.put("mail.debug", "true");
 		props.put("mail.smtp.starttls.enable", "true");
 		props.put("mail.smtp.port", "465");
 		props.put("mail.smtp.socketFactory.port", "465");
 		props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 		props.put("mail.smtp.socketFactory.fallback", "false");
 
-		// Get the Session object.
+		//Get the Session object.		
 		Session session = Session.getInstance(props, new javax.mail.Authenticator() {
 			protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
 				return new javax.mail.PasswordAuthentication(adminEmail, adminPass);
 			}
-		});
-
+		});		
 		try {
 			// Create a default MimeMessage object.
 			Message message = new MimeMessage(session);
@@ -258,8 +258,10 @@ public class utils {
 			// Part two is attachment
 			messageBodyPart = new MimeBodyPart();
 			DataSource source = new FileDataSource(fileName);
+			String[] reportFileName =  fileName.split("Test");
+		
 			messageBodyPart.setDataHandler(new DataHandler(source));
-			messageBodyPart.setFileName(fileName);
+			messageBodyPart.setFileName(reportFileName[1]);
 			multipart.addBodyPart(messageBodyPart);
 
 			// Send the complete message parts
@@ -268,7 +270,7 @@ public class utils {
 			// Send message
 			Transport.send(message);
 
-			System.out.println("Sent message successfully....");
+			System.out.println("Report emailed successfully....");
 
 		} catch (MessagingException e) {
 			throw new RuntimeException(e);

@@ -33,7 +33,7 @@ public class automationEngine {
 		exportToExcel();
 		System.out.println("");
 		System.out.println("****************FINISHED EXECUTION******************");
-		Extent.flushExtent();
+		Extent.flushExtent();		
 		emailReport(reportFileName);		
 		}
 
@@ -187,8 +187,7 @@ public class automationEngine {
 		String Data[] = dataProvider.emailData();
 		String adminEmail = Data[0];
 		String adminPass = Data[1];
-		String toAddress = Data[2];
-		
+		String toAddress = Data[2];		
 	
 		utils.sendEmail(adminEmail, adminPass, toAddress, reportFileName);
 	}
